@@ -1,0 +1,157 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc2.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DOWNTIME_CATEGORY_DIALOG DIALOG DISCARDABLE  0, 0, 420, 172
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LISTBOX         SUBCAT_LISTBOX,3,18,220,144,LBS_USETABSTOPS | WS_VSCROLL
+    EDITTEXT        CAT_INDEX_EDITBOX,268,36,27,12
+    EDITTEXT        CAT_NAME_EDITBOX,300,36,90,12
+    EDITTEXT        SUBCAT_INDEX_EDITBOX,267,52,29,12
+    EDITTEXT        SUBCAT_NAME_EDITBOX,300,52,90,12
+    EDITTEXT        RED_EBOX,275,82,16,12,ES_AUTOHSCROLL
+    EDITTEXT        GREEN_EBOX,275,94,16,12,ES_AUTOHSCROLL
+    EDITTEXT        BLUE_EBOX,275,107,16,12,ES_AUTOHSCROLL
+    SCROLLBAR       RED_HS,293,83,100,9,WS_TABSTOP
+    SCROLLBAR       GREEN_HS,293,96,100,9,WS_TABSTOP
+    SCROLLBAR       BLUE_HS,293,109,100,9,WS_TABSTOP
+    SCROLLBAR       MOVEALL_HS,293,122,100,9,WS_TABSTOP
+    LTEXT           "All",INDEX_LBTITLE_STATIC,396,123,15,8
+    PUSHBUTTON      "上書き保存",SAVE_BUTTON,291,133,60,14,BS_CENTER
+    PUSHBUTTON      "新",INSERT_SUBCAT_BUTTON,228,6,50,14,BS_CENTER
+    PUSHBUTTON      "取り除く",REMOVE_SUBCAT_BUTTON,282,6,50,14,BS_CENTER
+    LTEXT           "インデックス",INDEX_LBTITLE_STATIC,3,8,48,8,NOT 
+                    WS_GROUP
+    LTEXT           "種類",INDEX_LBTITLE_STATIC,57,8,17,8,NOT WS_GROUP
+    LTEXT           "亜インデックス",INDEX_LBTITLE_STATIC,88,8,54,8,NOT 
+                    WS_GROUP
+    LTEXT           "亜級",INDEX_LBTITLE_STATIC,157,8,36,8,NOT WS_GROUP
+    LTEXT           "インデックス",INDEX_LBTITLE_STATIC,263,24,45,8,NOT 
+                    WS_GROUP
+    LTEXT           "記録仕様",INDEX_LBTITLE_STATIC,314,24,41,8,NOT WS_GROUP
+    RTEXT           "種類",INDEX_LBTITLE_STATIC,220,39,37,8,NOT WS_GROUP
+    RTEXT           "亜級",INDEX_LBTITLE_STATIC,220,55,39,8,NOT WS_GROUP
+    CONTROL         "Subtract Timeout Seconds from Auto Down",
+                    SUBTRACT_TIMEOUT_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,227,151,185,6
+    CONTROL         "",COLOR_SWATCH,"Button",BS_OWNERDRAW | WS_DISABLED | 
+                    WS_TABSTOP,235,83,37,36
+    LTEXT           "Red",INDEX_LBTITLE_STATIC,395,83,14,8
+    LTEXT           "Green",INDEX_LBTITLE_STATIC,395,96,20,8
+    LTEXT           "Blue",INDEX_LBTITLE_STATIC,395,109,15,8
+    LTEXT           "Color",INDEX_LBTITLE_STATIC,197,8,17,8
+    LTEXT           "Plot Color",INDEX_LBTITLE_STATIC,233,72,39,8
+    CONTROL         "Copy To Network",COPY_TO_NETWORK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,227,159,71,10
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc2.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+DOWNTIME_ICON           ICON    DISCARDABLE     "downtime.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "DOWNTIME_CATEGORY_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 382
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "停止時間の設定"
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

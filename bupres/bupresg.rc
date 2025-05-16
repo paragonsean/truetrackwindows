@@ -1,0 +1,367 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcg.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resrcg.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+BACKUP_DIALOG DIALOG DISCARDABLE  0, 0, 263, 186
+STYLE WS_CHILD
+FONT 8, "Courier"
+BEGIN
+    GROUPBOX        "Löschoptionen",IDC_STATIC,4,98,96,81,WS_GROUP
+    CONTROL         "Daten löschen",TB_PURGE_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,127,66,12
+    GROUPBOX        "Absicherung",IDC_STATIC,4,4,87,76,WS_GROUP
+    PUSHBUTTON      "&Beginnen",IDOK,155,141,50,17,BS_CENTER
+    CONTROL         "Einstellungen",TB_SETUPS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,15,65,12
+    CONTROL         "Schrott/Ausfallz.",TB_SCRAP_DOWN_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,28,73,12
+    CONTROL         "Schussprofile",TB_PROFILE_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,41,68,12
+    CONTROL         "Schussparameter",TB_PARAM_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,54,73,12
+    CONTROL         "Alarmdaten",TB_ALARM_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,67,73,12
+    PUSHBUTTON      "Alle",TB_BACKUP_ALL_BUTTON,4,83,27,12,BS_CENTER
+    CONTROL         "Letz.50 Schuss sich.",TB_LAST_50_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,140,89,12
+    CONTROL         "Ausfallz.löschen",TB_PURGE_DOWNTIME_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,152,79,12
+    LTEXT           "ZIP-Dateien absichern",IDC_STATIC,109,102,108,8,NOT 
+                    WS_GROUP
+    LTEXT           "Maschine",IDC_STATIC,105,5,36,9
+    LTEXT           "Gussteil",IDC_STATIC,148,5,33,10
+    LISTBOX         TB_MACHINE_LISTBOX,110,15,31,66,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         TB_PART_LISTBOX,146,15,107,66,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        TB_ZIP_NAME_EDITBOX,109,113,144,12
+    PUSHBUTTON      "Alle",TB_ALL_MACHINES_BUTTON,109,75,27,12,BS_CENTER
+    LTEXT           "Param.",IDC_STATIC,187,5,30,9
+    LTEXT           "Schüsse",IDC_STATIC,218,5,28,9
+    CTEXT           "Gilt für Profile UND Parameter ",IDC_STATIC,11,109,78,
+                    17,NOT WS_GROUP
+    CONTROL         "letzten",TB_RECENT_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,153,87,56,10
+    EDITTEXT        TB_RECENT_COUNT_EBOX,205,85,22,12,ES_AUTOHSCROLL
+    LTEXT           "Schüsse",IDC_STATIC,229,88,29,8
+    CONTROL         "Alarmdaten löschen",TB_PURGE_ALARMS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,165,85,10
+    PUSHBUTTON      "Alle Einrichtdateien",TB_ALL_TEXT_FILES_PB,179,173,84,
+                    12
+END
+
+CHOOSE_FUNCTION DIALOG DISCARDABLE  0, 0, 231, 135
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "Courier"
+BEGIN
+    PUSHBUTTON      "&Sichern",BACKUP_BUTTON,4,6,74,22,BS_CENTER | 
+                    BS_MULTILINE
+    PUSHBUTTON      "&Wieder- herstellen",RESTORE_BUTTON,4,74,74,22,
+                    BS_CENTER | BS_MULTILINE
+    PUSHBUTTON      "&Löschen",DELETE_BUTTON,4,108,74,22,BS_CENTER | 
+                    BS_MULTILINE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,68,231,1
+    PUSHBUTTON      "Absicherungsliste",BACKUP_LIST_BUTTON,4,40,74,22,
+                    BS_CENTER | BS_VCENTER | BS_MULTILINE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,101,231,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,33,231,1
+    LTEXT           "Einrichtung sichern: Schüsse, Daten, Parameter, Alarme u. Ausfallzeiten.",
+                    IDC_STATIC,83,9,146,21
+    LTEXT           "Schüsse die zur Absicherungsliste hinzugefügt wurden.",
+                    IDC_STATIC,91,42,133,19
+    LTEXT           "Daten aus letzter Absicherung wieder herstellen.",
+                    IDC_STATIC,91,76,130,17
+    LTEXT           "Schüsse löschen oder umnumerieren.",IDC_STATIC,91,115,
+                    137,8
+END
+
+DELETE_DATA DIALOG DISCARDABLE  0, 0, 289, 184
+STYLE WS_CHILD
+FONT 8, "Courier"
+BEGIN
+    GROUPBOX        "Vorgang",-1,64,52,68,39,WS_GROUP
+    GROUPBOX        "Datentyp",-1,64,6,68,39,WS_GROUP
+    CTEXT           "Maschine",-1,3,1,36,8
+    LTEXT           "Gussteil",-1,5,72,35,8
+    LISTBOX         DD_MACHINE_LISTBOX,5,10,31,59,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         DD_PART_LISTBOX,5,82,51,90,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         DD_SHOT_LISTBOX,143,18,136,142,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Parameter",DD_PARAMETERS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,71,16,55,12
+    CONTROL         "Profile",DD_PROFILES_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,71,28,46,12
+    PUSHBUTTON      "&Beginnen",IDOK,71,154,56,18,BS_CENTER
+    CONTROL         "Löschen",DD_DELETE_RADIOBUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,72,63,39,12
+    CONTROL         "Umnumerieren",DD_RENUMBER_RADIOBUTTON,"Button",
+                    BS_AUTORADIOBUTTON,72,75,57,12
+    EDITTEXT        DD_RENUMBER_EDITBOX,104,103,20,12
+    PUSHBUTTON      "&Alle",DD_ALL_SHOTS_BUTTON,186,163,50,14,BS_CENTER
+    LTEXT           "Schuss",-1,143,6,25,8,NOT WS_GROUP
+    LTEXT           "Neue Anfangsnum.",DD_RENUMBER_LABEL,59,100,45,19,NOT 
+                    WS_GROUP
+    LTEXT           "Param /",-1,251,0,28,8,NOT WS_GROUP
+    LTEXT           "Profil",-1,261,8,25,8,NOT WS_GROUP
+    LTEXT           "Datum",-1,179,7,24,8,NOT WS_GROUP
+END
+
+RESTORE_DIALOG DIALOG DISCARDABLE  0, 0, 301, 150
+STYLE WS_CHILD
+FONT 8, "Courier"
+BEGIN
+    GROUPBOX        "Wiederherstellen",IDC_STATIC,9,11,103,117,WS_GROUP
+    LTEXT           "Maschine",IDC_STATIC,116,14,35,9
+    LTEXT           "Gussteil",IDC_STATIC,154,14,33,10
+    LTEXT           "Param",IDC_STATIC,190,14,20,9
+    LTEXT           "Schüsse",IDC_STATIC,215,14,30,8
+    PUSHBUTTON      "&Beginnen",IDOK,125,116,50,14,BS_CENTER
+    CONTROL         "Einstellungen",TR_SETUPS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,22,64,12
+    CONTROL         "Schrott/Ausfallz.",TR_SCRAP_DOWN_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,35,78,12
+    CONTROL         "Schussprofile",TR_PROFILE_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,48,68,12
+    CONTROL         "Schussparameter",TR_PARAM_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,61,73,12
+    CONTROL         "Alarmdaten",TR_ALARM_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,74,73,12
+    CONTROL         "SureTrak+glob.Param.",TR_SURETRAK_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,87,90,12
+    PUSHBUTTON      "Alles",TR_RESTORE_ALL_BUTTON,9,129,24,12,BS_CENTER
+    LISTBOX         TR_MACHINE_LISTBOX,116,24,31,66,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         TR_PART_LISTBOX,152,24,107,66,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Alles",TR_ALL_MACHINES_BUTTON,116,85,24,12,BS_CENTER
+    PUSHBUTTON      "ZIP-Datei einlesen",TR_LOAD_ZIP_FILE_BUTTON,184,85,76,
+                    14,BS_CENTER
+    LISTBOX         TR_DEST_LISTBOX,265,24,26,74,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Zielmaschine",IDC_STATIC,249,14,52,11
+    CONTROL         "Analoggeber-Liste",TR_ANALOGS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,100,90,12
+    CONTROL         "FasTrak-Karten-Liste",TR_BOARDS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,113,90,12
+END
+
+SAVING_PROGRESS DIALOG DISCARDABLE  0, 0, 98, 71
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Speichern.."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Maschine:",-1,4,3,35,8,NOT WS_GROUP
+    LTEXT           "Gussteil:",-1,4,13,25,8,NOT WS_GROUP
+    LTEXT           "Datei:",-1,4,23,20,8,NOT WS_GROUP
+    LTEXT           "M01",SAVING_MACHINE_TEXT_BOX,41,3,22,10,NOT WS_GROUP
+    LTEXT           "VisiTrak",SAVING_PART_TEXT_BOX,41,13,55,10,NOT WS_GROUP
+    LTEXT           "Text1",SAVING_FILE_TEXT_BOX,41,23,65,10,NOT WS_GROUP
+    PUSHBUTTON      "&Stop",SAVING_CANCEL_BUTTON,22,47,50,14,BS_CENTER
+END
+
+BACKUP_LIST_DIALOG DIALOGEX 0, 0, 197, 174
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Beginnen",IDOK,64,153,67,17,BS_CENTER
+    LTEXT           "Zip-Datei zum Absichern",IDC_STATIC,2,121,144,8,NOT 
+                    WS_GROUP
+    EDITTEXT        TB_ZIP_NAME_EDITBOX,2,132,192,12
+    LTEXT           "Maschine",IDC_STATIC,39,17,31,8
+    LTEXT           "Teil",BACKUP_LIST_PART_TBOX,80,17,15,8
+    LTEXT           "Schuss",BACKUP_LIST_SHOT_TBOX,108,17,25,8
+    LISTBOX         BACKUP_LIST_LISTBOX,39,26,114,87,LBS_SORT | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Folgende Schüsse werden abgesichert",IDC_STATIC,37,2,
+                    124,8,0,0,HIDC_STATIC
+END
+
+NEW_MACHINE_NOTIFY_DIALOG DIALOG DISCARDABLE  0, 0, 199, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Meldung: Neue Maschine"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Schließen",IDOK,74,67,50,14
+    LTEXT           "Diese erscheinen erst im Programm nach Neustart der zur Zeit laufenden True-Trak 2020-Software.",
+                    IDC_STATIC,41,31,148,26
+    LTEXT           "Hinweis",IDC_STATIC,9,17,26,8
+    LTEXT           "Eine oder mehrere Maschinen wurden erstellt.",
+                    IDC_STATIC,43,17,144,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "RESTORE_DIALOG", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 148
+    END
+
+    "BACKUP_LIST_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrcg.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+BUPRES_ICON             ICON    DISCARDABLE     "bupres.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MUST_SELECT_FIRST_STRING "Zuerst ein Gussteil auswählen"
+    CANT_DO_THAT_STRING     "Nicht durchführbar."
+    MAIN_CAPTION_STRING     "TrueTrak sichern und wiederherstellen"
+    EMPTY_DESTINATION_BOX   "Ein Zielpfad muss angegeben  werden."
+    DIR_CREATE_FAIL         "Zielverzeichnis kann nicht eingerichtet werden."
+    COMPUTER_DIR_CREATE_FAIL 
+                            "Rechner Verzeichnis kann nicht eingerichtet werden."
+    BACKUP_DATA_STRING      "Einstellungen und Daten sichern"
+    RESTORE_DATA_STRING     "Einstellungen und Daten wiederherstellen"
+    DELETE_DATA_STRING      "Daten löschen oder neu numerieren "
+    DIRECTORY_NOT_EXIST_STRING "Verzeichnis existiert nicht"
+    NOTE_STRING             "Hinweis"
+    NO_MEMORY_STRING        "Kein Arbeitsspeicher verfügbar"
+    SAVELIST_STRING         "Abspeicherliste einrichten"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    THREAD_CREATE_FAIL      "Teilprozess einrichten nicht möglich (thread)."
+    NO_DISK_IN_DRIVE_STRING "Keine Diskette im Laufwerk"
+    TRY_AGAIN_STRING        "Nochmals versuchen?"
+    NO_MACHINE_STRING       "Keine Maschine: Erst mit dem Maschinen-Editor einrichten"
+    NOTHING_TO_DO_STRING    "Bisher wurde keine Tätigkeit gewählt."
+    NEED_ZIP_NAME_STRING    "Einen Namen für die ZIP-Datei eingeben."
+    NO_ZIP_DIR_STRING       "Verzeichnis für ZIP-Datei kann nicht eingerichtet werden."
+    EVENT_FAIL_STRING       "Warte-auf-Ereignis kann nicht eingerichtet werden."
+    SEMAPHOR_FAIL_STRING    "Besitz von Maschinen-Semaphor db nicht möglich."
+    DELETING_STRING         "Löschen.."
+    BACKING_UP_STRING       "Absichern.."
+    RESTORING_STRING        "Wiederherstellen.."
+    RENUMBERING_STRING      "Neu numerieren.."
+    MACHINE_ON_OTHER_STRING "Maschine befindet sich auf einem anderen Rechner."
+    MUST_RESTORE_THERE_STRING 
+                            "Beim Wiederherstellen müssen Sie sich an diesem Rechner befinden."
+    WILL_RESTOR_CURRENT_STRING 
+                            "Das aktuelle GUSSTEIL soll auf dieser Maschine wiederhergestellt werden!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MONITOR_OFF_STRING      "Überwachung sollte ausgeschaltet sein. Soll Wiederherstellen fortgesetzt werden?"
+    CANT_LOAD_MACHINE_STRING 
+                            "Laden der ursprünglichen Maschine nicht möglich."
+    ZIP_FILES_STRING        "Zip-Dateien"
+    CHOOSE_ZIP_FILE_STRING  "ZIP-Datei zum Einlesen wählen."
+    ADRIVE_SUBDIR_STRING    "Abspeichern zum A-Laufwerk-Unterverzeichnis nicht möglich."
+    ZIP_OK_QUESTION_STRING  "Den Namen der Absicherungs-Datei verbessern?"
+    DEST_NOT_FOUND_STRING   "Zielmaschine ist nicht auffindbar"
+    NOT_ON_WS0_STRING       "Auf WS=0 sollten keine Maschinen eingerichtet werden."
+    NOT_VISIBLE_STRING      "Diese werden erst sichtbar nachdem die Grafik neu gestartet wird."
+    NEW_MACHINES_STRING     "Neue Maschine(n) eingerichtet."
+    NO_SAVE_TO_BACKUPDIR_STRING 
+                            "Vom Verzeichnis \\V5\\BACKUP kann nicht abgespeichert werden."
+    NO_EXES_DIR_FOUND_STRING "EXES-Verzeichnis nicht auffindbar"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

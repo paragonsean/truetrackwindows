@@ -1,0 +1,165 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MY_ICON                 ICON    DISCARDABLE     "serialtest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MAIN_DIALOG DIALOG DISCARDABLE  0, 0, 445, 218
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        COM_PORT_EBOX,55,7,40,12,ES_AUTOHSCROLL
+    EDITTEXT        SPEED_EBOX,55,23,40,12,ES_AUTOHSCROLL
+    CONTROL         "EosComCts",CTS_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,8,52,10
+    CONTROL         "EosComDsr",DSR_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,21,53,10
+    CONTROL         "EosComXonXoff",XON_XOFF_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,185,8,67,10
+    CONTROL         "EosNeedsStxEtx",STX_ETX_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,185,21,69,10
+    EDITTEXT        COM_EOL_EBOX,351,3,40,12,ES_AUTOHSCROLL
+    EDITTEXT        DELIMITER_EBOX,351,16,40,12,ES_AUTOHSCROLL
+    EDITTEXT        FIXED_WIDTH_EBOX,351,29,40,12,ES_AUTOHSCROLL
+    CONTROL         "7",BIT_7_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,27,85,20,10
+    CONTROL         "8",BIT_8_RADIO,"Button",BS_AUTORADIOBUTTON,54,85,20,10
+    CONTROL         "1",STOP_1_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,113,85,20,10
+    CONTROL         "1.5",STOP_1_5_RADIO,"Button",BS_AUTORADIOBUTTON,137,85,
+                    26,10
+    CONTROL         "2",STOP_2_RADIO,"Button",BS_AUTORADIOBUTTON,168,85,20,
+                    10
+    CONTROL         "None",NO_PARITY_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,238,85,32,10
+    CONTROL         "Odd",ODD_PARITY_RADIO,"Button",BS_AUTORADIOBUTTON,274,
+                    85,26,10
+    CONTROL         "Even",EVEN_PARITY_RADIO,"Button",BS_AUTORADIOBUTTON,305,
+                    85,31,10
+    CONTROL         "Space",SPACE_PARITY_RADIO,"Button",BS_AUTORADIOBUTTON,
+                    342,85,35,10
+    CONTROL         "Mark",MARK_PARITY_RADIO,"Button",BS_AUTORADIOBUTTON,383,
+                    85,30,10
+    EDITTEXT        SETUP_EBOX,54,105,384,12,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "Save This Setup",SAVE_SETUP_PB,220,137,77,14,BS_CENTER
+    PUSHBUTTON      "Save to True-Trak Setup",SAVE_TO_MONALL_INI_PB,314,137,
+                    99,14,BS_CENTER
+    EDITTEXT        SECONDS_EBOX,135,168,40,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Begin",TIMED_MESSAGES_PB,99,191,50,14
+    PUSHBUTTON      "Send One Test Message Now",SEND_ONE_MESSAGE_PB,272,180,
+                    114,14
+    LTEXT           "EosComPort",IDC_STATIC,9,12,40,8
+    LTEXT           "EosComSpeed",IDC_STATIC,1,26,48,8
+    LTEXT           "EosComSetup",IDC_STATIC,2,107,46,8
+    LTEXT           "EosComEol",IDC_STATIC,306,7,37,8
+    LTEXT           "EosComDelimitChar",IDC_STATIC,281,19,62,8
+    LTEXT           "EosFixedWidth",IDC_STATIC,295,32,48,8
+    LTEXT           "Send a sample message every",IDC_STATIC,30,171,97,8
+    LTEXT           "Seconds",IDC_STATIC,182,171,29,8
+    GROUPBOX        "Single Test Message",IDC_STATIC,226,158,203,52
+    GROUPBOX        "Timed Test Messages",IDC_STATIC,18,158,203,52
+    GROUPBOX        "Bits",IDC_STATIC,13,76,71,22
+    GROUPBOX        "Stop Bits",IDC_STATIC,106,76,87,22
+    GROUPBOX        "Parity",IDC_STATIC,218,76,205,22
+    PUSHBUTTON      "Initialize Com Port",INIT_COM_PORT_PB,126,137,77,14
+    LTEXT           "Message",IDC_STATIC,18,123,30,8
+    LTEXT           "MSG",MESSAGE_TBOX,54,123,379,8
+    PUSHBUTTON      "Make Test Message",MAKE_MESSAGE_PB,32,137,77,14
+    LTEXT           "Count",IDC_STATIC,32,185,20,8
+    LTEXT           "00000",MESSAGE_COUNT_TBOX,59,185,21,8
+    RTEXT           "Start File ( Sent Before Message )",IDC_STATIC,6,45,106,
+                    8
+    EDITTEXT        START_FILE_TBOX,117,41,116,12,ES_AUTOHSCROLL
+    EDITTEXT        END_FILE_TBOX,117,57,116,12,ES_AUTOHSCROLL
+    RTEXT           "End File ( Sent After Message )",IDC_STATIC,6,60,106,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Serial Test"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

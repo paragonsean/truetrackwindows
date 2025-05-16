@@ -1,0 +1,154 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc2.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MAINDIALOG DIALOG DISCARDABLE  0, 0, 180, 121
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CONTEXTHELP | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LISTBOX         101,0,0,180,121,WS_VSCROLL | WS_TABSTOP
+END
+
+EXIT_DIALOG DIALOG DISCARDABLE  5, 10, 163, 55
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,28,36,47,12,BS_CENTER
+    PUSHBUTTON      "キャンセル",IDCANCEL,88,36,47,12,BS_CENTER
+    CTEXT           "続けますか？",-1,51,23,60,8,NOT WS_GROUP
+    CTEXT           "終了すると全Visi-Trakプログラムが終了します",-1,35,2,87,
+                    16,NOT WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "最小化(&M)",                  107
+        MENUITEM "終了(&X)",                    108
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "DDEのイベントを表示する(&D)", 203
+        MENUITEM "VisiTrakのイベントを表示する(&V)", 205
+        MENUITEM "イベントをクリア(&C)",        204
+        MENUITEM "&Show Status",                207
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "トピックの検索(&H)",          901
+        MENUITEM SEPARATOR
+        MENUITEM "バージョン情報(&A)",          903
+    END
+END
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resrc2.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+EVENTMAN_ICON           ICON    DISCARDABLE     "eventman.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    SHUT_DOWN_ALL_STRING    "終了すると全Visi-Trakプログラムが終了します"
+    CONTINUE_STRING         "続けますか？"
+    UNABLE_TO_CONTINUE_STRING "イベントマネージャー：続ける事ができません"
+    MAIL_MONITOR_EVENT_FAIL_STRING
+                            "ボードモニターイベントの新設はできませんでした"
+    MAIL_MONITOR_WAIT_FAIL_STRING "MAILでWaitForSingleObjectが間違いました"
+    CREATE_FAILED_STRING    "新設できません"
+    MAILSLOT_THREAD_STRING  "Mailslot Thread"
+    MAILSLOT_STRING         "Mailslot"
+    MAIN_WINDOW_TITLE_STRING "イベントマネージャー"
+    BAD_DATA_SERVER_STRING  "データサーワー名前のエラー"
+    DS_CONNECT_FAIL_STRING  "データサーワーに付けできません"
+    REMOTE_COMPUTER_STRING  "Remote Computer"
+    DATA_ARCHIVER_STRING    "Data Archiver"
+    IS_OFFLINE_STRING       "is OFF line";
+    IS_ONLINE_STRING        "is ON line";
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

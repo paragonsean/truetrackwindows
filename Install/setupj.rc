@@ -1,0 +1,480 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc2.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+UPDATE_STATUS_DIALOG DIALOGEX 0, 0, 267, 147
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "キャンセル",IDCANCEL,104,96,57,14,BS_CENTER
+    LTEXT           "",STATUS_MSG_TEXTBOX,24,28,213,17,NOT WS_GROUP,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "",FILENAME_TEXTBOX,90,58,87,8,NOT WS_GROUP
+END
+
+INSTALL_STATUS_DIALOG DIALOGEX 0, 0, 267, 147
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "キャンセル",IDCANCEL,103,96,63,14,BS_CENTER
+    LTEXT           "",STATUS_MSG_TEXTBOX,25,28,207,17,NOT WS_GROUP,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "",FILENAME_TEXTBOX,0,58,268,8,NOT WS_GROUP
+END
+
+UPDATE_STARTUP_DIALOG DIALOG DISCARDABLE  0, 0, 267, 147
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "続きます",IDOK,60,68,58,14,BS_CENTER
+    PUSHBUTTON      "キャンセル",IDCANCEL,147,68,59,14,BS_CENTER
+    LTEXT           "このプログラムは現在のTrueTrakソフトウエアを最新バージョンへ更新します。 続ける前に全てのTrueTrakプログラムを閉じて下さい。",
+                    IDC_STATIC,10,12,244,48,NOT WS_GROUP
+    LTEXT           "Note: You must be at the highest password level to edit the passwords. If you do not know the password for the highest level you should find out before continuing.",
+                    UPDATE_PW_NOTE_TBOX,12,102,244,35
+END
+
+STARTUP_DIALOG DIALOG DISCARDABLE  0, 0, 511, 225
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    CTEXT           "このコンピュータの名前（３文字以下）",IDC_STATIC,146,47,
+                    168,12,NOT WS_GROUP
+    LTEXT           "このプログラムはTrueTrakソフトウエアを以下のディレクトリにインストールします。他のディレクトリへインストールしたい場合は、続ける前に変更して下さい。",
+                    IDC_STATIC,96,3,260,25,NOT WS_GROUP
+    DEFPUSHBUTTON   "続きます",IDOK,164,203,50,14,BS_CENTER
+    PUSHBUTTON      "キャンセル",IDCANCEL,237,203,50,14,BS_CENTER
+    EDITTEXT        ROOT_DIRECTORY_EBOX,112,28,237,14
+    EDITTEXT        THIS_COMPUTER_EBOX,214,62,24,14,ES_AUTOHSCROLL
+    CONTROL         "TrueTrakスタートアップで型番設定を開始します",
+                    PART_EDITOR_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,2,79,255,12
+    CONTROL         "TrueTrakスタートアップ時にモニター設定表示から開始します",
+                    MONITOR_SETUPS_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,2,92,254,12
+    CONTROL         "TrueTrakスタートアップ時にボードモニター表示から開始します",
+                    START_MONITOR_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,2,105,256,12
+    CONTROL         "TrueTrakコントロールのインストール",
+                    SURETRAK_CONTROL_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,2,117,255,12
+    GROUPBOX        "コントロール条件設定",RADIO_GROUPBOX,45,146,104,72,
+                    WS_GROUP
+    CONTROL         "IN   IPS   20P",E20_RADIO,"Button",BS_AUTORADIOBUTTON |
+                    WS_GROUP | WS_TABSTOP,63,179,71,12
+    CONTROL         "MM   MPS  2MM",M2_RADIO,"Button",BS_AUTORADIOBUTTON,63,
+                    191,71,12
+    CONTROL         "MM   MPS  20P",M20_RADIO,"Button",BS_AUTORADIOBUTTON,63,
+                    203,71,12
+    CONTROL         "モニタープログラムのためにウィンドウスNTドライブをインストールして下さい",
+                    NT_DRIVERS_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    BS_MULTILINE | WS_GROUP | WS_TABSTOP,257,86,254,22
+    LTEXT           "距離単位",DIST_UNITS_TBOX,69,156,16,22,NOT WS_GROUP
+    LTEXT           "速度単位",VEL_UNITS_TBOX,90,156,16,22,NOT WS_GROUP
+    LTEXT           "ロッド ピッチ",ROD_PITCH_TBOX,109,156,25,22,NOT
+                    WS_GROUP
+    CONTROL         "TrueTrakスタートアップでSureTrakコントロールを開始します",
+                    START_SURETRAK_CONTROL_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,2,130,258,12
+    CONTROL         "Automatically Start When the Computer Boots",
+                    START_AT_BOOT_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    257,74,219,12
+    LTEXT           "( These are NOT needed for the FasTrak2 )",IDC_STATIC,
+                    267,111,146,12
+    CONTROL         "FasTrak2",FASTRAK2_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,257,139,55,12
+    CONTROL         "This is an Office Workstation or Data Archiver",
+                    OFFICE_WORKSTATION_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,258,156,195,12
+    CONTROL         "This is a local installation on the Data Archiver",
+                    NO_NETWORK_XBOX,"Button",BS_AUTOCHECKBOX | BS_MULTILINE |
+                    WS_TABSTOP,257,125,254,12
+END
+
+INSTALL_OR_UPDATE_DIALOG DIALOG DISCARDABLE  0, 0, 267, 147
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "True Trakの新システムをインストールします",
+                    INSTALL_NEW_BUTTON,39,36,190,14,BS_CENTER
+    PUSHBUTTON      "現在のTrue Trak システムを更新します",
+                    UPDATE_EXISTING_BUTTON,40,56,190,14,BS_CENTER
+    PUSHBUTTON      "キャンセル",IDCANCEL,40,96,190,14,BS_CENTER
+    LTEXT           "ヘルプのためにはＦ１を押して下さい",-1,105,134,163,12,
+                    NOT WS_GROUP
+    PUSHBUTTON      "インストールフロッピーディスクを新作成",
+                    CREATE_FLOPPIES_BUTTON,40,76,190,14,BS_CENTER |
+                    WS_DISABLED
+END
+
+FINISH_DIALOG DIALOG DISCARDABLE  0, 0, 267, 147
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,91,50,14,BS_CENTER
+    CTEXT           "TrueTrakソフトウエアのインストールを完了して仕舞います。",
+                    -1,6,47,252,22,NOT WS_GROUP
+END
+
+FIND_DIRECTORY_DIALOG DIALOG DISCARDABLE  0, 0, 298, 221
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    EDITTEXT        EXE_DIR_EDITBOX,104,40,160,14
+    DEFPUSHBUTTON   "続きます",IDOK,75,198,63,14,BS_CENTER
+    PUSHBUTTON      "キャンセル",IDCANCEL,160,198,63,14,BS_CENTER
+    CONTROL         "Exeファイルのディレクトリ：",-1,"Static",
+                    SS_LEFTNOWORDWRAP | SS_CENTERIMAGE,3,42,100,12
+    LTEXT           "Visi-Trak Exes ファイルは以下のディレクトリに発見されています。正しくなければ”続ける”ボタンを押す前に訂正して下さい。",
+                    -1,13,4,242,31,NOT WS_GROUP
+    CONTROL         "TrueTrakスタートアップで型番設定を開始します",
+                    PART_EDITOR_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,20,60,240,12
+    CONTROL         "TrueTrakスタートアップ時にボードモニター表示から開始します",
+                    AUTO_MONITOR_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,20,86,241,12
+    CONTROL         "TrueTrakコントロールのインストール",
+                    SURETRAK_CONTROL_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,20,99,194,12
+    CONTROL         "TrueTrakスタートアップ時にモニター設定表示から開始します",
+                    MONITOR_SETUPS_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,20,73,242,12
+    CONTROL         "TrueTrakスタートアップでSureTrakコントロールを開始します",
+                    START_SURETRAK_CONTROL_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,20,112,226,12
+    CONTROL         "FasTrak2",FASTRAK2_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,20,125,63,12
+    CONTROL         "This is an Office Workstation",OFFICE_WORKSTATION_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,151,222,12
+    CONTROL         "This is a local installation on the Data Archiver",
+                    NO_NETWORK_XBOX,"Button",BS_AUTOCHECKBOX | BS_MULTILINE |
+                    WS_TABSTOP,20,138,227,12
+    CONTROL         "Automatically Start When the Computer Boots",
+                    START_AT_BOOT_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    20,165,216,12
+    CONTROL         "Copy FT2 Control Files",COPY_FT2_CONTROL_FILES_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,179,130,12
+END
+
+COPY_HELP_DIALOG DIALOG DISCARDABLE  0, 0, 223, 48
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "ディスク＃３からヘルプファイルをコピー"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,58,26,45,14,BS_CENTER
+    PUSHBUTTON      "スキップ",IDCANCEL,118,26,51,14,BS_CENTER
+    CONTROL         "フラッピディスク＃３を挿入してください",-1,"Static",
+                    SS_LEFTNOWORDWRAP,3,4,219,12
+END
+
+COPY_EXES_DIALOG DIALOG DISCARDABLE  0, 0, 208, 48
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "ディスク＃２からEXEファイルをコピー"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,57,24,40,14,BS_CENTER
+    PUSHBUTTON      "終了",IDCANCEL,111,24,40,14,BS_CENTER
+    CONTROL         "フラッピディスク＃２を挿入してください",-1,"Static",
+                    SS_LEFTNOWORDWRAP,3,4,203,12
+END
+
+COPY_FT2HELP_DIALOG DIALOG DISCARDABLE  0, 0, 205, 47
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Copy FT2 Help File from Disk 4"
+FONT 8, "MS Mincho"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,55,24,40,14,BS_CENTER
+    PUSHBUTTON      "Exit",IDCANCEL,109,24,40,14,BS_CENTER
+    CTEXT           "Insert Disk 4 of 4 into the Floppy Drive",-1,3,4,197,8,
+                    NOT WS_GROUP
+END
+
+INSERT_DISK1_DIALOG DIALOG DISCARDABLE  0, 0, 242, 48
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "ディスク＃１に戻る"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,74,30,40,14,BS_CENTER
+    PUSHBUTTON      "終了",IDCANCEL,128,30,40,14,BS_CENTER
+    CONTROL         "ディスク＃１をもう一度挿入して下さい",-1,"Static",
+                    SS_LEFTNOWORDWRAP,3,4,236,22
+END
+
+COPY_P42_DIALOG DIALOG DISCARDABLE  0, 0, 231, 75
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Copy P42 files"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,68,34,40,14,BS_CENTER
+    PUSHBUTTON      "終了",IDCANCEL,116,34,46,14,BS_CENTER
+    CTEXT           "You do not appear to have a complete P42 folder.\nWould you like to copy these files?",
+                    IDC_STATIC,1,6,228,22,NOT WS_GROUP
+    CTEXT           "Note: Don't copy these files to an office workstation.",
+                    IDC_STATIC,3,60,227,8
+END
+
+CREATE_FLOPPIES_DIALOG DIALOG DISCARDABLE  0, 0, 337, 103
+STYLE WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "コピー開始",BEGIN_COPYING_BUTTON,147,68,65,14
+    PUSHBUTTON      "止め",STOP_COPYING_BUTTON,219,68,65,14
+    CTEXT           "このにはTrueTrakソフトウエアをインストール用の3枚ディスクが作成されます。",
+                    IDC_STATIC,4,0,331,22
+    CONTROL         "１目ディスく",FLOPPY_1_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,39,77,12
+    CONTROL         "２目ディスく",FLOPPY_2_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,54,77,12
+    CONTROL         "３目ディスく",FLOPPY_3_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,13,69,77,12
+    GROUPBOX        "新作成にのディスク",IDC_STATIC,1,24,99,75,BS_CENTER
+    LTEXT           "空くてフォーマットしたディスクを フロッピードライブに挿入して下さい",
+                    INSERT_FLOPPY_TBOX,117,34,216,22,SS_SUNKEN
+    CONTROL         "Diskette 4",FLOPPY_4_RADIO,"Button",BS_AUTORADIOBUTTON |
+                    BS_PUSHLIKE,13,84,77,12
+END
+
+CHANGE_TO_CONTROL_DIALOG DIALOG DISCARDABLE  0, 0, 218, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Possible Machine Setup Error"
+FONT 12, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Change this machine to a Sure-Trak2 Control",IDOK,31,99,
+                    156,14
+    PUSHBUTTON      "Do Nothing, this is a Monitor-Only system",IDCANCEL,31,
+                    117,156,14
+    LTEXT           "It appears that this is a Sure-Trak2 control system. If that is so then you should change the machine setup to indicate that.",
+                    IDC_STATIC,11,18,200,16
+    LTEXT           "E20",MACHINE_TO_CHANGE_TBOX,113,5,22,8
+    RTEXT           "Machine",IDC_STATIC,82,5,28,8
+    LTEXT           "The machine will be marked as a control. system with a digital servo amplifier board.",
+                    IDC_STATIC,11,40,200,16
+    LTEXT           "You should save all parts on this machine when you restart the TrueTrak software.",
+                    IDC_STATIC,11,66,200,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE
+BEGIN
+    "STARTUP_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 500
+        BOTTOMMARGIN, 216
+    END
+
+    "COPY_HELP_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 153
+        BOTTOMMARGIN, 47
+    END
+
+    "COPY_EXES_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 153
+        BOTTOMMARGIN, 47
+    END
+
+    "COPY_FT2HELP_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 134
+    END
+
+    "INSERT_DISK1_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 153
+        BOTTOMMARGIN, 47
+    END
+
+    "COPY_P42_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 166
+        BOTTOMMARGIN, 74
+    END
+
+    "CREATE_FLOPPIES_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    "CHANGE_TO_CONTROL_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resrc2.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MY_ICON                 ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    COULD_NOT_FIND_EXE_STRING "Exesディレクトリが見つかりませんでした"
+    CANNOT_CONTINUE_STRING  "続ける事が出来ません"
+    INSTALL_DIR_EXISTS_STRING "インストールディレクトリが既に存在しています"
+    STARTUP_TITLE           "TrueTrak V6.56 を取り付く事"
+    BEGIN_INSTALL_STRING    "インストールを始めます．．．"
+    NO_UPDATE_NEEDED_STRING "更新の必要はありません"
+    NOTHING_TO_DO_STRING    "Nothing To Do"
+    NO_VISITRAK_INI_STRING  "VISITRAK.INIはExesディレクトリにありません"
+    CURRENT_VERSION_STRING  "6.56"
+    PRE_IMPACT_WORK_STRING  "Pre-Impact Workパラメータ"
+    SURETRAK_PIF_STRING     "c:\\windows\\desktop\\SureTrak Control Interface.pif"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    WORK_VARTYPE_NAME_STRING "Workパラメータ"
+    DEFAULT_INSTALL_DIRECTORY_STRING "C:\\V5\\"
+    WILL_BE_RENAMED_STRING  "ディレクトリ古名を変改に成ります"
+    CANT_CREATE_DIR_STRING  "ルートディレクトリの新設はできませんでした"
+    CREATE_FAILED_STRING    "新設できません"
+    INSTALL_THREAD_STRING   "インストールスレッド"
+    REGINI_FAIL_STRING      "Reginiファイルを動かす事は出来ません"
+    NO_PORT_DEV_INSTALL_STRING
+                            "VisiTrakポートアクセスドライブがインストールされていません"
+    MUST_HAVE_COMPUTER_STRING "コンピュータ名は空欄にできません"
+    CREATING_DIRS_STRING    "ディレクトリを新設します"
+    COPYING_EXES_STRING     "ＥＸＥファイルをコピーしています"
+    COPYING_DATA_STRING     "データをコピーしています"
+    UPDATING_DATA_STRING    "データを更新しています"
+    NO_ROOT_DATA_DIR_STRING "基本データのディレクトリが見つかりません"
+    UPDATE_STARTUP_TITLE    "Visi-Trak V6.56が改善されます"
+    BEGIN_UPDATE_STRING     "更新を始めます．．．"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    UPDATE_THREAD_STRING    "スレッドの更新"
+    COPY_HELP_FILE_STRING   "ヘルプファイルをコピーしています．．．"
+    UPDATE_SAVE_STATUS_STRING
+                            "動作状態が保存されているグラフを更新しています．．．"
+    UPDATE_DIFF_CURVES_STRING "ディファレンシャル曲線を更新しています．．．"
+    UPDATE_PARAM_NAMES_STRING "パラメータ名を更新しています..."
+    UPDATE_UNITS_STRING     "単位を更新しています．．．"
+    COPY_NEW_DBS_STRING     "新データベースをコピーしています．．．"
+    UNZIP_EXES_STRING       "新ＥＸＥファイルがアンジップされています．．．"
+    NT_START_MENU_DIR_STRING
+                            "Profiles\\All Users\\ｽﾀｰﾄ ﾒﾆｭｰ\\ﾌﾟﾛｸﾞﾗﾑ\\TrueTrak 2020 Monitoring System.lnk"
+    COPYING_PKZIP_STRING    "PKZipをコーピしている"
+    PKZIP_COPY_FAIL_STRING  "ジップファイルをコーピ出来ません。"
+    FILE_NOT_FOUND_STRING   "ファイルが見つかりません"
+    CREATE_FLOPPIES_TITLE   "TrueTrakソフトウエアをインストール用の3枚ディスケットが新作成され"
+    FLOPPY_IN_DRIVE_STRING  "空くてフォーマットしたディスクをフロッピードライブに挿入して下さい"
+    UNABLE_TO_COMPLY_STRING "実施することができません"
+    COPY_IN_PROGRESS_STRING "コピーの中"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    CREATE_FLOPPIES_THREAD_STRING "インストールディスケットのスレードを新設"
+    COPYING_STRING          "コピーの中"
+    UNABLE_TO_COPY_STRING   "コピー出来ません"
+    WANT_TO_ABORT_STRING    "ディスケットの作成を実に破損したいか？"
+    ABORT_RECEIVED_STRING   "ABORT指令を受けてしまう"
+    HOW_TO_INSTALL_STRING   "注：Setup.exeは第１のディスケットで在ります"
+    COPY_COMPLETE_STRING    "コピーして仕舞います"
+    WAIT_FOR_COPY_STRING    "コピーの終わりを待って下さい"
+    STOPPING_STRING         "このファイルの後で止める。。。"
+    UNABLE_TO_RENAME_DIR_STRING "ディレクトリ名前を改め出来ない！"
+    COPY_P42_STRING         "Copying P42 Directory..."
+    SPACES_IN_PATH_STRING   "There are spaces in the install directory!"
+    UPDATE_RODPITCH_STRING  "Adding 1.6 mm sensor definitions"
+    MISSING_CONTROL_FILES_STRING "Some control files are missing!"
+    COPY_BY_HAND_STRING     "***** You should copy these by hand. *****"
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

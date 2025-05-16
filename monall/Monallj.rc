@@ -1,0 +1,969 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc2.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "最小化(&M)",                  MINIMIZE_MENU_CHOICE
+        MENUITEM "モニタリングを止めて終了(&X)", EXIT_MENU_CHOICE
+    END
+    POPUP "表示"
+    BEGIN
+        MENUITEM "FasTrakコントロールインターフェイス", IOEX4_MENU_CHOICE
+        MENUITEM "Read Current Pos./Analog Values", 
+                                                SHOW_CURRENT_FT_VALUES_MENU_CHOICE
+
+    END
+    POPUP "ヘルプ"
+    BEGIN
+        MENUITEM "インデックス",                701
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+HARDWARE_STATUS DIALOG DISCARDABLE  0, 0, 218, 188
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "作業中",IDC_STATIC,107,12,67,9,NOT WS_GROUP
+    LTEXT           "エラー",IDC_STATIC,107,22,41,9,NOT WS_GROUP
+    LTEXT           "データ集録モード",IDC_STATIC,107,32,100,9,NOT WS_GROUP
+    LTEXT           "零速度",IDC_STATIC,107,42,60,9,NOT WS_GROUP
+    LTEXT           "データの用意はできています",IDC_STATIC,107,52,111,9,NOT 
+                    WS_GROUP
+    LTEXT           "サイクル開始",IDC_STATIC,107,62,72,9,NOT WS_GROUP
+    LTEXT           "パワーアップ",IDC_STATIC,107,72,60,9,NOT WS_GROUP
+    LTEXT           "割り込みできません",IDC_STATIC,107,82,111,9,NOT 
+                    WS_GROUP
+    LTEXT           "計測開始時間オーバー",IDC_STATIC,107,92,97,9,NOT 
+                    WS_GROUP
+    LTEXT           "トランスデューサ位置エラー",IDC_STATIC,107,102,111,9,
+                    NOT WS_GROUP
+    LTEXT           "メモリーエラーの自己検査",IDC_STATIC,107,112,111,9,NOT 
+                    WS_GROUP
+    LTEXT           "内部のエラー",IDC_STATIC,107,122,60,9,NOT WS_GROUP
+    LTEXT           "無効なコマンド",IDC_STATIC,107,132,69,9,NOT WS_GROUP
+    LTEXT           "パラメータの計算エラー",IDC_STATIC,107,142,111,9,NOT 
+                    WS_GROUP
+    LTEXT           "",IDC_STATIC,107,152,60,9,NOT WS_GROUP
+    LTEXT           "",265,93,12,9,9,NOT WS_GROUP
+    LTEXT           "",264,93,22,9,9,NOT WS_GROUP
+    LTEXT           "",263,93,32,9,9,NOT WS_GROUP
+    LTEXT           "",262,93,42,9,9,NOT WS_GROUP
+    LTEXT           "",261,93,52,9,9,NOT WS_GROUP
+    LTEXT           "",260,93,62,9,9,NOT WS_GROUP
+    LTEXT           "",259,93,72,9,9,NOT WS_GROUP
+    LTEXT           "",258,93,82,9,9,NOT WS_GROUP
+    LTEXT           "",257,93,92,9,9,NOT WS_GROUP
+    LTEXT           "",256,93,102,9,9,NOT WS_GROUP
+    LTEXT           "",255,93,112,9,9,NOT WS_GROUP
+    LTEXT           "",254,93,122,9,9,NOT WS_GROUP
+    LTEXT           "",253,93,132,9,9,NOT WS_GROUP
+    LTEXT           "",252,93,142,9,9,NOT WS_GROUP
+    LTEXT           "",251,93,152,9,9,NOT WS_GROUP
+    LTEXT           "",250,93,162,9,9,NOT WS_GROUP
+    LTEXT           "",245,80,12,9,9,NOT WS_GROUP
+    LTEXT           "",244,80,22,9,9,NOT WS_GROUP
+    LTEXT           "",243,80,32,9,9,NOT WS_GROUP
+    LTEXT           "",242,80,42,9,9,NOT WS_GROUP
+    LTEXT           "",241,80,52,9,9,NOT WS_GROUP
+    LTEXT           "",240,80,62,9,9,NOT WS_GROUP
+    LTEXT           "",239,80,72,9,9,NOT WS_GROUP
+    LTEXT           "",238,80,82,9,9,NOT WS_GROUP
+    LTEXT           "",237,80,92,9,9,NOT WS_GROUP
+    LTEXT           "",236,80,102,9,9,NOT WS_GROUP
+    LTEXT           "",235,80,112,9,9,NOT WS_GROUP
+    LTEXT           "",234,80,122,9,9,NOT WS_GROUP
+    LTEXT           "",233,80,132,9,9,NOT WS_GROUP
+    LTEXT           "",232,80,142,9,9,NOT WS_GROUP
+    LTEXT           "",231,80,152,9,9,NOT WS_GROUP
+    LTEXT           "",230,80,162,9,9,NOT WS_GROUP
+    LTEXT           "",225,67,12,9,9,NOT WS_GROUP
+    LTEXT           "",224,67,22,9,9,NOT WS_GROUP
+    LTEXT           "",223,67,32,9,9,NOT WS_GROUP
+    LTEXT           "",222,67,42,9,9,NOT WS_GROUP
+    LTEXT           "",221,67,52,9,9,NOT WS_GROUP
+    LTEXT           "",220,67,62,9,9,NOT WS_GROUP
+    LTEXT           "",219,67,72,9,9,NOT WS_GROUP
+    LTEXT           "",218,67,82,9,9,NOT WS_GROUP
+    LTEXT           "",217,67,92,9,9,NOT WS_GROUP
+    LTEXT           "",216,67,102,9,9,NOT WS_GROUP
+    LTEXT           "",215,67,112,9,9,NOT WS_GROUP
+    LTEXT           "",214,67,122,9,9,NOT WS_GROUP
+    LTEXT           "",213,67,132,9,9,NOT WS_GROUP
+    LTEXT           "",212,67,142,9,9,NOT WS_GROUP
+    LTEXT           "",211,67,152,9,9,NOT WS_GROUP
+    LTEXT           "",210,67,162,9,9,NOT WS_GROUP
+    LTEXT           "",205,54,12,9,9,NOT WS_GROUP
+    LTEXT           "",204,54,22,9,9,NOT WS_GROUP
+    LTEXT           "",203,54,32,9,9,NOT WS_GROUP
+    LTEXT           "",202,54,42,9,9,NOT WS_GROUP
+    LTEXT           "",201,54,52,9,9,NOT WS_GROUP
+    LTEXT           "",200,54,62,9,9,NOT WS_GROUP
+    LTEXT           "",199,54,72,9,9,NOT WS_GROUP
+    LTEXT           "",198,54,82,9,9,NOT WS_GROUP
+    LTEXT           "",197,54,92,9,9,NOT WS_GROUP
+    LTEXT           "",196,54,102,9,9,NOT WS_GROUP
+    LTEXT           "",195,54,112,9,9,NOT WS_GROUP
+    LTEXT           "",194,54,122,9,9,NOT WS_GROUP
+    LTEXT           "",193,54,132,9,9,NOT WS_GROUP
+    LTEXT           "",192,54,142,9,9,NOT WS_GROUP
+    LTEXT           "",191,54,152,9,9,NOT WS_GROUP
+    LTEXT           "",190,54,162,9,9,NOT WS_GROUP
+    LTEXT           "",185,41,12,9,9,NOT WS_GROUP
+    LTEXT           "",184,41,22,9,9,NOT WS_GROUP
+    LTEXT           "",183,41,32,9,9,NOT WS_GROUP
+    LTEXT           "",182,41,42,9,9,NOT WS_GROUP
+    LTEXT           "",181,41,52,9,9,NOT WS_GROUP
+    LTEXT           "",180,41,62,9,9,NOT WS_GROUP
+    LTEXT           "",179,41,72,9,9,NOT WS_GROUP
+    LTEXT           "",178,41,82,9,9,NOT WS_GROUP
+    LTEXT           "",177,41,92,9,9,NOT WS_GROUP
+    LTEXT           "",176,41,102,9,9,NOT WS_GROUP
+    LTEXT           "",175,41,112,9,9,NOT WS_GROUP
+    LTEXT           "",174,41,122,9,9,NOT WS_GROUP
+    LTEXT           "",173,41,132,9,9,NOT WS_GROUP
+    LTEXT           "",172,41,142,9,9,NOT WS_GROUP
+    LTEXT           "",171,41,152,9,9,NOT WS_GROUP
+    LTEXT           "",170,41,162,9,9,NOT WS_GROUP
+    LTEXT           "",165,28,12,9,9,NOT WS_GROUP
+    LTEXT           "",164,28,22,9,9,NOT WS_GROUP
+    LTEXT           "",163,28,32,9,9,NOT WS_GROUP
+    LTEXT           "",162,28,42,9,9,NOT WS_GROUP
+    LTEXT           "",161,28,52,9,9,NOT WS_GROUP
+    LTEXT           "",160,28,62,9,9,NOT WS_GROUP
+    LTEXT           "",159,28,72,9,9,NOT WS_GROUP
+    LTEXT           "",158,28,82,9,9,NOT WS_GROUP
+    LTEXT           "",157,28,92,9,9,NOT WS_GROUP
+    LTEXT           "",156,28,102,9,9,NOT WS_GROUP
+    LTEXT           "",155,28,112,9,9,NOT WS_GROUP
+    LTEXT           "",154,28,122,9,9,NOT WS_GROUP
+    LTEXT           "",153,28,132,9,9,NOT WS_GROUP
+    LTEXT           "",152,28,142,9,9,NOT WS_GROUP
+    LTEXT           "",151,28,152,9,9,NOT WS_GROUP
+    LTEXT           "",150,28,162,9,9,NOT WS_GROUP
+    LTEXT           "",145,15,12,9,9,NOT WS_GROUP
+    LTEXT           "",144,15,22,9,9,NOT WS_GROUP
+    LTEXT           "",143,15,32,9,9,NOT WS_GROUP
+    LTEXT           "",142,15,42,9,9,NOT WS_GROUP
+    LTEXT           "",141,15,52,9,9,NOT WS_GROUP
+    LTEXT           "",140,15,62,9,9,NOT WS_GROUP
+    LTEXT           "",139,15,72,9,9,NOT WS_GROUP
+    LTEXT           "",138,15,82,9,9,NOT WS_GROUP
+    LTEXT           "",137,15,92,9,9,NOT WS_GROUP
+    LTEXT           "",136,15,102,9,9,NOT WS_GROUP
+    LTEXT           "",135,15,112,9,9,NOT WS_GROUP
+    LTEXT           "",134,15,122,9,9,NOT WS_GROUP
+    LTEXT           "",133,15,132,9,9,NOT WS_GROUP
+    LTEXT           "",132,15,142,9,9,NOT WS_GROUP
+    LTEXT           "",131,15,152,9,9,NOT WS_GROUP
+    LTEXT           "",130,15,162,9,9,NOT WS_GROUP
+    LTEXT           "",125,2,12,9,9,NOT WS_GROUP
+    LTEXT           "",124,2,22,9,9,NOT WS_GROUP
+    LTEXT           "",123,2,32,9,9,NOT WS_GROUP
+    LTEXT           "",122,2,42,9,9,NOT WS_GROUP
+    LTEXT           "",121,2,52,9,9,NOT WS_GROUP
+    LTEXT           "",120,2,62,9,9,NOT WS_GROUP
+    LTEXT           "",119,2,72,9,9,NOT WS_GROUP
+    LTEXT           "",118,2,82,9,9,NOT WS_GROUP
+    LTEXT           "",117,2,92,9,9,NOT WS_GROUP
+    LTEXT           "",116,2,102,9,9,NOT WS_GROUP
+    LTEXT           "",115,2,112,9,9,NOT WS_GROUP
+    LTEXT           "",114,2,122,9,9,NOT WS_GROUP
+    LTEXT           "",113,2,132,9,9,NOT WS_GROUP
+    LTEXT           "",112,2,142,9,9,NOT WS_GROUP
+    LTEXT           "",111,2,152,9,9,NOT WS_GROUP
+    LTEXT           "",110,2,162,9,9,NOT WS_GROUP
+    CTEXT           "1",300,2,174,8,9,NOT WS_GROUP
+    CTEXT           "1",301,15,174,8,9,NOT WS_GROUP
+    CTEXT           "1",302,28,174,8,9,NOT WS_GROUP
+    CTEXT           "1",303,41,174,8,9,NOT WS_GROUP
+    CTEXT           "1",304,54,174,8,9,NOT WS_GROUP
+    CTEXT           "1",305,67,174,8,9,NOT WS_GROUP
+    CTEXT           "1",306,80,174,8,9,NOT WS_GROUP
+    CTEXT           "1",307,93,174,8,9,NOT WS_GROUP
+    LTEXT           "チャンネル",IDC_STATIC,108,174,53,9
+    CTEXT           "1",308,3,2,8,8
+    CTEXT           "2",309,15,2,8,8
+    CTEXT           "3",310,29,2,8,8
+    CTEXT           "4",311,41,2,8,8
+    CTEXT           "5",312,54,2,8,8
+    CTEXT           "6",313,67,2,8,8
+    CTEXT           "7",314,81,2,8,8
+    CTEXT           "8",315,94,2,8,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,0,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,10,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,21,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,31,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,41,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,51,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,61,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,71,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,81,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,91,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,101,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,111,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,121,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,131,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,141,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,151,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,1,1,182
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,161,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,171,211,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,13,1,1,182
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,26,1,1,182
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,39,1,1,182
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,51,1,1,182
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,65,1,1,182
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,77,1,1,182
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,91,1,1,182
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,104,1,1,182
+END
+
+AUTO_SHOT DIALOG DISCARDABLE  0, 0, 59, 8
+STYLE DS_3DLOOK | WS_POPUP | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    CTEXT           "サイクル始:",-1,0,0,41,8
+    LTEXT           "M02",AUTO_SHOT_MACHINE_NUMBER_TEXTBOX,41,0,17,8
+END
+
+IOEX4_DIALOG DIALOG DISCARDABLE  0, 0, 438, 242
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "C01",IOEX4_COMPUTER_TBOX,132,13,20,10,NOT WS_GROUP
+    GROUPBOX        "ボード動作状況",IDC_STATIC,1,21,95,213,WS_GROUP
+    GROUPBOX        "検査機能",IDC_STATIC,110,143,179,45,WS_GROUP
+    LTEXT           "可能",IDC_STATIC,129,102,21,8,NOT WS_GROUP
+    LTEXT           "マルチプレックスチャンネル",IDC_STATIC,101,83,52,18,NOT 
+                    WS_GROUP
+    CONTROL         "ボードアドレス：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP,
+                    101,44,54,9
+    LTEXT           "ボード型：",IDC_STATIC,108,58,40,9,NOT WS_GROUP
+    LTEXT           "クロックスピード:",IDC_STATIC,102,71,66,9,NOT WS_GROUP
+    LTEXT           "Mhz",IDC_STATIC,226,73,19,8,NOT WS_GROUP
+    LTEXT           "ボード番号：",IDC_STATIC,101,29,50,9,NOT WS_GROUP
+    LTEXT           "機番：",IDC_STATIC,156,13,32,10,NOT WS_GROUP
+    LTEXT           "オプトビット",IDC_STATIC,101,115,26,16,NOT WS_GROUP
+    LTEXT           "コンピュータ：",IDC_STATIC,76,13,53,10,NOT WS_GROUP
+    LTEXT           "型番：",IDC_STATIC,233,13,22,10,NOT WS_GROUP
+    LTEXT           "1",IOEX4_MACHINE_TBOX,189,13,30,10,NOT WS_GROUP
+    CTEXT           "作業中",BUSY_BIT_TBOX,22,33,48,9
+    CTEXT           "エラー",ERROR_BIT_TBOX,28,43,40,9
+    CTEXT           "データを取り集める",DATA_COLLECTION_BIT_TBOX,6,53,82,9
+    CTEXT           "零速度",ZERO_SPEED_BIT_TBOX,18,63,60,9
+    CTEXT           "データの用意はできている",DATA_READY_BIT_TBOX,14,74,66,
+                    14,0x2000
+    CTEXT           "サイクル開始",CYCLE_START_BIT_TBOX,8,91,78,9
+    CTEXT           "パワーアップ",POWER_UP_BIT_TBOX,15,101,66,9
+    CTEXT           "インテラプトを無動切",NO_INTERRUPTS_BIT_TBOX,6,111,87,9
+    CTEXT           "計測開始時間オーバー",CYCLE_START_TIMEOUT_BIT_TBOX,6,
+                    121,86,9
+    CTEXT           "トランスデューサ位置エラー",XDCR_ERROR_BIT_TBOX,12,133,
+                    71,16,0x2000
+    CTEXT           "メモリーエラーの自己検査",MEM_SELF_TEST_ERROR_BIT_TBOX,
+                    12,152,72,14,0x2000
+    CTEXT           "内部のエラー",INTERNAL_ERROR_BIT_TBOX,16,170,60,9
+    CTEXT           "無効なコマンド",INVALID_COMMAND_BIT_TBOX,14,180,69,9
+    CTEXT           "パラメータの計算エラー",PARAM_CALC_ERROR_BIT_TBOX,12,
+                    191,74,14,0x2000
+    CTEXT           "",BIT_2_TBOX,17,207,60,9
+    CTEXT           "スキャンモード",SCAN_MODE_BIT_TBOX,14,218,69,10,0x2000
+    CONTROL         "1",BOARD_1_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,155,28,18,12
+    CONTROL         "2",BOARD_2_RADIO,"Button",BS_AUTORADIOBUTTON,173,28,18,
+                    12
+    CONTROL         "3",BOARD_3_RADIO,"Button",BS_AUTORADIOBUTTON,191,28,18,
+                    12
+    CONTROL         "4",BOARD_4_RADIO,"Button",BS_AUTORADIOBUTTON,209,28,18,
+                    12
+    CONTROL         "5",BOARD_5_RADIO,"Button",BS_AUTORADIOBUTTON,227,28,18,
+                    12
+    CONTROL         "6",BOARD_6_RADIO,"Button",BS_AUTORADIOBUTTON,245,28,18,
+                    12
+    CONTROL         "7",BOARD_7_RADIO,"Button",BS_AUTORADIOBUTTON,263,28,18,
+                    12
+    CONTROL         "8",BOARD_8_RADIO,"Button",BS_AUTORADIOBUTTON,281,28,16,
+                    12
+    EDITTEXT        BOARD_ADDRESS_EBOX,157,44,24,12,WS_GROUP
+    CONTROL         "単体",SINGLE_BOARD_XBOX,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,155,58,29,12
+    CONTROL         "マルチプレックス",MUX_BOARD_XBOX,"Button",
+                    BS_AUTORADIOBUTTON,189,58,71,12
+    CONTROL         "4",FOUR_MHZ_BOARD_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,173,71,23,12
+    CONTROL         "12",TWELVE_MHZ_BOARD_RADIO,"Button",BS_AUTORADIOBUTTON,
+                    198,71,23,12
+    CONTROL         "1",MUX_CHANNEL_1_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,155,84,18,12
+    CONTROL         "2",MUX_CHANNEL_2_RADIO,"Button",BS_AUTORADIOBUTTON,173,
+                    84,18,12
+    CONTROL         "3",MUX_CHANNEL_3_RADIO,"Button",BS_AUTORADIOBUTTON,191,
+                    84,18,12
+    CONTROL         "4",MUX_CHANNEL_4_RADIO,"Button",BS_AUTORADIOBUTTON,209,
+                    84,18,12
+    CONTROL         "5",MUX_CHANNEL_5_RADIO,"Button",BS_AUTORADIOBUTTON,227,
+                    84,18,12
+    CONTROL         "6",MUX_CHANNEL_6_RADIO,"Button",BS_AUTORADIOBUTTON,245,
+                    84,18,12
+    CONTROL         "7",MUX_CHANNEL_7_RADIO,"Button",BS_AUTORADIOBUTTON,263,
+                    84,18,12
+    CONTROL         "8",MUX_CHANNEL_8_RADIO,"Button",BS_AUTORADIOBUTTON,281,
+                    84,16,12
+    PUSHBUTTON      "データを取り集めた条件を設定する",
+                    SET_DATA_COLL_MODE_BUTTON,299,32,136,12,BS_CENTER
+    PUSHBUTTON      "トランスデューサ検査",XDCR_TEST_BUTTON,202,169,80,12,
+                    BS_CENTER
+    PUSHBUTTON      "コマンドモードを設定します",SET_COMMAND_MODE_BUTTON,299,
+                    16,136,12,BS_CENTER
+    PUSHBUTTON      "PROMバージョン番号を受け取ります",
+                    GET_PROM_VERSION_BUTTON,299,91,136,12,BS_CENTER
+    PUSHBUTTON      "現在の位置とアナログ量を読み出し",
+                    READ_CURRENT_VALUES_BUTTON,299,59,136,12,BS_CENTER
+    PUSHBUTTON      "コマンドとデータポートアクセス",
+                    COMMAND_AND_DATA_PORTS_BUTTON,299,137,136,12,BS_CENTER
+    PUSHBUTTON      "パラメータの設定",SETUP_PARAMS_BUTTON,299,107,136,12,
+                    BS_CENTER
+    PUSHBUTTON      "エラーステイタスビットのクリア",
+                    CLEAR_ERROR_STATUS_BUTTON,299,152,136,12,BS_CENTER
+    PUSHBUTTON      "RAMメモリー検査",TEST_RAM_BUTTON,118,155,80,12,
+                    BS_CENTER
+    PUSHBUTTON      "オプトポート検査",TEST_OPTO_BUTTON,118,169,80,12,
+                    BS_CENTER
+    PUSHBUTTON      "入出力ポート検査",TEST_IO_BUTTON,202,155,80,12,
+                    BS_CENTER
+    CONTROL         "1",MUX_ENABLE_1_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,155,98,18,12
+    CONTROL         "2",MUX_ENABLE_2_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,173,98,18,12
+    CONTROL         "3",MUX_ENABLE_3_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,191,98,18,12
+    CONTROL         "4",MUX_ENABLE_4_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,209,98,18,12
+    CONTROL         "5",MUX_ENABLE_5_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,227,98,18,12
+    CONTROL         "6",MUX_ENABLE_6_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,245,98,18,12
+    CONTROL         "7",MUX_ENABLE_7_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,263,98,18,12
+    CONTROL         "8",MUX_ENABLE_8_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,281,98,18,12
+    PUSHBUTTON      "データレディビットをクリア",CLEAR_DATA_READY_BUTTON,299,
+                    168,136,12,BS_CENTER
+    PUSHBUTTON      "計算したショットパラメータを読み出し",
+                    READ_SHOT_PARAM_BUTTON,299,75,136,12,BS_CENTER
+    CTEXT           "",FASTRAK_STATUS_TBOX,100,222,233,10,SS_SUNKEN | NOT 
+                    WS_GROUP
+    LTEXT           "VISITRAK",IOEX4_PART_TBOX,256,13,37,10,NOT WS_GROUP
+    CONTROL         "1",OPTO_BIT_0_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,133,116,18,12
+    CONTROL         "2",OPTO_BIT_1_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,151,116,18,12
+    CONTROL         "3",OPTO_BIT_2_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,169,116,18,12
+    CONTROL         "4",OPTO_BIT_3_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,187,116,18,12
+    CONTROL         "5",OPTO_BIT_4_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,205,116,18,12
+    CONTROL         "6",OPTO_BIT_5_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,223,116,18,12
+    CONTROL         "7",OPTO_BIT_6_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,241,116,18,12
+    CONTROL         "8",OPTO_BIT_7_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,259,116,18,12
+    PUSHBUTTON      "E&xit to Main Screen",IDCLOSE,336,189,66,12
+    CTEXT           "FasTrakボードインタフェイス",IDC_STATIC,0,0,438,10,
+                    SS_SUNKEN
+END
+
+FT_SHOT_PARAMETER_DIALOG DIALOG DISCARDABLE  0, 0, 168, 249
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "現在のショットパラメータ"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "パラメータの名称",-1,9,7,66,8,NOT WS_GROUP
+    LTEXT           "現在の値",-1,82,7,60,8,NOT WS_GROUP
+    LISTBOX         SHOT_PARAM_LISTBOX,8,16,152,236,LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+FT_UNITS_AND_PITCH_DIALOG DIALOG DISCARDABLE  0, 0, 167, 193
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "単位とピッチを設定します"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LISTBOX         UNITS_AND_PITCH_LISTBOX,8,8,148,156,LBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "OK",IDOK,52,172,50,14,BS_CENTER
+END
+
+EPROM_NUMBER_DIALOG DIALOG DISCARDABLE  0, 0, 137, 63
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "現在のEPROMバージョン番号"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,43,35,50,14,BS_CENTER
+    CTEXT           "",EPROM_NUMBER_TBOX,38,12,60,8,SS_SUNKEN | NOT WS_GROUP
+END
+
+FT_COMMAND_PORT_DIALOG DIALOG DISCARDABLE  0, 0, 142, 122
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FasTrakポートアクセス"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    GROUPBOX        "データポート",-1,4,64,128,52,WS_GROUP
+    GROUPBOX        "コントロールポート",-1,4,4,128,52,WS_GROUP
+    CONTROL         "１６進法の値",-1,"Static",SS_LEFTNOWORDWRAP,7,77,49,8
+    CONTROL         "１６進法の値",-1,"Static",SS_LEFTNOWORDWRAP,7,17,48,8
+    PUSHBUTTON      "クリアー",CLEAR_COMMAND_PORT_BUTTON,15,34,50,14,
+                    BS_CENTER
+    PUSHBUTTON      "送信",SEND_COMMAND_BUTTON,71,34,50,14,BS_CENTER
+    EDITTEXT        COMMAND_VALUE_EBOX,59,15,33,12
+    PUSHBUTTON      "読み出し",READ_DATA_PORT_BUTTON,15,93,50,14,BS_CENTER
+    PUSHBUTTON      "送信",SEND_DATA_PORT_BUTTON,71,93,50,14,BS_CENTER
+    EDITTEXT        DATA_PORT_VALUE_EBOX,59,75,33,12
+END
+
+FT_CURRENT_VALUES_DIALOG DIALOG DISCARDABLE  0, 0, 295, 99
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "FasTrakの現在の位置とアナログ値"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    CTEXT           "アナログチャンネル",IDC_STATIC,100,0,37,18,NOT WS_GROUP
+    LTEXT           "現在量",IDC_STATIC,181,1,24,11,NOT WS_GROUP
+    LTEXT           "速度",IDC_STATIC,4,3,28,8,NOT WS_GROUP
+    LTEXT           "位置",IDC_STATIC,4,24,28,8,NOT WS_GROUP
+    LTEXT           "IPS",VELOCITY_UNITS_TBOX,66,3,20,8,NOT WS_GROUP
+    LTEXT           "IN",POSITION_UNITS_TBOX,66,24,12,8,NOT WS_GROUP
+    LTEXT           "単位",IDC_STATIC,211,1,20,8,NOT WS_GROUP
+    RTEXT           "245.12",FT_CURRENT_VELOCITY_TBOX,24,3,36,8,NOT WS_GROUP
+    RTEXT           "23.43",FT_CURRENT_POSITION_TBOX,26,24,36,8,NOT WS_GROUP
+    RTEXT           "1.0",ANALOG_1_TBOX,171,18,32,8,NOT WS_GROUP
+    RTEXT           "1.0",ANALOG_2_TBOX,171,26,32,8,NOT WS_GROUP
+    RTEXT           "1.0",ANALOG_3_TBOX,171,34,32,8,NOT WS_GROUP
+    RTEXT           "1.0",ANALOG_4_TBOX,171,42,32,8,NOT WS_GROUP
+    RTEXT           "1.0",ANALOG_5_TBOX,171,50,32,8,NOT WS_GROUP
+    RTEXT           "1.0",ANALOG_6_TBOX,171,58,32,8,NOT WS_GROUP
+    RTEXT           "1.0",ANALOG_7_TBOX,171,66,32,8,NOT WS_GROUP
+    RTEXT           "1.0",ANALOG_8_TBOX,171,74,32,8,NOT WS_GROUP
+    LTEXT           "VOLTS",UNITS_1_TBOX,210,18,25,8,NOT WS_GROUP
+    LTEXT           "VOLTS",UNITS_2_TBOX,210,26,25,8,NOT WS_GROUP
+    LTEXT           "VOLTS",UNITS_3_TBOX,210,34,25,8,NOT WS_GROUP
+    LTEXT           "VOLTS",UNITS_4_TBOX,210,42,25,8,NOT WS_GROUP
+    LTEXT           "",UNITS_5_TBOX,210,50,25,8,NOT WS_GROUP
+    LTEXT           "",UNITS_6_TBOX,210,58,25,8,NOT WS_GROUP
+    LTEXT           "",UNITS_7_TBOX,210,66,25,8,NOT WS_GROUP
+    LTEXT           "",UNITS_8_TBOX,210,74,25,8,NOT WS_GROUP
+    LTEXT           "最高",IDC_STATIC,4,47,28,8,NOT WS_GROUP
+    RTEXT           "0.0",MAX_POSITION_TBOX,26,47,36,8,NOT WS_GROUP
+    PUSHBUTTON      "零",MAX_POSITION_RESET_BUTTON,80,46,33,12,BS_CENTER
+    PUSHBUTTON      "全ストロークの長さの最高値を保存",
+                    SAVE_TOTAL_STROKE_BUTTON,4,60,98,20,BS_CENTER | 
+                    BS_MULTILINE
+    PUSHBUTTON      "リセット",RESET_FT_POSITION_BUTTON,80,22,33,12,
+                    BS_CENTER
+    CONTROL         "",FT_VEL_THERM,"msctls_progress32",PBS_SMOOTH,4,14,62,5
+    CONTROL         "",FT_POS_THERM,"msctls_progress32",PBS_SMOOTH,4,38,62,5
+    RTEXT           "1.0",VOLTS_1_TBOX,147,18,19,8,NOT WS_GROUP
+    RTEXT           "1.0",VOLTS_2_TBOX,147,26,19,8,NOT WS_GROUP
+    RTEXT           "1.0",VOLTS_3_TBOX,147,34,19,8,NOT WS_GROUP
+    RTEXT           "1.0",VOLTS_4_TBOX,147,42,19,8,NOT WS_GROUP
+    RTEXT           "1.0",VOLTS_5_TBOX,147,50,19,8,NOT WS_GROUP
+    RTEXT           "1.0",VOLTS_6_TBOX,147,57,19,8,NOT WS_GROUP
+    RTEXT           "1.0",VOLTS_7_TBOX,147,66,19,8,NOT WS_GROUP
+    RTEXT           "1.0",VOLTS_8_TBOX,147,74,19,8,NOT WS_GROUP
+    CONTROL         "1",FT_A1_XBOX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,133,18,12,8
+    CONTROL         "2",FT_A2_XBOX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,133,26,12,8
+    CONTROL         "3",FT_A3_XBOX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,133,34,12,8
+    CONTROL         "4",FT_A4_XBOX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,133,42,12,8
+    CONTROL         "5",FT_A5_XBOX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,133,50,12,8
+    CONTROL         "6",FT_A6_XBOX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,133,57,12,8
+    CONTROL         "7",FT_A7_XBOX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,133,66,12,8
+    CONTROL         "8",FT_A8_XBOX,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,133,74,12,8
+    LTEXT           "Volts",IDC_STATIC,157,1,19,8
+    CONTROL         "",FT_A1_THERM,"msctls_progress32",PBS_SMOOTH,238,20,55,
+                    5
+    CONTROL         "",FT_A2_THERM,"msctls_progress32",PBS_SMOOTH,238,28,55,
+                    5
+    CONTROL         "",FT_A3_THERM,"msctls_progress32",PBS_SMOOTH,238,36,55,
+                    5
+    CONTROL         "",FT_A4_THERM,"msctls_progress32",PBS_SMOOTH,238,44,55,
+                    5
+    CONTROL         "",FT_A5_THERM,"msctls_progress32",PBS_SMOOTH,238,52,55,
+                    5
+    CONTROL         "",FT_A6_THERM,"msctls_progress32",PBS_SMOOTH,238,60,55,
+                    5
+    CONTROL         "",FT_A7_THERM,"msctls_progress32",PBS_SMOOTH,238,68,55,
+                    5
+    CONTROL         "",FT_A8_THERM,"msctls_progress32",PBS_SMOOTH,238,76,55,
+                    5
+    LTEXT           "0",IDC_STATIC,237,10,6,7
+    LTEXT           "10",IDC_STATIC,286,9,7,7
+END
+
+FT_READ_RAM_DIALOG DIALOG DISCARDABLE  0, 0, 415, 178
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "RAMデータを読み出します"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    GROUPBOX        "表示方法",-1,345,69,64,50,WS_GROUP
+    GROUPBOX        "サンプル間隔",-1,345,17,65,39,WS_GROUP
+    LISTBOX         FT_RAM_DATA_LISTBOX,8,20,332,159,WS_VSCROLL
+    CONTROL         "インパクト前",PRE_IMPACT_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,351,28,54,12
+    CONTROL         "インパクト後",POST_IMPACT_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,351,41,54,12
+    CONTROL         "Raw Hex",RAW_HEX_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,351,81,48,12
+    CONTROL         "電圧",VOLTS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,351,92,48,12
+    CONTROL         "変換された",CONVERTED_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,351,103,57,12
+    LTEXT           "速度",-1,39,10,19,8,NOT WS_GROUP
+    LTEXT           "チャンネル1",-1,66,10,41,8,NOT WS_GROUP
+    LTEXT           "チャンネル2",-1,102,3,41,8,NOT WS_GROUP
+    LTEXT           "チャンネル3",-1,134,10,41,8,NOT WS_GROUP
+    LTEXT           "チャンネル4",-1,167,3,41,8,NOT WS_GROUP
+    LTEXT           "チャンネル5",-1,199,10,42,8,NOT WS_GROUP
+    LTEXT           "チャンネル6",-1,232,3,41,8,NOT WS_GROUP
+    LTEXT           "チャンネル7",-1,266,10,41,8,NOT WS_GROUP
+    LTEXT           "チャンネル8",-1,301,3,41,8,NOT WS_GROUP
+    LTEXT           "位置",-1,8,10,28,8,NOT WS_GROUP
+END
+
+FT_SETUP_PARAMS_DIALOG DIALOG DISCARDABLE  0, 0, 267, 224
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "FasTrak パラメータの設定"
+FONT 10, "ＭＳ ゴシック"
+BEGIN
+    LTEXT           "全射出ストローク",-1,8,10,100,10,NOT WS_GROUP
+    LTEXT           "最小ストローク",-1,8,22,100,10,NOT WS_GROUP
+    LTEXT           "ビスケットの時間遅れ",-1,8,35,100,10,NOT WS_GROUP
+    LTEXT           "最終射出速度",-1,8,46,100,10,NOT WS_GROUP
+    LTEXT           "充填距離",-1,8,58,100,9,NOT WS_GROUP
+    LTEXT           "ランナ充填までの距離",-1,8,70,100,9,NOT WS_GROUP
+    LTEXT           "CSFSの速度",-1,8,82,100,9,NOT WS_GROUP
+    LTEXT           "増速時間に対する速度",-1,8,94,100,9,NOT WS_GROUP
+    LTEXT           "最小CSFS位置",-1,8,106,100,9,NOT WS_GROUP
+    LTEXT           "EOSの前の最低速度",-1,8,155,100,10,NOT WS_GROUP
+    LTEXT           "リミットスイッチ#1設定値",-1,8,168,97,9,NOT WS_GROUP
+    LTEXT           "リミットスイッチ#2設定値",-1,8,180,97,9,NOT WS_GROUP
+    LTEXT           "リミットスイッチ#3設定値",-1,8,192,97,8,NOT WS_GROUP
+    LTEXT           "リミットスイッチ#4設定値",-1,8,204,97,9,NOT WS_GROUP
+    LTEXT           "位置時間表示の数",-1,8,118,100,9,NOT WS_GROUP
+    LTEXT           "時間ベースの集録間隔",-1,8,130,100,9,NOT WS_GROUP
+    LTEXT           "計測開始時間オーバー",-1,8,143,100,9,NOT WS_GROUP
+    LTEXT           "アナログ\nチャンネル",-1,165,10,38,17,NOT WS_GROUP
+    LTEXT           "ゲイン",-1,221,16,27,8,NOT WS_GROUP
+    LTEXT           "チャンネル1",-1,163,34,42,8,NOT WS_GROUP
+    LTEXT           "チャンネル2",-1,163,47,41,8,NOT WS_GROUP
+    LTEXT           "チャンネル3",-1,163,59,42,8,NOT WS_GROUP
+    LTEXT           "チャンネル4",-1,163,70,41,8,NOT WS_GROUP
+    LTEXT           "チャンネル5",-1,163,82,41,8,NOT WS_GROUP
+    LTEXT           "チャンネル6",-1,163,93,41,8,NOT WS_GROUP
+    LTEXT           "チャンネル7",-1,163,106,41,8,NOT WS_GROUP
+    LTEXT           "チャンネル8",-1,163,117,41,8,NOT WS_GROUP
+    CONTROL         "",-1,"Static",SS_ETCHEDFRAME,157,28,103,103
+    CONTROL         "",-1,"Static",SS_ETCHEDVERT,209,10,1,121
+    CONTROL         "",-1,"Static",SS_ETCHEDFRAME,157,8,103,21
+    LTEXT           "IN",TOTAL_STROKE_UNITS_TBOX,140,10,16,12,NOT WS_GROUP
+    LTEXT           "IN",MIN_STROKE_UNITS_TBOX,140,22,16,12,NOT WS_GROUP
+    LTEXT           "SEC",-1,140,34,16,12,NOT WS_GROUP
+    LTEXT           "IPS",VEL_FOR_EOS_UNITS_TBOX,140,46,16,12,NOT WS_GROUP
+    LTEXT           "IN",FILL_DISTANCE_UNITS_TBOX,140,58,16,12,NOT WS_GROUP
+    LTEXT           "IN",RUNNER_FILL_UNITS_TBOX,140,70,16,12,NOT WS_GROUP
+    LTEXT           "IPS",VEL_FOR_CSFS_UNITS_TBOX,140,82,16,12,NOT WS_GROUP
+    LTEXT           "IPS",VEL_FOR_RISE_UNITS_TBOX,140,94,16,12,NOT WS_GROUP
+    LTEXT           "IN",MIN_CSFS_POS_UNITS_TBOX,140,106,16,12,NOT WS_GROUP
+    LTEXT           "MS",-1,140,130,16,12,NOT WS_GROUP
+    LTEXT           "SEC",-1,140,142,16,12,NOT WS_GROUP
+    LTEXT           "IPS",MIN_EOS_UNITS_TBOX,140,154,16,12,NOT WS_GROUP
+    LTEXT           "IN",LS1_SETPOINT_UNITS_TBOX,140,167,16,12,NOT WS_GROUP
+    LTEXT           "IN",LS2_SETPOINT_UNITS_TBOX,140,179,16,12,NOT WS_GROUP
+    LTEXT           "IN",LS3_SETPOINT_UNITS_TBOX,140,191,16,12,NOT WS_GROUP
+    LTEXT           "IN",LS4_SETPOINT_UNITS_TBOX,140,203,16,12,NOT WS_GROUP
+    EDITTEXT        TOTAL_STROKE_LENGTH_EBOX,108,8,30,12,WS_GROUP
+    EDITTEXT        MIN_STROKE_LENGTH_EBOX,108,20,30,12
+    EDITTEXT        TIME_DELAY_BISCUIT_EBOX,108,32,30,12
+    EDITTEXT        VEL_FOR_EOS_EBOX,108,44,30,12
+    EDITTEXT        FILL_DISTANCE_EBOX,108,56,30,12
+    EDITTEXT        RUNNER_FILL_DISTANCE_EBOX,108,68,30,12
+    EDITTEXT        VEL_FOR_CSFS_EBOX,108,80,30,12
+    EDITTEXT        VEL_FOR_RISE_TIME_EBOX,108,92,30,12
+    EDITTEXT        MIN_POS_FOR_CSFS_EBOX,108,104,30,12
+    EDITTEXT        NOF_TIME_POINTS_EBOX,108,116,30,12
+    EDITTEXT        TIME_BASED_MS_EBOX,108,128,30,12
+    EDITTEXT        CYCLE_START_TIMEOUT_EBOX,108,140,30,12
+    EDITTEXT        MIN_EOS_EBOX,108,152,30,12
+    EDITTEXT        LS1_SETPOINT_EBOX,108,166,30,12
+    EDITTEXT        LS2_SETPOINT_EBOX,108,178,30,12
+    EDITTEXT        LS3_SETPOINT_EBOX,108,190,30,12
+    EDITTEXT        LS4_SETPOINT_EBOX,108,202,30,12
+    CONTROL         "1",CHAN_1_GAIN_1_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,215,32,20,12
+    CONTROL         "2",CHAN_1_GAIN_2_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,235,32,20,12
+    CONTROL         "1",CHAN_2_GAIN_1_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,215,44,20,12
+    CONTROL         "2",CHAN_2_GAIN_2_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,235,44,20,12
+    CONTROL         "1",CHAN_3_GAIN_1_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,215,56,20,12
+    CONTROL         "2",CHAN_3_GAIN_2_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,235,56,20,12
+    CONTROL         "1",CHAN_4_GAIN_1_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,215,68,20,12
+    CONTROL         "2",CHAN_4_GAIN_2_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,235,68,20,12
+    CONTROL         "1",CHAN_5_GAIN_1_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,215,80,20,12
+    CONTROL         "2",CHAN_5_GAIN_2_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,235,80,20,12
+    CONTROL         "1",CHAN_6_GAIN_1_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,215,92,20,12
+    CONTROL         "2",CHAN_6_GAIN_2_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,235,92,20,12
+    CONTROL         "1",CHAN_7_GAIN_1_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,215,104,20,12
+    CONTROL         "2",CHAN_7_GAIN_2_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,235,104,20,12
+    CONTROL         "1",CHAN_8_GAIN_1_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,215,116,20,12
+    CONTROL         "2",CHAN_8_GAIN_2_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,235,116,20,12
+    PUSHBUTTON      "FasTrakへ送信する",IDOK,176,190,75,14,BS_CENTER
+END
+
+SAVE_TOTAL_STROKE_DIALOG DIALOG DISCARDABLE  0, 0, 202, 146
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "全ストロークの長さを保存"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,69,122,50,14,BS_CENTER
+    EDITTEXT        TOTAL_STROKE_EBOX,8,62,44,12
+    EDITTEXT        MINIMUM_STROKE_EBOX,8,77,44,12
+    EDITTEXT        ZERO_SPEED_CHECK_EBOX,8,92,44,12
+    CONTROL         "全ストロークの長さを保存して置く",
+                    SAVE_TOTAL_STROKE_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,62,139,12
+    CONTROL         "最小ストローク長さを保存",SAVE_MINIMUM_STROKE_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,77,137,12
+    CONTROL         "零速度チェックの位置を保存",SAVE_ZERO_SPEED_CHECK_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,92,139,12
+    LTEXT           "チェックした項目を保存します",-1,29,13,138,10,NOT 
+                    WS_GROUP
+    LTEXT           "保存する前に型番編集プログラムを閉じて下さい。",-1,13,
+                    24,177,10,NOT WS_GROUP
+    LTEXT           "続ける用意が出来次第、”ＯＫ”ボタンを押して下さい。",
+                    -1,3,34,195,10,NOT WS_GROUP
+END
+
+SET_ANALOG_XDCR_TYPE_DIALOG DIALOG DISCARDABLE  0, 0, 183, 217
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "FasTrakアナログトランスデューサーの種類"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "1",-1,16,20,10,8,NOT WS_GROUP
+    LTEXT           "2",-1,16,41,10,8,NOT WS_GROUP
+    LTEXT           "3",-1,16,62,8,8,NOT WS_GROUP
+    LTEXT           "4",-1,16,83,10,8,NOT WS_GROUP
+    LTEXT           "5",-1,16,104,10,8,NOT WS_GROUP
+    LTEXT           "6",-1,16,125,10,8,NOT WS_GROUP
+    LTEXT           "7",-1,16,146,10,8,NOT WS_GROUP
+    LTEXT           "8",-1,16,168,10,8,NOT WS_GROUP
+    LTEXT           "アナログ\nチャンネル",-1,8,0,37,18,NOT WS_GROUP
+    LTEXT           "トランスヂューサ型",-1,60,4,74,8,NOT WS_GROUP
+    COMBOBOX        CHAN_1_XDCR_CBOX,32,18,120,34,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_TABSTOP
+    COMBOBOX        CHAN_2_XDCR_CBOX,32,39,120,34,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_TABSTOP
+    COMBOBOX        CHAN_3_XDCR_CBOX,32,60,120,34,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_TABSTOP
+    COMBOBOX        CHAN_4_XDCR_CBOX,32,81,120,34,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_TABSTOP
+    COMBOBOX        CHAN_5_XDCR_CBOX,32,103,120,34,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_TABSTOP
+    COMBOBOX        CHAN_6_XDCR_CBOX,32,124,120,34,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_TABSTOP
+    COMBOBOX        CHAN_7_XDCR_CBOX,32,145,120,34,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_TABSTOP
+    COMBOBOX        CHAN_8_XDCR_CBOX,32,166,120,34,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_TABSTOP
+    PUSHBUTTON      "全電圧",ALL_VOLTS_BUTTON,64,192,50,14,BS_CENTER
+END
+
+TRANSDUCER_TEST_DIALOG DIALOG DISCARDABLE  0, 0, 361, 146
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "FasTrak トランスデューサ検査"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "新検査",NEW_SAMPLE_BUTTON,151,128,57,16,BS_CENTER
+    CONTROL         "",CHANNEL_FRAME,"Static",SS_GRAYFRAME,20,2,332,122
+    LTEXT           "C H A",-1,7,16,8,28,NOT WS_GROUP
+    LTEXT           "C H B",-1,7,76,8,28,NOT WS_GROUP
+END
+
+VARIABLES_READ_AND_SET_DIALOG DIALOG DISCARDABLE  0, 0, 133, 71
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "変数読み出し／変数設定"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    RTEXT           "変数の番号",-1,4,8,60,8,NOT WS_GROUP
+    RTEXT           "量",-1,16,26,48,8,NOT WS_GROUP
+    LTEXT           "( 0-99 )",-1,96,8,33,8,NOT WS_GROUP
+    EDITTEXT        VARIABLE_NUMBER_EBOX,70,6,20,12
+    EDITTEXT        VARIABLE_VALUE_EBOX,69,25,32,12
+    PUSHBUTTON      "読みます",READ_VARIABLE_BUTTON,13,50,50,14,BS_CENTER
+    PUSHBUTTON      "設定",SET_VARIABLE_BUTTON,69,50,50,14,BS_CENTER
+END
+
+NO_POSITION_SENSOR_DIALOG DIALOG DISCARDABLE  0, 0, 249, 146
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Position Sensor Not Found"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,100,121,50,14
+    LTEXT           "The is no position sensor definition for this part. The parameters that determine the position sensor are shown below.",
+                    IDC_STATIC,11,10,205,28
+    LTEXT           "Rod Pitch",IDC_STATIC,43,50,32,8
+    LTEXT           "Board Clock Speed",IDC_STATIC,43,64,62,8
+    LTEXT           "Distance Units (Part Based)",IDC_STATIC,43,78,87,8
+    LTEXT           "Velocity Units (Part Based)",IDC_STATIC,43,92,84,8
+    LTEXT           "?",ROD_PITCH_TBOX,141,50,28,8
+    LTEXT           "?",CLOCK_SPEED_TBOX,141,64,28,8
+    LTEXT           "?",DISTANCE_UNITS_TBOX,141,78,28,8
+    LTEXT           "?",NPS_VELOCITY_UNITS_TBOX,141,92,28,8
+END
+
+OPTO_TEST_DIALOG DIALOG DISCARDABLE  0, 0, 127, 36
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Output Opto Test"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "Toggle",IDOK,7,9,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,70,10,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "HARDWARE_STATUS", DIALOG
+    BEGIN
+        RIGHTMARGIN, 213
+    END
+
+    "AUTO_SHOT", DIALOG
+    BEGIN
+        RIGHTMARGIN, 56
+    END
+
+    "IOEX4_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 435
+        BOTTOMMARGIN, 241
+    END
+
+    "SAVE_TOTAL_STROKE_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 199
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc2.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MONALL                  ICON    DISCARDABLE     "monall.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    PROM_VERSION_STRING     "現在のEPROMバージョン番号："
+    CREATE_FAILED_STRING    "新設できません"
+    UNABLE_TO_CONTINUE_STRING "続けられません"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    TESTING_RAM_STRING      "RAM記憶を検査しています。。。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NO_RAM_ERRORS_STRING    "RAMエラーは検出されませんでした"
+    HIGH_RAM_ERROR_STRING   "高RAMエラーが検出されました。位置"
+    LOW_RAM_ERROR_STRING    "低RAMエラーが検出されました。位置"
+    TESTING_OPTO_PORT_STRING "オプトポートを検査しています。。。"
+    OPTO_PORT_OK_STRING     "オプトポートに問題はありません"
+    OPTO_PORT_ERROR_STRING  "オプトポートにエラーが検出されました"
+    TESTING_IO_PORT_STRING  "入出力ポートを検査しています．．．"
+    IO_PORT_OK_STRING       "入出力ポートに問題はありません"
+    IO_PORT_DATA_ERROR_STRING 
+                            "データ、動作状況、データアウトレジスターに問題が検出されました"
+    IO_PORT_COMMAND_ERROR_STRING 
+                            "コマンド、動作状況、データアウトポートに問題が検出されました"
+    SKIP_COUNT_STRING       "スキップ回数"
+    SKIP_SECONDS_STRING     "スキップ時間（秒）"
+    SHOTSAVE_WAIT_FAIL_STRING "SHOTSAVEでWaitForSingleObjectが間違いました"
+    SHOTSAVE_EVENT_FAIL_STRING "ShotSaveイベントの新設はできませんでした"
+    BOARD_MONITOR_EVENT_FAIL_STRING 
+                            "ボードモニターイベントの新設はできませんでした"
+    BOARD_MONITOR_THREAD_STRING "Board Monitor Thread"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SHOTSAVE_THREAD_STRING  "Shot Save Thread"
+    CREATE_PIPE_FAILED_STRING "Pipe Creation Failed"
+    LOW_DISK_SPACE_STRING   "ディスクの空き容量は３ＭＢ以下です"
+    NO_SHOTS_SAVED_STRING   "保存するショットデータはありません"
+    ON_1_STRING             "開#1"
+    OFF_1_STRING            "閉#1"
+    ON_2_STRING             "開#2"
+    OFF_2_STRING            "閉#2"
+    ON_3_STRING             "開#3"
+    OFF_3_STRING            "閉#3"
+    ON_4_STRING             "開#4"
+    OFF_4_STRING            "閉#4"
+    CANT_COMPLY_STRING      "実施することが出来ません"
+    NEED_CMD_MODE_STRING    "コマンドモードにして下さい"
+    MUX_BOARD_ONLY_STRING   "マルチプレックスボードでなければならない"
+    MONITORING_STRING       "モニトルしています"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NOT_MONITORING_STRING   "モニトルしていません"
+    SET_DATA_COL_MODE_STRING "データ収集モードを設定します"
+    ERROR_STRING            "エロル"
+    SET_COMMAND_MODE_STRING "コマンドモードを設定します"
+    MONITOR_WINDOW_TITLE_STRING "ボードモニター"
+    BOARD_NOT_STARTED_STRING "ボードが開始されていません"
+    ERROR_IN_COMMUNICATION_STRING "通信のエラー"
+    UNABLE_TO_SET_MONITOR_WIRE_STRING "モニタ電線をセット出来ません"
+    MORE_THAN_ONE_MACHINE_STRING "一機以上の機番がモニタされています。"
+    NO_CURRENT_PART_STRING  "この機番には現在の型番が在りません。"
+    WIRE_USED_BY_ALARM_STRING "モニタ電線がこのパラメータに使用されています["
+    INVALID_WIRE_STRING     "無効なモニタ電線です。6,7や8を使用して下さい。"
+    UNABLE_TO_SET_DOWN_ALARM_WIRE_STRING "Unable to set downtime alarm wire."
+    FT_BOARD_STRING         "FT Board "
+    AT_ADDRESS_STRING       " at "
+    BOARD_TYPE_ERR_STRING   "Unable to set board type\n\rBad Address or No Board Found"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    COMMAND_MODE_ERR_STRING "Unable to set command mode\n\rBad Address or No Board Found"
+    NO_BOARD_INIT_STRING    "Unable to initialize board"
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

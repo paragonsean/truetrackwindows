@@ -1,0 +1,305 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "msresg.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 520, 203
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Rechner",IDC_STATIC,8,9,28,8
+    LTEXT           "Verzeichnis",DIRECTORY_TBOX,42,9,37,8
+    LTEXT           "Typ",TYPE_TBOX,199,9,13,8
+    LTEXT           "Anschlüsse",CONNECTIONS_TBOX,266,9,37,8
+    LTEXT           "Online",ONLINE_TBOX,490,10,21,8
+    LTEXT           "Rechnername",COMPUTER_NAME_TBOX,13,111,46,8,WS_DISABLED
+    CTEXT           "Angeschlossene Rechner",CONNECTED_COMPUTERS_TBOX,263,
+                    111,54,17,WS_DISABLED
+    CTEXT           "Verfügbare Rechner",AVAILABLE_COMPUTERS_TBOX,322,110,44,
+                    17,WS_DISABLED
+    GROUPBOX        "Typ",TYPE_GBOX,87,107,100,49,WS_DISABLED
+    LISTBOX         COMPUTER_LISTBOX,6,19,507,85,LBS_SORT | LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        COMPUTER_NAME_EBOX,11,123,69,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED | WS_GROUP
+    CONTROL         "Rechner überwachen",MONITORING_COMPUTER_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP | WS_TABSTOP,
+                    97,117,85,10
+    CONTROL         "Arbeitsplatzsystem",OFFICE_WORKSTATION_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,97,129,73,10
+    CONTROL         "Datenserver ",DATA_SERVER_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,97,141,57,10
+    PUSHBUTTON      "Standardmäßige Anschlüsse",STANDARD_CONNECTIONS_BUTTON,
+                    196,119,58,28,BS_CENTER | BS_MULTILINE | WS_GROUP
+    LISTBOX         CONNECTED_COMPUTER_LISTBOX,265,129,44,46,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         AVAILABLE_COMPUTER_LISTBOX,322,129,44,46,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Änderungen &speichern",SAVE_CHANGES_BUTTON,166,169,86,
+                    14
+    LTEXT           "\\\\W01\\V5",CHECKING_DIR_TBOX,9,185,152,9
+    PUSHBUTTON      "&Hilfe",HELP_BUTTON,354,0,25,10
+    PUSHBUTTON      "Nach Rechner suchen",BROUSE_COMPUTERS_BUTTON,12,142,73,
+                    12
+    PUSHBUTTON      "Rechner entfernen",REMOVE_COMPUTER_BUTTON,12,156,73,14
+    LTEXT           "Version",VERSION_TBOX,439,10,24,8
+    LTEXT           "Shared Full",SHARED_FULL_TBOX,465,2,24,17
+END
+
+ADD_COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 181, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rechner hinzufügen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,8,196,50,14
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,63,196,50,14
+    LISTBOX         ADD_COMPUTER_LB,7,26,108,164,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "Hinzuzufügende Rechner aus folgender Aufstellung wählen.",
+                    IDC_STATIC,4,4,103,19,NOT WS_GROUP
+    LTEXT           "Um mehrere zu wählen, die Strg-Taste gedrückt halten. \n\n Klicken und über Bereich ziehen.",
+                    IDC_STATIC,123,54,53,76
+END
+
+RENAME_NEW_COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 172, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Komputer umbenennen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,27,54,50,14
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,96,54,50,14
+    LTEXT           "Der Name ist schon vergeben. Für den neuen Rechner bitte einen anderen Namen verwenden.",
+                    IDC_STATIC,4,1,168,17
+    EDITTEXT        NEW_COMPUTER_NAME_EBOX,132,34,22,12,ES_AUTOHSCROLL
+    LTEXT           "Namen eingeben, drei Zeichen oder weniger.",IDC_STATIC,
+                    18,21,143,8
+    LTEXT           "W01",OLD_COMPUTER_NAME_TBOX,59,36,16,8
+    LTEXT           "Name derzeitig",IDC_STATIC,9,36,48,8
+    LTEXT           "Neuer Name",IDC_STATIC,90,36,41,8
+END
+
+PATH_TOO_LONG_DIALOG DIALOG DISCARDABLE  0, 0, 420, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Pfad zu lang"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Schließen",IDOK,180,73,50,14
+    LTEXT           "W01",TOO_LONG_SORC_TBOX,85,7,26,8
+    LTEXT           "WS0",TOO_LONG_DEST_TBOX,165,20,42,8
+    LTEXT           "\\\\The-Office-Workstation-Computer\\V5\\DATA\\",
+                    TOO_LONG_PATH_TBOX,137,31,245,8
+    LTEXT           "Rechner wird aktualisiert",IDC_STATIC,0,7,78,8
+    LTEXT           "Rechner wird der Anschlussliste hinzugefügt:",
+                    IDC_STATIC,0,20,145,8
+    LTEXT           "Pfad",IDC_STATIC,115,31,16,8
+    LTEXT           "Der zu aktualisierende Rechner arbeitet mit einer älteren True-Trak 2020 (tm) Software, die keine Stammordnerpfade (siehe oben) mit mehr als 15 Zeichen unterstützt. ",
+                    IDC_STATIC,18,49,383,19
+END
+
+COMPUTER_DIR_CHANGED_DIALOG DIALOG DISCARDABLE  0, 0, 334, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Änderung zu Rechnerverzeichnis"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Schließen",IDOK,142,73,50,14
+    CTEXT           "W01",TOO_LONG_SORC_TBOX,44,7,22,8
+    LTEXT           "WS0",TOO_LONG_DEST_TBOX,69,29,245,8
+    LTEXT           "\\\\The-Office-Workstation-Computer\\V5\\DATA\\",
+                    TOO_LONG_PATH_TBOX,69,39,245,8
+    LTEXT           "Der Pfad von",IDC_STATIC,0,7,43,8
+    LTEXT           "hat sich seit dem letzten Programmablauf geändert",
+                    IDC_STATIC,73,7,174,8
+    LTEXT           "Gegenwärtg. Pfad:",IDC_STATIC,8,39,60,8
+    LTEXT           "Vorherig. Pfad:",IDC_STATIC,14,28,48,8
+    LTEXT           "Alle hier angeschlossenen Rechner sollten aktualisiert werden.",
+                    IDC_STATIC,7,57,188,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "COMPUTER_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 467
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "msresg.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+NETSETUP_ICON           ICON    DISCARDABLE     "netsetup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Datennetzrechner für VisiTrak einrichten."
+    MONITORING_COMPUTER_STRING "Rechner überwachen"
+    WORKSTATION_COMPUTER_STRING "Arbeitsplatzsystem"
+    DATA_SERVER_COMPUTER_STRING "Datenserver"
+    CANT_COMPLY_STRING      "Nicht durchführbar."
+    ERROR_WRITING_COMPUTER_STRING 
+                            "Fehler beim Schreiben zur  Datei COMPUTER.TXT"
+    DIR_TOO_LONG_STRING     "Verzeichnisname zu lang, maximal 25 Zeichen erlaubt."
+    YES_STRING              "Ja"
+    NO_STRING               "Nein"
+    CONFIRM_REMOVE_STRING   "Möchten Sie fortfahren?"
+    WILL_REMOVE_STRING      "Hell hinterlegter Rechner wird entfernt werden."
+    NEW_NAME_TOO_LONG_STRING "Der Name ist zu lang."
+    NO_NAME_ENTERED_STRING  "Bitte einen Namen eingegeben."
+    SAME_NAME_STRING        "Bitte einen anderen Namen eingeben."
+    CREATE_FAILED_STRING    "Fehler beim Einrichten"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ENUMERATION_THREAD_STRING "Datennetzrechner-Suchprogramm (thread) "
+    ADD_COMPUTERS_FROM_LISTBOX_THREAD_STRING 
+                            "Rechner vom Listenfeld hinzufügen."
+    NO_V5_FOLDER_FOUND_STRING "Kein V5-Ordner auffindbar"
+    NO_DATA_DIR_FOUND_STRING 
+                            "\\DATA\\ nicht auffindbar im lokalen Verzeichnis "
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ADD_NEW_COMPUTERS_DIALOG DIALOG DISCARDABLE  0, 0, 230, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Datennetzrechner hinzufügen.."
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Abbrechen",IDCANCEL,85,45,50,14
+    LTEXT           "Statisch",CURRENT_RESOURCE_TBOX,16,17,200,10
+END
+
+ENUMERATE_COMPUTERS_DIALOG DIALOG DISCARDABLE  0, 0, 230, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Nach Datennetzrechnern suchen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Abbrechen",IDCANCEL,85,45,50,14
+    LTEXT           "Statisch",CURRENT_RESOURCE_TBOX,16,17,200,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "ENUMERATE_COMPUTERS_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

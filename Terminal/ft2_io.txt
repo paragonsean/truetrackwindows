@@ -1,0 +1,130 @@
+
++10+--------------------------------------------+
+   |                       |                    |
+   |                       |                 +  |
+   |                       |                    |
+   |                       |              +     |
+   |                       |                    |
+   |                       |           +        |
+   |                       |                    |
+   |                       |        +           |
+   |                       |                    |
+   |                       |     +              |
+   |                       |                    |
+   |                       |  +                 |
+V  |                                            |
+O  |                       +                    |
+L 0+--------------------------------------------|
+T  |                    +                       |
+S  |                       |                    |
+   |                 +     |                    |
+   |                       |                    |
+   |              +        |                    |
+   |                       |                    |
+   |           +           |                    |
+   |                       |                    |
+   |        +              |                    |
+   |                       |                    |
+   |     +                 |                    |
+   |                       |                    |
+   |  +                    |                    |
+   |                       |                    |
+-10+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+  -8 -7 -6 -5 -4 -3 -2 -1  0  1  2  3  4  5  6  7
+   8  9  A  B  C  D  E  F
+
+        Raw A/D Value (0-F in 2's Compliment)
+
+
+The above is an illustration of a 4 bit A/D -10V to +10V conversion.
+x is the raw value (0 to F, in 2's compliment)
+
+          (x + 8)
+V = -10 + ------- * 20
+             15
+
+Similarly, for a 12 bit system the equation is
+
+          (x + 2048)
+V = -10 + ---------- * 20
+             4095
+
+For 0-2.5V and 0-5V the equation is just
+
+     x                       x
+V = ---- * 2.5    or    V = ---- * 5.0
+    4095                    4095
+
+The DAC is 14 bits so the voltage is:
+
+          (x + 8192)                 (V + 10) * 16383
+V = -10 + ---------- * 20        x = ---------------- - 8192
+            16383                          20
+
+--------
+Commands
+--------
+An Axis refers to one of the position encoder inputs, 1 or 2
+
+OS1<CR>            = Request current position of axis 1
+R_POS1:11 #0<LF>   = Response = 32 bit hex = X1 counts
+
+OS2<CR>  => Request current position of axis 2
+R:12xxxxxxxx<LF>   = response
+
+OF1<CR>  => Request current velocity of axis 1
+R:17xxxxxxxx<LF>   = response
+R_VEL1:15 #0<LF>   = response
+
+OF2<CR>  => Request current velocity of axis 2
+R:18xxxxxxxx<LF>   = response
+
+
+Analog Inputs
+    12 Bit 0-2.5 or 0-5V Single Ended or Differential
+        8 dynamically sampled inputs
+           Channels 9 thru 16 are normally included in the data streams
+           as CH9_xxx, where xxx is the hex value of the raw A/D reading.
+
+           Gain is set in Configuration Word 1 (V313)
+
+
+        8 statically sampled inputs
+            Reported as group of data including all the analog channels (0-16)
+
+
+    12 Bit -10V to +10V Single Ended Inputs
+        4 dynamic channels 17, 18, 19, 20. Displayed in place of CH13 => 16 when
+        bit 16 of Config Word #1 (V313) is set.
+
+Analog Outputs
+
+    14 Bit -10V to +10 Volt
+        1 Shot Control
+        1 Pressure Control
+        2 reserved
+
+        OD1=0000A<cr> => set channel to to 0xA
+
+        Channel [1,4]
+        Value   [00000, 03FFF]
+
+
+        Reported in operational status data packet.
+
+
+Digital Inputs
+
+    32 Opto Inputs (AC or DC)
+
+        Reported in operational status data packet.
+
+        Bit  0 - 15 correspond to inputs 17 - 32 on the 1st Opto board.
+        Bit 16 - 31 correspond to inputs 17 - 32 on the 2nd Opto board.
+
+     6 "High Speed" 12 to 14 VDC.
+
+     1 Master Enable
+     1 Cycle Start
+
+

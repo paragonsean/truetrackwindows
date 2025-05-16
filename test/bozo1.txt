@@ -1,0 +1,58 @@
+B_L         Biscuit Length
+EOSP        EOS Position
+FIP
+FT          Fill Time
+FTSP
+IntStrk
+IPRT
+IPRTSV
+SHOT_CTR
+VRT
+VRTEP
+VRTSP
+AISV_PF
+AvIHPr_PF
+AvIRPr_PF
+AvSHPr_PF
+AvSRPr_PF
+ISTWE_PF
+ISTWS_PF
+SSTWE_PF
+SSTWS_PF
+ASSV_PF_X
+
+FillTime            Fill Time
+TotalShotTime       Total Shot Time
+SlotShotTime        Slow Shot Time
+FastShotTime        Fast Shot Time
+FastShotRiseTime    Fast Shot Rise Time
+CycleTime           Cycle Time
+TimeInterval1       User Time Int One
+TimeInterval2       User Time Int Two
+TimeInterval3       User Time Int Three
+TimeInterval4       User Time Int Four
+TimeInterval5       User Time Int Five
+BiscuitSize         Biscuit Size
+CSFS                Calc Start Fast Shot
+IntensPressure      Intensification Pressure
+IntensRiseTime      Intensification Rise Time
+EffPeakIntens       Effective Peak Intensification Pressure
+ImpactPresToPeak    Impact Pressure To Peak
+SqueezeDistance     Intens Squeeze Distance
+SleeveFullVelocity  Sleeve Full Velocity
+RunnerFullVelocity  Runner Full Velocity
+AvgFillVelocity     Average Fill Velocity
+UserVelocity1       User Velocity Pos One
+UserVelocity2       User Velocity Pos Two
+UserVelocity3       User Velocity Pos Three
+UserVelocity4       User Velocity Pos Four
+AvgVelocity1        User Average Vel Range One
+AvgVelocity2        User Average Vel Range Two
+AvgVelocity3        User Average Vel Range Three
+AvgVelocity4        User Average Vel Range Four
+P1                  Position P1
+P2                  Position P2
+P3                  Position P3
+AvgSlowShotVelocity Average Slow Shot Velocity
+AvgFastShotVelocity Average Fast Shot Velocity
+FastShotDistance    Fast Shot Distance

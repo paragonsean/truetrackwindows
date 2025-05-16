@@ -1,0 +1,28 @@
+Mark,
+
+I've been putting out fires for a while but I think I have some time to work on this again.
+
+I'm trying to code the <Machine_Setup> message. It would seem that I should send you one
+of these for each machine. Thus if I have I have 30 machines, then for each one you would get
+a message such as the following. I've made separate lines for each statement in the following but
+in the actual message there would be no carriage returns or line feeds.
+
+<Machine_Setup>
+<Parameters>
+<parameter ParameterID="Machine Name" CurrentValueType="2" CurrentValue="M01"/>
+<parameter ParameterID="Part Name" CurrentValueType="2" CurrentValue="88206163"/>
+<parameter ParameterID="Velocity_Pos" Units="in/s" CurrentValueType="1"/>
+<parameter ParameterID="Velocity_Time" Units="in/s" CurrentValueType="1"/>
+<parameter ParameterID="Analog0_Pos" Units="psi" CurrentValueType="1"/>
+<parameter ParameterID="Analog0_Time" Units="psi" CurrentValueType="1"/>
+<parameter ParameterID="Analog1_Pos" Units="psi" CurrentValueType="1"/>
+<parameter ParameterID="Analog1_Time" Units="psi" CurrentValueType="1"/>
+<parameter ParameterID="Analog2_Pos" Units="volts" CurrentValueType="1"/>
+<parameter ParameterID="Analog2_Time" Units="volts" CurrentValueType="1"/>
+<parameter ParameterID="Analog3_Pos" Units="volts" CurrentValueType="1"/>
+<parameter ParameterID="Analog3_Time" Units="volts" CurrentValueType="1"/>
+<parameter ParameterID="Time_Pos" Units="ms" CurrentValueType="1"/>
+<parameter ParameterID="Position_Time" Units="ms" CurrentValueType="1"/>
+<parameter ParameterID="PosInc" Units="in" CurrentValueType="1" CurrentValue="0.0125" Precision="3"/>
+<parameter ParameterID="TimeInc" Units="ms" CurrentValueType="1" CurrentValue="1" Precision="3"/>
+<parameter ParameterID="Parameter1" Description="" Units="in/sec" Precision="1" HelValue="205" HalEnabled="False" HalValue="0" HwlEnabled="False" HwlValue="0" TargetValueType="0" TargetValue="0" CurrentValueType="2" CurrentValue="1" LwlEnabled="False" LwlValue="0" LalEnabled="False" LalValue="0" LelValue="0" />\r\n

@@ -1,0 +1,292 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc2.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MACHINEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "終了(&X)",                    EXIT_CHOICE
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "機番の新規設定(&C)",          CREATE_CHOICE
+        MENUITEM "削除(&D)",                    DELETE_CHOICE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+EDIT_MACHINES DIALOG DISCARDABLE  0, 0, 304, 172
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 11, "ＭＳ 明朝"
+BEGIN
+    LISTBOX         MACHINE_LIST_BOX,7,28,24,136,LBS_SORT | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    CONTROL         "ホットチャンバ",HOT_CHAMBER_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,37,20,63,11
+    CONTROL         "コールドチャンバ",COLD_CHAMBER_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,37,32,71,12
+    COMBOBOX        ROD_PITCH_COMBO_BOX,42,61,49,37,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "Sure-Trak Control",SURETRAK2_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,34,86,81,10
+    DEFPUSHBUTTON   "上書き保存",IDOK,139,132,52,12
+    LTEXT           "機番号",MACHINE_NUMBER_STATIC,8,15,25,10
+    LTEXT           "ロッド ピッチ",ROD_PITCH_STATIC,42,51,52,9
+    GROUPBOX        "機種",MACHINE_TYPE_STATIC,33,9,76,38
+    GROUPBOX        "時間終了(秒)",TIMEOUTS_STATIC,119,51,90,43
+    GROUPBOX        "インパクト点の数",IMPACT_POINTS_STATIC,119,9,90,40
+    GROUPBOX        "計算パラメータを使用",CALC_PARAMS_STATIC,210,9,91,40
+    LTEXT           "位置",-1,156,22,30,9
+    LTEXT           "時間",-1,156,35,22,9
+    LTEXT           "機番停止",-1,156,67,48,9
+    LTEXT           "サイクル開始",-1,153,82,52,9
+    LTEXT           "差圧波形表示",DIFF_CURVE_TYPE_STATIC,210,53,91,11
+    EDITTEXT        POS_IMPACT_POINTS_BOX,125,21,27,11,ES_RIGHT
+    EDITTEXT        TIME_IMPACT_POINTS_BOX,125,34,27,11,ES_RIGHT
+    EDITTEXT        CYCLE_TIMEOUT_BOX,125,65,27,11,ES_RIGHT
+    EDITTEXT        AUTOSHOT_TIMEOUT_BOX,125,81,27,11,ES_RIGHT
+    CONTROL         "ヘッド圧力",HEAD_PRESS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,216,18,60,9
+    CONTROL         "ロッド圧力",ROD_PRESS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,216,28,65,9
+    CONTROL         "差圧",DIFF_PRESS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,216,38,80,9
+    COMBOBOX        DIFF_CURVE_TYPE_COMBO_BOX,210,65,91,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "計算式の編集",EDIT_EQUATIONS_BUTTON,224,83,70,16,
+                    BS_CENTER
+    CONTROL         "MVO-06596",MVO_06596_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,45,109,57,12
+    CONTROL         "Digital Servo Amp",DIGITAL_SERVO_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,45,118,72,12
+    PUSHBUTTON      "Choose",CHOOSE_SERVO_PB,63,132,34,12,WS_GROUP
+    GROUPBOX        "Servo Amplifier Board Type",SERVO_AMP_BOARD_TYPE_STATIC,
+                    35,99,98,49
+    CONTROL         "Replace Biscuit Time Delay with Time to Measure Biscuit",
+                    MEAS_BISCUIT_AT_DELAY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,223,122,76,33
+END
+
+NEW_MACHINE DIALOG DISCARDABLE  6, 15, 91, 74
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "機番の新規設定"
+FONT 12, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "新機番",-1,46,34,28,12
+    LTEXT           "コンピュータ",-1,40,8,49,8
+    DEFPUSHBUTTON   "OK",1,28,51,36,14
+    EDITTEXT        101,4,32,31,12,ES_UPPERCASE
+    COMBOBOX        102,4,7,31,39,CBS_DROPDOWNLIST | CBS_SORT | WS_TABSTOP
+END
+
+INPUT_ERROR_DIALOG DIALOG DISCARDABLE  0, 0, 211, 56
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "入力エラー"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,64,28,52,14,BS_CENTER
+    LTEXT           "この フィルド は",-1,17,9,62,10
+    LTEXT           "12",INPUT_ERROR_MAX_CHARS_TBOX,82,9,11,8,NOT WS_GROUP
+    LTEXT           "字サイズを越えられません",-1,94,9,104,8,NOT WS_GROUP
+END
+
+EDIT_DCURVE_DIALOG DIALOGEX 0, 0, 364, 209
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_DLGMODALFRAME | WS_EX_TOPMOST
+CAPTION "差圧計算式"
+FONT 10, "ＭＳ 明朝", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "上書き保存(&S)",EDITDIFF_SAVE_CHANGES_BUTTON,117,188,56,
+                    14,BS_CENTER
+    CONTROL         "",GRID_POSITION_BORDER,"Static",SS_ETCHEDFRAME,9,7,345,
+                    176
+    PUSHBUTTON      "挿入(&I)",INSERT_EQUATION_BUTTON,300,188,54,14,
+                    BS_CENTER
+    PUSHBUTTON      "削除(&D)",DELETE_EQUATION_BUTTON,9,188,54,14,BS_CENTER
+    PUSHBUTTON      "キャンセル(&C)",EDITDIFF_CANCEL_BUTTON,189,188,56,14,
+                    BS_CENTER
+END
+
+CHOOSE_SERVO_DIALOG DIALOG DISCARDABLE  0, 0, 387, 268
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Your Servo Amplifier Board"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "Button1",MVO_06596_PB,20,2,348,130,BS_BITMAP
+    PUSHBUTTON      "Button1",DIGITAL_SERVO_PB,157,135,211,128,BS_BITMAP
+    LTEXT           "Click on the board you have.",IDC_STATIC,8,144,145,12
+    LTEXT           "The one on the right is the new Digital Servo Amp that plugs directly into the Sure-Trak2・External Interface.",
+                    IDC_STATIC,8,204,144,36
+    LTEXT           "The one above is the older MVO-06596 External Servo Amp board. All Sure-Trak・systems use this board.",
+                    IDC_STATIC,8,165,143,36
+    PUSHBUTTON      "Cancel",IDCANCEL,55,247,50,14
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc2.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "EDIT_MACHINES", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 157
+    END
+
+    "NEW_MACHINE", DIALOG
+    BEGIN
+        RIGHTMARGIN, 89
+        BOTTOMMARGIN, 73
+    END
+
+    "INPUT_ERROR_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 210
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+EMACHINE ACCELERATORS MOVEABLE PURE 
+BEGIN
+    VK_F1,          901,                    VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+EMACHINE_ICON           ICON    DISCARDABLE     "emachine.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+DIGITAL_SERVO_BMP       BITMAP  DISCARDABLE     "digital_servo_amp.bmp"
+MVO_06596_BMP           BITMAP  DISCARDABLE     "mvo_06596.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NEED_NEW_PARM_TYPE_STRING "他のプレッシャ型パラメータを選んで下さい"
+    ABOUT_TO_DELETE_STRING  "この機番の全情報を削除しようとしています。"
+    CONTINUE_STRING         "続けますか？"
+    UNABLE_TO_COMPLY_STRING "実施することが出来ません"
+    MONITORING_OFF_FIRST_STRING "モニタ動作を中止して下さい"
+    MAIN_WINDOW_TITLE       "機番設定"
+    LAST_MACHINE_STRING     "最後の機番は削除できません"
+    NO_DEL_ALL_ROWS_STRING  "全列を削除することはできません"
+    ATTEMPT_DEL_ALL_ROWS_STRING "全列削除を試みにやってみます"
+    NOTHING_SELECTED_STRING "未選択"
+    SELECT_ROW_STRING       "列番号をクリックして１つ以上の列を選択して下さい"
+    RESTART_STRING          "変更を有効にするためにTrueTrakプログラムを再起動して下さい"
+    CHANGES_SAVED_STRING    "変更内容は保存されました"
+    GRID_NUMBER_STRING      "番号"
+    GRID_NAME_STRING        "名称"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GRID_HEAD_COEF_STRING   "係数"
+    GRID_ROD_COEF_STRING    "ロッド係数"
+    FONT_CHARSET_STRING     "SHIFTJIS_CHARSET"
+    ONLY_ONE_MACHINE_STRING "このコンピュータには機番が一つだけで御座います"
+    SURETRAK_CONTROLLED_STRING 
+                            "この機番にはがSureTrakコントロールが在ります。"
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

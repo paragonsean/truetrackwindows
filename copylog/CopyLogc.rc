@@ -1,0 +1,170 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "msresc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+COPYLOG_DIALOG DIALOG DISCARDABLE  0, 0, 381, 317
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 12, "PMingLiU"
+BEGIN
+    CONTROL         "Password",PASSWORD_LOG_PB,"Button",BS_AUTORADIOBUTTON |
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,15,16,51,14
+    CONTROL         "Monitor",MONITOR_LOG_PB,"Button",BS_AUTORADIOBUTTON |
+                    BS_PUSHLIKE,69,16,51,14
+    GROUPBOX        "Log File Type",IDC_STATIC,6,5,123,29,WS_GROUP
+    LTEXT           "The Password Log File is added to whenever the ",
+                    LOG_FILE_TYPE_HELP_STATIC,133,12,245,20
+    LISTBOX         STATUS_LISTBOX,223,40,150,215,LBS_USETABSTOPS |
+                    LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL
+    EDITTEXT        LOG_FILE_NAME_EBOX,75,99,122,12,ES_AUTOHSCROLL
+    EDITTEXT        LOG_FORMAT_EBOX,80,256,69,12,ES_AUTOHSCROLL
+    LTEXT           "Log File Path Name",IDC_STATIC,9,101,63,8
+    LTEXT           "Log File Entry Format",IDC_STATIC,10,257,67,8
+    LTEXT           "n = name of operator\nd = date\nt = time\nc = computer name",
+                    IDC_STATIC,23,153,73,35,NOT WS_GROUP
+    LTEXT           "The Log File Path Name is the name of the file that you want the log entires to be written to. If you want more than one computer to write to the same file you should use the network name of the file such as:",
+                    IDC_STATIC,7,39,211,35
+    LTEXT           "The fomat is a string that tells what each log entry should look like. Everything in the string will be typed as is except the letters n, d, t, c, m, o, p which will be replaced with the following.",
+                    IDC_STATIC,8,123,211,26
+    LTEXT           "A typical entry would be:",IDC_STATIC,10,192,78,8
+    CTEXT           "c, d, t, n",FORMAT_EXAMPLE_TBOX,32,203,52,12,
+                    SS_CENTERIMAGE | WS_BORDER | NOT WS_GROUP
+    LTEXT           "m = machine name\no = old part name\np = current part name",
+                    RECORD_HELP_STATIC,106,153,73,35,NOT WS_GROUP
+    LTEXT           "which would cause the entry to be saved as something like",
+                    IDC_STATIC,10,218,189,10
+    CTEXT           "W01, 02/24/2002, 7:23:21, John Doe",RECORD_EXAMPLE_TBOX,
+                    1,231,217,12,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "\\\\WS0\\V5\\ChangeLog.csv",IDC_STATIC,32,74,113,12,
+                    SS_CENTERIMAGE | WS_BORDER
+    CONTROL         "Save to Network Computers",SAVE_TO_NETWORK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,289,105,10
+    PUSHBUTTON      "Save Changes",SAVE_CHANGES_BUTTON,132,295,57,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,295,50,14
+    LTEXT           "W01,02/24/2005,...",LOG_RECORD_TBOX,80,271,290,12,
+                    SS_CENTERIMAGE | WS_BORDER | NOT WS_GROUP
+    LTEXT           "Sample Record",IDC_STATIC,10,273,50,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE
+BEGIN
+    "COPYLOG_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "msres3.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+COPYLOG_ICON            ICON    DISCARDABLE     "CopyLog.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Visi-Trak Worldwide 記錄檔案的設定"
+    CANT_COMPLY_STRING      "無法執行"
+    PASSWORD_LOG_STRING     "當密碼階層設定改變時本程式將記錄操作員名字到你所指定的檔案."
+    MONITOR_LOG_STRING      "當鑄件型號設定改變時本程式將記錄改變資料到你所指定的檔案."
+    PASSWORD_FORMAT_EXAMPLE_STRING "c,d,t,n"
+    PASSWORD_RECORD_EXAMPLE_STRING "C01,04/12/2005,20:35:50,John Doe"
+    MONITOR_FORMAT_EXAMPLE_STRING "c,m,o,p,d,t,n"
+    MONITOR_RECORD_EXAMPLE_STRING 
+                            "C01,E20,VISITRAK,PRODPART,04/12/2005,20:35:50,John Doe"
+    SAVING_LOCAL_PASSWORD_SETTINGS_STRING "儲存本機密碼誌的設定"
+    SAVING_LOCAL_MONITOR_SETTINGS_STRING "儲存本機監測誌的設定"
+    SAVING_NETWORK_PASSWORD_SETTINGS_STRING "儲存網路密碼誌的設定"
+    SAVING_NETWORK_MONITOR_SETTINGS_STRING "儲存網路監測誌的設定"
+    DONE_STRING             "*** 完成 ***"
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

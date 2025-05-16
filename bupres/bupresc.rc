@@ -1,0 +1,380 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc3.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+BACKUP_DIALOG DIALOG DISCARDABLE  0, 0, 279, 186
+STYLE WS_CHILD
+FONT 12, "PMingLiU"
+BEGIN
+    GROUPBOX        "去除選擇",IDC_STATIC,4,98,123,87,WS_GROUP
+    CONTROL         "去除全數資料",TB_PURGE_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,127,60,12
+    GROUPBOX        "拷貝儲存",IDC_STATIC,4,4,87,76,WS_GROUP
+    PUSHBUTTON      "開始",IDOK,174,141,50,17,BS_CENTER
+    CONTROL         "鑄件設定資料",TB_SETUPS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,15,65,12
+    CONTROL         "廢品/停機時間",TB_SCRAP_DOWN_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,28,73,12
+    CONTROL         "射出曲線",TB_PROFILE_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,41,68,12
+    CONTROL         "射出參數",TB_PARAM_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,54,73,12
+    CONTROL         "警示數據",TB_ALARM_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,67,73,12
+    PUSHBUTTON      " 全選",TB_BACKUP_ALL_BUTTON,4,83,27,12,BS_CENTER
+    CONTROL         "保留最新50次射出資料",TB_LAST_50_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,138,92,12
+    CONTROL         "去除停機資料",TB_PURGE_DOWNTIME_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,152,71,12
+    LTEXT           "拷貝儲存zip檔案名稱",IDC_STATIC,130,102,108,8,NOT 
+                    WS_GROUP
+    LTEXT           "機號",IDC_STATIC,129,5,31,9
+    LTEXT           "鑄件型號",IDC_STATIC,165,5,35,10
+    LISTBOX         TB_MACHINE_LISTBOX,129,15,31,66,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         TB_PART_LISTBOX,165,15,107,66,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        TB_ZIP_NAME_EDITBOX,128,113,144,12
+    PUSHBUTTON      "全選",TB_ALL_MACHINES_BUTTON,128,81,27,12,BS_CENTER
+    LTEXT           "射出參數",IDC_STATIC,203,4,34,9
+    LTEXT           "射出曲線",IDC_STATIC,239,5,33,9
+    CTEXT           "包含射出參數和射出曲線",IDC_STATIC,11,109,56,17,NOT 
+                    WS_GROUP
+    CONTROL         "最新",TB_RECENT_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,174,88,26,10
+    EDITTEXT        TB_RECENT_COUNT_EBOX,203,86,18,12,ES_AUTOHSCROLL
+    LTEXT           "射出資料",IDC_STATIC,228,88,41,8
+    PUSHBUTTON      "Debug Setup File Backup",TB_ALL_TEXT_FILES_PB,169,173,
+                    94,12
+    CONTROL         "Purge Alarm Summaries",TB_PURGE_ALARMS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,166,95,10
+    EDITTEXT        TB_NEXT_SHOT_NUMBER_EBOX,68,119,29,10,ES_NUMBER
+    LTEXT           "Next Shot Number",TB_NEXT_SHOT_NUMBER_STATIC,98,113,25,
+                    27
+END
+
+BACKUP_LIST_DIALOG DIALOG DISCARDABLE  0, 0, 199, 165
+STYLE WS_CHILD
+FONT 12, "PMingLiU"
+BEGIN
+    EDITTEXT        TB_ZIP_NAME_EDITBOX,2,125,192,12
+    PUSHBUTTON      "開始",IDOK,64,146,67,17,BS_CENTER
+    LTEXT           "拷貝儲存 Zip檔案名稱",IDC_STATIC,2,114,144,8,NOT 
+                    WS_GROUP
+    LTEXT           "下列 射出資料將被拷貝儲存",IDC_STATIC,39,2,119,8
+    LTEXT           "機號",IDC_STATIC,40,14,16,8
+    LTEXT           "鑄件型號",BACKUP_LIST_PART_TBOX,64,13,29,8
+    LTEXT           "射出資料",BACKUP_LIST_SHOT_TBOX,109,14,34,8
+    LISTBOX         BACKUP_LIST_LISTBOX,40,23,117,87,LBS_SORT | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+CHOOSE_FUNCTION DIALOG DISCARDABLE  0, 0, 231, 124
+STYLE WS_CHILD | WS_VISIBLE
+FONT 12, "PMingLiU"
+BEGIN
+    PUSHBUTTON      "拷貝儲存",BACKUP_BUTTON,10,7,74,22,BS_CENTER | 
+                    BS_MULTILINE
+    PUSHBUTTON      "拷貝儲存名單",BACKUP_LIST_BUTTON,10,37,74,22,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    PUSHBUTTON      "回存",RESTORE_BUTTON,10,67,74,22,BS_CENTER | 
+                    BS_MULTILINE
+    PUSHBUTTON      "去除/重新編號",DELETE_BUTTON,10,97,74,22,BS_CENTER | 
+                    BS_MULTILINE
+    LTEXT           "拷貝儲存設定,射出曲線,射出參數 ,警示和停機時間等資料.",
+                    IDC_STATIC,91,9,132,21
+    LTEXT           "拷貝儲存在拷貝儲存名單上所有的射出的資料.",IDC_STATIC,
+                    91,41,133,19
+    LTEXT           "回存先前拷貝儲存的資料檔案.",IDC_STATIC,91,71,130,17
+    LTEXT           "去除或重新編號射出的資料",IDC_STATIC,91,104,97,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,32,231,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,63,231,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,92,231,1
+END
+
+DELETE_DATA DIALOG DISCARDABLE  0, 0, 289, 184
+STYLE WS_CHILD
+FONT 12, "PMingLiU"
+BEGIN
+    GROUPBOX        "指令",-1,64,52,68,39,WS_GROUP
+    GROUPBOX        "資料選擇",-1,64,6,68,39,WS_GROUP
+    CTEXT           "機號",-1,6,1,27,8
+    LTEXT           "鑄件型號",-1,5,72,38,8
+    LISTBOX         DD_MACHINE_LISTBOX,5,10,31,59,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         DD_PART_LISTBOX,5,82,51,90,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         DD_SHOT_LISTBOX,143,18,136,142,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "射出參數",DD_PARAMETERS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,71,16,55,12
+    CONTROL         "射出曲線",DD_PROFILES_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,71,28,46,12
+    PUSHBUTTON      "開始",IDOK,71,154,56,18,BS_CENTER
+    CONTROL         "去除",DD_DELETE_RADIOBUTTON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,72,63,39,12
+    CONTROL         "重新編號",DD_RENUMBER_RADIOBUTTON,"Button",
+                    BS_AUTORADIOBUTTON,72,75,44,12
+    EDITTEXT        DD_RENUMBER_EDITBOX,104,103,20,12
+    PUSHBUTTON      "所有",DD_ALL_SHOTS_BUTTON,186,163,50,14,BS_CENTER
+    LTEXT           "射出號碼",-1,143,6,34,8,NOT WS_GROUP
+    LTEXT           "新編號啟始號碼",DD_RENUMBER_LABEL,64,100,40,15,NOT 
+                    WS_GROUP
+    LTEXT           "射出參數/",-1,236,0,43,8,NOT WS_GROUP
+    LTEXT           "射出曲線",-1,256,9,33,8,NOT WS_GROUP
+    LTEXT           "日期時間",-1,182,6,33,8,NOT WS_GROUP
+END
+
+NEW_MACHINE_NOTIFY_DIALOG DIALOG DISCARDABLE  0, 0, 199, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Machine Notification"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,74,67,50,14
+    LTEXT           "These won't be visible in any currently running programs until you restart the True-Trak 2020 software.",
+                    IDC_STATIC,31,27,148,26
+    LTEXT           "Note:",IDC_STATIC,9,17,18,8
+    LTEXT           "You have created one or more new machines.",IDC_STATIC,
+                    31,17,146,8
+END
+
+RESTORE_DIALOG DIALOG DISCARDABLE  0, 0, 301, 147
+STYLE WS_CHILD
+FONT 12, "PMingLiU"
+BEGIN
+    GROUPBOX        "回存",IDC_STATIC,9,11,103,117,WS_GROUP
+    LTEXT           "機號",IDC_STATIC,116,14,31,9
+    LTEXT           "鑄件型號",IDC_STATIC,152,14,33,10
+    LTEXT           "射出參數",IDC_STATIC,186,14,37,9
+    LTEXT           "射出曲線",IDC_STATIC,222,15,33,9
+    PUSHBUTTON      "開始",IDOK,125,127,50,14,BS_CENTER
+    CONTROL         "鑄件設定資料",TR_SETUPS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,22,59,12
+    CONTROL         "廢品/停機時間",TR_SCRAP_DOWN_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,35,73,12
+    CONTROL         "射出曲線",TR_PROFILE_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,48,68,12
+    CONTROL         "射出參數",TR_PARAM_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,61,73,12
+    CONTROL         "警示數據",TR_ALARM_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,74,73,12
+    CONTROL         "SureTrak 程式+參數",TR_SURETRAK_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,87,90,12
+    PUSHBUTTON      "全選",TR_RESTORE_ALL_BUTTON,9,128,18,12,BS_CENTER
+    LISTBOX         TR_MACHINE_LISTBOX,116,24,31,66,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         TR_PART_LISTBOX,154,26,107,58,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "全選",TR_ALL_MACHINES_BUTTON,116,91,18,12,BS_CENTER
+    PUSHBUTTON      "讀入Zip檔案",TR_LOAD_ZIP_FILE_BUTTON,200,85,60,14,
+                    BS_CENTER
+    LISTBOX         TR_DEST_LISTBOX,265,24,26,74,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "回存的新機號",IDC_STATIC,257,4,34,17
+    CONTROL         "類比Sensor名單",TR_ANALOGS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,100,90,12
+    CONTROL         "FasTrak線路板名單",TR_BOARDS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,113,90,12
+END
+
+SAVING_PROGRESS DIALOG DISCARDABLE  0, 0, 98, 71
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "儲存..."
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "機號:",-1,0,3,35,8,NOT WS_GROUP
+    LTEXT           "鑄件:",-1,0,13,19,8,NOT WS_GROUP
+    LTEXT           "檔案:",-1,0,23,19,8,NOT WS_GROUP
+    LTEXT           "M01",SAVING_MACHINE_TEXT_BOX,41,3,22,10,NOT WS_GROUP
+    LTEXT           "VisiTrak",SAVING_PART_TEXT_BOX,41,13,55,10,NOT WS_GROUP
+    LTEXT           "Text1",SAVING_FILE_TEXT_BOX,41,23,65,10,NOT WS_GROUP
+    PUSHBUTTON      "停止",SAVING_CANCEL_BUTTON,22,47,50,14,BS_CENTER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "BACKUP_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 263
+        BOTTOMMARGIN, 171
+    END
+
+    "BACKUP_LIST_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    "CHOOSE_FUNCTION", DIALOG
+    BEGIN
+        RIGHTMARGIN, 212
+        BOTTOMMARGIN, 46
+    END
+
+    "RESTORE_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 298
+        BOTTOMMARGIN, 145
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc3.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+BUPRES_ICON             ICON    DISCARDABLE     "bupres.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MUST_SELECT_FIRST_STRING "你必須先選擇一鑄件型號"
+    CANT_DO_THAT_STRING     "無法從命"
+    MAIN_CAPTION_STRING     "TrueTrak備份/回存"
+    EMPTY_DESTINATION_BOX   "你必須填上目標檔案途徑"
+    DIR_CREATE_FAIL         "無法建立目標檔案的資料夾"
+    COMPUTER_DIR_CREATE_FAIL "無法建立電腦檔案的資料夾."
+    BACKUP_DATA_STRING      "備份鑄件設定資料和射出資料"
+    BACKUP_LIST_DATA_STRING "根據備份名單檔案來備份"
+    RESTORE_DATA_STRING     "回存鑄件設定資料和射出資料"
+    DELETE_DATA_STRING      "清除或重新編號射出資料"
+    DIRECTORY_NOT_EXIST_STRING "檔案的資料夾不存在"
+    NOTE_STRING             "附註"
+    NO_MEMORY_STRING        "電腦記憶體用盡"
+    SAVELIST_STRING         "儲存名單已建立"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    THREAD_CREATE_FAIL      "無法建立Thread"
+    NO_DISK_IN_DRIVE_STRING "磁碟機內無磁碟"
+    TRY_AGAIN_STRING        "再嘗試?"
+    NO_MACHINE_STRING       "沒機號: 請先用機號.編輯器建立機號"
+    NOTHING_TO_DO_STRING    "你尚未選擇任何指令"
+    NEED_ZIP_NAME_STRING    "你必須提供 ZIP檔案的名稱."
+    NO_ZIP_DIR_STRING       "無法建立Zip檔案的資料夾."
+    EVENT_FAIL_STRING       "無法建立waitfor event"
+    SEMAPHOR_FAIL_STRING    "無法擁有機器semaphor db"
+    DELETING_STRING         "清除中..."
+    BACKING_UP_STRING       "拷貝儲存中..."
+    RESTORING_STRING        "回存中..."
+    RENUMBERING_STRING      "重新編號中..."
+    MACHINE_ON_OTHER_STRING "此機號已在其他電腦中."
+    MUST_RESTORE_THERE_STRING "你必須在那電腦才能回存所須資料."
+    WILL_RESTOR_CURRENT_STRING "你即將回存現行鑄件型號資料在本機號!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MONITOR_OFF_STRING      "監測功能應該暫停.  你要繼續回存鑄件型號資料嗎?"
+    CANT_LOAD_MACHINE_STRING "原始機號資料無法裝載!"
+    ZIP_FILES_STRING        "Zip檔案"
+    CHOOSE_ZIP_FILE_STRING  "選擇要回存的Zip檔案"
+    ADRIVE_SUBDIR_STRING    "無法儲存到 A 磁碟機的次-檔案資料夾"
+    ZIP_OK_QUESTION_STRING  "你要用固定的備份檔案的資料夾.?"
+    DEST_NOT_FOUND_STRING   "目標機號不存在"
+    NOT_ON_WS0_STRING       "你不能在WS0上建立機號"
+    NOT_VISIBLE_STRING      "你必須從新起始plot 程式才能見到這些新機號"
+    NEW_MACHINES_STRING     "新機號已建立"
+    NO_SAVE_TO_BACKUPDIR_STRING "無法儲存到 \\V5\\BACKUP檔案"
+    NO_EXES_DIR_FOUND_STRING "\\EXES 檔案資料夾不存在"
+    PURGE_SHOT_DATA_STRING  "Purge Shot Data"
+    PURGE_N_PARTS_STRING    "Purge more than one part?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    PURGING_STRING          "Purging..."
+    NO_ZIP_FILE_STRING      "No Zip file was created"
+    UNABLE_TO_BACKUP_STRING "Unable to backup data"
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

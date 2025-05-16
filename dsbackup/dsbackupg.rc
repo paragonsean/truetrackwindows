@@ -1,0 +1,328 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcg.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MAINDIALOG DIALOGEX 0, 0, 227, 242
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_DLGMODALFRAME
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Zip nach jedem",ZIP_COUNT_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,51,36,62,12
+    EDITTEXT        ZIP_COUNT_EBOX,113,36,36,12,ES_RIGHT
+    CONTROL         "Zip täglich um",ZIP_TIME_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,51,56,68,12
+    PUSHBUTTON      "Zip-Datei jetzt erstellen",ZIP_NOW_BUTTON,72,222,84,14,
+                    BS_CENTER
+    LTEXT           "Schuss",-1,151,38,24,8,NOT WS_GROUP
+    GROUPBOX        "Status",-1,3,192,220,23,WS_GROUP
+    CTEXT           "Auf Aktualisierung warten...",DS_STATUS_TBOX,7,202,208,
+                    10,NOT WS_GROUP
+    LISTBOX         ZIP_COUNT_LISTBOX,23,112,176,86,LBS_SORT | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Maschine",-1,24,100,32,8,NOT WS_GROUP
+    LTEXT           "Gussteil",-1,63,100,28,8,NOT WS_GROUP
+    LTEXT           "Profilzahl",-1,95,100,24,8,NOT WS_GROUP
+    LTEXT           "Letzter Schuss-Zeitpunkt",-1,128,100,85,8,NOT WS_GROUP
+    EDITTEXT        TIME_1_EBOX,117,56,28,12
+    EDITTEXT        TIME_2_EBOX,117,68,28,12
+    EDITTEXT        TIME_3_EBOX,117,80,28,12
+    RTEXT           "2037",K_FREE_TBOX,110,8,24,8,NOT WS_GROUP
+    LTEXT           "Verfügbarer Speicher",-1,43,8,77,8,NOT WS_GROUP
+    LTEXT           "Megabyte",-1,138,8,32,8,NOT WS_GROUP
+    CONTROL         "",-1,"Static",SS_ETCHEDFRAME,42,4,140,16
+    CTEXT           "Datenträger voll",DISK_FULL_TBOX,82,24,60,10,NOT 
+                    WS_VISIBLE | NOT WS_GROUP
+    CONTROL         "Keine Ausfallzeit- Daten zur Zip-Datei",
+                    IGNORE_DOWNTIME_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,168,60,56,36
+END
+
+SAVE_OPTIONS DIALOG DISCARDABLE  0, 0, 327, 204
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Schusspeichervorgaben zur Datenarchivierung"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Parameters",IDC_STATIC,4,96,156,81
+    GROUPBOX        "Profiles",IDC_STATIC,166,96,156,81
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,171,109,64,62
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,8,109,64,62
+    CONTROL         "Alle aufnehm",PARM_ACQUIRE_ALL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,114,61,12
+    CONTROL         "Keine aufnehm.",PARM_ACQUIRE_NONE,"Button",
+                    BS_AUTORADIOBUTTON,11,127,63,12
+    CONTROL         "Zeitsprung",PARM_TIME_SKIP,"Button",BS_AUTORADIOBUTTON,
+                    11,141,52,12
+    CONTROL         "Schussprung",PARM_SKIP_COUNT,"Button",
+                    BS_AUTORADIOBUTTON,11,155,58,12
+    LTEXT           "Anz. aufnehm",PARM_ACQUIRE_LABEL,110,112,47,8,NOT 
+                    WS_GROUP
+    LTEXT           "Sprungzeit",PARM_SKIP_LABEL,110,135,45,8,NOT WS_GROUP
+    EDITTEXT        PARM_ACQUIRE_EBOX,74,110,33,10,WS_GROUP
+    EDITTEXT        PARM_SKIP_EBOX,74,133,33,11
+    CONTROL         "Alle aufnehm.",PROF_ACQUIRE_ALL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,175,113,59,12
+    CONTROL         "Keine aufnehm",PROF_ACQUIRE_NONE,"Button",
+                    BS_AUTORADIOBUTTON,175,127,57,12
+    CONTROL         "Zeitsprung",PROF_TIME_SKIP,"Button",BS_AUTORADIOBUTTON,
+                    175,141,52,12
+    CONTROL         "Schussprung",PROF_SKIP_COUNT,"Button",
+                    BS_AUTORADIOBUTTON,175,155,57,12
+    LTEXT           "Anz. aufnehm",PROF_ACQUIRE_LABEL,273,112,47,8,NOT 
+                    WS_GROUP
+    LTEXT           "Sprungzeit",PROF_SKIP_LABEL,273,135,46,8,NOT WS_GROUP
+    EDITTEXT        PROF_ACQUIRE_EBOX,237,110,33,11,WS_GROUP
+    EDITTEXT        PROF_SKIP_EBOX,237,133,33,11
+    PUSHBUTTON      "Änderungen speichern",SAVE_CHANGES_BUTTON,117,186,77,14
+    LTEXT           "Maschine",IDC_STATIC,34,18,29,8
+    LTEXT           "Aufnehmen",IDC_STATIC,118,18,37,8
+    CTEXT           "Parameter",IDC_STATIC,72,7,94,9,SS_SUNKEN
+    LTEXT           "Auslassen",IDC_STATIC,71,18,39,8
+    LTEXT           "Aufnehmen",IDC_STATIC,229,18,44,8
+    CTEXT           "Profile",IDC_STATIC,180,7,96,9,SS_SUNKEN
+    LTEXT           "Auslassen",IDC_STATIC,181,18,35,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,90,328,1
+    LISTBOX         MACHINE_LISTBOX,32,28,256,60,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+GLOBAL_FILE_SETTINGS_DIALOG DIALOG DISCARDABLE  0, 0, 315, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Vorgaben für Datenarchiv"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Datei für Datennetz-Schussvorgaben",IDC_STATIC,5,5,118,
+                    8
+    LTEXT           "Dateiname:",IDC_STATIC,20,23,37,8
+    EDITTEXT        NET_SHOT_PARAM_FILE_EBOX,57,22,232,11,ES_AUTOHSCROLL
+    LTEXT           "Datensatzformat:",IDC_STATIC,6,39,54,8
+    EDITTEXT        NET_SHOT_PARAM_FORMAT_EBOX,57,38,232,11,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,60,293,1
+    CONTROL         "Unterschiedlliche Vorgaben für jede Maschine anwenden",
+                    MACHINE_BASED_ZIP_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,4,65,108,17
+    LTEXT           "Maschine",IDC_STATIC,6,84,32,8
+    LISTBOX         MACHINE_LISTBOX,0,93,40,53,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Zip-Dateien",IDC_STATIC,131,67,38,8
+    RTEXT           "Teilwegebniss-Datei",IDC_STATIC,28,100,75,8,NOT 
+                    WS_GROUP
+    EDITTEXT        PART_PATH_EBOX,120,98,187,12,ES_AUTOHSCROLL
+    RTEXT           "Maschinergebnis-Datei",IDC_STATIC,41,116,73,8
+    EDITTEXT        MACHINE_PATH_EBOX,119,113,188,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Änderungen speichern",IDOK,132,134,85,14
+END
+
+PART_SAVE_ERROR_DIALOG DIALOG DISCARDABLE  0, 0, 403, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Unfähig Zip-Datei zu erstellen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Schließen",IDOK,226,90,50,14
+    LTEXT           "Statisch",PSERROR_CMD_TBOX,0,12,403,33
+    LTEXT           "Befehl",IDC_STATIC,0,2,21,8
+    LTEXT           "Absicherungs-Verzeichnis",IDC_STATIC,2,50,82,8
+    LTEXT           "Statisch",PSERROR_BACKUP_PATH_TBOX,1,62,398,22
+    PUSHBUTTON      "Speicher zu Logdatei",SAVE_TO_LOG_PB,5,84,77,24
+    EDITTEXT        LOG_FILE_EBOX,88,90,108,14,ES_AUTOHSCROLL
+    LTEXT           "PKZip.exe nicht auffindbar",NO_PKZIP_TBOX,286,90,87,8,
+                    NOT WS_VISIBLE
+END
+
+ABOUT_DIALOG DIALOG DISCARDABLE  0, 0, 140, 50
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Datenarchiv-Absicherung"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Version 2.1",-1,44,10,50,8,NOT WS_GROUP
+    DEFPUSHBUTTON   "Schließen",IDCANCEL,47,29,44,14,BS_CENTER
+END
+
+MACHINE_LIST_DIALOG DIALOG DISCARDABLE  0, 0, 301, 322
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Auflistung der Maschinen am Datennetz (lokale Kopien ausgenommen)"
+
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         MACHINE_LIST_LB,0,10,300,311,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Maschine",MACHINE_NAME_STATIC,0,1,32,8
+    LTEXT           "Rechner",COMPUTER_NAME_STATIC,51,1,28,8
+    LTEXT           "Verzeichnis",COMPUTER_DIR_STATIC,100,2,37,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Display Machine and Computer List", MACHINE_LIST_MENU
+        MENUITEM "&Minimize",                   MINIMIZE_MENU
+        MENUITEM "E&xit",                       EXIT_MENU
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Shot Save Configuration",    SAVE_CONFIG_MENU
+        MENUITEM "&Global File Settings",       GLOBAL_FILE_SETTINGS_MENU
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                HELP_MENU
+        MENUITEM "&About",                      ABOUT_MENU
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrcg.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+DATA_SERVER_ICON        ICON    DISCARDABLE     "DsBackup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "GLOBAL_FILE_SETTINGS_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    "PART_SAVE_ERROR_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 396
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAILSLOT_EVENT_FAIL_STRING "Fehler: Erstellen von Mailslot-Ereignis."
+    MAILSLOT_WAIT_FAIL_STRING "Fehler bei WaitForSingleObject in MAIL"
+    CREATE_FAILED_STRING    "Fehler beim Einrichten"
+    MAILSLOT_THREAD_STRING  "Mailslot-Teilprogramm "
+    MAILSLOT_STRING         "Mailslot"
+    UNABLE_TO_CONTINUE_STRING 
+                            "Daten-Archivar-Sicherung: Fortfahren nicht möglich."
+    BACKUP_NOT_FOUND_STRING "Verzeichnis zur Absicherung nicht auffindbar"
+    ADD_BUP_FAILED_STRING   "Unfähig Rechnernamen zur Absicherung hinzuzufügen"
+    DIR_CREATE_FAIL         "Fehler beim Einrichten von Verzeichnis"
+    CANT_DO_THAT_STRING     "Nicht durchführbar."
+    ZIP_COMPLETE_STRING     "Komprimierung beendet (Zip)"
+    MACHINE_LABEL_STRING    "Maschine"
+    PART_LABEL_STRING       "Gussteil"
+    SHOT_LABEL_STRING       "Schuss"
+    ZIP_COUNT_LABEL_STRING  "Impulse Komprimieren (Zip)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SECONDS_ABREVIATION_STRING "Sek."
+    ALL_STRING              "Alle"
+    SHOTS_LABEL_STRING      "Schüsse"
+    SKIP_TIME_STRING        "Sekunden ausblenden"
+    SKIP_COUNT_STRING       "Impuls ausblenden"
+    CANT_GET_SEMAPHORE_STRING "Unfähig Semaphore zu erhalten"
+    MAZ_ZIP_ERROR_STRING    "Fehler beim Komprimieren von Maschinendaten"
+    PAZ_ZIP_ERROR_STRING    "Fehler beim Komprimieren von Teildaten"
+    NO_MACHINES_FOUND_STRING "Keine Maschinen gefunden"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

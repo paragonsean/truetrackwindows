@@ -1,0 +1,194 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MY_ICON                 ICON    DISCARDABLE     "jeditres.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open Controls",              OPEN_CONTROLS_CHOICE
+        MENUITEM "S&ave Controls",              SAVE_CONTROLS_CHOICE
+        MENUITEM "E&xit",                       EXIT_CHOICE
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Create",                     CREATE_CHOICE
+        MENUITEM "&Delete",                     DELETE_CHOICE
+        MENUITEM "&Left Align",                 LEFT_ALIGN_CHOICE
+        MENUITEM "&Stack",                      STACK_WINDOWS_CHOICE
+        MENUITEM "Same Si&ze",                  SAME_SIZE_CHOICE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Refresh",                    REFRESH_CHOICE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+SET_RECT_SIZE_DIALOG DIALOG DISCARDABLE  0, 0, 138, 109
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Set Rectangle Size"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        RECT_X_EBOX,25,0,36,10
+    EDITTEXT        RECT_Y_EBOX,25,12,36,10
+    EDITTEXT        RECT_W_EBOX,25,24,36,10
+    EDITTEXT        RECT_H_EBOX,25,36,36,10
+    LTEXT           "X",IDC_STATIC,10,2,8,8,NOT WS_GROUP
+    LTEXT           "Y",IDC_STATIC,10,14,8,8,NOT WS_GROUP
+    LTEXT           "Width",IDC_STATIC,2,26,20,8,NOT WS_GROUP
+    LTEXT           "Height",IDC_STATIC,0,38,22,8,NOT WS_GROUP
+    CONTROL         "Background",ISBACKGROUND_XBOX,"Button",BS_AUTOCHECKBOX,
+                    0,48,60,10
+    EDITTEXT        TEXT_EBOX,0,80,136,12
+    PUSHBUTTON      "Ok",IDOK,15,95,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,69,95,50,14
+    CONTROL         "Border",BORDER_RADIO,"Button",BS_AUTOCHECKBOX,65,1,37,
+                    10
+    CONTROL         "Filled",FILLED_RADIO,"Button",BS_AUTOCHECKBOX,65,12,32,
+                    10
+    LTEXT           "ID",IDC_STATIC,65,24,10,8,NOT WS_GROUP
+    EDITTEXT        ID_EBOX,76,24,22,10
+    CONTROL         "Text",TEXT_RADIO,"Button",BS_AUTOCHECKBOX,104,0,30,10
+    CONTROL         "Vctr",VERTICAL_CTR_XBOX,"Button",BS_AUTOCHECKBOX,104,10,
+                    30,10
+    CONTROL         "Hctr",HORIZONTAL_CTR_XBOX,"Button",BS_AUTOCHECKBOX,104,
+                    21,30,10
+    CONTROL         "Bar",BAR_TYPE_XBOX,"Button",BS_AUTOCHECKBOX,104,32,30,
+                    10
+    CONTROL         "R",RIGHT_JUSTIFY_XBOX,"Button",BS_AUTOCHECKBOX,104,43,
+                    30,10
+    PUSHBUTTON      "Font",CHOOSE_FONT_BUTTON,65,40,30,12
+    PUSHBUTTON      "Background Color",CHOOSE_COLOR_BUTTON,65,53,65,12
+    CONTROL         "Sizing Border",WINDOW_BORDER_RADIO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,65,67,64,10
+END
+
+SET_MS_SIZE_DIALOG DIALOG DISCARDABLE  0, 0, 138, 109
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Set MS Control Size"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        RECT_X_EBOX,25,0,36,10
+    EDITTEXT        RECT_Y_EBOX,25,12,36,10
+    EDITTEXT        RECT_W_EBOX,25,24,36,10
+    EDITTEXT        RECT_H_EBOX,25,36,36,10
+    LTEXT           "X",IDC_STATIC,10,2,8,8,NOT WS_GROUP
+    LTEXT           "Y",IDC_STATIC,10,14,8,8,NOT WS_GROUP
+    LTEXT           "Width",IDC_STATIC,2,26,20,8,NOT WS_GROUP
+    LTEXT           "Height",IDC_STATIC,0,38,22,8,NOT WS_GROUP
+    EDITTEXT        TEXT_EBOX,0,80,136,12
+    PUSHBUTTON      "Ok",IDOK,15,95,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,69,95,50,14
+    LTEXT           "ID",IDC_STATIC,65,24,10,8,NOT WS_GROUP
+    EDITTEXT        ID_EBOX,76,24,22,10
+    CONTROL         "Top",TOP_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP |
+                    WS_TABSTOP,63,0,25,10
+    CONTROL         "VCtr",VCTR_RADIO,"Button",BS_AUTORADIOBUTTON,88,0,25,10
+    CONTROL         "Btm",BOTTOM_RADIO,"Button",BS_AUTORADIOBUTTON,113,0,25,
+                    10
+    CONTROL         "L",LEFT_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP |
+                    WS_TABSTOP,63,12,25,10
+    CONTROL         "C",HCTR_RADIO,"Button",BS_AUTORADIOBUTTON,88,12,25,10
+    CONTROL         "R",RIGHT_RADIO,"Button",BS_AUTORADIOBUTTON,113,12,25,10
+    PUSHBUTTON      "Font",CHOOSE_FONT_BUTTON,65,40,30,12,WS_GROUP
+    CONTROL         "Sizing Border",WINDOW_BORDER_RADIO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,65,67,64,10
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Visi-Trak Worldwide, LLC"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

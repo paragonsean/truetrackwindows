@@ -1,0 +1,360 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcj.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+BOARDS_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 376, 268
+STYLE WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "名称",-1,10,0,30,8,NOT WS_GROUP
+    LTEXT           "ディレクトリ",-1,68,0,42,8,NOT WS_GROUP
+    LTEXT           "このコンピュータは",-1,209,34,70,8,NOT WS_GROUP
+    LTEXT           "ボード番号：",-1,9,83,28,17,NOT WS_GROUP
+    LTEXT           "ボードアドレス：",-1,40,83,31,17,NOT WS_GROUP
+    CTEXT           "ボード型：",-1,102,83,35,17,NOT WS_GROUP
+    LTEXT           "時計速度（Mhz）",-1,141,83,31,16,NOT WS_GROUP
+    LTEXT           "機番号",-1,10,170,29,12,NOT WS_GROUP
+    LTEXT           "ボード番号：",-1,45,169,29,17,NOT WS_GROUP
+    LTEXT           "FasTrakのマルチプレックスチャンネル",-1,80,169,68,17,
+                    NOT WS_GROUP
+    LTEXT           "ボード番号：",-1,176,108,49,9,NOT WS_GROUP
+    CONTROL         "ボードアドレス：",-1,"Static",SS_LEFTNOWORDWRAP,176,124,
+                    55,8
+    LTEXT           "ボード型：",-1,176,138,43,9,NOT WS_GROUP
+    LTEXT           "クロックスピード：",-1,177,151,69,9,NOT WS_GROUP
+    LTEXT           "Mhz",-1,300,152,19,8,NOT WS_GROUP
+    LTEXT           "ボード番号：",-1,162,210,48,9,NOT WS_GROUP
+    LTEXT           "マルチプレックスチャンネル：",-1,161,223,52,21,NOT 
+                    WS_GROUP
+    LISTBOX         COMPUTER_LISTBOX,9,8,191,67,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "???",THIS_COMPUTER_TBOX,281,34,17,8,NOT WS_GROUP
+    LISTBOX         BOARD_LISTBOX,9,102,160,63,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "1",BOARD_RADIO_1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,230,107,18,12
+    CONTROL         "2",BOARD_RADIO_2,"Button",BS_AUTORADIOBUTTON,248,107,18,
+                    12
+    CONTROL         "3",BOARD_RADIO_3,"Button",BS_AUTORADIOBUTTON,266,107,18,
+                    12
+    CONTROL         "4",BOARD_RADIO_4,"Button",BS_AUTORADIOBUTTON,284,107,18,
+                    12
+    CONTROL         "5",BOARD_RADIO_5,"Button",BS_AUTORADIOBUTTON,302,107,18,
+                    12
+    CONTROL         "6",BOARD_RADIO_6,"Button",BS_AUTORADIOBUTTON,320,107,18,
+                    12
+    CONTROL         "7",BOARD_RADIO_7,"Button",BS_AUTORADIOBUTTON,338,107,18,
+                    12
+    CONTROL         "8",BOARD_RADIO_8,"Button",BS_AUTORADIOBUTTON,356,107,18,
+                    12
+    EDITTEXT        BOARD_ADDRESS_EDITBOX,232,123,38,12,WS_GROUP
+    CONTROL         "UpDown2",BOARD_ADDRESS_UPDOWN,"msctls_updown32",
+                    UDS_ARROWKEYS,269,121,11,15
+    CONTROL         "単体",SINGLE_BOARD_TYPE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,230,137,36,12
+    CONTROL         "マルチプレックス",MUX_BOARD_TYPE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,269,137,45,12
+    CONTROL         "FasTrak2",FTII_BOARD_TYPE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,318,135,45,12
+    CONTROL         "4",MHZ_4_BUTTON,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,247,150,23,12
+    CONTROL         "12",MHZ_12_BUTTON,"Button",BS_AUTORADIOBUTTON,270,150,
+                    23,12
+    LISTBOX         MACHINE_LISTBOX,9,186,148,67,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "1",MACHINE_BOARD_RADIO_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,216,209,18,12
+    CONTROL         "2",MACHINE_BOARD_RADIO_2,"Button",BS_AUTORADIOBUTTON,
+                    234,209,18,12
+    CONTROL         "3",MACHINE_BOARD_RADIO_3,"Button",BS_AUTORADIOBUTTON,
+                    252,209,18,12
+    CONTROL         "4",MACHINE_BOARD_RADIO_4,"Button",BS_AUTORADIOBUTTON,
+                    270,209,18,12
+    CONTROL         "5",MACHINE_BOARD_RADIO_5,"Button",BS_AUTORADIOBUTTON,
+                    288,209,18,12
+    CONTROL         "6",MACHINE_BOARD_RADIO_6,"Button",BS_AUTORADIOBUTTON,
+                    306,209,18,12
+    CONTROL         "7",MACHINE_BOARD_RADIO_7,"Button",BS_AUTORADIOBUTTON,
+                    324,209,18,12
+    CONTROL         "8",MACHINE_BOARD_RADIO_8,"Button",BS_AUTORADIOBUTTON,
+                    342,209,18,12
+    CONTROL         "1",MACHINE_MUX_RADIO_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,216,229,18,12
+    CONTROL         "2",MACHINE_MUX_RADIO_2,"Button",BS_AUTORADIOBUTTON,234,
+                    229,18,12
+    CONTROL         "3",MACHINE_MUX_RADIO_3,"Button",BS_AUTORADIOBUTTON,252,
+                    229,18,12
+    CONTROL         "4",MACHINE_MUX_RADIO_4,"Button",BS_AUTORADIOBUTTON,270,
+                    229,18,12
+    CONTROL         "5",MACHINE_MUX_RADIO_5,"Button",BS_AUTORADIOBUTTON,288,
+                    229,18,12
+    CONTROL         "6",MACHINE_MUX_RADIO_6,"Button",BS_AUTORADIOBUTTON,306,
+                    229,18,12
+    CONTROL         "7",MACHINE_MUX_RADIO_7,"Button",BS_AUTORADIOBUTTON,324,
+                    229,18,12
+    CONTROL         "8",MACHINE_MUX_RADIO_8,"Button",BS_AUTORADIOBUTTON,342,
+                    229,18,12
+    PUSHBUTTON      "上書き保存",IDOK,163,249,55,16,BS_CENTER | WS_GROUP
+    CONTROL         "",-1,"Static",SS_GRAYFRAME,0,73,376,1
+    CONTROL         "",-1,"Static",SS_GRAYFRAME,0,165,376,1
+    CTEXT           "コンピュータ",-1,198,1,47,8,NOT WS_GROUP
+    CTEXT           "このコンピュータに機番は",-1,150,167,104,8,NOT WS_GROUP
+    CTEXT           "そのコンピュータにボードは",-1,158,75,101,8,NOT 
+                    WS_GROUP
+    PUSHBUTTON      "新",NEW_BOARD_BUTTON,288,78,40,12,BS_CENTER | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "削除",DELETE_BOARD_BUTTON,331,78,40,12,BS_CENTER | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "新",NEW_COMPUTER_BUTTON,286,2,40,12,BS_CENTER | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "削除",DELETE_COMPUTER_BUTTON,329,2,40,12,BS_CENTER | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "&Edit",EDIT_COMPUTER_BUTTON,329,16,40,12,WS_DISABLED
+    EDITTEXT        TCP_ADDR_EBOX,205,147,86,12,ES_AUTOHSCROLL
+    EDITTEXT        TCP_PORT_EBOX,311,147,43,12,ES_AUTOHSCROLL
+    LTEXT           "Address",TCP_ADDR_TXT,177,149,26,8
+    LTEXT           "Port",TCP_PORT_TXT,295,150,14,8
+END
+
+NO_COMPUTER_BOARDS_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 362, 231
+STYLE WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "C01",THIS_COMPUTER_TBOX,232,2,19,8,NOT WS_GROUP
+    LTEXT           "ボード番号：",-1,10,17,27,17,NOT WS_GROUP
+    LTEXT           "ボードアドレス：",-1,42,17,30,17,NOT WS_GROUP
+    CTEXT           "ボード型：",-1,76,17,29,17,NOT WS_GROUP
+    LTEXT           "時計速度（Mhz）",-1,118,17,35,16,NOT WS_GROUP
+    CONTROL         "機番号",-1,"Static",SS_LEFTNOWORDWRAP,10,123,29,11
+    LTEXT           "ボード番号：",-1,45,121,29,17,NOT WS_GROUP
+    LTEXT           "FasTrakのマルチプレックスチャンネル",-1,80,121,70,17,
+                    NOT WS_GROUP
+    LTEXT           "ボード番号：",-1,162,42,50,9,NOT WS_GROUP
+    LTEXT           "ボードアドレス：",-1,162,57,54,9,NOT WS_GROUP
+    LTEXT           "ボード型：",-1,162,71,52,9,NOT WS_GROUP
+    CONTROL         "クロックスピード：",-1,"Static",SS_LEFTNOWORDWRAP,164,
+                    84,65,9
+    LTEXT           "Mhz",-1,286,86,19,8,NOT WS_GROUP
+    LTEXT           "ボード番号：",-1,162,162,50,9,NOT WS_GROUP
+    LTEXT           "マルチプレックスチャンネル：",-1,157,175,52,19,NOT 
+                    WS_GROUP
+    LISTBOX         BOARD_LISTBOX,9,36,148,63,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "1",BOARD_RADIO_1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,216,41,18,12
+    CONTROL         "2",BOARD_RADIO_2,"Button",BS_AUTORADIOBUTTON,234,41,18,
+                    12
+    CONTROL         "3",BOARD_RADIO_3,"Button",BS_AUTORADIOBUTTON,252,41,18,
+                    12
+    CONTROL         "4",BOARD_RADIO_4,"Button",BS_AUTORADIOBUTTON,270,41,18,
+                    12
+    CONTROL         "5",BOARD_RADIO_5,"Button",BS_AUTORADIOBUTTON,288,41,18,
+                    12
+    CONTROL         "6",BOARD_RADIO_6,"Button",BS_AUTORADIOBUTTON,306,41,18,
+                    12
+    CONTROL         "7",BOARD_RADIO_7,"Button",BS_AUTORADIOBUTTON,324,41,18,
+                    12
+    CONTROL         "8",BOARD_RADIO_8,"Button",BS_AUTORADIOBUTTON,342,41,18,
+                    12
+    EDITTEXT        BOARD_ADDRESS_EDITBOX,218,57,38,12,WS_GROUP
+    CONTROL         "UpDown2",BOARD_ADDRESS_UPDOWN,"msctls_updown32",
+                    UDS_ARROWKEYS,255,55,11,15
+    CONTROL         "単体",SINGLE_BOARD_TYPE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,216,71,36,12
+    CONTROL         "マルチプレックス",MUX_BOARD_TYPE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,255,71,45,12
+    CONTROL         "4",MHZ_4_BUTTON,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,233,84,23,12
+    CONTROL         "12",MHZ_12_BUTTON,"Button",BS_AUTORADIOBUTTON,256,84,23,
+                    12
+    LISTBOX         MACHINE_LISTBOX,6,138,148,67,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "1",MACHINE_BOARD_RADIO_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,216,161,18,12
+    CONTROL         "2",MACHINE_BOARD_RADIO_2,"Button",BS_AUTORADIOBUTTON,
+                    234,161,18,12
+    CONTROL         "3",MACHINE_BOARD_RADIO_3,"Button",BS_AUTORADIOBUTTON,
+                    252,161,18,12
+    CONTROL         "4",MACHINE_BOARD_RADIO_4,"Button",BS_AUTORADIOBUTTON,
+                    270,161,18,12
+    CONTROL         "5",MACHINE_BOARD_RADIO_5,"Button",BS_AUTORADIOBUTTON,
+                    288,161,18,12
+    CONTROL         "6",MACHINE_BOARD_RADIO_6,"Button",BS_AUTORADIOBUTTON,
+                    306,161,18,12
+    CONTROL         "7",MACHINE_BOARD_RADIO_7,"Button",BS_AUTORADIOBUTTON,
+                    324,161,18,12
+    CONTROL         "8",MACHINE_BOARD_RADIO_8,"Button",BS_AUTORADIOBUTTON,
+                    342,161,18,12
+    CONTROL         "1",MACHINE_MUX_RADIO_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,216,181,18,12
+    CONTROL         "2",MACHINE_MUX_RADIO_2,"Button",BS_AUTORADIOBUTTON,234,
+                    181,18,12
+    CONTROL         "3",MACHINE_MUX_RADIO_3,"Button",BS_AUTORADIOBUTTON,252,
+                    181,18,12
+    CONTROL         "4",MACHINE_MUX_RADIO_4,"Button",BS_AUTORADIOBUTTON,270,
+                    181,18,12
+    CONTROL         "5",MACHINE_MUX_RADIO_5,"Button",BS_AUTORADIOBUTTON,288,
+                    181,18,12
+    CONTROL         "6",MACHINE_MUX_RADIO_6,"Button",BS_AUTORADIOBUTTON,306,
+                    181,18,12
+    CONTROL         "7",MACHINE_MUX_RADIO_7,"Button",BS_AUTORADIOBUTTON,324,
+                    181,18,12
+    CONTROL         "8",MACHINE_MUX_RADIO_8,"Button",BS_AUTORADIOBUTTON,342,
+                    181,18,12
+    PUSHBUTTON      "上書き保存",IDOK,156,208,55,16,BS_CENTER | WS_GROUP
+    CONTROL         "",-1,"Static",SS_GRAYFRAME,0,107,368,1
+    CTEXT           "このコンピュータに機番は",-1,162,112,104,8,NOT WS_GROUP
+    CTEXT           "ボードがそのコンピュータには",-1,116,2,109,8,NOT 
+                    WS_GROUP
+    PUSHBUTTON      "新",NEW_BOARD_BUTTON,277,3,40,12,BS_CENTER | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "削除",DELETE_BOARD_BUTTON,320,3,40,12,BS_CENTER | NOT 
+                    WS_TABSTOP
+END
+
+ADD_COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 181, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Computers"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "Add",IDOK,38,196,50,14
+    LISTBOX         ADD_COMPUTER_LB,7,26,108,164,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "Choose the Computers to Add from the Following List",
+                    IDC_STATIC,4,4,103,19,NOT WS_GROUP
+    LTEXT           "Hold down the Ctrl key to select more than one. \n\nClick and drag for a range.",
+                    IDC_STATIC,123,54,53,55
+    LTEXT           "Added computers will not be visible until the TrueTrak programs are restarted.",
+                    IDC_STATIC,124,129,47,59
+END
+
+EDIT_COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 114, 31
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Computer Name"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,62,9,37,14
+    EDITTEXT        COMPUTER_NAME_EBOX,13,10,38,12,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+V5SETUPS_ICON           ICON    DISCARDABLE     "v5setups.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrcj.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SINGLE_BOARD_STRING     "単体"
+    MULTIPLEX_BOARD_STRING  "マルチプレックス"
+    FTII_BOARD_STRING       "FasTrak2"
+    UNKNOWN_BOARD_STRING    "不明です"
+    NO_DELETE_THIS_COMPUTER_STRING 
+                            "現在使っているコンピュータを取り除く事はできません"
+    UNABLE_TO_COMPLY_STRING "実施することが出来ません"
+    DELETE_COMPUTER_STRING  "コンピュータを削除します"
+    NO_DELETE_ONLY_COMPUTER_STRING "コンピュータだけを取り除く事はできません"
+    NO_CREATE_DIR_STRING    "ヂレクトリが新設される事が出来ません"
+    NO_DEL_COMPUTER_DIR_STRING "ディレクトリの削除はできません"
+    MAIN_WINDOW_TITLE       "FasTrakのボード設定"
+    ERROR_GETTING_DIR_STRING "ディレクトリ名の受け取りエラー"
+    MUST_CHANGE_COMPUTER_STRING "名称とディレクトリを変更して下さい"
+    NO_CREATE_COMPUTER_STRING "コンピュータの創設はできません"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NO_EMPTY_COMPUTER_STRING "名前もディレクトリも既に登録済みです"
+    ONLY_EIGHT_BOARDS_STRING "ボードは８枚以上使えません"
+    NO_CREATE_BOARD_STRING  "他のボードの追加はできません"
+    USED_BOARD_ADDRESS_STRING "このアドレスはすでに使用されています"
+    NO_ADDRESS_CHANGE_STRING "ボードアドレスの変更はできません"
+    NO_OTHER_COMPUTERS_STRING "No other computers found on the network"
+    ADDING_STRING           "Adding "
+    V5_DIR_NOT_FOUND_STRING "V5 Directory not found"
+    NO_EDIT_THIS_COMPUTER_STRING "You cannot edit THIS computer"
+    RENAME_BEFORE_SAVING_STRING "You should rename these before saving"
+    SAME_NAME_STRING        "You have one or more computers with the same name!"
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

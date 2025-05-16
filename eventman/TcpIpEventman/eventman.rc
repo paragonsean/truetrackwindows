@@ -1,0 +1,242 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MAINDIALOG DIALOG DISCARDABLE  0, 0, 180, 121
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CONTEXTHELP | WS_CHILD | WS_VISIBLE
+FONT 8, "Lucida Sans Unicode"
+BEGIN
+    LISTBOX         101,0,0,180,121,LBS_USETABSTOPS | WS_VSCROLL |
+                    WS_TABSTOP
+END
+
+EXIT_DIALOG DIALOG DISCARDABLE  5, 10, 163, 55
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,28,36,47,12,BS_CENTER
+    PUSHBUTTON      "Cancel",IDCANCEL,88,36,47,12,BS_CENTER
+    CTEXT           "Continue?",-1,51,23,60,8,NOT WS_GROUP
+    CTEXT           "Exiting will SHUT DOWN all Visi-Trak programs",-1,40,2,
+                    83,16,NOT WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Minimize",                   107
+        MENUITEM "E&xit",                       108
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "View &DDE Events",            203
+        MENUITEM "View &VisiTrak Events",       205
+        MENUITEM "&Clear Events",               204
+        MENUITEM "&Status",                     206
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                901
+        MENUITEM SEPARATOR
+        MENUITEM "&About",                      903
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+EVENTMAN_ICON           ICON    DISCARDABLE     "eventman.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    SHUT_DOWN_ALL_STRING    "Exiting will shut down all VISITRAK programs"
+    CONTINUE_STRING         "Continue?"
+    UNABLE_TO_CONTINUE_STRING "Eventman: Unable to Continue"
+    MAIL_MONITOR_EVENT_FAIL_STRING "Failed to create Board Monitor event"
+    MAIL_MONITOR_WAIT_FAIL_STRING "Failure of WaitForSingleObject in MAIL"
+    CREATE_FAILED_STRING    "Create Failed"
+    MAILSLOT_THREAD_STRING  "Mailslot Thread"
+    MAILSLOT_STRING         "Mailslot"
+    MAIN_WINDOW_TITLE_STRING "Event Manager"
+    BAD_DATA_SERVER_STRING  "Data Server Name Error"
+    DS_CONNECT_FAIL_STRING  "Unable to connect to Data Server"
+    NEW_COMPUTER_STRING     "New Computer"
+    NEW_DATA_SERVER_STRING  "New Data Server"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexican) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MAINDIALOG DIALOG DISCARDABLE  0, 0, 180, 121
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CONTEXTHELP | WS_CHILD | WS_VISIBLE
+FONT 8, "Lucida Sans Unicode"
+BEGIN
+    LISTBOX         101,0,0,180,121,LBS_USETABSTOPS | WS_VSCROLL |
+                    WS_TABSTOP
+END
+
+EXIT_DIALOG DIALOG DISCARDABLE  5, 10, 163, 55
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,28,36,47,12,BS_CENTER
+    PUSHBUTTON      "Cancel",IDCANCEL,88,36,47,12,BS_CENTER
+    CTEXT           "Continue?",-1,51,23,60,8,NOT WS_GROUP
+    CTEXT           "Exiting will SHUT DOWN all Visi-Trak programs",-1,40,2,
+                    83,16,NOT WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Minimize",                   107
+        MENUITEM "E&xit",                       108
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "View &DDE Events",            203
+        MENUITEM "View &VisiTrak Events",       205
+        MENUITEM "&Clear Events",               204
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                901
+        MENUITEM SEPARATOR
+        MENUITEM "&About",                      903
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    SHUT_DOWN_ALL_STRING    "Exiting will shut down all VISITRAK programs"
+    CONTINUE_STRING         "Continue?"
+    UNABLE_TO_CONTINUE_STRING "Eventman: Unable to Continue"
+    MAIL_MONITOR_EVENT_FAIL_STRING "Failed to create Board Monitor event"
+    MAIL_MONITOR_WAIT_FAIL_STRING "Failure of WaitForSingleObject in MAIL"
+    CREATE_FAILED_STRING    "Create Failed"
+    MAILSLOT_THREAD_STRING  "Mailslot Thread"
+    MAILSLOT_STRING         "Mailslot"
+    MAIN_WINDOW_TITLE_STRING "Event Manager"
+    BAD_DATA_SERVER_STRING  "Data Server Name Error"
+    DS_CONNECT_FAIL_STRING  "Unable to connect to Data Server"
+    NEW_COMPUTER_STRING     "New Computer"
+    NEW_DATA_SERVER_STRING  "New Data Server"
+END
+
+#endif    // Spanish (Mexican) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

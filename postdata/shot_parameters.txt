@@ -1,0 +1,16 @@
+<parameter ParameterID="Machine Name" CurrentValueType="2"/>
+<parameter ParameterID="Part Name" CurrentValueType="2"/>
+<parameter ParameterID="Velocity_Pos" Units="in/s" CurrentValueType="1"/>
+<parameter ParameterID="Velocity_Time" Units="in/s" CurrentValueType="1"/>
+<parameter ParameterID="Analog0_Pos" Units="psi" CurrentValueType="1"/>
+<parameter ParameterID="Analog0_Time" Units="psi" CurrentValueType="1"/>
+<parameter ParameterID="Analog1_Pos" Units="psi" CurrentValueType="1"/>
+<parameter ParameterID="Analog1_Time" Units="psi" CurrentValueType="1"/>
+<parameter ParameterID="Analog2_Pos" Units="volts" CurrentValueType="1"/>
+<parameter ParameterID="Analog2_Time" Units="volts" CurrentValueType="1"/>
+<parameter ParameterID="Analog3_Pos" Units="volts" CurrentValueType="1"/>
+<parameter ParameterID="Analog3_Time" Units="volts" CurrentValueType="1"/>
+<parameter ParameterID="Time_Pos" Units="ms" CurrentValueType="1"/>
+<parameter ParameterID="Position_Time" Units="ms" CurrentValueType="1"/>
+<parameter ParameterID="PosInc" Units="in" CurrentValueType="1" CurrentValue="0.2" Precision="3"/>
+<parameter ParameterID="TimeInc" Units="ms" CurrentValueType="1" CurrentValue="1" Precision="3"/>

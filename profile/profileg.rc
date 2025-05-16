@@ -1,0 +1,1555 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcg.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+#include "colordlg.h"
+#include "dlgs.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ABOUT_DIALOG DIALOG DISCARDABLE  0, 0, 147, 75
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,48,52,50,14,BS_CENTER
+    CTEXT           "True-Trak  2020 ",-1,43,7,60,8,NOT WS_GROUP
+    CTEXT           "Prozess-Überwachung ",-1,27,20,92,8,NOT WS_GROUP
+    RTEXT           "Version",-1,38,34,32,8,NOT WS_GROUP
+    LTEXT           "5.08",ABOUT_VERSION_TEXTBOX,75,34,36,8,NOT WS_GROUP
+END
+
+ALARM_SUMMARY_DIALOG DIALOGEX 0, 0, 371, 242
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_DLGMODALFRAME
+CAPTION "Alarmüberblick"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         ALARM_SUMMARY_LISTBOX,12,39,252,170,LBS_USETABSTOPS | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL
+    LTEXT           "Parameter",-1,23,27,36,8,NOT WS_GROUP
+    CTEXT           "Alarm: unter",ALARM_LOW_TITLE_TBOX,89,19,32,18,NOT 
+                    WS_GROUP
+    CTEXT           "Anzahl unter",-1,129,19,32,18,NOT WS_GROUP
+    CTEXT           "Alarm: über",ALARM_HIGH_TITLE_TBOX,167,19,32,18,NOT 
+                    WS_GROUP
+    CTEXT           "Anzahl über",-1,211,19,32,18,NOT WS_GROUP
+    GROUPBOX        "Menge",-1,278,9,80,48,WS_GROUP
+    GROUPBOX        "Zeitspanne",-1,278,67,80,60,WS_GROUP
+    GROUPBOX        "Alarmkategorie",-1,278,136,80,53,WS_GROUP
+    CONTROL         "Prozent",PERCENT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,294,24,44,12
+    CONTROL         "Impuls",COUNT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,37,44,12
+    CONTROL         "Schichten",BY_SHIFT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,294,83,44,12
+    CONTROL         "Tage",BY_DAY_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,95,44,12
+    CONTROL         "Alles",ALL_DATA_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,107,28,12
+    CONTROL         "Warnung",WARNING_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,294,152,44,12
+    CONTROL         "Alarm",ALARM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,165,44,12
+    PUSHBUTTON      "&Vorherige Schicht",PREV_BUTTON,286,200,64,14,BS_CENTER | 
+                    WS_GROUP
+    PUSHBUTTON      "&Nächste Schicht",NEXT_BUTTON,286,219,64,14,BS_CENTER
+    RTEXT           "Schüsse gesamt:",-1,14,214,59,8,NOT WS_GROUP
+    LTEXT           "543",ALARM_TOTAL_SHOTS_TBOX,78,214,36,8,NOT WS_GROUP
+    RTEXT           "Alarmschüsse gesamt",ALARM_OUT_TITLE_TBOX,142,214,70,8,
+                    NOT WS_GROUP
+    LTEXT           "10%",ALARM_OUT_TBOX,216,214,28,8,NOT WS_GROUP
+    LTEXT           "M02",ALARM_MACHINE_TBOX,32,2,24,8,NOT WS_GROUP
+    LTEXT           "VISITRAK",ALARM_PART_TBOX,72,2,44,8,NOT WS_GROUP
+    LTEXT           "10/27/97",ALARM_DATE_TBOX,122,2,40,8,NOT WS_GROUP
+    LTEXT           "Schicht 2",ALARM_SHIFT_TBOX,174,2,40,8,NOT WS_GROUP
+END
+
+CHOOSE_PARAMETER_LIST DIALOG DISCARDABLE  0, 0, 240, 175
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Parameter für Eckkästchen wählen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,95,156,50,14
+    LISTBOX         101,6,20,114,136,WS_VSCROLL | WS_TABSTOP
+    LISTBOX         102,122,20,114,136,WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Anzuzeigende Parameter ",-1,6,8,114,10,SS_SUNKEN
+    CTEXT           "Verfügbare Parameter",-1,122,8,114,10,SS_SUNKEN
+END
+
+CHOOSE_DOWNTIME_MACHINE_DIALOG DIALOG DISCARDABLE  6, 15, 151, 95
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Maschine für Ausfallzeit wählen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         DOWNTIME_MACHINE_LISTBOX,4,15,142,70,LBS_SORT | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Schließen",IDOK,58,78,35,14
+    LTEXT           "Maschine",-1,5,4,31,9
+    LTEXT           "Letztes Ausfallereignis",DOWNTIME_MACHINE_DATE_TBOX,49,
+                    4,84,9
+END
+
+CSV_SHOT_FILE_DIALOG DIALOG DISCARDABLE  6, 15, 205, 41
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "CSV-Datei speichern"
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        CSV_SHOT_FILE_EBOX,50,4,152,12,WS_GROUP
+    DEFPUSHBUTTON   "Speichern",IDOK,33,23,35,14
+    LTEXT           "Dateiname",IDC_STATIC,5,4,37,9
+    PUSHBUTTON      "Abbrechen",IDCANCEL,80,22,35,14
+    CONTROL         "Ausgangsimpulse",SAVE_RAW_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,138,21,63,10
+END
+
+CHOOSE_PART DIALOG DISCARDABLE  6, 15, 165, 95
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Gussteil wählen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         112,4,15,28,58,LBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         121,36,15,127,58,LBS_SORT | LBS_USETABSTOPS | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,63,77,35,14
+    LTEXT           "Maschine",-1,2,4,31,9
+    LTEXT           "Gussteil",-1,38,4,25,10
+    LTEXT           "Param",-1,101,4,24,9
+    LTEXT           "Schüsse",-1,128,4,32,9
+END
+
+CHOOSE_SHOTS DIALOG DISCARDABLE  5, 18, 239, 101
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Schüsse wählen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,99,87,50,14,NOT WS_TABSTOP
+    LISTBOX         101,125,11,112,66,LBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         102,126,11,112,79,LBS_SORT | LBS_MULTIPLESEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         CS_MACHINE_LISTBOX,3,11,28,80,LBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         CS_PART_LISTBOX,33,11,90,79,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Schussnummer        Datum",-1,127,1,112,9
+    LTEXT           "Maschine",-1,2,1,31,9
+    LTEXT           "Gussteil",-1,37,1,26,9
+    LTEXT           "Schüsse",-1,86,1,31,9
+END
+
+SMALL_CHOOSE_SHOTS DIALOG DISCARDABLE  0, 0, 222, 74
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Schussnummer   Datum",-1,114,0,112,9
+    LTEXT           "Maschine",-1,0,0,34,9
+    LTEXT           "Gussteil",-1,37,0,27,9
+    LTEXT           "Schüsse",-1,75,0,29,9
+    PUSHBUTTON      "",IDOK,83,68,50,6,NOT WS_TABSTOP
+    LISTBOX         101,108,8,112,62,LBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         102,108,8,112,61,LBS_SORT | LBS_MULTIPLESEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         CS_MACHINE_LISTBOX,0,8,28,62,LBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         CS_PART_LISTBOX,30,8,78,62,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+CHOOSE_MASTER_TRACE DIALOG DISCARDABLE  0, 0, 141, 131
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Aktuelle Hauptkennlinie wählen"
+FONT 9, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,42,114,50,14,BS_CENTER
+    COMBOBOX        101,15,23,104,90,CBS_SORT | WS_TABSTOP
+    CTEXT           "Aktuelle Hauptkennlinie ",-1,16,8,104,10,SS_SUNKEN | 
+                    NOT WS_GROUP
+END
+
+CHOOSECOLOR DIALOG DISCARDABLE  2, 0, 150, 124
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Farbe"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "Grundfarben",-1,4,4,140,9
+    CONTROL         "",COLOR_BOX1,"Static",SS_SIMPLE | WS_GROUP | WS_TABSTOP,
+                    6,15,140,86
+    DEFPUSHBUTTON   "OK",IDOK,22,106,44,14,WS_GROUP
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,78,106,44,14,WS_GROUP
+    LTEXT           "&Custom Colors:",-1,4,1666,140,9
+    CONTROL         "",COLOR_CUSTOM1,"Static",SS_SIMPLE | WS_GROUP,4,166,140,
+                    28
+    PUSHBUTTON      "&Spezielle Farben festlegen...",COLOR_MIX,4,150,140,14,
+                    WS_GROUP
+    PUSHBUTTON      "&Help",1038,100,166,44,14,WS_GROUP
+    CONTROL         "",COLOR_RAINBOW,"Static",SS_BLACKFRAME,152,4,118,116
+    CONTROL         "",COLOR_LUMSCROLL,"Static",SS_SIMPLE,280,4,8,116
+    CONTROL         "",COLOR_CURRENT,"Static",SS_BLACKFRAME,152,124,40,26
+    PUSHBUTTON      "&o",COLOR_SOLID,300,200,4,14,WS_GROUP
+    RTEXT           "Farbe",-1,152,151,20,9
+    LTEXT           "fest",-1,60,52,26,12
+    RTEXT           "&Färb:",COLOR_HUEACCEL,194,126,20,9
+    EDITTEXT        COLOR_HUE,216,124,18,12,WS_GROUP
+    RTEXT           "&Sat:",COLOR_SATACCEL,194,140,20,9
+    EDITTEXT        COLOR_SAT,216,138,18,12,WS_GROUP
+    RTEXT           "&Lum:",COLOR_LUMACCEL,194,154,20,9
+    EDITTEXT        COLOR_LUM,216,152,18,12,WS_GROUP
+    RTEXT           "&Rot:",COLOR_REDACCEL,243,126,24,9
+    EDITTEXT        COLOR_RED,269,124,18,12,WS_GROUP
+    RTEXT           "&Grün:",COLOR_GREENACCEL,243,140,24,9
+    EDITTEXT        COLOR_GREEN,269,138,18,12,WS_GROUP
+    RTEXT           "Blau",COLOR_BLUEACCEL,243,154,24,9
+    EDITTEXT        COLOR_BLUE,269,152,18,12,WS_GROUP
+    PUSHBUTTON      "Als Spezialfarbe hinzufügen",COLOR_ADD,152,166,142,14,
+                    WS_GROUP
+END
+
+COLOR_DEFINITION_DIALOG DIALOG DISCARDABLE  0, 0, 227, 242
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Anzeigefarben einrichten..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Änderungen &speichern",IDOK,18,225,78,14,BS_CENTER
+    PUSHBUTTON      "Auf Anfangsfarben &zurückstellen",IDCANCEL,105,225,109,
+                    14,BS_CENTER
+    LTEXT           "Zeitbasis",-1,130,34,41,8,NOT WS_GROUP
+    LTEXT           "Y-Position",-1,130,45,60,8,NOT WS_GROUP
+    LTEXT           "X-Position",-1,130,55,60,8,NOT WS_GROUP
+    LTEXT           "Vorschub",-1,130,65,60,8,NOT WS_GROUP
+    LTEXT           "Kopfdruck/Analog 1",-1,130,75,87,8,NOT WS_GROUP
+    LTEXT           "Stempeldruck/Analog 2",-1,130,85,80,8,NOT WS_GROUP
+    LTEXT           "Differential/Analog 3",-1,130,95,71,8,NOT WS_GROUP
+    LTEXT           "Analog 4",-1,130,105,60,8,NOT WS_GROUP
+    CONTROL         "",SCREEN_NORMAL_SQUARE_ONE,"Button",BS_OWNERDRAW,13,34,
+                    8,8
+    CONTROL         "",101,"Button",BS_OWNERDRAW,13,44,8,8
+    CONTROL         "",102,"Button",BS_OWNERDRAW,13,54,8,8
+    CONTROL         "",103,"Button",BS_OWNERDRAW,13,64,8,8
+    CONTROL         "",104,"Button",BS_OWNERDRAW,13,74,8,8
+    CONTROL         "",105,"Button",BS_OWNERDRAW,13,84,8,8
+    CONTROL         "",106,"Button",BS_OWNERDRAW,13,94,8,8
+    CONTROL         "",107,"Button",BS_OWNERDRAW,13,104,8,8
+    CONTROL         "",108,"Button",BS_OWNERDRAW,13,124,8,8
+    CONTROL         "",109,"Button",BS_OWNERDRAW,13,134,8,8
+    CONTROL         "",110,"Button",BS_OWNERDRAW,13,144,8,8
+    CONTROL         "",111,"Button",BS_OWNERDRAW,13,154,8,8
+    CONTROL         "",112,"Button",BS_OWNERDRAW,13,164,8,8
+    CONTROL         "",SCREEN_REF_SQUARE_ONE,"Button",BS_OWNERDRAW,41,34,8,8
+    CONTROL         "",121,"Button",BS_OWNERDRAW,41,44,8,8
+    CONTROL         "",122,"Button",BS_OWNERDRAW,41,54,8,8
+    CONTROL         "",123,"Button",BS_OWNERDRAW,41,64,8,8
+    CONTROL         "",124,"Button",BS_OWNERDRAW,41,74,8,8
+    CONTROL         "",125,"Button",BS_OWNERDRAW,41,84,8,8
+    CONTROL         "",126,"Button",BS_OWNERDRAW,41,94,8,8
+    CONTROL         "",127,"Button",BS_OWNERDRAW,41,104,8,8
+    CONTROL         "",PRINT_NORMAL_SQUARE_ONE,"Button",BS_OWNERDRAW,77,34,8,
+                    8
+    CONTROL         "",141,"Button",BS_OWNERDRAW,77,45,8,8
+    CONTROL         "",142,"Button",BS_OWNERDRAW,77,54,8,8
+    CONTROL         "",143,"Button",BS_OWNERDRAW,77,64,8,8
+    CONTROL         "",144,"Button",BS_OWNERDRAW,77,74,8,8
+    CONTROL         "",145,"Button",BS_OWNERDRAW,77,85,8,8
+    CONTROL         "",146,"Button",BS_OWNERDRAW,77,94,8,8
+    CONTROL         "",147,"Button",BS_OWNERDRAW,77,104,8,8
+    CONTROL         "",148,"Button",BS_OWNERDRAW,77,124,8,8
+    CONTROL         "",149,"Button",BS_OWNERDRAW,77,134,8,8
+    CONTROL         "",150,"Button",BS_OWNERDRAW,77,144,8,8
+    CONTROL         "",151,"Button",BS_OWNERDRAW,77,154,8,8
+    CONTROL         "",152,"Button",BS_OWNERDRAW,77,164,8,8
+    CONTROL         "",PRINT_REF_SQUARE_ONE,"Button",BS_OWNERDRAW,105,34,8,8
+    CONTROL         "",161,"Button",BS_OWNERDRAW,105,45,8,8
+    CONTROL         "",162,"Button",BS_OWNERDRAW,105,54,8,8
+    CONTROL         "",163,"Button",BS_OWNERDRAW,105,64,8,8
+    CONTROL         "",164,"Button",BS_OWNERDRAW,105,74,8,8
+    CONTROL         "",165,"Button",BS_OWNERDRAW,105,85,8,8
+    CONTROL         "",166,"Button",BS_OWNERDRAW,105,94,8,8
+    CONTROL         "",167,"Button",BS_OWNERDRAW,105,104,8,8
+    LTEXT           "Normal",-1,5,20,26,8,NOT WS_GROUP
+    LTEXT           "Bezug",-1,31,20,38,8,NOT WS_GROUP
+    LTEXT           "Normal",-1,69,21,26,8,NOT WS_GROUP
+    LTEXT           "Bezug",-1,95,21,38,8,NOT WS_GROUP
+    CTEXT           "Anzeigeseite",-1,14,9,45,8,NOT WS_GROUP
+    CTEXT           "Drucker",-1,81,9,31,8,NOT WS_GROUP
+    LTEXT           "Hintergrund",-1,130,124,46,8,NOT WS_GROUP
+    LTEXT           "Umrandung",-1,130,135,38,8,NOT WS_GROUP
+    LTEXT           "Rasterfeld",-1,130,145,34,8,NOT WS_GROUP
+    LTEXT           "Text",-1,130,154,19,8,NOT WS_GROUP
+    LTEXT           "Tendenz Hintergrund",-1,130,164,73,8,NOT WS_GROUP
+    CONTROL         "",ALARM_COLOR_SQUARE,"Button",BS_OWNERDRAW | BS_CENTER,
+                    13,178,8,8
+    CONTROL         "",WARNING_COLOR_SQUARE,"Button",BS_OWNERDRAW | 
+                    BS_CENTER,13,188,8,8
+    CONTROL         "",NO_ALARM_COLOR_SQUARE,"Button",BS_OWNERDRAW | 
+                    BS_CENTER,13,198,8,8
+    CONTROL         "",DIALOG_TEXT_COLOR_SQUARE,"Button",BS_OWNERDRAW | 
+                    BS_CENTER,13,208,8,8
+    LTEXT           "Alarmfarbe",-1,38,178,60,8,NOT WS_GROUP
+    LTEXT           "Warnfarbe",-1,38,188,48,8,NOT WS_GROUP
+    LTEXT           "Farbe ohne Alarmprotokolle ",-1,38,198,91,8,NOT 
+                    WS_GROUP
+    LTEXT           "Farbe ohne Alarmtexte",-1,38,208,75,8,NOT WS_GROUP
+END
+
+DISPLAY_CONFIGURATION DIALOG DISCARDABLE  0, 0, 369, 193
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Anzeigeeinstellungen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Kennlinien vor Aufprall",IDC_STATIC,6,35,89,108,
+                    WS_GROUP
+    GROUPBOX        "Kennlinien anzeigen als",103,6,6,171,24,WS_GROUP
+    PUSHBUTTON      "OK",IDOK,135,174,50,14,BS_CENTER
+    CONTROL         "Druck",PRESSURES_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,19,16,60,12
+    CONTROL         "Kontinuierliche Kanäle",CHANNELS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,82,16,84,12
+    CONTROL         "Kopfdruck",PRE_CHANNEL_1_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,44,79,12
+    CONTROL         "Stempeldruck",PRE_CHANNEL_2_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,56,79,12
+    CONTROL         "Differentialdruck",PRE_CHANNEL_3_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,68,79,12
+    CONTROL         "FasTrak Kanal 4",PRE_CHANNEL_4_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,80,79,12
+    GROUPBOX        "Kennlinien nach Aufprall",IDC_STATIC,99,35,89,108,
+                    WS_GROUP
+    CONTROL         "Kopfdruck",POST_CHANNEL_1_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,44,79,12
+    CONTROL         "Stempeldruck",POST_CHANNEL_2_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,105,56,79,12
+    CONTROL         "Differentialdruck",POST_CHANNEL_3_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,105,68,79,12
+    CONTROL         "FasTrak Kanal 4",POST_CHANNEL_4_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,105,80,79,12
+    PUSHBUTTON      "Alle",ALL_CHANNELS_BUTTON,166,144,22,10,BS_CENTER
+    CONTROL         "FasTrak Kanal 5",PRE_CHANNEL_5_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,92,79,12
+    CONTROL         "FasTrak Kanal 6",PRE_CHANNEL_6_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,104,79,12
+    CONTROL         "FasTrak Kanal 7",PRE_CHANNEL_7_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,116,79,12
+    CONTROL         "FasTrak Kanal 8",PRE_CHANNEL_8_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,128,79,12
+    CONTROL         "FasTrak Kanal 5",POST_CHANNEL_5_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,105,92,79,12
+    CONTROL         "FasTrak Kanal 6",POST_CHANNEL_6_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,105,104,79,12
+    CONTROL         "FasTrak Kanal 7",POST_CHANNEL_7_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,105,116,79,12
+    CONTROL         "FasTrak Kanal 8",POST_CHANNEL_8_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,105,128,79,12
+    CONTROL         "Stempeldruck",FIX_FTCHAN_1_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,200,32,78,12
+    CONTROL         "Kopfdruck",FIX_FTCHAN_2_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,200,44,78,12
+    CONTROL         "Differentialdruck",FIX_FTCHAN_3_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,200,56,78,12
+    CONTROL         "Vorschub",FIX_VELOCITY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,200,128,64,12
+    LTEXT           "Min",IDC_STATIC,278,20,32,8,NOT WS_GROUP
+    LTEXT           "Max",IDC_STATIC,318,20,25,8,NOT WS_GROUP
+    CTEXT           "Achsbegrenzung",IDC_STATIC,278,8,72,9,NOT WS_GROUP
+    LTEXT           "Feste Grenzwerte",IDC_STATIC,200,20,60,8,NOT WS_GROUP
+    CONTROL         "FasTrak Kanal 4",FIX_FTCHAN_4_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,200,68,78,12
+    CONTROL         "FasTrak Kanal 5",FIX_FTCHAN_5_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,200,80,78,12
+    CONTROL         "FasTrak Kanal 6",FIX_FTCHAN_6_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,200,92,78,12
+    CONTROL         "FasTrak Kanal 7",FIX_FTCHAN_7_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,200,104,78,12
+    CONTROL         "FasTrak Kanal 8",FIX_FTCHAN_8_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,200,116,78,12
+    EDITTEXT        MIN_FTCHAN_1_EBOX,278,32,32,12
+    EDITTEXT        MIN_FTCHAN_2_EBOX,278,44,32,12
+    EDITTEXT        MIN_FTCHAN_3_EBOX,278,56,32,12
+    EDITTEXT        MIN_FTCHAN_4_EBOX,278,68,32,12
+    EDITTEXT        MIN_FTCHAN_5_EBOX,278,80,32,12,WS_DISABLED
+    EDITTEXT        MIN_FTCHAN_6_EBOX,278,92,32,12,WS_DISABLED
+    EDITTEXT        MIN_FTCHAN_7_EBOX,278,104,32,12,WS_DISABLED
+    EDITTEXT        MIN_FTCHAN_8_EBOX,278,116,32,12,WS_DISABLED
+    EDITTEXT        MIN_VELOCITY_EBOX,278,128,32,12
+    EDITTEXT        MAX_FTCHAN_1_EBOX,318,32,32,12
+    EDITTEXT        MAX_FTCHAN_2_EBOX,318,44,32,12
+    EDITTEXT        MAX_FTCHAN_3_EBOX,318,56,32,12
+    EDITTEXT        MAX_FTCHAN_4_EBOX,318,68,32,12
+    EDITTEXT        MAX_FTCHAN_5_EBOX,318,80,32,12,WS_DISABLED
+    EDITTEXT        MAX_FTCHAN_6_EBOX,318,92,32,12,WS_DISABLED
+    EDITTEXT        MAX_FTCHAN_7_EBOX,318,104,32,12,WS_DISABLED
+    EDITTEXT        MAX_FTCHAN_8_EBOX,318,116,32,12,WS_DISABLED
+    EDITTEXT        MAX_VELOCITY_EBOX,318,128,32,12
+    EDITTEXT        SMOOTH_N_EBOX,261,151,20,12,ES_AUTOHSCROLL
+    EDITTEXT        SMOOTH_MULTIPLIER_EBOX,317,151,21,12,ES_AUTOHSCROLL
+    GROUPBOX        "Glätten",IDC_STATIC,198,142,168,47
+    LTEXT           "Anzahl der Punkte",IDC_STATIC,204,153,59,8
+    LTEXT           "Multipliknt",IDC_STATIC,285,153,32,8
+    EDITTEXT        CURVE_PEN_WIDTH_EBOX,9,150,22,12,ES_AUTOHSCROLL
+    LTEXT           "Kennlinienbreite",IDC_STATIC,35,152,51,8
+    CONTROL         "",SMOOTH_P1_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    234,178,8,8
+    CONTROL         "",SMOOTH_P2_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    248,178,8,8
+    CONTROL         "",SMOOTH_P3_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    262,178,8,8
+    CONTROL         "",SMOOTH_P4_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    276,178,8,8
+    CONTROL         "",SMOOTH_P5_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    290,178,8,8
+    CONTROL         "",SMOOTH_P6_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    304,178,8,8
+    CONTROL         "",SMOOTH_P7_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    318,178,8,8
+    CONTROL         "",SMOOTH_P8_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    332,178,8,8
+    CONTROL         "",SMOOTH_VELOCITY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,348,178,8,8
+    LTEXT           "Glätte",IDC_STATIC,204,178,20,8
+    CTEXT           "1",IDC_STATIC,234,167,8,8
+    LTEXT           "Kanal",IDC_STATIC,204,167,19,8
+    LTEXT           "Vel",IDC_STATIC,346,167,11,8
+    CTEXT           "2",IDC_STATIC,248,167,8,8
+    CTEXT           "3",IDC_STATIC,262,167,8,8
+    CTEXT           "4",IDC_STATIC,276,167,8,8
+    CTEXT           "5",IDC_STATIC,290,167,8,8
+    CTEXT           "6",IDC_STATIC,304,167,8,8
+    CTEXT           "7",IDC_STATIC,318,167,8,8
+    CTEXT           "8",IDC_STATIC,332,167,8,8
+    PUSHBUTTON      "Als Grundeinstellung speichern",
+                    SAVE_DEFAULT_DISPLAY_CONFIG_PB,0,173,72,20,BS_CENTER | 
+                    BS_MULTILINE
+END
+
+EDIT_OPERATORS_DIALOG DIALOGEX 0, 0, 364, 209
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Bedienpersonen ändern "
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",GRID_POSITION_BORDER,"Static",SS_ETCHEDFRAME,9,7,345,
+                    176
+    PUSHBUTTON      "Änderungen &speichern",EDITOP_SAVE_CHANGES_BUTTON,94,
+                    188,82,14,BS_CENTER
+    PUSHBUTTON      "&Einfügen",INSERT_OPERATOR_BUTTON,300,188,54,14,
+                    BS_CENTER
+    PUSHBUTTON      "&Löschen",DELETE_OPERATOR_BUTTON,9,188,54,14,BS_CENTER
+    PUSHBUTTON      "&Abbrechen",EDITOP_CANCEL_BUTTON,207,188,56,14,
+                    BS_CENTER
+END
+
+EDIT_PASSWORDS_DIALOG DIALOGEX 0, 0, 300, 191
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Kennworte bearbeiten "
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Änderungen speichern",IDOK,79,177,78,14
+    CONTROL         "Zu Netzwerk kopieren",COPY_TO_NETWORK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,213,181,86,10
+END
+
+EXPORT_SHOTS_DIALOG DIALOG DISCARDABLE  0, 0, 245, 173
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Schussparameter exportieren"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Schussnummer   Datum",SHOT_TITLE_STATIC,8,2,114,9,NOT 
+                    WS_GROUP
+    LTEXT           "Parameter",PARAM_TITLE_STATIC,127,3,47,8,NOT WS_GROUP
+    LISTBOX         SHOT_LISTBOX,8,12,115,91,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Alle",ALL_SHOTS_BUTTON,8,103,50,11,BS_CENTER
+    LISTBOX         PARAM_NAME_LISTBOX,127,12,107,91,LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Alle",ALL_PARAMETERS_BUTTON,128,103,50,11,BS_CENTER
+    PUSHBUTTON      "&Export starten",IDOK,95,154,50,14,BS_CENTER
+    CONTROL         "In Zwischenablage kopieren",EXPORT_TO_CLIPBOARD_RADIO,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,7,122,105,10
+    CONTROL         "In CSV-Datei kopieren",EXPORT_CSV_FILE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,7,135,86,10
+    EDITTEXT        CSV_FILE_NAME_EBOX,95,134,139,12,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,4,118,236,32
+END
+
+INPUT_ERROR_DIALOG DIALOG DISCARDABLE  0, 0, 187, 56
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Eingabefehler"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,64,28,52,14,BS_CENTER
+    LTEXT           "Dieses Feld kann nicht mehr als ",-1,6,10,109,10
+    LTEXT           "12",INPUT_ERROR_MAX_CHARS_TBOX,114,10,16,8,NOT WS_GROUP
+    LTEXT           "Zeichen haben. ",-1,131,10,53,8,NOT WS_GROUP
+END
+
+KILL_ALARMSUM_DATA_DIALOG DIALOGEX 0, 0, 154, 49
+STYLE DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Beabsichtigt alle Alarm- Überblick-Daten zu löschen"
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Ja",IDOK,18,24,50,14,BS_CENTER
+    PUSHBUTTON      "&Nein",IDCANCEL,74,24,50,14,BS_CENTER
+    CTEXT           "Möchten Sie fortfahren?",ALARMSUM_KILL_TBOX,27,8,92,8,
+                    NOT WS_GROUP
+END
+
+LOAD_FROM_NETWORK_DIALOG DIALOG DISCARDABLE  0, 0, 162, 72
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 10, "MS Sans Serif"
+BEGIN
+    CTEXT           "Maschinen vom Datennetz laden...",-1,25,18,112,8,NOT 
+                    WS_GROUP
+    RTEXT           "Rechner",-1,44,40,38,8,NOT WS_GROUP
+    LTEXT           "???",NETWORK_COMPUTER_TBOX,86,40,16,8,NOT WS_GROUP
+END
+
+OPERATOR_SIGNON_DIALOG DIALOG DISCARDABLE  0, 0, 165, 109
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Bedienperson anmelden"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Bedienperson ",-1,45,5,60,8,NOT WS_GROUP
+    LTEXT           "Maschine",-1,2,5,31,9
+    LISTBOX         OPERATOR_MACHINE_LISTBOX,2,15,31,70,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Alle",ALL_OPERATOR_MACHINES_BUTTON,2,74,31,12,
+                    BS_CENTER
+    LISTBOX         OPERATOR_LISTBOX,44,15,100,70,WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,64,89,50,14,BS_CENTER
+    PUSHBUTTON      "&Edit",EDIT_OPERATORS_BUTTON,134,1,31,10,BS_CENTER | 
+                    WS_DISABLED | NOT WS_TABSTOP
+END
+
+PARAM_HISTORY_DIALOG DIALOG DISCARDABLE  0, 0, 209, 74
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "1",201,4,0,34,8
+    RTEXT           "50",202,164,0,39,8
+END
+
+PASSWORD_DIALOG DIALOGEX 0, 0, 240, 108
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Kennwortstufe festlegen"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,61,73,50,14,BS_CENTER
+    PUSHBUTTON      "Abbrechen",IDCANCEL,129,73,50,14,BS_CENTER
+    EDITTEXT        ENTER_PASSWORD_EBOX,83,36,132,12,ES_PASSWORD
+    PUSHBUTTON      "Kennworte bearbeiten ",EDIT_PASSWORDS_BUTTON,164,0,76,
+                    14,BS_CENTER
+    RTEXT           "Kennwort eingeben",-1,8,39,67,8,NOT WS_GROUP
+    LTEXT           "0",CURRENT_PASSWORD_LEVEL_TBOX,88,4,16,8,NOT WS_GROUP
+    RTEXT           "Jetzige Kennwortstufe",-1,4,4,80,8,NOT WS_GROUP
+    PUSHBUTTON      "Bearbeitungsoptionen",CO_OPTIONS_BUTTON,160,15,80,12,
+                    BS_CENTER
+END
+
+PRINT_MULTIPLE_SHOTS_DIALOG DIALOG DISCARDABLE  0, 0, 231, 110
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Mehrfache Schüsse ausdrucken"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Drucker starten",MP_OK_BUTTON,85,95,60,14,BS_CENTER
+    LISTBOX         MP_MACHINE_LISTBOX,2,12,28,80,LBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         MP_PART_LISTBOX,34,12,78,80,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         MP_SHOT_LISTBOX,116,12,112,80,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Schussnummer    Datum",-1,116,2,85,9
+    LTEXT           "Maschine",-1,2,2,31,9
+    LTEXT           "Gussteil",-1,35,2,28,9
+    LTEXT           "Schüsse",-1,75,2,30,9
+END
+
+REALTIME_MACHINE_LIST DIALOG DISCARDABLE  0, 0, 140, 153
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Maschinen für Echtzeit-Anzeige"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Maschine",-1,8,6,32,8,NOT WS_GROUP
+    LTEXT           "Anzeige",-1,48,6,28,8,NOT WS_GROUP
+    LTEXT           "Durch Anklicken wechseln ",-1,84,20,36,27,NOT WS_GROUP
+    LISTBOX         RT_MACHINE_LISTBOX,8,17,72,135,LBS_SORT | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "OK",IDOK,84,68,50,14,BS_CENTER
+    PUSHBUTTON      "&Alle",RT_DISPLAY_ALL_BUTTON,91,111,36,12,BS_CENTER
+    PUSHBUTTON      "&Keine",RT_DISPLAY_NONE_BUTTON,91,127,36,12,BS_CENTER
+END
+
+SHUT_DOWN_DIALOG DIALOG DISCARDABLE  0, 0, 216, 81
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Visi-Trak herunterfahren"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Alle Visi-Trak Programme herunterfahren",
+                    SHUT_DOWN_ALL_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,48,16,144,12
+    CONTROL         "Kurvenschreiber herunterfahren",SHUT_DOWN_PLOT_RADIO,
+                    "Button",BS_AUTORADIOBUTTON,48,32,119,12
+    PUSHBUTTON      "&Ja",IDOK,53,56,50,14,BS_CENTER | WS_GROUP
+    PUSHBUTTON      "&Nein",IDCANCEL,113,56,50,14,BS_CENTER
+END
+
+SMALL_ZOOM_BOX_DIALOG DIALOG DISCARDABLE  0, 0, 291, 41
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Wegstrecke ",IDC_STATIC,23,2,40,8,NOT WS_GROUP
+    LTEXT           "Zeitpunkt",IDC_STATIC,67,2,31,8,NOT WS_GROUP
+    LTEXT           "Vorschub",IDC_STATIC,102,2,31,8,NOT WS_GROUP
+    LTEXT           "Stempeldrck",CHAN_1_ZOOM_TITLE_TBOX,136,2,40,8,NOT 
+                    WS_GROUP
+    LTEXT           "Kopfdrck",CHAN_2_ZOOM_TITLE_TBOX,177,2,30,8,NOT 
+                    WS_GROUP
+    LTEXT           "Diff.-Druck",CHAN_3_ZOOM_TITLE_TBOX,217,1,35,8,NOT 
+                    WS_GROUP
+    LTEXT           "Kan 4",CHAN_4_ZOOM_TITLE_TBOX,251,2,20,8,NOT WS_GROUP
+    LTEXT           "Start",IDC_STATIC,4,13,18,9,NOT WS_GROUP
+    LTEXT           "Ende",IDC_STATIC,4,21,21,9,NOT WS_GROUP
+    LTEXT           "Delta",IDC_STATIC,4,29,20,9,NOT WS_GROUP
+    LTEXT           "0.00",110,36,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",111,36,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",112,36,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",120,69,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",121,69,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",122,69,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",130,107,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",131,107,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",132,107,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",140,147,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",141,147,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",142,147,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",150,186,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",151,186,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",152,186,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",160,219,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",161,219,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",162,219,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",170,252,14,30,9,NOT WS_GROUP
+    LTEXT           "0.00",171,252,22,30,9,NOT WS_GROUP
+    LTEXT           "0.00",172,252,30,30,9,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,27,11,
+                    257,30
+END
+
+TREND_CONFIG_DIALOG DIALOG DISCARDABLE  0, 0, 477, 159
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Einstellung der Tendenzgrafiken "
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Grafiktyp",IDC_STATIC,4,24,64,52,WS_GROUP
+    GROUPBOX        "Zeitspanne für Anzeige",IDC_STATIC,74,32,150,45
+    GROUPBOX        "X-Achse",IDC_STATIC,4,79,76,55
+    LTEXT           "Durchschnitt alle",IDC_STATIC,2,11,54,8,NOT WS_GROUP
+    LTEXT           "Punkte",IDC_STATIC,141,46,27,8,NOT WS_GROUP
+    EDITTEXT        N_TO_AVG_EBOX,57,10,20,10,WS_GROUP
+    CONTROL         "Schüsse",AVG_SHOTS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,83,6,40,12
+    CONTROL         "Min.",AVG_MINUTES_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,125,6,30,12
+    CONTROL         "Std.",AVG_HOURS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,158,6,27,12
+    CONTROL         "Schichtn",AVG_SHIFTS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,190,6,42,12
+    CONTROL         "Tage",AVG_DAYS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,83,17,32,12
+    CONTROL         "Wochen",AVG_WEEKS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,119,17,40,12
+    CONTROL         "Monate",AVG_MONTHS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,165,17,37,12
+    CONTROL         "Letzte",LAST_N_RANGE_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,78,44,32,12
+    CONTROL         "Schussbreich v.",SHOT_RANGE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,77,59,65,12
+    EDITTEXT        LAST_N_RANGE_EBOX,114,45,20,10,WS_GROUP
+    EDITTEXT        SHOT_RANGE_FROM_EBOX,146,60,28,10
+    LTEXT           "bis",IDC_STATIC,175,61,12,8,NOT WS_GROUP
+    EDITTEXT        SHOT_RANGE_TO_EBOX,190,60,28,10
+    CONTROL         "Schussnummer",SHOT_X_AXIS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,88,60,12
+    CONTROL         "Stunde und Tag",HOUR_DAY_X_AXIS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,12,99,65,12
+    CONTROL         "Schicht und Tag",SHIFT_DAY_X_AXIS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,12,110,66,12
+    CONTROL         "Tag und Monat",DAY_MONTH_X_AXIS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,12,121,64,12
+    CONTROL         "Tendenz",TREND_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,8,32,44,10
+    CONTROL         "X-Balken",XBAR_RADIO,"Button",BS_AUTORADIOBUTTON,8,42,
+                    56,10
+    CONTROL         "Bereich",RANGE_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,8,52,40,10
+    CONTROL         "Ablauf",HISTOGRAM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,8,62,48,10
+    CONTROL         "Alarmgrenze",ALARM_LIMITS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,87,84,60,12
+    CONTROL         "Warngrenze",WARNING_LIMITS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX,87,96,60,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,84,82,67,30
+    PUSHBUTTON      "Änderungen &speichern",TREND_CHART_SAVE_CHANGES_BUTTON,
+                    130,136,78,16,BS_CENTER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,80,4,152,26
+    LISTBOX         TREND_PARAMETER_LISTBOX,236,12,185,136,LBS_MULTIPLESEL | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Keines",NO_TREND_PARAMS_BUTTON,317,142,28,10,BS_CENTER
+    LTEXT           "Anzeige v. Parameter ",PARAM_COL_TBOX,238,2,74,10,
+                    SS_SUNKEN
+    LTEXT           "Minimum",MIN_COL_TBOX,319,2,31,10,SS_SUNKEN
+    LTEXT           "Maximum",MAX_COL_TBOX,356,2,31,10,SS_SUNKEN
+    LTEXT           "Nutzen",USE_COL_TBOX,394,2,26,10,SS_SUNKEN
+    EDITTEXT        PLOT_MAX_EBOX,426,30,40,10,ES_AUTOHSCROLL
+    EDITTEXT        PLOT_MIN_EBOX,426,55,40,10,ES_AUTOHSCROLL
+    CONTROL         "Grenzwerte?",USE_LIMITS_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,422,71,52,10
+    LTEXT           "Maximum",IDC_STATIC,426,20,30,8
+    LTEXT           "Minimum",IDC_STATIC,426,46,28,8
+    PUSHBUTTON      "Überblick- parameter wählen",CHOOSE_VISIBLE_PB,431,124,
+                    42,29,BS_MULTILINE
+END
+
+VIEW_PARAMETERS_DIALOG DIALOG DISCARDABLE  0, 0, 312, 258
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parameteranzeige"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Parameter",-1,5,12,37,10,NOT WS_GROUP
+    LISTBOX         101,3,22,303,233,LBS_OWNERDRAWFIXED | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "unter",-1,83,12,21,9,NOT WS_GROUP
+    LTEXT           "über",-1,123,12,20,9,NOT WS_GROUP
+    LTEXT           "unter",-1,163,12,19,9,NOT WS_GROUP
+    LTEXT           "über",-1,198,12,23,9,NOT WS_GROUP
+    LTEXT           "Wert",-1,235,12,24,9,NOT WS_GROUP
+    LTEXT           "Alarm",-1,181,4,24,10,NOT WS_GROUP
+    LTEXT           "Warnung",-1,95,4,32,10,NOT WS_GROUP
+END
+
+ZOOM_BOX_DIALOG DIALOG DISCARDABLE  0, 0, 288, 74
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Wegstreck",IDC_STATIC,23,8,35,9,NOT WS_GROUP
+    LTEXT           "Zeitpunkt",IDC_STATIC,67,8,30,9,NOT WS_GROUP
+    LTEXT           "Vorschub",IDC_STATIC,102,8,30,9,NOT WS_GROUP
+    LTEXT           "Stempeldrck",CHAN_1_ZOOM_TITLE_TBOX,136,8,41,9,NOT 
+                    WS_GROUP
+    LTEXT           "Kopfdruck",CHAN_2_ZOOM_TITLE_TBOX,170,8,36,9,NOT 
+                    WS_GROUP
+    LTEXT           "Diff-Druck",CHAN_3_ZOOM_TITLE_TBOX,211,8,33,8
+    LTEXT           "Chan 4",CHAN_4_ZOOM_TITLE_TBOX,251,8,24,8,NOT WS_GROUP
+    LTEXT           "Start",IDC_STATIC,4,25,20,9,NOT WS_GROUP
+    LTEXT           "Ende",IDC_STATIC,4,35,23,9,NOT WS_GROUP
+    LTEXT           "Delta",IDC_STATIC,4,45,20,9,NOT WS_GROUP
+    LTEXT           "0.00",110,36,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",111,36,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",112,36,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",120,69,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",121,69,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",122,69,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",130,107,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",131,107,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",132,107,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",140,147,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",141,147,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",142,147,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",150,186,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",151,186,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",152,186,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",160,219,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",161,219,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",162,219,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",170,252,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",171,252,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",172,252,45,30,9,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,29,20,
+                    258,38
+END
+
+EDIT_SHIFTS_DIALOG DIALOG DISCARDABLE  0, 0, 334, 172
+STYLE DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Schichten einrichten"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         SHIFT_LISTBOX,7,23,180,127,LBS_USETABSTOPS | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Sonntag",SUNDAY_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,209,45,43,10
+    CONTROL         "Montag",MONDAY_RADIO,"Button",BS_AUTORADIOBUTTON,209,56,
+                    39,10
+    CONTROL         "Dienstag",TUESDAY_RADIO,"Button",BS_AUTORADIOBUTTON,209,
+                    67,41,10
+    CONTROL         "Mittwoch",WEDNESDAY_RADIO,"Button",BS_AUTORADIOBUTTON,
+                    209,78,45,10
+    CONTROL         "Donnerstag",THURSDAY_RADIO,"Button",BS_AUTORADIOBUTTON,
+                    268,45,49,10
+    CONTROL         "Freitag",FRIDAY_RADIO,"Button",BS_AUTORADIOBUTTON,268,
+                    56,37,10
+    CONTROL         "Samstag",SATURDAY_RADIO,"Button",BS_AUTORADIOBUTTON,268,
+                    67,43,10
+    EDITTEXT        SHIFT_NAME_EBOX,205,113,15,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        SHIFT_HOUR_EBOX,236,113,15,14,ES_AUTOHSCROLL
+    EDITTEXT        SHIFT_MINUTE_EBOX,258,113,15,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Änderungen &speichern",SAVE_CHANGES_BUTTON,120,154,76,
+                    14,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "Neu",NEW_SHIFT_BUTTON,206,10,50,14,BS_CENTER | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Entfernen",REMOVE_SHIFT_BUTTON,260,10,50,14,BS_CENTER | 
+                    NOT WS_TABSTOP
+    GROUPBOX        "Tag der Woche",-1,198,33,123,60
+    LTEXT           "Schicht",-1,205,101,25,8
+    LTEXT           "Schichtanfang",-1,236,101,47,8
+    LTEXT           ":",-1,253,115,3,8
+    LTEXT           "Tag",-1,13,10,18,8
+    LTEXT           "Schicht",-1,42,10,27,8
+    LTEXT           "Tag der Woche",-1,85,10,51,8
+    LTEXT           "Anfangszeit",-1,144,10,44,8
+    PUSHBUTTON      "&Alle Tage wie diesen Tag einrichten.",
+                    COPY_THIS_DAY_BUTTON,201,134,122,11,BS_CENTER | NOT 
+                    WS_TABSTOP
+END
+
+EXPORT_ALARMS_DIALOG DIALOG DISCARDABLE  0, 0, 374, 223
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Daten für Alarmüberblick exportieren/löschen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         EXPORT_ALARMS_LISTBOX,8,28,355,177,LBS_USETABSTOPS | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Gewählten Bereich &Löschen ",DEL_ALARM_RANGE_BUTTON,68,
+                    202,101,14
+    PUSHBUTTON      "Zur &Zwischenablage kopieren",EXPORT_ALARM_RANGE_BUTTON,
+                    196,201,103,14
+    LTEXT           "Datum",IDC_STATIC,14,16,22,8
+    LTEXT           "Schicht",ALARMSUM_SHIFT_STATIC,52,16,25,8
+    LTEXT           "Parameter",ALARMSUM_PARAMETER_STATIC,80,16,33,8
+    LTEXT           "unter",LOW_WARNING_COUNT_STATIC,143,17,16,7
+    LTEXT           "über",HIGH_WARNING_COUNT_STATIC,176,17,15,8
+    LTEXT           "unter",LOW_ALARM_COUNT_STATIC,208,18,16,7
+    LTEXT           "über",HIGH_ALARM_COUNT_STATIC,240,18,15,8
+    LTEXT           "Warnungen gesamt",TOTAL_WARNINGS_STATIC,265,8,38,18
+    LTEXT           "Alarme gesamt",TOTAL_ALARMS_STATIC,307,8,24,19
+    LTEXT           "End Summe",TOTAL_ALARM_COUNT_STATIC,335,8,24,16
+    CTEXT           "Warnungen",IDC_STATIC,127,8,72,8
+    CTEXT           "Alarme",IDC_STATIC,206,8,56,8,NOT WS_GROUP
+END
+
+ALARM_LOG_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 286, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alarm-Protokoll-Einstellungen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Alarme speichern in Datei",ALARM_LOG_TO_FILE_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,8,96,10
+    CONTROL         "Alarme zum Drucker ausgeben",ALARM_LOG_TO_PRINTER_XBXO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,50,111,10
+    EDITTEXT        ALARM_LOG_FILE_EBOX,119,6,149,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Drucker &wählen...",CHOOSE_ALARM_LOG_PRINTER_BUTTON,28,
+                    63,63,11
+    LTEXT           "Epson LQ-570",ALARM_LOG_PRINTER_TBOX,129,50,144,11,
+                    WS_BORDER
+    PUSHBUTTON      "Änderungen &speichern",ALARM_LOG_SETUP_OK_BUTTON,114,80,
+                    83,14
+    PUSHBUTTON      "Datei wählen...",CHOOSE_ALARM_LOG_FILE_BUTTON,28,22,58,
+                    11
+    LTEXT           "Max Zeilen in Datei:",IDC_STATIC,93,24,64,8
+    EDITTEXT        ALARM_LOG_MAX_LINES_EBOX,162,22,40,12,ES_AUTOHSCROLL
+END
+
+DOWNTIME_ENTRY_DIALOG DIALOG DISCARDABLE  0, 0, 186, 231
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ausfallzeitkategorie und -Unterkategorie vorgeben"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        CAT_AND_SUBCAT_EBOX,10,28,56,14,ES_AUTOHSCROLL
+    LISTBOX         CAT_AND_SUBCAT_LB,0,44,183,185,LBS_SORT | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,72,29,50,14
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,128,29,50,14
+    RTEXT           "Ausfallzeit",IDC_STATIC,14,13,58,12,SS_CENTERIMAGE
+    LTEXT           "01/01/2002 00:00:00",EVENT_TIME_TBOX,75,13,107,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Maschine",IDC_STATIC,64,3,32,8
+    LTEXT           "M03",EVENT_MACHINE_TBOX,98,3,15,8
+END
+
+CO_OPTIONS_DIALOG DIALOGEX 0, 0, 451, 261
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Optionen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Teilbezogene Eckparameter und Tendenzgrafik nutzen",
+                    PART_BASED_DISPLAY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,2,0,126,18
+    CONTROL         "Pop-up-Dialogfeld für Ausfallzeit-nutzen",
+                    POPUP_DOWNTIME_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,2,19,139,10
+    CONTROL         "Ausdruck des aktuellen Profils durch Drücken der Drucktaste ",
+                    ENABLE_SNAPSHOT_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,2,30,123,18
+    CONTROL         "Standardmäßig Abfahren aller Programme",
+                    EXIT_ALL_DEFAULT_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,0,147,10
+    EDITTEXT        ALARM_ON_DOWN_WIRE_EBOX,142,11,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Alarm auf Abfahrausgang (0 für keines)",
+                    ALARM_ON_DOWN_WIRE_TBOX,161,13,124,10
+    CONTROL         "Alle Alarmschüsse speichern",SAVE_ALL_ALARM_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,149,24,105,10
+    CONTROL         "Zeitsperre von Ausfallzeit abziehen",SUB_TIMEOUT_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,303,0,129,10
+    EDITTEXT        MONITOR_WIRE_EBOX,296,11,15,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Überwachungsausgang (0 für keines)",MONITOR_WIRE_TBOX,
+                    315,13,120,10
+    CONTROL         "Überwachausg bei Abfahrt Nullstell",
+                    CLEAR_MONITOR_WIRE_ON_DOWN_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,303,26,130,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,50,451,1
+    CTEXT           "Einstellg mehrf. Ablaufliste ",IDC_STATIC,0,55,84,8,NOT 
+                    WS_GROUP
+    CONTROL         "Mehrf. Ablaufliste nutzen (Ersatz für Teil vorwärmen)",
+                    MULTIPART_RUNTIME_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,102,55,176,10
+    EDITTEXT        WIRE_1_MULTIPART_RUNTIME_EBOX,294,53,15,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "E/A 1",WIRE_1_TBOX,314,55,20,8
+    EDITTEXT        WIRE_2_MULTIPART_RUNTIME_EBOX,342,53,15,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "E/A 2",WIRE_2_TBOX,361,55,20,8
+    EDITTEXT        WIRE_3_MULTIPART_RUNTIME_EBOX,393,53,15,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "E/A 3",WIRE_3_TBOX,412,55,20,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,67,451,1
+    CTEXT           "Kennwortstufe ",IDC_STATIC,95,72,48,8,NOT WS_GROUP
+    GROUPBOX        "FasTrak- Kartenüberwachung",IDC_STATIC,0,95,233,57
+    EDITTEXT        READ_CURRENT_ANALOG_EBOX,13,107,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Wegstrecke einlesen/Analogwerte sichtbar auf d. Hauptmenü",
+                    READ_CURRENT_ANALOG_TBOX,33,109,196,8
+    EDITTEXT        SHOW_BOARD_MONITOR_LEVEL_EBOX,13,121,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "FasTrak-Kartenschnittst. sichtbar auf dem Hauptmenü",
+                    SHOW_BOARD_MONITOR_LEVEL_TBOX,33,123,170,8
+    EDITTEXT        IOEX4_GRAY_LEVEL_EBOX,13,136,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Opto-Test,  Portzugang für Befehle, usw.",
+                    IOEX4_GRAY_LEVEL_TBOX,31,138,129,8
+    GROUPBOX        "Sure-Trak Steuerungsschnittstelle",IDC_STATIC,1,156,232,
+                    56
+    CONTROL         "Sure-Trak-Steuerung vorh.",HAVE_SURETRAK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,166,99,10
+    CONTROL         "Ventiltestausg. nutzen",USE_VALVE_TEST_OUTPUT_XBOX,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,
+                    187,87,10
+    CONTROL         "Nullventilausg. nutzen",USE_NULL_VALVE_OUTPUT_XBOX,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,
+                    197,87,10
+    EDITTEXT        EDIT_CONTROL_PROGRAM_EBOX,108,166,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Steuerprog-Taste bearbeiten",EDIT_CONTROL_PROGRAM_TBOX,
+                    128,169,91,8
+    EDITTEXT        SERVICE_TOOLS_EBOX,108,179,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Dienstprogramm-Taste",SERVICE_TOOLS_TBOX,127,181,72,8
+    EDITTEXT        ST_EXIT_LEVEL_EBOX,108,192,15,12,ES_AUTOHSCROLL
+    LTEXT           "Menü verlassen",IDC_STATIC,127,195,51,8
+    EDITTEXT        PURGE_DOWNTIMES_EBOX,254,81,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Alarme und Ausfallzeiten löschen",PURGE_DOWNTIMES_TBOX,
+                    274,84,111,8
+    EDITTEXT        EDIT_OPERATORS_EBOX,254,95,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Bedienknöpfe bearbeiten",EDIT_OPERATORS_TBOX,274,98,80,
+                    8
+    GROUPBOX        "Gussteil-Einstellung",IDC_STATIC,241,115,205,97
+    EDITTEXT        CHANGE_PARAM_LEVEL_EBOX,252,124,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Parametereinstellungen ändern",CHANGE_PARAM_LEVEL_TBOX,
+                    272,126,98,8
+    EDITTEXT        OTHER_COMPUTER_EBOX,252,138,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Gussteil an anderem Rechner ändern",OTHER_COMPUTER_TBOX,
+                    272,140,118,8
+    EDITTEXT        OTHER_CURRENT_PART_EBOX,252,152,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Laufendes Gussteil an anderem Rechner ändern",
+                    OTHER_CURRENT_PART_TBOX,272,154,154,8
+    EDITTEXT        OTHER_SURETRAK_EBOX,252,166,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Sure-trak-Einstellungen an anderem Rechner ändern",
+                    OTHER_SURETRAK_TBOX,272,168,166,8
+    CONTROL         "Einrichtseite bei Teil-Einstellungen anzeigen",
+                    SHOW_SETUP_SHEET_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,258,182,150,10
+    EDITTEXT        EDIT_SETUP_SHEET_EBOX,252,195,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Einrichtseite bearbeit",EDIT_SETUP_SHEET_TBOX,271,197,
+                    66,8
+    EDITTEXT        VELOCITY_CHANGES_EBOX,345,195,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Vorschubänderungstaste",VELOCITY_CHANGES_TBOX,364,197,
+                    80,8
+    LTEXT           "Änderungen werden erst nach  Neustart der jeweiligen Programme effektiv.",
+                    IDC_STATIC,6,242,138,18
+    GROUPBOX        "Kurvenschreiberprogramm",IDC_STATIC,241,70,185,43
+    CONTROL         "Parameter mit Einstellungen ausdrucken",
+                    PRINT_PARAMETERS_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,303,38,143,10
+    CONTROL         "Von Ausfallzeit-Dialogfeld löschen ",
+                    CLEAR_FROM_POPUP_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,35,124,10
+    CONTROL         "Kein Datennetz",NO_NETWORK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,376,244,65,10
+    LTEXT           "Anzeigrenze für Eckparameter",IDC_STATIC,15,220,101,8
+    LTEXT           "Unter",IDC_STATIC,123,214,18,8
+    LTEXT           "Über",IDC_STATIC,124,224,16,8
+    CONTROL         "Alarm: unter",LOW_LIMIT_LOW_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,150,214,53,10
+    CONTROL         "Warn: unter ",LOW_LIMIT_LOW_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,215,214,55,10
+    CONTROL         "Warn: über",LOW_LIMIT_HIGH_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,280,214,51,10
+    CONTROL         "Alarm: über",LOW_LIMIT_HIGH_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,345,214,51,10
+    CONTROL         "Alarm: unter",HIGH_LIMIT_LOW_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,150,224,53,10
+    CONTROL         "Warn: unter ",HIGH_LIMIT_LOW_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,215,224,55,10
+    CONTROL         "Warn: über",HIGH_LIMIT_HIGH_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,280,224,51,10
+    CONTROL         "Alarm: über",HIGH_LIMIT_HIGH_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,345,224,51,10
+    DEFPUSHBUTTON   "Änderungen speichern",IDOK,151,241,79,14,WS_GROUP
+    PUSHBUTTON      "Abbrechen",IDCANCEL,235,240,50,14
+    CONTROL         "Kopiere zu Datennetz",COPY_TO_NETWORK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,288,243,84,10
+    GROUPBOX        "Nur FT2 ",IDC_STATIC,1,178,99,34
+    EDITTEXT        PASSWORD_LEVEL_TIMEOUT_EBOX,10,79,23,12,ES_AUTOHSCROLL
+    LTEXT           "Restore DEFAULT password after this many minutes.",
+                    PASSWORD_LEVEL_TIMEOUT_TBOX,38,81,168,8
+END
+
+MACHINE_LIST_DIALOG DIALOG DISCARDABLE  0, 0, 301, 322
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Auflistung von Maschinen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         MACHINE_LIST_LB,0,10,300,311,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Maschine",MACHINE_NAME_STATIC,0,1,32,8
+    LTEXT           "Rechner",COMPUTER_NAME_STATIC,51,1,28,8
+    LTEXT           "Verzeichnis",COMPUTER_DIR_STATIC,100,2,37,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "CHOOSE_PARAMETER_LIST", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 161
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+PROFILE_HOT_KEYS ACCELERATORS MOVEABLE PURE 
+BEGIN
+    VK_ESCAPE,      ESCAPE_KEY,             VIRTKEY 
+    VK_F5,          F5_KEY,                 VIRTKEY 
+    VK_F6,          F6_KEY,                 VIRTKEY 
+    VK_F7,          F7_KEY,                 VIRTKEY 
+    VK_F8,          F8_KEY,                 VIRTKEY 
+    VK_F9,          F9_KEY,                 VIRTKEY 
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrcg.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "#include ""colordlg.h""\r\n"
+    "#include ""dlgs.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+PROFILE                 ICON    DISCARDABLE     "profile.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    1                       "Parameter-Eckkästchen ist voll."
+    CANT_DO_THAT_STRING     "Nicht durchführbar."
+    3                       "Kopf"
+    4                       "Stempel "
+    5                       "Diff"
+    6                       "Abstand "
+    7                       "Wegstrecke "
+    8                       "Druck"
+    9                       "Temperatur"
+    10                      "Zeitdauer"
+    11                      "Zeitabschnitt "
+    12                      "Vorschub"
+    13                      "Volumen"
+    14                      "Fläche"
+    15                      "Nicht bekannt"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    16                      "Kan 1"
+    17                      "Kan 2"
+    18                      "Kan 3"
+    19                      "Kan 4"
+    20                      "Kopfdruck"
+    21                      "Stempeldruck"
+    22                      "Differentialdruck"
+    23                      "FasTrak Kanal 4"
+    24                      "Kopfdruck"
+    25                      "Stempeldruck"
+    26                      "Differentialdruck"
+    27                      "FasTrak Kanal 4"
+    28                      "FasTrak Kanal 1"
+    29                      "FasTrak Kanal 2"
+    30                      "FasTrak Kanal 3"
+    31                      "FasTrak Kanal 4"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    32                      "FasTrak Kanal 1"
+    33                      "FasTrak Kanal 2"
+    34                      "FasTrak Kanal 3"
+    35                      "FasTrak Kanal 4"
+    36                      "Kanal"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    TIME_ONLY_MENU_HELP     "Gesamten Schuss vs. Zeit anzeigen."
+    LAST_50_SCREEN_MENU_HELP 
+                            "Die Alarmzustände der letzten 50 Schüsse im Eckkästchen anzeigen."
+    STD_SCREEN_MENU_HELP    "Parameter im Eckkästchen in normaler Ansicht anzeigen."
+    VIEW_REFERENCE_TRACE_MENU_HELP 
+                            "Bezugskennlinie zusammen mit der aktuellen Kennlinie anzeigen."
+    VIEW_PARAMETERS_MENU_HELP 
+                            "Alle Parameter für den aktuellen Schuss anzeigen."
+    BOX_SCREEN_MENU_HELP    "Anzeigefenster mit Info aller zu überwachenden Maschinen."
+    TREND_SCREEN_MENU_HELP  "Tendenzgrafik der Parameterwerte des aktuellen Gussteils anzeigen."
+    PROFILE_SCREEN_MENU_HELP "Profil für den aktuellen Schuss anzeigen."
+    DOWNBAR_SCREEN_MENU_HELP "Balkengrafik der Ausfallzeiten anzeigen."
+    PART_EDITOR_MENU_HELP   "Grundeinstellungen, weitere Einstellungen, Parameter, Wegstrecken, Beschriftungen, Kanäle, SureTrak"
+    MACHINE_EDITOR_MENU_HELP 
+                            "Maschinen-Einstellungen, weitere Maschinen-Einstellungen"
+    ZOOM_MENU               "Vergrößern"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    UNZOOM_MENU             "Normalgröße"
+    MAX_OVERLAY_REACHED_STRING "Maximale Anzahl Schüsse werden angezeigt"
+    DEL_SOME_FIRST_STRING   "Eines entfernen um ein anderes anzuzeigen."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    501                     "Wegstrecke/Zeitbasis"
+    502                     "Auf Wegstrecke basiert"
+    503                     "Auf Zeitbasis"
+    504                     "Anzeige der letzten 50 Schüsse"
+    505                     "Standard Anzeigeseite"
+    EMPTY_LIST              "Diese Liste ist leer."
+    NO_MACHINES_HERE        "Dieser Rechner hat keine Maschinen."
+    OPERATOR_NOT_FOUND      "Keine Bedienperson gefunden."
+    SHOT_NUMBER_STRING      "Schussnummer"
+    DATE_NAME_STRING        "Datum"
+    TIME_NAME_STRING        "Uhrzeit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NO_MEMORY_STRING        "Kein Arbeitsspeicher verfügbar."
+    PRINTER_LIST_STRING     "Druckerliste [EnumPrinters]"
+    UNITS_TITLE_STRING      "Einheiten"
+    REALTIME_ON_MENU_STRING "Schüsse in Echtzeit"
+    NO_ALARM_STRING         "Innerhalb Nennwerte"
+    WARNING_STRING          "Warnmeldung"
+    ALARM_STRING            "Alarm"
+    NO_DOWN_STRING          "Stillstand "
+    HUMAN_DOWN_STRING       "Stillstand "
+    AUTO_DOWN_STRING        "Auto-Stillstand "
+    PROG_DOWN_STRING        "Kein Mon-Task "
+    PROG_UP_STRING          "Überwachung "
+    MACH_UP_STRING          "In Betrieb "
+    NO_MONITOR_STRING       "Keine Überwachung"
+    BOX_SCREEN_MENU_STRING  "Anzeigekästchen"
+    MACHINE_TT_STRING       "Name der Druckguss-Maschine"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NEXT_SHIFT_STRING       "Nächste Schicht"
+    PREV_SHIFT_STRING       "Vorherige Schicht"
+    NEXT_DAY_STRING         "Morgen"
+    PREV_DAY_STRING         "Gestern"
+    NEXT_STRING             "vorwärts"
+    PREV_STRING             "zurück "
+    NO_ALARM_DATA_STRING    "Keine Alarmdaten gefunden."
+    NOTHING_TO_DISPLAY_STRING "Nichts anzuzeigen"
+    SHIFT_STRING            "Schicht"
+    PARAMETER_STRING        "Parameter"
+    LOW_LIMIT_STRING        "Untere Grenze"
+    HIGH_LIMIT_STRING       "Obere Grenze"
+    PARAMETER_VALUE_STRING  "Wert"
+    ALARM_TT_STRING         "Warnung- oder Alarmanzeige, sollten ein oder mehrere Parameter nicht im Bereich sein."
+    REALTIME_OFF_MENU_STRING "Gewählter Schuss"
+    REALTIME_SINGLE_MENU_STRING "Schüsse in Echtzeit, eine Maschine"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    PART_TT_STRING          "Jetziger Name für Gussteil oder Form."
+    SHOT_TT_STRING          "Letzte Schussnummer"
+    DATE_TT_STRING          "Zeitdauer des letzten Schusses"
+    NO_DOWN_TT_STRING       "Neue Maschine oder keine Ausfallzeit bestimmt."
+    HUMAN_DOWN_TT_STRING    "Personal bestätigt Stillstand "
+    AUTO_DOWN_TT_STRING     "Maschine ohne bekannten Grund in Zeitsperre."
+    PROG_DOWN_TT_STRING     "Modulüberwachung nicht in Betrieb."
+    PROG_UP_TT_STRING       "Überwachung begonnen, noch kein Schuss "
+    MACH_UP_TT_STRING       "Maschine läuft OK"
+    NO_MONITOR_TT_STRING    "Überwachung dieser Maschine ist ausgeschaltet."
+    TOTAL_ALARM_SHOTS_STRING "Gesamtzahl der Alarmschüsse:"
+    TOTAL_WARNING_SHOTS_STRING "Gesamtzahl der Schüsse mit Warnung:"
+    LOW_ALARM_STRING        "Unterer Alarmwert"
+    HIGH_ALARM_STRING       "Oberer Alarmwert"
+    LOW_WARNING_STRING      "Warnmeldung: Unterschreitung "
+    HIGH_WARNING_STRING     "Warnung: Überschreitung"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    TIME_AXIS_LABEL_STRING  "Zeitdauer (Sek)"
+    TREND_ALLSHOTS_MENU_STRING "Alle Schüsse anzeigen - F8"
+    TREND_CONFIG_MENU_STRING "Einstellung der Tendenzgrafiken "
+    TREND_SCREEN_MENU_STRING "Tendenzgrafik "
+    NO_GRAPHS_FOUND_STRING  "Keine Profile gefunden"
+    TREND_REALTIME_MENU_STRING "Tendenzgrafik in Echtzeit "
+    N_EQUALS_STRING         "  ( Größe der Gruppe = "
+    END_PARENS_STRING       " )"
+    TOO_MANY_GRAPHS_STRING  "Zu viele Grafiken für dieses Anzeige"
+    TIMEOUT_STRING          "FasTrak Zeitsperre"
+    DOWNBAR_TITLE_STRING    "Überblick  der Maschineausfallzeiten"
+    TOTAL_HOURS_STRING      "Gesamtzahl der aufgezeichneten Stunden"
+    TOTAL_HOURS_UP_STRING   "Gesamtzahl der Stunden im Einsatz"
+    TOTAL_HOURS_DOWN_STRING "Gesamtzahl von Stunden Maschinenausfall"
+    MACH_UTILIZATION_STRING "Maschinen-Auslastung"
+    MAX_DOWNTIME_HOURS_STRING "99999.99"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAX_DOWNTIME_PERCENT_STRING "100.00%"
+    DOWNTIME_FROM_STRING    "Von: "
+    DOWNTIME_TO_STRING      "Bis: "
+    HOURS_STRING            "Stunden"
+    CATEGORY_TITLE_STRING   " : Kategorie = "
+    DOWNBAR_CONFIG_MENU_STRING "Datenbereich wählen"
+    NO_DOWNTIME_DATA_STRING "Keine Ausfalldaten gefunden."
+    CHOOSE_PART_MENU_HELP   "Gussteil für aktuelle Anzeige wählen."
+    CHOOSE_SHOT_MENU_HELP   "Schuss für aktuelle Anzeige wählen"
+    EXIT_MENU_HELP          "Das Programm verlassen"
+    MINIMIZE_MENU_HELP      "Anzeigeseite minimieren"
+    SAVE_MENU_HELP          "Wählen ob dieser Schuss dauerhaft gespeichert werden soll oder nicht."
+    SAVE_AS_MASTER_MENU_HELP "Aktueller Schuss wird als Bezug abgespeichert."
+    PRINT_MENU_HELP         "Gegenwärtigen Schuss drucken"
+    POS_TIME_MENU_HELP      "Daten vor Aufprall vs. Wegaufnahme und Daten nach Aufprall vs. Zeit anzeigen."
+    POS_ONLY_MENU_HELP      "Nur Daten vor Aufprall anzeigen."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SEC_TIME_LABEL_STRING   "Zeitdauer (Sek)"
+    SHOT_LABEL_STRING       "Schuss"
+    MULTIPLE_SHOT_PRINT_MENU_HELP 
+                            "Anzahl der Schüsse für sofortige Ausgabe zum Drucker wählen."
+    MULTIPLE_PRINT_STRING   "Mehrfachschüsse ausdrucken"
+    PRINTING_COMPLETE_STRING "Drucken beendet"
+    STAT_N_EQUALS_STRING    "N = "
+    ALARM_LIMITS_STRING     "Alarmgrenzwerte"
+    ALARM_SHOT_LABEL_STRING "Schuss"
+    ALARM_DATE_LABEL_STRING "Datum"
+    ALARM_TIME_LABEL_STRING "Uhrzeit"
+    TREND_REALTIME_MENU_HELP 
+                            "Die allerletzten n Schüsse, mit n von der Einrichtung der Tendenzgrafik anzeigen."
+    TREND_ALLSHOTS_MENU_HELP 
+                            "Alle für dieses Gussteil aufgezeichneten Schüsse anzeigen."
+    TREND_CONFIG_MENU_HELP  "Tendenzgrafik einstellen"
+    STAT_SUMMARY_MENU_STRING "Statistische Übersicht"
+    STAT_SUMMARY_MENU_HELP  "Statistischen Parameterüberblick für den gewählten Schussbereich anzeigen."
+    NO_STAT_SUMMARY_MENU_STRING "Kein statistischer Überblick"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MONITOR_CONFIG_MENU_HELP 
+                            "Aktuelles Gussteil, Alarm- Überwachung, Zeitprobe nach Aufprall, Schuss ausblenden wählen."
+    BACKUP_AND_RESTORE_MENU_HELP 
+                            "Gussteil-Einstellungen,  Parameter-Daten und Profile sichern/wiederherstellen"
+    SETUPS_MENU_HELP        "FasTrak Modul auf diesem Rechner, Maschinen dem FasTrak Modul zuordnen"
+    DOWNTIME_MENU_HELP      "Ausfallzeitkategorie- und Unterkategorienamen ändern."
+    EDITDOWN_MENU_HELP      "Datensatz ändern oder hinzufügen und Grund des Maschinenausfalls vermerken."
+    SURETRAK_CONTROL_MENU_HELP 
+                            "Steuerung Modul-Diagnose, Einstellungen, und Steuerprogramm runterladen."
+    OPERATOR_SIGNON_MENU_HELP 
+                            "Die für die Maschine bestimmte Bedienperson wählen."
+    EXPORT_SHOTS_MENU_HELP  "Parameterdaten für den Gebrauch bei anderen Programmen in die Windows-Zwischenablage kopieren."
+    ALARM_SUMMARY_MENU_HELP "Überblick der Alarmimpulse betrachten."
+    PASSWORDS_MENU_HELP     "Bisherige Kennwortstufe ändern und Kennwortliste bearbeiten."
+    RESTORE_PASSWORD_MENU_HELP 
+                            "Aktuelles Kennwort der Normalstufe gleichstellen."
+    BOARD_MONITOR_MENU_HELP "Programm um Schussdaten vom FasTrak- Datenaufnahme-Modul zu erfassen."
+    HELP_MENU_HELP          "Hilfefunktion Hauptdatei einsehen."
+    UNZOOM_MENU_HELP        "Auf Vollanzeige zurückgehen."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ZOOM_MENU_HELP          "Anzeige auf einen kleineren Bereich der X-Achse beschränken."
+    DISPLAY_CONFIGURATION_MENU_HELP "Analog-Kanäle zum Anzeigen wählen."
+    COLOR_DEFINITION_MENU_HELP "Anzeigefarben wählen."
+    CHOOSE_RT_MACHINES_MENU_HELP 
+                            "Maschinen zur Schussanzeige in Echtzeit wählen."
+    CORNER_PARAMETERS_MENU_HELP 
+                            "Parameter zur Anzeige unten auf der Profilseite  wählen."
+    OVERLAY_MENU_HELP       "Bei Überlagerung vorheriger Schüsse werden keine Profile gelöscht."
+    MACHINE_INTRO_STRING    "Maschine : "
+    PART_INTRO_STRING       "  Gussteil: "
+    TOTAL_SHOTS_INTRO_STRING "Gesamtzahl der Schüsse ="
+    TOTAL_ALARM_SHOTS_INTRO_STRING "Gesamtzahl der Alarmschüsse ="
+    TOTAL_WARNING_SHOTS_INTRO_STRING "Gesamtzahl der Schüsse mit Warnung ="
+    QUANTITY_BELOW_STRING   "Anzahl unter"
+    QUANTITY_ABOVE_STRING   "Anzahl über"
+    CANNOT_COMPLY_STRING    "Nicht durchführbar"
+    PASSWORD_NOT_FOUND_STRING "Kennwort nicht gefunden."
+    MS_TIME_LABEL_STRING    "Zeitdauer (mSek)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NO_STAT_SUMMARY_MENU_HELP "Statistischen Überblick entfernen."
+    ZOOM_PRINT_POSITION_STRING "Wegstrecke "
+    ZOOM_PRINT_TIME_STRING  "Uhrzeit"
+    ZOOM_PRINT_VELOCITY_STRING "Vorschub"
+    ZOOM_PRINT_ROD_PRES_STRING "Stempeldruck"
+    ZOOM_PRINT_HEAD_PRES_STRING "Kopfdruck"
+    ZOOM_PRINT_START_STRING "Start"
+    ZOOM_PRINT_END_STRING   "Ende"
+    ZOOM_PRINT_DELTA_STRING "Delta"
+    FIELD_TOO_LONG_STRING   "Maximale Anzahl von Zeichen = "
+    INPUT_ERROR_STRING      "Fehler: Eingänge "
+    NO_DEL_ALL_ROWS_STRING  "Alle Zeilen können nicht gelöscht werden."
+    ATTEMPT_DEL_ALL_ROWS_STRING "Es wurde versucht alle Zeilen zu löschen."
+    NOTHING_SELECTED_STRING "Noch nichts gewählt."
+    SELECT_ROW_STRING       "Ein oder mehrere Zeilen durch Anklicken der Zeilennummer wählen."
+    N_PER_GROUP_STRING      "Größe der Gruppe ="
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    KILLING_ALARMSUM_DATA_STRING "Alarmüberblickdaten werden gelöscht..."
+    OPERATOR_ABREVIATION_STRING "Abkürzung"
+    OPERATOR_FIRST_NAME_STRING "Vorname"
+    OPERATOR_LAST_NAME_STRING "Nachname"
+    STATSUM_MAX_STRING      "Max"
+    STATSUM_MIN_STRING      "Min"
+    STATSUM_AVERAGE_STRING  "Durchschnitt"
+    STATSUM_RANGE_STRING    "Bereich"
+    STATSUM_STDDEV_STRING   "Std.Abw."
+    STATSUM_LOW_STRING      "Unterschreitung"
+    STATSUM_HIGH_STRING     "Überschreitung"
+    STATSUM_LCL_STRING      "LCL"
+    STATSUM_UCL_STRING      "UCL"
+    STATSUM_ZLCL_STRING     "Zlcl"
+    STATSUM_ZUCL_STRING     "Zucl"
+    STATSUM_ZMIN_STRING     "Zmin"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    STATSUM_CPK_STRING      "Cpk"
+    STATSUM_PERCENT_OUT_STRING "%Out"
+    SHIFT_TIME_TITLE_STRING "Einstellung der Schichtzeiten"
+    MUST_HAVE_ONE_STRING    "Mindestens einen Schichteintrag pro Tag machen."
+    RESTART_MONITOR_STRING  "Überwachung des FasTrak-Moduls muss neu gestartet werden."
+    SHIFT_CHANGES_STRING    "Schichtänderungen wurden abgespeichert."
+    NOTHING_TO_EXPORT_STRING "Nichts zu exportieren"
+    NO_MEM_FOR_SORT_STRING  "Kein Arbeitsspeicher zum Sortieren verfügbar."
+    DBARCFG_HEADING_STRING  "Datum\tKategorie\tUnterkategorie\tBedienperson\tGussteil-Nr.\r\n"
+    VISIEDIT_MENU_HELP      "Bearbeitung der Initialisierung und Menüdatein"
+    ALARM_LOG_SETUP_MENU_HELP "Alarme zu Datei oder Drucker ausgeben."
+    TOTAL_SHOTS_STRING      "Gesamtzahl der Schüsse:"
+    TOTALS_STRING           "Endsummen"
+    ALARMSUM_EXPORT_HEADER_STRING 
+                            "Datum\tSchicht\tParameter\tUnter-Warnung\tÜber-Warnung\tUnter-Alarm\tÜber-Alarm\tGesamtzahl Warnungen\tGesamtzahl Alarme\tGesamtzahl Schüsse"
+    YES_STRING              "Ja"
+    NO_STRING               "Nein"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EDIT_SHIFTS_MENU_HELP   "Anfangszeiten der Schichten bearbeiten."
+    EXPORT_NO_CSV_STRING    "Kein Name für CSV-Datei angegeben."
+    EXPORT_TOO_SMALL_STRING "Platte zu klein"
+    EXPORT_OF_STRING        "von"
+    EXPORT_WRITTEN_STRING   "Bytes geschrieben."
+    PW_COL_0_STRING         "Stufe"
+    PW_COL_1_STRING         "Kennwort"
+    PW_COL_2_STRING         "Benutzername"
+    PW_DUPLICATE_STRING     "Kennwort zweifach vertreten."
+    PW_BLANK_STRING         "Kennwörter oder -stufen können nicht leer sein."
+    NO_DOWNTIME_SELECTED_STRING "Keine Ausfallzeit gewählt."
+    SEMAPHOR_FAIL_STRING    "Maschinen-Semaphor für DB nicht verfügbar."
+    FIXED_AXIS_STRING       "Feststehend"
+    CLEAR_BACKUP_LIST_MENU_HELP 
+                            "Eine neue Datei zur Absicherungsauflistung erstellen"
+    ADD_TO_BACKUP_LIST_MENU_HELP 
+                            "Gegenwärtigen Schuss zur Absicherungsliste hinzufügen"
+    ADDING_TO_BACKUP_STRING "Wird zur Absicherungsliste hinzugefügt..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    CHOOSE_DOWNTIME_MACHINE_MENU_STRING "Maschine wählen"
+    STATUS_SCREEN_MENU_STRING "Statusanzeigeseite "
+    EDIT_STATUS_SCREEN_MENU_STRING "Statusanzeige-Einstellungen bearbeiten"
+    SAVE_STATUS_SCREEN_MENU_STRING "Statusanzeige-Einstellungen speichern"
+    SAVING_STRING           "Speichern .."
+    STATUS_SCREEN_MENU_HELP "Gegenwärtigen Schuss, Ausfallzeit und Sachleistung anzeigen"
+    EDIT_STATUS_SCREEN_MENU_HELP "Spaltenbreiten der Statusanzeige ändern"
+    SAVE_STATUS_SCREEN_MENU_HELP "Änderungen zur Statusanzeige speichern"
+    CHANNEL_5_LABEL_STRING  "Kan 1"
+    CHANNEL_6_LABEL_STRING  "Kan 2"
+    CHANNEL_7_LABEL_STRING  "Kan 3"
+    CHANNEL_8_LABEL_STRING  "Kan 4"
+    XDCR_MENU_STRING        "Messwandler-Aufzeichnung"
+    EXPORT_ALARMS_MENU_HELP "Alarmüberblickdaten für andere Programme in die Windows-Zwischenablage kopieren."
+    XDCR_MENU_HELP          "Kurvenbilder der einzelnen Messwandlersignale anzeigen (nur bei FasTrak2)"
+    STANDARD_DOWNTIMES_MENU_HELP 
+                            "Standardzeichen für Auto-Stillstand bei Pausen usw. einrichten."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SHIFT_REPORT_MENU_HELP  "Ausfallzeiten der Maschine vs. Laufzeit aufzeichnen."
+    WHATS_NEW_MENU_HELP     "Hilfetext zur Beschreibung von Programmänderungen anzeigen"
+    ABOUT_BOX_MENU_HELP     "Software-Versionsnummer  anzeigen."
+    FONT_STATUS_SCREEN_MENU_STRING "Schriftart wählen"
+    FONT_STATUS_SCREEN_MENU_HELP "Schriftart für Statusseite wählen"
+    MASTER_EXISTS_STRING    "Eine Hauptkennlinie ist bereits vorhanden"
+    REPLACE_MASTER_STRING   "Soll diese ersetzt werden ?"
+    CANT_CREATE_DEST_DIR_STRING 
+                            "Ein Zielverzeichnis lässt sich nicht einrichten."
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

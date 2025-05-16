@@ -1,0 +1,261 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc3.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+EDIT_DCURVE_DIALOG DIALOGEX 0, 0, 364, 209
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_DLGMODALFRAME | WS_EX_TOPMOST
+CAPTION "修改分壓公式"
+FONT 12, "PMingLiU", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "儲存改變",EDITDIFF_SAVE_CHANGES_BUTTON,117,188,56,14,
+                    BS_CENTER
+    CONTROL         "",GRID_POSITION_BORDER,"Static",SS_ETCHEDFRAME,9,7,345,
+                    176
+    PUSHBUTTON      "加新",INSERT_EQUATION_BUTTON,300,188,54,14,BS_CENTER
+    PUSHBUTTON      "刪除",DELETE_EQUATION_BUTTON,9,188,54,14,BS_CENTER
+    PUSHBUTTON      "取消",EDITDIFF_CANCEL_BUTTON,189,188,56,14,BS_CENTER
+END
+
+EDIT_MACHINES DIALOG DISCARDABLE  0, 0, 304, 139
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 12, "PMingLiU"
+BEGIN
+    LISTBOX         MACHINE_LIST_BOX,7,21,24,113,LBS_SORT | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    CONTROL         "熱式機",HOT_CHAMBER_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,46,13,54,11
+    CONTROL         "冷式機",COLD_CHAMBER_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,46,25,56,12
+    COMBOBOX        ROD_PITCH_COMBO_BOX,42,51,49,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "Sure-Trak控制系統",SURETRAK2_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,37,77,77,10
+    DEFPUSHBUTTON   "儲存改變",IDOK,146,120,52,12
+    LTEXT           "機號",MACHINE_NUMBER_STATIC,6,2,29,16
+    LTEXT           "軸的Pitch",ROD_PITCH_STATIC,42,41,35,9
+    GROUPBOX        "機器型類",MACHINE_TYPE_STATIC,42,2,63,38
+    GROUPBOX        "Timeouts (Sec.)",TIMEOUTS_STATIC,110,45,86,41
+    GROUPBOX        "衝撞點取決點數",IMPACT_POINTS_STATIC,110,2,86,40
+    GROUPBOX        "推算壓力參數用",CALC_PARAMS_STATIC,201,2,91,40
+    LTEXT           "位置",-1,147,15,30,9
+    LTEXT           "時間",-1,147,27,22,9
+    LTEXT           "停機",-1,147,60,48,9
+    LTEXT           "Cycle Start",-1,147,71,35,9
+    LTEXT           "分壓力曲線種類",DIFF_CURVE_TYPE_STATIC,201,46,91,11
+    EDITTEXT        POS_IMPACT_POINTS_BOX,116,14,27,11,ES_RIGHT
+    EDITTEXT        TIME_IMPACT_POINTS_BOX,116,26,27,11,ES_RIGHT
+    EDITTEXT        CYCLE_TIMEOUT_BOX,116,58,27,11,ES_RIGHT
+    EDITTEXT        AUTOSHOT_TIMEOUT_BOX,116,70,27,11,ES_RIGHT
+    CONTROL         "頭壓力",HEAD_PRESS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,207,11,60,9
+    CONTROL         "軸壓力",ROD_PRESS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,207,21,65,9
+    CONTROL         "分壓力",DIFF_PRESS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,207,31,80,9
+    COMBOBOX        DIFF_CURVE_TYPE_COMBO_BOX,201,57,91,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "修改公式",EDIT_EQUATIONS_BUTTON,244,75,50,12,BS_CENTER
+    CONTROL         "MVO-06596",MVO_06596_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,47,102,47,10
+    CONTROL         "Digital Servo Amp",DIGITAL_SERVO_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,47,111,66,10
+    PUSHBUTTON      "Choose",CHOOSE_SERVO_PB,61,123,34,10,WS_GROUP
+    GROUPBOX        "Servo Amplifier Board Type",SERVO_AMP_BOARD_TYPE_STATIC,
+                    37,92,90,44
+    CONTROL         "Replace Biscuit Time Delay with Time to Measure Biscuit",
+                    MEAS_BISCUIT_AT_DELAY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,204,93,98,23
+END
+
+INPUT_ERROR_DIALOG DIALOG DISCARDABLE  0, 0, 187, 56
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "輸入錯誤"
+FONT 12, "PMingLiU"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,64,28,52,14,BS_CENTER
+    LTEXT           "不能多過",-1,33,8,53,10
+    LTEXT           "12",INPUT_ERROR_MAX_CHARS_TBOX,113,11,15,8,NOT WS_GROUP
+    LTEXT           "  字",-1,132,10,40,8,NOT WS_GROUP
+END
+
+NEW_MACHINE DIALOG DISCARDABLE  6, 15, 78, 71
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "建立新機器"
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "新機器",-1,39,33,28,9
+    LTEXT           "電腦",-1,40,8,33,8
+    DEFPUSHBUTTON   "OK",1,20,52,36,14
+    EDITTEXT        101,4,32,31,12,ES_UPPERCASE
+    COMBOBOX        102,4,7,31,39,CBS_DROPDOWNLIST | CBS_SORT | WS_TABSTOP
+END
+
+CHOOSE_SERVO_DIALOG DIALOG DISCARDABLE  0, 0, 387, 268
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Your Servo Amplifier Board"
+FONT 10, "Arial"
+BEGIN
+    PUSHBUTTON      "Button1",MVO_06596_PB,20,2,348,130,BS_BITMAP
+    PUSHBUTTON      "Button1",DIGITAL_SERVO_PB,157,135,211,128,BS_BITMAP
+    LTEXT           "Click on the board you have.",IDC_STATIC,8,150,96,9
+    LTEXT           "The one on the right is the new Digital Servo Amp that plugs directly into the Sure-Trak2?External Interface.",
+                    IDC_STATIC,8,197,131,26
+    LTEXT           "The one above is the older MVO-06596 External Servo Amp board. All Sure-Trak?systems use this board.",
+                    IDC_STATIC,8,165,129,31
+    PUSHBUTTON      "Cancel",IDCANCEL,55,242,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MACHINEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       EXIT_CHOICE
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Create",                     CREATE_CHOICE
+        MENUITEM "&Delete",                     DELETE_CHOICE
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc3.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+EMACHINE ACCELERATORS MOVEABLE PURE 
+BEGIN
+    VK_F1,          901,                    VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+EMACHINE_ICON           ICON    DISCARDABLE     "emachine.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+DIGITAL_SERVO_BMP       BITMAP  DISCARDABLE     "digital_servo_amp.bmp"
+MVO_06596_BMP           BITMAP  DISCARDABLE     "mvo_06596.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NEED_NEW_PARM_TYPE_STRING "請選擇其他的參數壓力種類"
+    ABOUT_TO_DELETE_STRING  "你即將去除所有和本機器相關的資料"
+    CONTINUE_STRING         "要繼續嗎?"
+    UNABLE_TO_COMPLY_STRING "無法從命"
+    MONITORING_OFF_FIRST_STRING "你必須先停止監測"
+    MAIN_WINDOW_TITLE       "機器設定"
+    LAST_MACHINE_STRING     "這是最後僅剩的機器無法刪除"
+    NO_DEL_ALL_ROWS_STRING  "不能刪除整列"
+    ATTEMPT_DEL_ALL_ROWS_STRING "嘗試刪除整列"
+    NOTHING_SELECTED_STRING "無任何選定"
+    SELECT_ROW_STRING       "你必須按列號選擇一或多列"
+    RESTART_STRING          "你必須重新起始TrueTrak程式讓改變生效"
+    CHANGES_SAVED_STRING    "改變已儲存"
+    GRID_NUMBER_STRING      "號碼"
+    GRID_NAME_STRING        "名稱"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GRID_HEAD_COEF_STRING   "頭壓力係數"
+    GRID_ROD_COEF_STRING    "軸壓力係數"
+    FONT_CHARSET_STRING     "ANSI_CHARSET"
+    ONLY_ONE_MACHINE_STRING "在此電腦應該只有一個機器設定"
+    SURETRAK_CONTROLLED_STRING "本機器有SureTrak控制器"
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

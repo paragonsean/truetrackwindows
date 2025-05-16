@@ -1,0 +1,330 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "msres.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 520, 215
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Computer",IDC_STATIC,5,9,31,8
+    LTEXT           "Directory",DIRECTORY_TBOX,39,9,29,8
+    LTEXT           "Type",TYPE_TBOX,175,9,17,8
+    LTEXT           "Connections",CONNECTIONS_TBOX,242,9,40,8
+    LTEXT           "Online",ONLINE_TBOX,490,10,21,8
+    LTEXT           "Computer Name",COMPUTER_NAME_TBOX,13,140,52,8,
+                    WS_DISABLED
+    CTEXT           "Connected Computers",CONNECTED_COMPUTERS_TBOX,275,140,
+                    47,17,WS_DISABLED
+    CTEXT           "Available Computers",AVAILABLE_COMPUTERS_TBOX,334,139,
+                    44,17,WS_DISABLED
+    GROUPBOX        "Type",TYPE_GBOX,87,139,100,49,WS_DISABLED
+    LISTBOX         COMPUTER_LISTBOX,6,19,507,115,LBS_SORT | LBS_USETABSTOPS |
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL |
+                    WS_TABSTOP
+    EDITTEXT        COMPUTER_NAME_EBOX,11,150,69,12,ES_AUTOHSCROLL |
+                    WS_DISABLED | WS_GROUP
+    CONTROL         "Monitoring Computer",MONITORING_COMPUTER_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP | WS_TABSTOP,
+                    97,149,81,10
+    CONTROL         "Office Workstation",OFFICE_WORKSTATION_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,97,161,80,10
+    CONTROL         "Data Archiver",DATA_SERVER_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,97,173,65,10
+    PUSHBUTTON      "Standard Connections",STANDARD_CONNECTIONS_BUTTON,204,
+                    145,48,28,BS_CENTER | BS_VCENTER | BS_MULTILINE |
+                    WS_GROUP
+    LISTBOX         CONNECTED_COMPUTER_LISTBOX,277,158,44,46,LBS_SORT |
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         AVAILABLE_COMPUTER_LISTBOX,334,158,44,46,LBS_SORT |
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Save Changes",SAVE_CHANGES_BUTTON,202,192,57,14
+    LTEXT           "\\\\W01\\V5",CHECKING_DIR_TBOX,6,200,171,9
+    PUSHBUTTON      "&Help",HELP_BUTTON,401,0,25,10
+    PUSHBUTTON      "Browse for Computers",BROUSE_COMPUTERS_BUTTON,11,165,73,
+                    12
+    PUSHBUTTON      "Remove Computer(s)",REMOVE_COMPUTER_BUTTON,11,179,73,12
+    LTEXT           "Version",VERSION_TBOX,439,10,24,8
+    LTEXT           "Shared Full",SHARED_FULL_TBOX,465,2,24,17
+END
+
+ADD_COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 181, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Computers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,8,196,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,196,50,14
+    LISTBOX         ADD_COMPUTER_LB,7,26,108,164,LBS_SORT |
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL |
+                    WS_TABSTOP
+    CTEXT           "Choose the Computers to Add from the Following List",
+                    IDC_STATIC,4,4,103,19,NOT WS_GROUP
+    LTEXT           "Hold down the Ctrl key to select more than one. \n\nClick and drag for a range.",
+                    IDC_STATIC,123,54,53,53
+END
+
+RENAME_NEW_COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 190, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,56,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,56,50,14
+    LTEXT           "Because you already have a computer with this name you will have to use a different name for the new one.",
+                    IDC_STATIC,7,3,168,17
+    EDITTEXT        NEW_COMPUTER_NAME_EBOX,135,36,28,12,ES_AUTOHSCROLL
+    LTEXT           "Enter a new name, three characters or less, below.",
+                    IDC_STATIC,7,23,160,8
+    LTEXT           "W01",OLD_COMPUTER_NAME_TBOX,60,38,21,8
+    LTEXT           "Current Name",IDC_STATIC,10,38,44,8
+    LTEXT           "New Name",IDC_STATIC,93,38,36,8
+END
+
+ENUMERATE_COMPUTERS_DIALOG DIALOG DISCARDABLE  0, 0, 230, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Searching for Network Computers..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,85,45,50,14
+    LTEXT           "Static",CURRENT_RESOURCE_TBOX,16,17,200,10
+END
+
+PATH_TOO_LONG_DIALOG DIALOG DISCARDABLE  0, 0, 420, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Path Too Long"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Close",IDOK,180,73,50,14
+    LTEXT           "W01",TOO_LONG_SORC_TBOX,85,7,26,8
+    LTEXT           "WS0",TOO_LONG_DEST_TBOX,137,21,42,8
+    LTEXT           "\\\\The-Office-Workstation-Computer\\V5\\DATA\\",
+                    TOO_LONG_PATH_TBOX,137,31,245,8
+    LTEXT           "Computer being updated:",IDC_STATIC,0,7,80,8
+    LTEXT           "Computer being added to the connect list:",IDC_STATIC,0,
+                    20,133,8
+    LTEXT           "Path:",IDC_STATIC,115,31,18,8
+    LTEXT           "The computer being updated has an older version of the True-Trak 2020 (tm) software which does not support root paths (as shown above) longer than 15 characters.",
+                    IDC_STATIC,18,49,383,19
+END
+
+COMPUTER_DIR_CHANGED_DIALOG DIALOG DISCARDABLE  0, 0, 331, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Computer Directory Change"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Close",IDOK,140,72,50,14
+    CTEXT           "W01",TOO_LONG_SORC_TBOX,44,7,22,8
+    LTEXT           "WS0",TOO_LONG_DEST_TBOX,69,29,245,8
+    LTEXT           "\\\\The-Office-Workstation-Computer\\V5\\DATA\\",
+                    TOO_LONG_PATH_TBOX,69,39,245,8
+    LTEXT           "The Path of ",IDC_STATIC,0,7,40,8
+    LTEXT           "has changed since the last time this program was run.",
+                    IDC_STATIC,73,7,174,8
+    LTEXT           "Current Path:",IDC_STATIC,19,39,42,8
+    LTEXT           "Previous Path:",IDC_STATIC,14,28,47,8
+    LTEXT           "You should update any computers that connect to this one",
+                    IDC_STATIC,7,57,188,8
+END
+
+ADD_NEW_COMPUTERS_DIALOG DIALOG DISCARDABLE  0, 0, 230, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Adding Network Computers..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,85,45,50,14
+    LTEXT           "Static",CURRENT_RESOURCE_TBOX,16,17,200,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE
+BEGIN
+    "COMPUTER_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 519
+        BOTTOMMARGIN, 188
+    END
+
+    "ADD_COMPUTER_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    "ENUMERATE_COMPUTERS_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "msres.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+NETSETUP_ICON           ICON    DISCARDABLE     "netsetup.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", " \0"
+            VALUE "CompanyName", "Visi-Trak Worldwide, LLC\0"
+            VALUE "FileDescription", "Setup the way computers are connected.\0"
+            VALUE "FileVersion", " \0"
+            VALUE "InternalName", "NetSetup\0"
+            VALUE "LegalCopyright", "Copyright © 2007\0"
+            VALUE "LegalTrademarks", "True-Trak 2020\0"
+            VALUE "OriginalFilename", "NetSetup.exe\0"
+            VALUE "PrivateBuild", " \0"
+            VALUE "ProductName", "NetSetup\0"
+            VALUE "ProductVersion", " \0"
+            VALUE "SpecialBuild", "No\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Visi-Trak Network Computer Setup V6.48"
+    MONITORING_COMPUTER_STRING "Monitoring Computer"
+    WORKSTATION_COMPUTER_STRING "Office Workstation"
+    DATA_SERVER_COMPUTER_STRING "Data Archiver"
+    CANT_COMPLY_STRING      "Unable to Comply"
+    ERROR_WRITING_COMPUTER_STRING "Error writing COMPUTER.TXT file"
+    DIR_TOO_LONG_STRING     "Directory Name Too Long, Max is 25 Chars"
+    YES_STRING              "Yes"
+    NO_STRING               "No"
+    CONFIRM_REMOVE_STRING   "Do you wish to continue?"
+    WILL_REMOVE_STRING      "Highlighted computers will be REMOVED"
+    NEW_NAME_TOO_LONG_STRING "New Name is Too Long"
+    NO_NAME_ENTERED_STRING  "You must enter a Name"
+    SAME_NAME_STRING        "You must enter DIFFERENT Name"
+    CREATE_FAILED_STRING    "Creation Failure"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    ENUMERATION_THREAD_STRING "Network Computer Search Thread"
+    ADD_COMPUTERS_FROM_LISTBOX_THREAD_STRING "Add Computers from Listbox"
+    NO_V5_FOLDER_FOUND_STRING "No V5 Folder Found"
+    NO_DATA_DIR_FOUND_STRING "\\DATA\\ not found in local directory"
+    COMPUTER_ALREADY_IN_LIST_STRING "This computer is already in the list"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

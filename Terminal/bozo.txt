@@ -1,0 +1,15 @@
+ Volume in drive \\fs\download is DISK1_VOL1
+ Volume Serial Number is 6E93-5453
+
+ Directory of \\fs\download\ftii
+
+11/24/03  07:13a               185,037 dev2.flash
+10/24/03  01:11p               517,483 dev_monitor_only.hexout.flash
+10/24/03  07:31p               130,264 dev.flash
+09/29/03  10:58a               517,483 emc_chip_01000000.hexout.0x1c0000.flash
+12/05/03  11:52a               138,442 emc_2_0_monitor_only.flash
+12/05/03  07:09a               517,483 emc_chip_02000000.hexout.0x1c0000.flash
+12/04/03  03:25p               517,483 emc_chip_02000000.hexout.flash
+12/05/03  11:57a               190,072 emc_2_0.flash
+               8 File(s)      2,713,747 bytes
+                         29,202,317,312 bytes free

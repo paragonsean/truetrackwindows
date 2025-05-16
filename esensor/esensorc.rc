@@ -1,0 +1,229 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CALC_LINEAR_CONVERT_DIALOG DIALOG DISCARDABLE  0, 0, 187, 89
+STYLE DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "計算線性轉換資料"
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "最小輸出電壓",-1,24,20,84,8,NOT WS_GROUP
+    LTEXT           "最大輸出電壓",-1,24,37,84,8,NOT WS_GROUP
+    EDITTEXT        MIN_VOLTS_EBOX,116,17,36,12
+    EDITTEXT        MAX_VOLTS_EBOX,116,34,36,12
+    PUSHBUTTON      "計算公式",CALC_LINEAR_EQUATION_BUTTON,44,61,92,14,
+                    BS_CENTER
+END
+
+EDIT_ANALOG_SENSOR DIALOG DISCARDABLE  0, 0, 380, 141
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 12, "PMingLiU"
+BEGIN
+    LISTBOX         SENSOR_NUMBER_LISTBOX,36,6,30,128,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        VARTYPE_CBOX,75,19,71,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        UNITS_CBOX,75,38,71,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        MAX_VALUE_EBOX,82,74,53,12
+    EDITTEXT        MIN_VALUE_EBOX,82,90,53,12
+    EDITTEXT        SENSOR_DESCRIPTION_EBOX,190,13,124,13
+    EDITTEXT        GAIN_EBOX,190,32,20,11
+    EDITTEXT        SUB_EBOX,192,75,53,12
+    EDITTEXT        MUL_EBOX,192,91,53,12
+    EDITTEXT        DIV_EBOX,285,75,53,12
+    EDITTEXT        ADD_EBOX,285,91,53,12
+    DEFPUSHBUTTON   "儲存改變",SAVE_CHANGES_BUTTON,88,119,52,14
+    GROUPBOX        "壓力, 溫度, 等範圍",IDC_STATIC,75,60,101,46
+    GROUPBOX        "線性轉換資料",IDC_STATIC,189,53,179,54
+    LTEXT           "描述",IDC_STATIC,190,2,40,8
+    LTEXT           "變數種類",IDC_STATIC,150,19,29,18
+    CTEXT           "類比測試器號碼",IDC_STATIC,1,45,28,24
+    LTEXT           "最大值",IDC_STATIC,137,76,35,8
+    LTEXT           "最小值",IDC_STATIC,137,92,35,8
+    LTEXT           "單位",IDC_STATIC,150,40,20,9
+    LTEXT           "Gain ",IDC_STATIC,219,34,20,8
+    LTEXT           "乘數",IDC_STATIC,247,93,37,10
+    LTEXT           "減數",IDC_STATIC,246,77,37,10
+    LTEXT           "除數",IDC_STATIC,341,77,24,10
+    LTEXT           "加數",IDC_STATIC,341,93,24,10
+    LTEXT           "計算值= [ ( 輸入值 - 減數 ) * 乘數 ] / 除數 + 加數",
+                    IDC_STATIC,196,64,155,11
+    LTEXT           "(Gain * Max Volts = 10 Volts)",IDC_STATIC,243,34,101,8
+    LTEXT           "Use a gain of 2  for FasTrak2",IDC_STATIC,219,44,93,8
+    LTEXT           "Note: After creating a new analog sensor you MUST RESTART all the True-Trak programs.",
+                    IDC_STATIC,175,112,191,16
+    LTEXT           "You should NOT do this when you are about to make a shot.",
+                    IDC_STATIC,175,131,199,7
+END
+
+EDIT_FT2_ANALOG_SENSOR DIALOG DISCARDABLE  0, 0, 530, 153
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 12, "PMingLiU"
+BEGIN
+    LISTBOX         SENSOR_NUMBER_LISTBOX,0,12,192,134,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        VARTYPE_CBOX,199,12,71,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        UNITS_CBOX,199,31,71,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        MAX_VALUE_EBOX,275,72,53,12
+    EDITTEXT        MIN_VALUE_EBOX,275,88,53,12
+    EDITTEXT        SENSOR_DESCRIPTION_EBOX,311,12,134,13
+    EDITTEXT        SUB_EBOX,344,72,53,12
+    EDITTEXT        MUL_EBOX,344,88,53,12
+    EDITTEXT        DIV_EBOX,437,72,53,12
+    EDITTEXT        ADD_EBOX,437,88,53,12
+    DEFPUSHBUTTON   "儲存改變",SAVE_CHANGES_BUTTON,337,124,54,14
+    GROUPBOX        "類比測試器 I/O 範圍",IDC_STATIC,195,49,142,62
+    GROUPBOX        "線性轉換資料",IDC_STATIC,339,49,186,62
+    LTEXT           "描述",IDC_STATIC,311,1,40,8
+    LTEXT           "變數種類",IDC_STATIC,274,13,29,18
+    CTEXT           "類比測試器",IDC_STATIC,47,1,90,9
+    LTEXT           "單位",IDC_STATIC,274,34,20,9
+    LTEXT           "乘數",IDC_STATIC,399,91,37,10
+    LTEXT           "減數",IDC_STATIC,398,75,37,10
+    LTEXT           "除數",IDC_STATIC,493,75,24,10
+    LTEXT           "加數",IDC_STATIC,493,91,24,10
+    LTEXT           "計算值= [ ( 輸入值 - 減數 ) * 乘數 ] / 除數 + 加數",
+                    IDC_STATIC,348,60,161,11
+    CTEXT           "Volts",IDC_STATIC,229,62,22,8,NOT WS_GROUP
+    RTEXT           "低",IDC_STATIC,202,90,16,8,NOT WS_GROUP
+    EDITTEXT        MIN_VOLTS_EBOX,223,72,36,12
+    EDITTEXT        MAX_VOLTS_EBOX,223,89,36,12
+    RTEXT           "高",IDC_STATIC,202,76,16,8,NOT WS_GROUP
+    CTEXT           "PSI",UNITS_TBOX,291,62,18,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+GENERALMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       EXIT_CHOICE
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Create\tIns",                CREATE_CHOICE
+        MENUITEM "D&elete\tDel",                DELETE_CHOICE
+        MENUITEM "Calculate &Linear Conversion", CALC_LINEAR_CONVERT_CHOICE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "EDIT_ANALOG_SENSOR", DIALOG
+    BEGIN
+        RIGHTMARGIN, 351
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc3.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ESENSOR_ICON            ICON    DISCARDABLE     "esensor.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NONE_STRING             "無"
+    CANNOT_COMPLY_STRING    "無法從命"
+    SENSOR_LIST_FULL_STRING "類比測試器的名單已滿"
+    MAIN_WINDOW_TITLE_STRING "類比測試器的設定"
+    UNABLE_TO_CONTINUE_STRING "無法繼續"
+    NO_VARIABLE_TYPES_STRING "無此種類存在"
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

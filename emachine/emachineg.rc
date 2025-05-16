@@ -1,0 +1,304 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcg.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+EDIT_MACHINES DIALOG DISCARDABLE  0, 0, 306, 142
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "MS Sans Serif"
+BEGIN
+    LISTBOX         MACHINE_LIST_BOX,7,21,24,76,LBS_SORT | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    CONTROL         "Warmkammer",HOT_CHAMBER_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,46,13,54,11
+    CONTROL         "Kaltkammer",COLD_CHAMBER_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,46,25,56,12
+    COMBOBOX        ROD_PITCH_COMBO_BOX,42,54,49,37,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "Sure-Trak Control",SURETRAK2_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,37,77,69,10
+    DEFPUSHBUTTON   "Änderungen &speichern",IDOK,142,120,73,12
+    LTEXT           "Maschine Nr.",MACHINE_NUMBER_STATIC,7,2,30,16
+    LTEXT           "Stempel-Steigung ",ROD_PITCH_STATIC,42,44,56,9
+    GROUPBOX        "Maschinenart",MACHINE_TYPE_STATIC,42,2,63,38
+    GROUPBOX        "Zeitsperre (Sek.)",TIMEOUTS_STATIC,110,45,86,41
+    GROUPBOX        "Anzahl der Aufprallpunkte",IMPACT_POINTS_STATIC,110,2,
+                    86,40
+    GROUPBOX        "Parameter errechnen mit",CALC_PARAMS_STATIC,201,2,91,40
+    LTEXT           "Wegstrecke ",-1,147,15,37,9
+    LTEXT           "Zeitlänge",-1,147,27,29,9
+    LTEXT           "Maschine aus",-1,147,60,48,9
+    LTEXT           "Programmstart",-1,147,71,45,9
+    LTEXT           "Art der Differential-Kennlinie",DIFF_CURVE_TYPE_STATIC,
+                    201,46,91,11
+    EDITTEXT        POS_IMPACT_POINTS_BOX,116,14,27,11,ES_RIGHT
+    EDITTEXT        TIME_IMPACT_POINTS_BOX,116,26,27,11,ES_RIGHT
+    EDITTEXT        CYCLE_TIMEOUT_BOX,116,58,27,11,ES_RIGHT
+    EDITTEXT        AUTOSHOT_TIMEOUT_BOX,116,70,27,11,ES_RIGHT
+    CONTROL         "Kopfdruck",HEAD_PRESS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,207,11,60,9
+    CONTROL         "Stempeldruck",ROD_PRESS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,207,21,65,9
+    CONTROL         "Differentialdruck",DIFF_PRESS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,207,31,80,9
+    COMBOBOX        DIFF_CURVE_TYPE_COMBO_BOX,201,57,91,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Gleichungen &bearbeiten ",EDIT_EQUATIONS_BUTTON,217,75,
+                    77,12,BS_CENTER
+    CONTROL         "Verzögerung der Gießtablette durch Messzeit der Gießtablette ersetzen.",
+                    MEAS_BISCUIT_AT_DELAY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,203,89,102,29
+    CONTROL         "MVO-06596",MVO_06596_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,53,102,47,10
+    CONTROL         "Digital -Servoverstärk.",DIGITAL_SERVO_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,53,111,73,10
+    PUSHBUTTON      "Wählen",CHOOSE_SERVO_PB,67,123,34,10,WS_GROUP
+    GROUPBOX        "Servoverstärker-Modultyp",SERVO_AMP_BOARD_TYPE_STATIC,
+                    43,92,90,44
+END
+
+NEW_MACHINE DIALOG DISCARDABLE  6, 15, 78, 71
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Maschine einrichten"
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "Neue Maschine",-1,38,28,30,16
+    LTEXT           "Rechner",-1,40,8,33,8
+    DEFPUSHBUTTON   "OK",1,20,52,36,14
+    EDITTEXT        101,4,32,31,12,ES_UPPERCASE
+    COMBOBOX        102,4,7,31,39,CBS_DROPDOWNLIST | CBS_SORT | WS_TABSTOP
+END
+
+EDIT_DCURVE_DIALOG DIALOGEX 0, 0, 364, 209
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_DLGMODALFRAME | WS_EX_TOPMOST
+CAPTION "Differential-Gleichungen bearbeiten"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Änderungen speichern",EDITDIFF_SAVE_CHANGES_BUTTON,87,
+                    189,80,14,BS_CENTER
+    CONTROL         "",GRID_POSITION_BORDER,"Static",SS_ETCHEDFRAME,9,7,345,
+                    176
+    PUSHBUTTON      "Einfügen",INSERT_EQUATION_BUTTON,300,188,54,14,
+                    BS_CENTER
+    PUSHBUTTON      "Löschen",DELETE_EQUATION_BUTTON,9,188,54,14,BS_CENTER
+    PUSHBUTTON      "&Abbrechen",EDITDIFF_CANCEL_BUTTON,189,188,56,14,
+                    BS_CENTER
+END
+
+INPUT_ERROR_DIALOG DIALOG DISCARDABLE  0, 0, 187, 56
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Fehler: Eingänge "
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,64,28,52,14,BS_CENTER
+    LTEXT           "Das Feld kann nicht mehr als ",-1,10,10,96,10
+    LTEXT           "12",INPUT_ERROR_MAX_CHARS_TBOX,110,10,16,8,NOT WS_GROUP
+    LTEXT           "Zeichen haben. ",-1,127,10,54,8,NOT WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MACHINEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "Be&enden",                    EXIT_CHOICE
+    END
+    POPUP "Be&arbeiten"
+    BEGIN
+        MENUITEM "&Erstellen",                  CREATE_CHOICE
+        MENUITEM "&Löschen",                    DELETE_CHOICE
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrcg.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+EMACHINE ACCELERATORS MOVEABLE PURE 
+BEGIN
+    VK_F1,          901,                    VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+EMACHINE_ICON           ICON    DISCARDABLE     "emachine.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+DIGITAL_SERVO_BMP       BITMAP  DISCARDABLE     "digital_servo_amp.bmp"
+MVO_06596_BMP           BITMAP  DISCARDABLE     "mvo_06596.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NEED_NEW_PARM_TYPE_STRING "Wählen Sie eine andere Parameter-Druckart."
+    ABOUT_TO_DELETE_STRING  "Sie beabsichtigen alle Informationen für dieses Maschine zu löschen."
+    CONTINUE_STRING         "Möchten Sie fortfahren?"
+    UNABLE_TO_COMPLY_STRING "Nicht durchführbar."
+    MONITORING_OFF_FIRST_STRING "Überwachung zuerst abwählen."
+    MAIN_WINDOW_TITLE       "Maschinen-Einstellungen"
+    LAST_MACHINE_STRING     "Die letzte Maschine kann NICHT gelöscht werden."
+    NO_DEL_ALL_ROWS_STRING  "Alle Zeilen können nicht gelöscht werden."
+    ATTEMPT_DEL_ALL_ROWS_STRING 
+                            "Es wurde ein Versucht gemacht alle Zeilen zu löschen."
+    NOTHING_SELECTED_STRING "Noch nichts gewählt."
+    SELECT_ROW_STRING       "Ein oder mehrere Zeilen durch Anklicken der Zeilennummer wählen."
+    RESTART_STRING          "TrueTrak-Programm neu starten damit Änderungen in Kraft treten können."
+    CHANGES_SAVED_STRING    "Änderungen sind abgespeichert worden."
+    GRID_NUMBER_STRING      "Nummer"
+    GRID_NAME_STRING        "Name"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    GRID_HEAD_COEF_STRING   "Koeffizient für Kopf"
+    GRID_ROD_COEF_STRING    "Koeffizient für Stempel"
+    FONT_CHARSET_STRING     "ANSI_Zeichensatz"
+    ONLY_ONE_MACHINE_STRING "Dieser Rechner ist nur für eine MASCHINE bestimmt."
+    SURETRAK_CONTROLLED_STRING "Diese Maschine hat SureTrak-Steuerung."
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CHOOSE_SERVO_DIALOG DIALOG DISCARDABLE  0, 0, 387, 268
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Vorhandene Servoverstärkerkarte wählen"
+FONT 10, "Arial"
+BEGIN
+    PUSHBUTTON      "Button1",MVO_06596_PB,20,2,348,130,BS_BITMAP
+    PUSHBUTTON      "Button1",DIGITAL_SERVO_PB,157,135,211,128,BS_BITMAP
+    LTEXT           "Vorhandene Karte anklicken",IDC_STATIC,8,150,96,9
+    LTEXT           "Rechts finden Sie den neuen Digital- Servoverstärker der direkt an der externen Sure-Trak2™-Schnittstelle eingesteckt wird.",
+                    IDC_STATIC,8,197,131,26
+    LTEXT           "Obig finden Sie die ältere MVO-06596 Externe Servoverst-Karte. Alle Sure-Trak™ arbeiten mit dieser Karte.",
+                    IDC_STATIC,8,165,129,31
+    PUSHBUTTON      "Abbrechen",IDCANCEL,55,242,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "CHOOSE_SERVO_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 380
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

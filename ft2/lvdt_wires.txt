@@ -1,0 +1,85 @@
+                                                       4_30 and Up (Revision D External Interface)
+                                           --------------------------------------------------------------
+               Up to 4_11                        Digital Servo Amp               External Servo Amp
+           -----------------------------   -----------------------------    -----------------------------
+           Channel                         Channel                          Channel
+  TB2      --------                        --------                         --------
+Terminal   No. Name         Input          No. Name         Input           No. Name         Input
+--------   --- -------- ----------------   --- -------- ------------------  --- -------- ----------------
+  23       17  CANA_CH1 LVDT Feedback      21  WANA_CH1 Measured Command 1  21  WANA_CH1 LVDT Feedback
+  24       18  CANA_CH2 Measured Command   22  WANA_CH2 Measured Command 2  22  WANA_CH2 Measured Command
+
+R:6#emc_5_02, monitor_and_control, interrupt driven control, polled Ethernet, UDP, handshake, ad_loop17
+
+V429_7
+OC3=1
+   [Manual Mode]              [Jog Shot]
+Dac 1 Volts = -1.999      Dac 1 Volts = 3.999
+Dac 2 Volts = 4.998       Dac 2 Volts = 4.998
+Dac 3 Volts = 0.0         Dac 3 Volts = 0.0
+Dac 4 Volts = 0.0         Dac 4 Volts = 0.0
+Position (x4) = 0         Position (x4) = 0
+Velocity (x1/sec) = 0     Velocity (x1/sec) = 0
+Analog  1 =  78F          Analog  1 =  78F
+Analog  2 = 1011          Analog  2 = 1011
+Analog  3 = 2014          Analog  3 = 2014  Command 1 (?)
+Analog  4 = 3011          Analog  4 = 3011  Command 2 (?)
+Analog  5 = FBFB          Analog  5 = FBFC  LVDT Feedback 1    = CANA_CH1
+Analog  6 = F7FF          Analog  6 = F7FF  LVDT Feedback 2    = CANA_CH3
+Analog  7 = F666          Analog  7 = FB2F  Measured Command 1 = WANA_CH1
+Analog  8 = F7BC          Analog  8 = F7CF  Measured Command 2 = WANA_CH2
+Analog  9 = FBFB          Analog  9 = FBFA  CANA_CH1
+Analog 10 = F7FF          Analog 10 = F7FF  CANA_CH2
+Analog 11 = F7FF          Analog 11 = F7FF  CANA_CH3
+Analog 12 = F7FE          Analog 12 = F7FD  CANA_CH4
+Analog 13 = F666          Analog 13 = FB30  WANA_CH1 Measured Command
+Analog 14 = F78F          Analog 14 = F7B2  WANA_CH2
+Analog 15 = F794          Analog 15 = F792  WANA_CH3
+Analog 16 = F79F          Analog 16 = F79F  WANA_CH4
+Analog 17 = 0             Analog 17 = 0
+Analog 18 = 0             Analog 18 = 0
+Analog 19 = 0             Analog 19 = 0
+Analog 20 = 0             Analog 20 = 0
+Isw1 = 600200             Isw1 = 700200
+Osw1 = 8000000            Osw1 = 8010000
+Monitor Status = 0        Monitor Status = 0
+Control Status = C        Control Status = C
+Warning = 0               Warning = 0
+Fatal = 0                 Fatal = 0
+Current Block Number = 76 Current Block Number = 93
+
+V429=5
+OC3=1
+Dac 1 Volts = 3.999
+Dac 2 Volts = 4.998
+Dac 3 Volts = 0.0
+Dac 4 Volts = 0.0
+Position (x4) = 0
+Velocity (x1/sec) = 0
+Analog  1 =  790
+Analog  2 = 1011
+Analog  3 = 2013
+Analog  4 = 3011
+Analog  5 = 4013
+Analog  6 = 5012
+Analog  7 = FB31  WANA_CH1  LVDT Feedback
+Analog  8 = F7CF  WANA_CH2  Measured Command
+Analog  9 = FBFB  CANA_CH1
+Analog 10 = F7FF  CANA_CH2
+Analog 11 = F7FE  CANA_CH3
+Analog 12 = F7FD  CANA_CH4
+Analog 13 = FB30  WANA_CH1
+Analog 14 = F7B2  WANA_CH2
+Analog 15 = F792  WANA_CH3
+Analog 16 = F79E  WANA_CH4
+Analog 17 = 0
+Analog 18 = 0
+Analog 19 = 0
+Analog 20 = 0
+Isw1 = 700200
+Osw1 = 8010000
+Monitor Status = 0
+Control Status = C
+Warning = 0
+Fatal = 0
+Current Block Number = 93

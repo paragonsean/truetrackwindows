@@ -1,0 +1,175 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "msresg.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+COPYLOG_DIALOG DIALOG DISCARDABLE  0, 0, 381, 317
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Kennwort ",PASSWORD_LOG_PB,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,15,16,51,14
+    CONTROL         "Überwachung ",MONITOR_LOG_PB,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,69,16,51,14
+    GROUPBOX        "Protokolldateityp ",IDC_STATIC,6,5,123,29,WS_GROUP
+    LTEXT           "Die Kennwort-Protokolldatei wird hinzugefügt wenn",
+                    LOG_FILE_TYPE_HELP_STATIC,133,12,245,20
+    LISTBOX         STATUS_LISTBOX,223,40,150,215,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL
+    EDITTEXT        LOG_FILE_NAME_EBOX,75,99,122,12,ES_AUTOHSCROLL
+    EDITTEXT        LOG_FORMAT_EBOX,111,255,69,12,ES_AUTOHSCROLL
+    LTEXT           "Protokolldateipfad",IDC_STATIC,9,101,58,8
+    LTEXT           "Protokolldatei-Eingabeformat",IDC_STATIC,10,257,91,8
+    LTEXT           "n=Bedienername\nd=Datum\nt=Uhrzeit\nc=Rechnername",
+                    IDC_STATIC,23,153,73,34,NOT WS_GROUP
+    LTEXT           "Der Protokolldateiname ist der Dateiname zu dem die Protokolldaten übertragen werden. Sollen mehrere Rechner zur gleichen Datei schreiben, so soll der Datennetzname der Datei wie folgt verwendet werden:",
+                    IDC_STATIC,7,39,211,35
+    LTEXT           "Das Format ist eine Zeichenkette die besagt wie der Protokolleintrag sein soll. Alles in der Kette wird normal getippt mit Ausnahme der Zeichen n,d,t,c,m,o,p, die wie folgt ersetzt werden.",
+                    IDC_STATIC,8,123,211,26
+    LTEXT           "Eine Eingabe wäre gewöhnlich:",IDC_STATIC,10,192,112,8
+    CTEXT           "c, d, t, n",FORMAT_EXAMPLE_TBOX,32,203,52,12,
+                    SS_CENTERIMAGE | WS_BORDER | NOT WS_GROUP
+    LTEXT           "m=Maschienenname\no=vorheriger Name\np=aktueller Teilname",
+                    RECORD_HELP_STATIC,106,153,73,29,NOT WS_GROUP
+    LTEXT           "wobei die Eingabe wie folgt gespeichert würde:",
+                    IDC_STATIC,10,218,155,10
+    CTEXT           "W01, 02/24/2002, 7:23:21, John Doe",RECORD_EXAMPLE_TBOX,
+                    1,231,217,12,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "\\\\WS0\\V5\\ChangeLog.csv",IDC_STATIC,32,74,113,12,
+                    SS_CENTERIMAGE | WS_BORDER
+    CONTROL         "Zu Netzrechner speichern",SAVE_TO_NETWORK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,289,98,10
+    PUSHBUTTON      "Änderungen speichern",SAVE_CHANGES_BUTTON,119,295,80,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,227,296,50,14
+    LTEXT           "W01,02/24/2005,...",LOG_RECORD_TBOX,80,271,290,12,
+                    SS_CENTERIMAGE | WS_BORDER | NOT WS_GROUP
+    LTEXT           "Eingabebeispiel",IDC_STATIC,10,273,59,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "COPYLOG_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "msresg.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+COPYLOG_ICON            ICON    DISCARDABLE     "CopyLog.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAIN_WINDOW_TITLE_STRING 
+                            "Einrichten der Protokolldatei Visi-Trak-Weltweit."
+    CANT_COMPLY_STRING      "Nicht durchführbar."
+    PASSWORD_LOG_STRING     "Sollte jemand die Kennwortstufe ändern, so nimmt das Programm den Bedienernamen in einer Datei Ihrere Wahl entsprechend auf."
+    MONITOR_LOG_STRING      "Sollte jemand das zu überwachende Teil ändern, so nimmt das Programm den Bedienernamen in einer Datei Ihrere Wahl entsprechend auf."
+    PASSWORD_FORMAT_EXAMPLE_STRING "c,d,t,n"
+    PASSWORD_RECORD_EXAMPLE_STRING "C01,04/12/2005,20:35:50,John Doe"
+    MONITOR_FORMAT_EXAMPLE_STRING "c,m,o,p,d,t,n"
+    MONITOR_RECORD_EXAMPLE_STRING 
+                            "C01,E20,VISITRAK,PRODPART,04/12/2005,20:35:50,John Doe"
+    SAVING_LOCAL_PASSWORD_SETTINGS_STRING 
+                            "Speichern der Protokolleinstellungen für lokales Kennwort."
+    SAVING_LOCAL_MONITOR_SETTINGS_STRING 
+                            "Speichern der Protokolleinstellungen zur lokalen Überwachung."
+    SAVING_NETWORK_PASSWORD_SETTINGS_STRING 
+                            "Speichern der Protokolleinstellungen für Datennetzkennwort."
+    SAVING_NETWORK_MONITOR_SETTINGS_STRING 
+                            "Speichern der Protokolleinstellungen zur Datennetz-Überwachung."
+    DONE_STRING             "*** Beendet ***"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

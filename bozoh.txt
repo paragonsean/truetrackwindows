@@ -1,0 +1,5 @@
+File VISIPARM.H:
+#define MAX_POINTS              5000
+File shotsave.h:
+    unsigned short points[MAX_CURVES][MAX_POINTS];
+BOOLEAN add_to_shotsave( PROFILE_HEADER & new_ph, float new_points[MAX_CURVES][MAX_POINTS], float * new_parameters, short nof_new_parameters, BOOLEAN has_alarm );

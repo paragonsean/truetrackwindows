@@ -1,0 +1,411 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcg.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+STARTUP_DIALOG DIALOG DISCARDABLE  0, 0, 258, 298
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name dieses Rechners (Drei Zeichen oder weniger)",
+                    IDC_STATIC,49,43,168,8,NOT WS_GROUP
+    LTEXT           "Das Programm wird TrueTrak im folgenden Verzeichnis installieren. Die Vorgabe entweder annehmen oder ein anderes Verzeichnis eingeben.",
+                    IDC_STATIC,16,2,236,16,NOT WS_GROUP
+    DEFPUSHBUTTON   "&Weiter",IDOK,68,275,50,14,BS_CENTER
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,141,275,50,14,BS_CENTER
+    EDITTEXT        ROOT_DIRECTORY_EBOX,16,22,228,14
+    EDITTEXT        THIS_COMPUTER_EBOX,119,55,27,12,ES_AUTOHSCROLL
+    CONTROL         "Teilbearbeitung starten bei Anlauf von TrueTrak.",
+                    PART_EDITOR_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,56,69,178,12
+    CONTROL         "Überwachung einrichten starten bei Anlauf von TrueTrak.",
+                    MONITOR_SETUPS_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,56,82,192,12
+    CONTROL         "Modul überwachen starten bei Anlauf von TrueTrak.",
+                    START_MONITOR_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,56,95,182,12
+    CONTROL         "SureTrak-Steuerung installiert",
+                    SURETRAK_CONTROL_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,56,107,113,12
+    CONTROL         "SureTrak-Steuerung starten bei Anlauf von TrueTrak.",
+                    START_SURETRAK_CONTROL_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,56,120,183,12
+    GROUPBOX        "Steuerung einstellen",RADIO_GROUPBOX,79,134,80,64,
+                    WS_GROUP
+    CONTROL         "IN      IPS   20P",E20_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,85,161,71,12
+    CONTROL         "MM   MPS  2MM",M2_RADIO,"Button",BS_AUTORADIOBUTTON,85,
+                    172,71,12
+    CONTROL         "MM   MPS  20P",M20_RADIO,"Button",BS_AUTORADIOBUTTON,85,
+                    183,71,12
+    CONTROL         "Windows NT-Treiber für Überwachungs-Programm installieren",
+                    NT_DRIVERS_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_GROUP |
+                    WS_TABSTOP,37,217,209,12
+    LTEXT           "Weg Einh",DIST_UNITS_TBOX,94,144,19,18,NOT WS_GROUP
+    LTEXT           "Vor Einh",VEL_UNITS_TBOX,113,144,18,18,NOT WS_GROUP
+    LTEXT           "Stemp Steig",ROD_PITCH_TBOX,131,144,21,18,NOT WS_GROUP
+    CONTROL         "Bei Rechnerstart automatisch starten ",
+                    START_AT_BOOT_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    56,202,160,12
+    LTEXT           "(Diese werden NICHT für FasTrak2 benötigt)",IDC_STATIC,
+                    47,230,142,8
+    CONTROL         "FasTrak2",FASTRAK2_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,38,247,46,10
+    CONTROL         "Dies ist ein dienstliche Arbeitsstelle",
+                    OFFICE_WORKSTATION_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,113,262,125,10
+    CONTROL         "Dies ist eine vor Ort Installation am Datenarchivar",
+                    NO_NETWORK_XBOX,"Button",BS_AUTOCHECKBOX | BS_MULTILINE |
+                    WS_TABSTOP,113,244,114,15
+END
+
+INSTALL_STATUS_DIALOG DIALOGEX 0, 0, 267, 147
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,109,96,50,14,BS_CENTER
+    LTEXT           "",STATUS_MSG_TEXTBOX,51,28,165,17,NOT WS_GROUP,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "",FILENAME_TEXTBOX,0,58,268,8,NOT WS_GROUP
+END
+
+FINISH_DIALOG DIALOG DISCARDABLE  0, 0, 267, 147
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,109,96,50,14,BS_CENTER
+    CTEXT           "Installation wurde erfolgreich beendet",-1,43,47,181,9,
+                    NOT WS_GROUP
+END
+
+INSTALL_OR_UPDATE_DIALOG DIALOG DISCARDABLE  0, 0, 267, 147
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Neues TrueTrak-System installieren",INSTALL_NEW_BUTTON,
+                    73,26,120,14,BS_CENTER
+    PUSHBUTTON      "Vorhandenes TrueTrak-System aufarbeiten",
+                    UPDATE_EXISTING_BUTTON,62,50,148,14,BS_CENTER
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,73,98,120,14,BS_CENTER
+    LTEXT           "Für Hilfetext F1 drücken",-1,188,138,80,8,NOT WS_GROUP
+    PUSHBUTTON      "Installations-Disketten vorbereiten",
+                    CREATE_FLOPPIES_BUTTON,73,74,120,14,BS_CENTER |
+                    WS_DISABLED
+END
+
+UPDATE_STARTUP_DIALOG DIALOG DISCARDABLE  0, 0, 267, 147
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Weiter",IDOK,69,72,50,14,BS_CENTER
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,148,72,50,14,BS_CENTER
+    LTEXT           "Das Programm wird die jetzige TrueTrak-Software auf die neueste Version aufarbeiten. Alle TrueTrak- Programme zuvor verlassen.",
+                    IDC_STATIC,35,29,181,32,NOT WS_GROUP
+    CTEXT           "Hinweis\nZugang zur höchsten Kennwortstufe ist unbedingt erforderlich. Sollte ihnen das Kennwort der höchsten Stufe nicht bekannt sein, vor dem Fortfahren erst danach erkundigen.",
+                    UPDATE_PW_NOTE_TBOX,20,100,224,34
+END
+
+FIND_DIRECTORY_DIALOG DIALOG DISCARDABLE  0, 0, 267, 206
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        EXE_DIR_EDITBOX,85,43,163,12
+    DEFPUSHBUTTON   "&Weiter",IDOK,69,186,50,14,BS_CENTER
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,148,186,50,14,BS_CENTER
+    LTEXT           "Verzeichnis für Exes",-1,8,46,69,8,NOT WS_GROUP
+    LTEXT           "Visi-Trak Hauptprogramm wurde im folgenden Verzeichnis gefunden. Wenn falsch, erst verbessern, und dann auf Weiter"" drücken.",
+                    -1,38,10,181,27,NOT WS_GROUP
+    CONTROL         "Teilbearbeitung starten bei Anlauf von TrueTrak.",
+                    PART_EDITOR_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,61,61,180,12
+    CONTROL         "Modul überwachen starten bei Anlauf von TrueTrak.",
+                    AUTO_MONITOR_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,61,88,195,12
+    CONTROL         "SureTrak-Steuerung installiert",
+                    SURETRAK_CONTROL_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,61,101,144,12
+    CONTROL         "Überwachung einrichten starten bei Anlauf von TrueTrak.",
+                    MONITOR_SETUPS_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,61,75,196,12
+    CONTROL         "SureTrak-Steuerung starten bei Anlauf von TrueTrak.",
+                    START_SURETRAK_CONTROL_CHECKBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,61,114,185,12
+    CONTROL         "FasTrak2",FASTRAK2_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,61,127,46,10
+    CONTROL         "Dies ist ein dienstliche Arbeitsstelle",
+                    OFFICE_WORKSTATION_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,61,149,125,10
+    CONTROL         "Dies ist eine vor Ort Installation am Datenarchivar",
+                    NO_NETWORK_XBOX,"Button",BS_AUTOCHECKBOX | BS_MULTILINE |
+                    WS_TABSTOP,61,135,188,15
+    CONTROL         "Bei Rechnerstart automatisch starten.",
+                    START_AT_BOOT_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    61,159,160,12
+    CONTROL         "Copy FT2 Control Files",COPY_FT2_CONTROL_FILES_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,61,170,88,12
+END
+
+UPDATE_STATUS_DIALOG DIALOGEX 0, 0, 267, 147
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,109,96,50,14,BS_CENTER
+    LTEXT           "",STATUS_MSG_TEXTBOX,51,28,165,17,NOT WS_GROUP,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "",FILENAME_TEXTBOX,90,58,87,8,NOT WS_GROUP
+END
+
+COPY_HELP_DIALOG DIALOG DISCARDABLE  0, 0, 148, 47
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Hilfedateien von Diskette 3 kopieren"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,24,40,14,BS_CENTER
+    PUSHBUTTON      "&Auslassen",IDCANCEL,71,24,40,14,BS_CENTER
+    CTEXT           "Diskette 3 von 4 in das Laufwerk einlegen.",-1,3,4,139,
+                    8,NOT WS_GROUP
+END
+
+COPY_EXES_DIALOG DIALOG DISCARDABLE  0, 0, 163, 47
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Hauptprogramm von Diskette 2 kopieren."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,24,40,14,BS_CENTER
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,71,24,40,14,BS_CENTER
+    CTEXT           "Diskette 2 von 4 in das Laufwerk einlegen.",-1,3,4,143,
+                    8,NOT WS_GROUP
+END
+
+COPY_FT2HELP_DIALOG DIALOG DISCARDABLE  0, 0, 164, 47
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Hilfe-Datei FT2 von Laufwerk 4 kopieren."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,24,40,14,BS_CENTER
+    PUSHBUTTON      "Abbrechen",IDCANCEL,71,24,40,14,BS_CENTER
+    CTEXT           "Diskette 4 von 4 in das Laufwerk einlegen.",-1,3,4,151,
+                    8,NOT WS_GROUP
+END
+
+INSERT_DISK1_DIALOG DIALOG DISCARDABLE  0, 0, 151, 47
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Zur Diskette 1 zurückkehren"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,24,40,14,BS_CENTER
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,71,24,40,14,BS_CENTER
+    CTEXT           "Diskette 1 nochmals in das Laufwerk einlegen.",-1,3,4,
+                    148,8,NOT WS_GROUP
+END
+
+COPY_P42_DIALOG DIALOG DISCARDABLE  0, 0, 201, 74
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "P42-Dateien kopieren"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Ja",IDOK,43,34,40,14,BS_CENTER
+    PUSHBUTTON      "&Nein",IDCANCEL,95,34,40,14,BS_CENTER
+    CTEXT           "Der P42-Ordner scheint unvollständig zu sein.\nSollen diese Dateien ebenfalls kopiert werden?",
+                    IDC_STATIC,1,6,161,22,NOT WS_GROUP
+    LTEXT           "Hinweis: Die Dateien nicht auf ein Arbeitsplatzsystem kopieren.",
+                    IDC_STATIC,3,60,198,8
+END
+
+CREATE_FLOPPIES_DIALOG DIALOG DISCARDABLE  0, 0, 286, 104
+STYLE WS_CHILD | WS_VISIBLE
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Kopieren starten",BEGIN_COPYING_BUTTON,117,65,60,14
+    PUSHBUTTON      "&Stop",STOP_COPYING_BUTTON,184,65,59,14
+    CTEXT           "Dieser Dialog erstellt einen Satz von Disketten zur Installation der TrueTrak-Software.",
+                    IDC_STATIC,0,7,279,9
+    CONTROL         "Diskette 1",FLOPPY_1_RADIO,"Button",BS_AUTORADIOBUTTON |
+                    BS_PUSHLIKE,32,34,48,12
+    CONTROL         "Diskette 2",FLOPPY_2_RADIO,"Button",BS_AUTORADIOBUTTON |
+                    BS_PUSHLIKE,32,49,48,12
+    CONTROL         "Diskette 3",FLOPPY_3_RADIO,"Button",BS_AUTORADIOBUTTON |
+                    BS_PUSHLIKE,32,64,48,12
+    GROUPBOX        "Disketten erstellen",IDC_STATIC,22,18,67,76,BS_CENTER
+    CTEXT           "Eine leere, formatierte Diskette in das Laufwerk einlegen.",
+                    INSERT_FLOPPY_TBOX,94,30,175,22,SS_CENTERIMAGE |
+                    SS_SUNKEN
+    CONTROL         "Diskette 4",FLOPPY_4_RADIO,"Button",BS_AUTORADIOBUTTON |
+                    BS_PUSHLIKE,32,79,48,12
+END
+
+CHANGE_TO_CONTROL_DIALOG DIALOG DISCARDABLE  0, 0, 218, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Möglicher Fehler bei Maschine einrichten."
+FONT 12, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Maschine auf Sure-Trak2-Steuerung ändern.",IDOK,31,28,
+                    156,14
+    PUSHBUTTON      "Nicht ändern, System dient nur zur Überwachung.",
+                    IDCANCEL,25,46,162,14
+    LTEXT           "Es handelt sich scheinbar um eine Sure-Trak2-Steuerung. In diesem Fall müssen Sie die Maschineneinrichtung entsprechend ändern.",
+                    IDC_STATIC,1,6,217,16
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resrcg.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MY_ICON                 ICON    DISCARDABLE     "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    COULD_NOT_FIND_EXE_STRING "Exes-Verzeichnis ist nicht auffindbar."
+    CANNOT_CONTINUE_STRING  "Fortfahren nicht möglich."
+    INSTALL_DIR_EXISTS_STRING "Installations-Verzeichnis bereits vorhanden."
+    STARTUP_TITLE           "Installation von TrueTrak V6.50 "
+    BEGIN_INSTALL_STRING    "Das Installieren wurde gestartet..."
+    NO_UPDATE_NEEDED_STRING "Keine Aufarbeitung erforderlich."
+    NOTHING_TO_DO_STRING    "Nichts zu tun."
+    NO_VISITRAK_INI_STRING  "Kein VISITRAK.INI im Exe-Verzeichnis."
+    CURRENT_VERSION_STRING  "6.50"
+    PRE_IMPACT_WORK_STRING  "Arbeitleistung vor Aufprall"
+    SURETRAK_PIF_STRING     "c:\\windows\\desktop\\SureTrak Control Interface.pif"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    WORK_VARTYPE_NAME_STRING "Arbeitsleistung"
+    DEFAULT_INSTALL_DIRECTORY_STRING "C:\\V5\\"
+    WILL_BE_RENAMED_STRING  "Vorheriges Verzeichnis wird umbenannt auf"
+    CANT_CREATE_DIR_STRING  "Hauptverzeichnis einrichten nicht möglich."
+    CREATE_FAILED_STRING    "Fehler beim Einrichten"
+    INSTALL_THREAD_STRING   "Teilprogramm (thread) installieren "
+    REGINI_FAIL_STRING      "Ablauf von Regini nicht möglich."
+    NO_PORT_DEV_INSTALL_STRING
+                            "Der Geräteadressentreiber für VisiTrak ist nicht  installiert."
+    MUST_HAVE_COMPUTER_STRING "Der Rechnername kann nicht leer sein."
+    CREATING_DIRS_STRING    "Verzeichnisse einrichten"
+    COPYING_EXES_STRING     "Das Hauptprogramm wird kopiert."
+    COPYING_DATA_STRING     "Die Daten werden kopiert."
+    UPDATING_DATA_STRING    "Daten werden aktualisiert."
+    NO_ROOT_DATA_DIR_STRING "Hauptdaten-Verzeichnis ist nicht auffindbar."
+    UPDATE_STARTUP_TITLE    "Aufarbeitung von Visi-Trak V6.50 "
+    BEGIN_UPDATE_STRING     "Aufarbeitung gestartet..."
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    UPDATE_THREAD_STRING    "Teilprogramm (thread) aufarbeiten "
+    COPY_HELP_FILE_STRING   "Hilfedatei wird kopiert..."
+    UPDATE_SAVE_STATUS_STRING "Abgespeicherten Grafikstatus aktualisieren..."
+    UPDATE_DIFF_CURVES_STRING "Differential-Kennlinien aktualisieren..."
+    UPDATE_PARAM_NAMES_STRING "Parameternamen aktualisieren..."
+    UPDATE_UNITS_STRING     "Einheiten aktualisieren..."
+    COPY_NEW_DBS_STRING     "Neue Datenbanken werden kopiert..."
+    UNZIP_EXES_STRING       "Neues Hauptprogram wird aus Zip-Datei dekomprimiert."
+    NT_START_MENU_DIR_STRING
+                            "Profiles\\All Users\\Start Menu\\Programs\\TrueTrak 2020 Monitoring System.lnk"
+    COPYING_PKZIP_STRING    "PKZip...wird kopiert."
+    PKZIP_COPY_FAIL_STRING  "Kopieren von PKZip nicht möglich."
+    FILE_NOT_FOUND_STRING   "Datei nicht auffindbar."
+    CREATE_FLOPPIES_TITLE   "Einrichten der Disketten zum Installieren von TrueTrak V6.50."
+    FLOPPY_IN_DRIVE_STRING  "Eine leere, formatierte Diskette in das Laufwerk einlegen."
+    UNABLE_TO_COMPLY_STRING "Nicht durchführbar."
+    COPY_IN_PROGRESS_STRING "Kopieren noch nicht beendet."
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    CREATE_FLOPPIES_THREAD_STRING
+                            "Teilprogramm für Disketteninstallation einrichten (thread)."
+    COPYING_STRING          "Kopieren"
+    UNABLE_TO_COPY_STRING   "Kopieren unmöglich."
+    WANT_TO_ABORT_STRING    "Soll die Diskettenerstellung abgebrochen werden?"
+    ABORT_RECEIVED_STRING   "Ersuch auf ABBRUCH erhalten!"
+    HOW_TO_INSTALL_STRING   "Hinweis: Setup.exe befindet sich auf Diskette Nr. 1."
+    COPY_COMPLETE_STRING    "Kopieren beendet."
+    WAIT_FOR_COPY_STRING    "Warten bis das Kopieren beendet ist."
+    STOPPING_STRING         "Nach dieser Datei stoppen..."
+    UNABLE_TO_RENAME_DIR_STRING "Verzeichnis umbenennen ist nicht möglich!"
+    COPY_P42_STRING         "Das P42-Verzeichnis wird kopiert..."
+    SPACES_IN_PATH_STRING   "Das Installationsverzeichnis enthält Leerstellen !"
+    UPDATE_RODPITCH_STRING  "Formulierung des 1,6 mm Messwertgebers wird hinzugefügt"
+    MISSING_CONTROL_FILES_STRING "Es fehlen einige Steuerdateien !"
+    COPY_BY_HAND_STRING     "**** Sie sollten diese von Hand niederschreiben ****"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

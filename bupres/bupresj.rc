@@ -1,0 +1,371 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc2.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+SAVING_PROGRESS DIALOG DISCARDABLE  0, 0, 98, 71
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "保存しています。。。"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "機番：",-1,16,3,22,8,NOT WS_GROUP
+    LTEXT           "型番：",-1,16,13,24,8,NOT WS_GROUP
+    CONTROL         "ファイル：",-1,"Static",SS_LEFTNOWORDWRAP,1,23,35,8
+    LTEXT           "M01",SAVING_MACHINE_TEXT_BOX,42,3,22,10,NOT WS_GROUP
+    LTEXT           "VisiTrak",SAVING_PART_TEXT_BOX,41,13,55,10,NOT WS_GROUP
+    LTEXT           "Text1",SAVING_FILE_TEXT_BOX,41,23,65,10,NOT WS_GROUP
+    PUSHBUTTON      "止め",SAVING_CANCEL_BUTTON,22,47,50,14,BS_CENTER
+END
+
+CHOOSE_FUNCTION DIALOG DISCARDABLE  0, 0, 231, 125
+STYLE WS_CHILD | WS_VISIBLE
+FONT 11, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "バックアップ",BACKUP_BUTTON,5,5,74,22,BS_CENTER | 
+                    BS_MULTILINE
+    PUSHBUTTON      "Backup List",BACKUP_LIST_BUTTON,5,36,74,22,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE
+    PUSHBUTTON      "回復",RESTORE_BUTTON,5,67,74,22,BS_CENTER | 
+                    BS_MULTILINE
+    PUSHBUTTON      "削除",DELETE_BUTTON,5,98,74,22,BS_CENTER | BS_MULTILINE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,30,231,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,62,231,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,93,231,1
+    LTEXT           "Delete or renumber shots",IDC_STATIC,88,96,138,22
+    LTEXT           "Restore data from previous backups.",IDC_STATIC,91,66,
+                    130,22
+    LTEXT           "Backup shots that have been added to the backup list file.",
+                    IDC_STATIC,91,36,133,22
+    LTEXT           "Backup Setups, shots, parameter data, alarms, and downtimes.",
+                    IDC_STATIC,91,5,132,22
+END
+
+DELETE_DATA DIALOG DISCARDABLE  0, 0, 289, 187
+STYLE WS_CHILD
+FONT 11, "ＭＳ 明朝"
+BEGIN
+    GROUPBOX        "手続き",-1,64,52,68,39,WS_GROUP
+    GROUPBOX        "データ型",-1,64,6,68,39,WS_GROUP
+    CTEXT           "機番",-1,6,0,27,12
+    LTEXT           "型番",-1,5,76,21,12
+    LISTBOX         DD_MACHINE_LISTBOX,5,13,31,59,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         DD_PART_LISTBOX,5,89,51,90,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         DD_SHOT_LISTBOX,143,26,136,142,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "パラメータ",DD_PARAMETERS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,71,16,55,12
+    CONTROL         "プロフィール",DD_PROFILES_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,71,28,57,12
+    PUSHBUTTON      "始め",IDOK,71,154,56,18,BS_CENTER
+    CONTROL         "削除",DD_DELETE_RADIOBUTTON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,72,63,39,12
+    CONTROL         "改番",DD_RENUMBER_RADIOBUTTON,"Button",
+                    BS_AUTORADIOBUTTON,72,75,44,12
+    EDITTEXT        DD_RENUMBER_EDITBOX,104,103,20,12
+    PUSHBUTTON      "全",DD_ALL_SHOTS_BUTTON,186,171,50,14,BS_CENTER
+    LTEXT           "ショット",-1,138,12,40,12,NOT WS_GROUP
+    LTEXT           "最初の新しい番号",DD_RENUMBER_LABEL,68,102,34,22,NOT 
+                    WS_GROUP
+    LTEXT           "パラメータ /",-1,222,0,65,12,NOT WS_GROUP
+    LTEXT           "プロフィール",-1,222,12,65,12,NOT WS_GROUP
+    LTEXT           "データ",-1,179,12,37,12,NOT WS_GROUP
+END
+
+BACKUP_DIALOG DIALOG DISCARDABLE  0, 0, 284, 189
+STYLE WS_CHILD
+FONT 11, "ＭＳ 明朝"
+BEGIN
+    GROUPBOX        "オプション除去",IDC_STATIC,2,99,127,86,WS_GROUP
+    CONTROL         "設定情報",TB_SETUPS_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,15,92,12
+    CONTROL         "破損/休止時間",TB_SCRAP_DOWN_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,28,91,12
+    GROUPBOX        "バックアップ",IDC_STATIC,4,4,106,78,WS_GROUP
+    PUSHBUTTON      "始め",IDOK,181,141,50,17,BS_CENTER
+    CONTROL         "ショットプロフィール",TB_PROFILE_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,41,96,12
+    CONTROL         "ショットパラメータ",TB_PARAM_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,54,91,12
+    CONTROL         "アラームデータ",TB_ALARM_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,67,85,12
+    PUSHBUTTON      "全",TB_BACKUP_ALL_BUTTON,4,83,27,12,BS_CENTER
+    CONTROL         "データ除去",TB_PURGE_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,131,56,12
+    CONTROL         "最終50ショットの保存",TB_LAST_50_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,144,85,12
+    CONTROL         "除去停止時間",TB_PURGE_DOWNTIME_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,156,71,12
+    CONTROL         "Purge Alarm Summaries",TB_PURGE_ALARMS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,168,97,12
+    LTEXT           "ジップファイルでバックアップする",IDC_STATIC,135,102,
+                    149,8,NOT WS_GROUP
+    LTEXT           "機番",IDC_STATIC,136,5,31,9
+    LTEXT           "型番",IDC_STATIC,172,5,23,10
+    LISTBOX         TB_MACHINE_LISTBOX,136,15,31,66,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         TB_PART_LISTBOX,172,15,107,66,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "全",TB_ALL_MACHINES_BUTTON,139,84,27,12,BS_CENTER
+    LTEXT           "パラメータ",IDC_STATIC,203,5,38,9
+    LTEXT           "ショット",IDC_STATIC,246,5,31,9
+    CTEXT           "射出波形とパラメータとに関係する",IDC_STATIC,5,109,94,
+                    11,NOT WS_GROUP
+    CONTROL         "Most Recent",TB_RECENT_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,179,87,56,10
+    EDITTEXT        TB_RECENT_COUNT_EBOX,236,85,17,12,ES_AUTOHSCROLL
+    EDITTEXT        TB_ZIP_NAME_EDITBOX,135,113,144,12
+    LTEXT           "Shots",IDC_STATIC,255,88,21,8
+    PUSHBUTTON      "Debug Setup File Backup",TB_ALL_TEXT_FILES_PB,193,177,
+                    91,12
+    LTEXT           "Next Shot Number",TB_NEXT_SHOT_NUMBER_STATIC,99,122,27,
+                    26
+    EDITTEXT        TB_NEXT_SHOT_NUMBER_EBOX,70,128,26,10,ES_NUMBER
+END
+
+RESTORE_DIALOG DIALOG DISCARDABLE  0, 0, 299, 139
+STYLE WS_CHILD
+FONT 11, "ＭＳ 明朝"
+BEGIN
+    GROUPBOX        "回復",IDC_STATIC,9,11,103,112,WS_GROUP
+    LTEXT           "機番",IDC_STATIC,116,14,31,9
+    LTEXT           "型番",IDC_STATIC,152,14,17,10
+    LTEXT           "パラメータ",IDC_STATIC,178,14,45,9
+    LTEXT           "ショット",IDC_STATIC,229,14,31,9
+    PUSHBUTTON      "始め",IDOK,114,115,50,14,BS_CENTER
+    CONTROL         "設定情報",TR_SETUPS_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,22,46,12
+    CONTROL         "破損/休止時間",TR_SCRAP_DOWN_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,35,73,12
+    CONTROL         "ショットプロフィール",TR_PROFILE_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,48,86,12
+    CONTROL         "ショットパラメータ",TR_PARAM_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,61,88,12
+    CONTROL         "アラームデータ",TR_ALARM_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,74,73,12
+    CONTROL         "SureTrak＋グローバル",TR_SURETRAK_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,87,90,11
+    PUSHBUTTON      "全",TR_RESTORE_ALL_BUTTON,10,123,18,12,BS_CENTER
+    LISTBOX         TR_MACHINE_LISTBOX,116,24,31,66,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         TR_PART_LISTBOX,152,24,107,66,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "全",TR_ALL_MACHINES_BUTTON,122,92,18,14,BS_CENTER
+    PUSHBUTTON      "ジップファイルをロードします",TR_LOAD_ZIP_FILE_BUTTON,
+                    145,92,114,14,BS_CENTER
+    LISTBOX         TR_DEST_LISTBOX,265,24,26,74,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "転送先機番",IDC_STATIC,264,6,28,17
+    CONTROL         "Analog Sensor List",TR_ANALOGS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,99,90,10
+    CONTROL         "FasTrak Board List",TR_BOARDS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,111,90,10
+END
+
+BACKUP_LIST_DIALOG DIALOG DISCARDABLE  0, 0, 199, 175
+STYLE WS_CHILD
+FONT 11, "ＭＳ 明朝"
+BEGIN
+    EDITTEXT        TB_ZIP_NAME_EDITBOX,2,134,192,14
+    PUSHBUTTON      "Begin",IDOK,64,156,67,17,BS_CENTER
+    LTEXT           "Backup Zip File",IDC_STATIC,2,119,144,12,NOT WS_GROUP
+    CTEXT           "The following shots will be backed up",IDC_STATIC,11,0,
+                    180,12
+    LTEXT           "Machine",IDC_STATIC,44,13,31,12
+    LTEXT           "Part",BACKUP_LIST_PART_TBOX,76,13,15,12
+    LTEXT           "Shot",BACKUP_LIST_SHOT_TBOX,114,13,15,12
+    LISTBOX         BACKUP_LIST_LISTBOX,44,26,110,87,LBS_SORT | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+NEW_MACHINE_NOTIFY_DIALOG DIALOG DISCARDABLE  0, 0, 199, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Machine Notification"
+FONT 11, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,74,67,50,14
+    LTEXT           "These won't be visible in any currently running programs until you restart the True-Trak 2020 software.",
+                    IDC_STATIC,31,27,148,26
+    LTEXT           "Note:",IDC_STATIC,9,17,18,8
+    LTEXT           "You have created one or more new machines.",IDC_STATIC,
+                    31,17,146,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc2.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+BUPRES_ICON             ICON    DISCARDABLE     "bupres.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "CHOOSE_FUNCTION", DIALOG
+    BEGIN
+        RIGHTMARGIN, 166
+        BOTTOMMARGIN, 55
+    END
+
+    "BACKUP_LIST_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MUST_SELECT_FIRST_STRING "最初に型番を選択して下さい"
+    CANT_DO_THAT_STRING     "実施することが出来ません"
+    MAIN_CAPTION_STRING     "True Trakのバックアップ／リストア"
+    EMPTY_DESTINATION_BOX   "パス名を書き入れて下さい"
+    DIR_CREATE_FAIL         "転送先ディレクトリの新設はできません"
+    COMPUTER_DIR_CREATE_FAIL "コンピュータディレクトリの新設はできません"
+    BACKUP_DATA_STRING      "設定条件とデータのバックアップ"
+    BACKUP_LIST_DATA_STRING "Backup from Backup List File"
+    RESTORE_DATA_STRING     "設定条件とデータをリストア"
+    DELETE_DATA_STRING      "データ削除または改番"
+    DIRECTORY_NOT_EXIST_STRING "ディレクトリが存在しません"
+    NOTE_STRING             "注釈"
+    NO_MEMORY_STRING        "メモリー容量オーバーです"
+    SAVELIST_STRING         "リストの保存と創設"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    THREAD_CREATE_FAIL      "スレッドの新設はできません"
+    NO_DISK_IN_DRIVE_STRING "ドライブにディスクがありません"
+    TRY_AGAIN_STRING        "もう一度行いますか？"
+    NO_MACHINE_STRING       "機番がありません。最初に機番修正で機番を新設して下さい。"
+    NOTHING_TO_DO_STRING    "何も選択していません"
+    NEED_ZIP_NAME_STRING    "ジップファイルの名前を付けて下さい"
+    NO_ZIP_DIR_STRING       "ジップファイルのディレクトリの創設はできません"
+    EVENT_FAIL_STRING       "イベント待の創設はできません"
+    SEMAPHOR_FAIL_STRING    "機械からのシグナルがありません"
+    DELETING_STRING         "削除しています。。。"
+    BACKING_UP_STRING       "バックアップしています。。。"
+    RESTORING_STRING        "回復しています。。。"
+    RENUMBERING_STRING      "改番しています。。。"
+    MACHINE_ON_OTHER_STRING "機番は他のコンピュータ上にあります。"
+    MUST_RESTORE_THERE_STRING 
+                            "あなたはリストアするコンピュータについていて下さい"
+    WILL_RESTOR_CURRENT_STRING 
+                            "この機番へ現在の型番をリストアしようとしています。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MONITOR_OFF_STRING      "モニタリングを止めなければいけません。リストアを続けますか？"
+    CANT_LOAD_MACHINE_STRING 
+                            "転送先機番はありますが、ロードする事ができません"
+    ZIP_FILES_STRING        "ジップファイル"
+    CHOOSE_ZIP_FILE_STRING  "ロードするジップファイルを選択して下さい"
+    ADRIVE_SUBDIR_STRING    "Aドライブのサブディレクトリに保存できません"
+    ZIP_OK_QUESTION_STRING  "バックアップファイルの名前を直しますか？"
+    DEST_NOT_FOUND_STRING   "転送先機番が見つかりませんでした。"
+    NOT_ON_WS0_STRING       "WS0で機番の新規設定はだめです。"
+    NOT_VISIBLE_STRING      "はプロットプログラムが再起動させる後でだけに表われに成ります。"
+    NEW_MACHINES_STRING     "新機番"
+    NO_SAVE_TO_BACKUPDIR_STRING "Cannot save to the \\V5\\BACKUP folder"
+    NO_EXES_DIR_FOUND_STRING "No EXES directory found"
+    PURGE_SHOT_DATA_STRING  "Purge Shot Data"
+    PURGE_N_PARTS_STRING    "Purge more than one part?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    PURGING_STRING          "Purging..."
+    NO_ZIP_FILE_STRING      "No Zip file was created"
+    UNABLE_TO_BACKUP_STRING "Unable to backup data"
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

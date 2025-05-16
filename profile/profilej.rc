@@ -1,0 +1,1705 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcj.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+#include "colordlg.h"
+#include "dlgs.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CHOOSE_SHOTS DIALOG DISCARDABLE  5, 18, 229, 106
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "ショットの選択"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,89,90,50,14,NOT WS_TABSTOP
+    LISTBOX         101,113,11,112,81,LBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         102,113,11,112,79,LBS_SORT | LBS_MULTIPLESEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         CS_MACHINE_LISTBOX,3,11,28,80,LBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         CS_PART_LISTBOX,33,11,78,80,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ショット番号　　　年月日時",-1,113,1,127,9
+    LTEXT           "機番",-1,2,2,31,9
+    LTEXT           "型番",-1,35,2,17,9
+    LTEXT           "ショット",-1,73,2,32,9
+END
+
+CHOOSE_PART DIALOG DISCARDABLE  6, 15, 151, 94
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "型番の選択"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LISTBOX         112,4,15,28,58,LBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         121,36,15,110,58,LBS_SORT | LBS_USETABSTOPS | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,54,77,35,14
+    LTEXT           "機番",-1,2,4,31,9
+    LTEXT           "型番",-1,36,4,17,10
+    LTEXT           "パラメータ",-1,64,4,47,9
+    LTEXT           "ショット",-1,114,4,32,9
+END
+
+ZOOM_BOX_DIALOG DIALOG DISCARDABLE  0, 0, 285, 74
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "位置",IDC_STATIC,30,8,30,9,NOT WS_GROUP
+    LTEXT           "時間",IDC_STATIC,65,8,30,9,NOT WS_GROUP
+    LTEXT           "速度",IDC_STATIC,97,8,30,9,NOT WS_GROUP
+    LTEXT           "ロッド圧力",CHAN_1_ZOOM_TITLE_TBOX,130,8,42,9,NOT 
+                    WS_GROUP
+    LTEXT           "ヘッド圧力",CHAN_2_ZOOM_TITLE_TBOX,169,8,41,9,NOT 
+                    WS_GROUP
+    LTEXT           "Diff Pres",CHAN_3_ZOOM_TITLE_TBOX,210,8,35,7,NOT 
+                    WS_GROUP
+    LTEXT           "Chan 4",CHAN_4_ZOOM_TITLE_TBOX,247,8,24,8,NOT WS_GROUP
+    LTEXT           "始まり",IDC_STATIC,4,25,24,9,NOT WS_GROUP
+    LTEXT           "終わり",IDC_STATIC,4,35,16,9,NOT WS_GROUP
+    LTEXT           "デルタ",IDC_STATIC,4,45,27,9,NOT WS_GROUP
+    LTEXT           "0.00",110,33,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",111,33,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",112,33,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",120,69,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",121,69,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",122,69,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",130,104,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",131,104,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",132,104,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",140,141,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",141,141,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",142,141,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",150,176,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",151,176,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",152,176,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",160,212,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",161,212,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",162,212,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",170,249,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",171,249,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",172,249,45,30,9,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,35,20,
+                    253,38
+END
+
+CHOOSE_PARAMETER_LIST DIALOG DISCARDABLE  0, 0, 240, 175
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "コーナーパラメータ選択"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,93,156,50,14
+    LISTBOX         101,5,20,114,136,WS_VSCROLL | WS_TABSTOP
+    LISTBOX         102,122,20,114,136,WS_VSCROLL | WS_TABSTOP
+    CTEXT           "表示可能パラメータ",-1,5,8,114,10,SS_SUNKEN
+    CTEXT           "採用パラメータ",-1,122,8,114,10,SS_SUNKEN
+END
+
+CHOOSE_DOWNTIME_MACHINE_DIALOG DIALOG DISCARDABLE  6, 15, 151, 95
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Choose Downtime Machine"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LISTBOX         DOWNTIME_MACHINE_LISTBOX,4,15,142,70,LBS_SORT | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Close",IDOK,58,81,35,14
+    LTEXT           "Machine",-1,5,4,31,9
+    LTEXT           "Most Recent Downtime Event",DOWNTIME_MACHINE_DATE_TBOX,
+                    49,4,98,9
+END
+
+CSV_SHOT_FILE_DIALOG DIALOG DISCARDABLE  6, 15, 205, 41
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Save CSV File"
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        CSV_SHOT_FILE_EBOX,50,4,152,12,WS_GROUP
+    DEFPUSHBUTTON   "Save",IDOK,63,22,35,14
+    LTEXT           "File Name",IDC_STATIC,5,4,37,9
+    PUSHBUTTON      "Cancel",IDCANCEL,107,22,35,14
+    CONTROL         "Raw Counts",SAVE_RAW_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,154,21,46,10
+END
+
+PARAM_HISTORY_DIALOG DIALOG DISCARDABLE  0, 0, 137, 74
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "1",201,4,0,34,8
+    RTEXT           "50",202,92,0,39,8
+END
+
+SMALL_ZOOM_BOX_DIALOG DIALOG DISCARDABLE  0, 0, 285, 41
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "位置",-1,30,1,30,9,NOT WS_GROUP
+    LTEXT           "時間",-1,65,1,30,9,NOT WS_GROUP
+    LTEXT           "速度",-1,97,1,30,9,NOT WS_GROUP
+    LTEXT           "ロッド圧力",CHAN_1_ZOOM_TITLE_TBOX,130,1,37,9,NOT 
+                    WS_GROUP
+    LTEXT           "ヘッド圧力",CHAN_2_ZOOM_TITLE_TBOX,169,1,36,9,NOT 
+                    WS_GROUP
+    LTEXT           "ヘッド圧力",CHAN_3_ZOOM_TITLE_TBOX,207,1,36,9,NOT 
+                    WS_GROUP
+    LTEXT           "Chan 4",CHAN_4_ZOOM_TITLE_TBOX,243,24,8,0
+    LTEXT           "始まり",-1,4,13,24,9,NOT WS_GROUP
+    LTEXT           "終わり",-1,4,21,22,9,NOT WS_GROUP
+    LTEXT           "デルタ",-1,4,29,23,9,NOT WS_GROUP
+    LTEXT           "0.00",110,33,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",111,33,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",112,33,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",120,69,13,30,8,NOT WS_GROUP
+    LTEXT           "0.00",121,69,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",122,69,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",130,104,13,30,8,NOT WS_GROUP
+    LTEXT           "0.00",131,104,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",132,104,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",140,141,13,30,8,NOT WS_GROUP
+    LTEXT           "0.00",141,141,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",142,141,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",150,176,13,30,8,NOT WS_GROUP
+    LTEXT           "0.00",151,176,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",152,176,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",160,212,13,30,8,NOT WS_GROUP
+    LTEXT           "0.00",161,212,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",162,212,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",170,249,13,30,9,NOT WS_GROUP
+    LTEXT           "0.00",171,249,22,30,9,NOT WS_GROUP
+    LTEXT           "0.00",172,249,30,30,9,NOT WS_GROUP
+    CONTROL         "",-1,"Static",SS_ETCHEDFRAME | SS_SUNKEN,27,10,257,31
+END
+
+CHOOSE_MASTER_TRACE DIALOG DISCARDABLE  0, 0, 141, 131
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "現在のマステル探索にします"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,42,114,50,14,BS_CENTER
+    COMBOBOX        101,15,23,104,90,CBS_SORT | WS_TABSTOP
+    CTEXT           "現在のマステル探索",-1,16,8,104,10,SS_SUNKEN | NOT 
+                    WS_GROUP
+END
+
+DISPLAY_CONFIGURATION DIALOG DISCARDABLE  0, 0, 401, 188
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "画面表示条件設定"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    GROUPBOX        "インパクト前の曲線",IDC_STATIC,6,35,101,108,WS_GROUP
+    GROUPBOX        "曲線表示",103,6,6,171,24,WS_GROUP
+    PUSHBUTTON      "OK",IDOK,173,158,50,14,BS_CENTER
+    CONTROL         "圧力",PRESSURES_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,19,16,60,12
+    CONTROL         "連続チャンネル",CHANNELS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,82,16,84,12
+    CONTROL         "ヘッド圧力",PRE_CHANNEL_1_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,44,79,12
+    CONTROL         "ロッド圧力",PRE_CHANNEL_2_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,56,79,12
+    CONTROL         "差圧",PRE_CHANNEL_3_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,68,94,12
+    CONTROL         "FasTrak4チャンネル",PRE_CHANNEL_4_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,80,79,12
+    GROUPBOX        "インパクト後の曲線",IDC_STATIC,113,35,100,108,WS_GROUP
+    CONTROL         "ヘッド圧力",POST_CHANNEL_1_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,119,44,79,12
+    CONTROL         "ロッド圧力",POST_CHANNEL_2_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,119,56,79,12
+    CONTROL         "差圧",POST_CHANNEL_3_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,119,68,93,12
+    CONTROL         "FasTrak4チャンネル",POST_CHANNEL_4_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,119,80,79,12
+    PUSHBUTTON      "全",ALL_CHANNELS_BUTTON,191,143,22,10,BS_CENTER
+    CONTROL         "FasTrak5チャンネル",PRE_CHANNEL_5_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,92,79,12
+    CONTROL         "FasTrak6チャンネル",PRE_CHANNEL_6_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,104,79,12
+    CONTROL         "FasTrak7チャンネル",PRE_CHANNEL_7_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,116,79,12
+    CONTROL         "FasTrak8チャンネル",PRE_CHANNEL_8_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,12,128,79,12
+    CONTROL         "FasTrak5チャンネル",POST_CHANNEL_5_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,119,92,79,12
+    CONTROL         "FasTrak6チャンネル",POST_CHANNEL_6_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,119,104,79,12
+    CONTROL         "FasTrak7チャンネル",POST_CHANNEL_7_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,119,116,79,12
+    CONTROL         "FasTrak8チャンネル",POST_CHANNEL_8_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,119,128,79,12
+    CONTROL         "ロッド圧力",FIX_FTCHAN_1_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,219,35,78,12
+    CONTROL         "ヘッド圧力",FIX_FTCHAN_2_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,219,47,78,12
+    CONTROL         "差圧",FIX_FTCHAN_3_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,219,59,96,12
+    CONTROL         "速度",FIX_VELOCITY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,219,131,64,12
+    LTEXT           "極小",IDC_STATIC,315,22,32,8,NOT WS_GROUP
+    LTEXT           "最高",IDC_STATIC,355,22,32,8,NOT WS_GROUP
+    CTEXT           "軸限界",IDC_STATIC,315,10,72,9,NOT WS_GROUP
+    LTEXT           "設定限界値",IDC_STATIC,219,23,60,8,NOT WS_GROUP
+    CONTROL         "FasTrak4チャンネル",FIX_FTCHAN_4_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,219,71,84,12
+    CONTROL         "FasTrak5チャンネル",FIX_FTCHAN_5_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,219,83,83,12
+    CONTROL         "FasTrak6チャンネル",FIX_FTCHAN_6_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,219,95,83,12
+    CONTROL         "FasTrak7チャンネル",FIX_FTCHAN_7_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,219,107,83,12
+    CONTROL         "FasTrak8チャンネル",FIX_FTCHAN_8_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,219,119,84,12
+    EDITTEXT        MIN_FTCHAN_1_EBOX,315,34,32,12
+    EDITTEXT        MIN_FTCHAN_2_EBOX,315,46,32,12
+    EDITTEXT        MIN_FTCHAN_3_EBOX,315,58,32,12
+    EDITTEXT        MIN_FTCHAN_4_EBOX,315,70,32,12
+    EDITTEXT        MIN_FTCHAN_5_EBOX,315,82,32,12,WS_DISABLED
+    EDITTEXT        MIN_FTCHAN_6_EBOX,315,94,32,12,WS_DISABLED
+    EDITTEXT        MIN_FTCHAN_7_EBOX,315,106,32,12,WS_DISABLED
+    EDITTEXT        MIN_FTCHAN_8_EBOX,315,118,32,12,WS_DISABLED
+    EDITTEXT        MIN_VELOCITY_EBOX,315,130,32,12
+    EDITTEXT        MAX_FTCHAN_1_EBOX,355,34,32,12
+    EDITTEXT        MAX_FTCHAN_2_EBOX,355,46,32,12
+    EDITTEXT        MAX_FTCHAN_3_EBOX,355,58,32,12
+    EDITTEXT        MAX_FTCHAN_4_EBOX,355,70,32,12
+    EDITTEXT        MAX_FTCHAN_5_EBOX,355,82,32,12,WS_DISABLED
+    EDITTEXT        MAX_FTCHAN_6_EBOX,355,94,32,12,WS_DISABLED
+    EDITTEXT        MAX_FTCHAN_7_EBOX,355,106,32,12,WS_DISABLED
+    EDITTEXT        MAX_FTCHAN_8_EBOX,355,118,32,12,WS_DISABLED
+    EDITTEXT        MAX_VELOCITY_EBOX,355,130,32,12
+    EDITTEXT        SMOOTH_N_EBOX,315,154,15,12,ES_AUTOHSCROLL
+    EDITTEXT        SMOOTH_MULTIPLIER_EBOX,374,154,16,12,ES_AUTOHSCROLL
+    GROUPBOX        "Smoothing",IDC_STATIC,252,146,143,39
+    LTEXT           "Number of Points",IDC_STATIC,254,156,60,8
+    LTEXT           "Multiplier",IDC_STATIC,338,156,31,8
+    CONTROL         "",SMOOTH_P1_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    295,176,6,7
+    CONTROL         "",SMOOTH_P2_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    305,176,6,7
+    CONTROL         "",SMOOTH_P3_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    316,176,6,7
+    CONTROL         "",SMOOTH_P4_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    326,176,6,7
+    CONTROL         "",SMOOTH_P5_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    337,176,6,7
+    CONTROL         "",SMOOTH_P6_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    347,176,6,7
+    CONTROL         "",SMOOTH_P7_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    358,176,6,7
+    CONTROL         "",SMOOTH_P8_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    368,176,6,7
+    CONTROL         "",SMOOTH_VELOCITY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,380,176,6,7
+    LTEXT           "Smooth",IDC_STATIC,259,175,25,7
+    CTEXT           "1",IDC_STATIC,295,167,6,7
+    LTEXT           "Channel",IDC_STATIC,259,167,29,7
+    LTEXT           "Vel",IDC_STATIC,379,167,10,7
+    CTEXT           "2",IDC_STATIC,305,167,6,7
+    CTEXT           "3",IDC_STATIC,316,167,6,7
+    CTEXT           "4",IDC_STATIC,326,167,6,7
+    CTEXT           "5",IDC_STATIC,337,167,6,7
+    CTEXT           "6",IDC_STATIC,347,167,6,7
+    CTEXT           "7",IDC_STATIC,358,167,6,7
+    CTEXT           "8",IDC_STATIC,368,167,6,7
+    EDITTEXT        CURVE_PEN_WIDTH_EBOX,6,148,17,10,ES_AUTOHSCROLL
+    LTEXT           "Curve Width",IDC_STATIC,25,149,60,9
+    PUSHBUTTON      "Save as the Default Configuration",
+                    SAVE_DEFAULT_DISPLAY_CONFIG_PB,2,164,54,24,BS_CENTER | 
+                    BS_MULTILINE
+END
+
+VIEW_PARAMETERS_DIALOG DIALOG DISCARDABLE  0, 0, 312, 258
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "パラメータの表示"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "パラメータ",-1,5,12,46,10,NOT WS_GROUP
+    LISTBOX         101,3,22,303,233,LBS_OWNERDRAWFIXED | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "低",-1,106,11,21,9,NOT WS_GROUP
+    LTEXT           "高",-1,146,11,20,9,NOT WS_GROUP
+    LTEXT           "低",-1,199,10,19,9,NOT WS_GROUP
+    LTEXT           "高",-1,234,10,23,9,NOT WS_GROUP
+    LTEXT           "量",-1,284,10,16,9,NOT WS_GROUP
+    LTEXT           "アラーム",-1,215,0,32,10,NOT WS_GROUP
+    LTEXT           "警報",-1,118,1,32,10,NOT WS_GROUP
+END
+
+COLOR_DEFINITION_DIALOG DIALOG DISCARDABLE  0, 0, 246, 242
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "画面表示カラー設定"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "上書き保存",IDOK,39,225,57,14,BS_CENTER
+    PUSHBUTTON      "初期のカラーに再設定",IDCANCEL,105,225,83,14,BS_CENTER
+    LTEXT           "時間軸",-1,130,34,41,8,NOT WS_GROUP
+    LTEXT           "Yの位置",-1,130,45,60,8,NOT WS_GROUP
+    LTEXT           "Xの位置",-1,130,55,60,8,NOT WS_GROUP
+    LTEXT           "速度",-1,130,65,60,8,NOT WS_GROUP
+    LTEXT           "ヘッド圧力/1目アナログ",-1,130,75,87,8,NOT WS_GROUP
+    LTEXT           "ロッド圧力/２目アナログ",-1,130,85,89,8,NOT WS_GROUP
+    LTEXT           "ディファレンシャル/3目アナログ",-1,132,94,113,8,NOT 
+                    WS_GROUP
+    LTEXT           "4目アナログ",-1,130,105,60,8,NOT WS_GROUP
+    CONTROL         "",SCREEN_NORMAL_SQUARE_ONE,"Button",BS_OWNERDRAW,13,34,
+                    8,8
+    CONTROL         "",101,"Button",BS_OWNERDRAW,13,44,8,8
+    CONTROL         "",102,"Button",BS_OWNERDRAW,13,54,8,8
+    CONTROL         "",103,"Button",BS_OWNERDRAW,13,64,8,8
+    CONTROL         "",104,"Button",BS_OWNERDRAW,13,74,8,8
+    CONTROL         "",105,"Button",BS_OWNERDRAW,13,84,8,8
+    CONTROL         "",106,"Button",BS_OWNERDRAW,13,94,8,8
+    CONTROL         "",107,"Button",BS_OWNERDRAW,13,104,8,8
+    CONTROL         "",108,"Button",BS_OWNERDRAW,13,124,8,8
+    CONTROL         "",109,"Button",BS_OWNERDRAW,13,134,8,8
+    CONTROL         "",110,"Button",BS_OWNERDRAW,13,144,8,8
+    CONTROL         "",111,"Button",BS_OWNERDRAW,13,154,8,8
+    CONTROL         "",112,"Button",BS_OWNERDRAW,13,164,8,8
+    CONTROL         "",SCREEN_REF_SQUARE_ONE,"Button",BS_OWNERDRAW,41,34,8,8
+    CONTROL         "",121,"Button",BS_OWNERDRAW,41,44,8,8
+    CONTROL         "",122,"Button",BS_OWNERDRAW,41,54,8,8
+    CONTROL         "",123,"Button",BS_OWNERDRAW,41,64,8,8
+    CONTROL         "",124,"Button",BS_OWNERDRAW,41,74,8,8
+    CONTROL         "",125,"Button",BS_OWNERDRAW,41,84,8,8
+    CONTROL         "",126,"Button",BS_OWNERDRAW,41,94,8,8
+    CONTROL         "",127,"Button",BS_OWNERDRAW,41,104,8,8
+    CONTROL         "",PRINT_NORMAL_SQUARE_ONE,"Button",BS_OWNERDRAW,77,34,8,
+                    8
+    CONTROL         "",141,"Button",BS_OWNERDRAW,77,45,8,8
+    CONTROL         "",142,"Button",BS_OWNERDRAW,77,54,8,8
+    CONTROL         "",143,"Button",BS_OWNERDRAW,77,64,8,8
+    CONTROL         "",144,"Button",BS_OWNERDRAW,77,74,8,8
+    CONTROL         "",145,"Button",BS_OWNERDRAW,77,85,8,8
+    CONTROL         "",146,"Button",BS_OWNERDRAW,77,94,8,8
+    CONTROL         "",147,"Button",BS_OWNERDRAW,77,104,8,8
+    CONTROL         "",148,"Button",BS_OWNERDRAW,77,124,8,8
+    CONTROL         "",149,"Button",BS_OWNERDRAW,77,134,8,8
+    CONTROL         "",150,"Button",BS_OWNERDRAW,77,144,8,8
+    CONTROL         "",151,"Button",BS_OWNERDRAW,77,154,8,8
+    CONTROL         "",152,"Button",BS_OWNERDRAW,77,164,8,8
+    CONTROL         "",PRINT_REF_SQUARE_ONE,"Button",BS_OWNERDRAW,105,34,8,8
+    CONTROL         "",161,"Button",BS_OWNERDRAW,105,45,8,8
+    CONTROL         "",162,"Button",BS_OWNERDRAW,105,54,8,8
+    CONTROL         "",163,"Button",BS_OWNERDRAW,105,64,8,8
+    CONTROL         "",164,"Button",BS_OWNERDRAW,105,74,8,8
+    CONTROL         "",165,"Button",BS_OWNERDRAW,105,85,8,8
+    CONTROL         "",166,"Button",BS_OWNERDRAW,105,94,8,8
+    CONTROL         "",167,"Button",BS_OWNERDRAW,105,104,8,8
+    LTEXT           "通常",-1,5,20,26,8,NOT WS_GROUP
+    LTEXT           "引用の",-1,35,20,27,8,NOT WS_GROUP
+    LTEXT           "通常",-1,69,21,26,8,NOT WS_GROUP
+    LTEXT           "引用の",-1,99,21,29,8,NOT WS_GROUP
+    CTEXT           "画面",-1,20,9,39,8,NOT WS_GROUP
+    CTEXT           "プリンタ",-1,81,9,31,8,NOT WS_GROUP
+    LTEXT           "背景",-1,130,124,46,8,NOT WS_GROUP
+    LTEXT           "縁",-1,130,135,26,8,NOT WS_GROUP
+    LTEXT           "度目盛",-1,130,145,19,8,NOT WS_GROUP
+    LTEXT           "文",-1,130,154,19,8,NOT WS_GROUP
+    LTEXT           "トレンド背景",-1,130,164,66,8,NOT WS_GROUP
+    CONTROL         "",ALARM_COLOR_SQUARE,"Button",BS_OWNERDRAW | BS_CENTER,
+                    13,178,8,8
+    CONTROL         "",WARNING_COLOR_SQUARE,"Button",BS_OWNERDRAW | 
+                    BS_CENTER,13,188,8,8
+    CONTROL         "",NO_ALARM_COLOR_SQUARE,"Button",BS_OWNERDRAW | 
+                    BS_CENTER,13,198,8,8
+    CONTROL         "",DIALOG_TEXT_COLOR_SQUARE,"Button",BS_OWNERDRAW | 
+                    BS_CENTER,13,208,8,8
+    LTEXT           "アラームカラー",-1,38,178,60,8,NOT WS_GROUP
+    LTEXT           "警報のカラー",-1,38,188,48,8,NOT WS_GROUP
+    LTEXT           "アラーム歴記を見付けなかったの色",-1,38,198,122,8,NOT 
+                    WS_GROUP
+    LTEXT           "アラーム文を見付けなかったの色",-1,38,208,112,8,NOT 
+                    WS_GROUP
+END
+
+CHOOSECOLOR DIALOG DISCARDABLE  2, 0, 150, 124
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "カラー"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "基礎カラー(&B) :",-1,4,4,140,9
+    CONTROL         "",COLOR_BOX1,"Static",SS_SIMPLE | WS_GROUP | WS_TABSTOP,
+                    4,14,140,86
+    DEFPUSHBUTTON   "OK",IDOK,22,106,44,14,WS_GROUP
+    PUSHBUTTON      "閉じる",IDCANCEL,78,106,44,14,WS_GROUP
+    LTEXT           "&Custom Colors:",-1,4,1666,140,9
+    CONTROL         "",COLOR_CUSTOM1,"Static",SS_SIMPLE | WS_GROUP,4,166,140,
+                    28
+    PUSHBUTTON      "作成した色(&D)>>>",COLOR_MIX,4,150,140,14,WS_GROUP
+    PUSHBUTTON      "&Help",1038,100,166,44,14,WS_GROUP
+    CONTROL         "",COLOR_RAINBOW,"Static",SS_BLACKFRAME,152,4,118,116
+    CONTROL         "",COLOR_LUMSCROLL,"Static",SS_SIMPLE,280,4,8,116
+    CONTROL         "",COLOR_CURRENT,"Static",SS_BLACKFRAME,152,124,40,26
+    PUSHBUTTON      "&o",COLOR_SOLID,300,200,6,14,WS_GROUP
+    RTEXT           "色|",-1,152,151,20,9
+    LTEXT           "純色(&o)",-1,172,151,20,9
+    RTEXT           "色合い(&H):",COLOR_HUEACCEL,194,126,20,9
+    EDITTEXT        COLOR_HUE,216,124,18,12,WS_GROUP
+    RTEXT           "魚やかさ(&S):",COLOR_SATACCEL,194,140,20,9
+    EDITTEXT        COLOR_SAT,216,138,18,12,WS_GROUP
+    RTEXT           "明るさ(&L):",COLOR_LUMACCEL,194,154,20,9
+    EDITTEXT        COLOR_LUM,216,152,18,12,WS_GROUP
+    RTEXT           "赤(&R):",COLOR_REDACCEL,243,126,24,9
+    EDITTEXT        COLOR_RED,269,124,18,12,WS_GROUP
+    RTEXT           "綠(&G):",COLOR_GREENACCEL,243,140,24,9
+    EDITTEXT        COLOR_GREEN,269,138,18,12,WS_GROUP
+    RTEXT           "青(&u):",COLOR_BLUEACCEL,243,154,24,9
+    EDITTEXT        COLOR_BLUE,269,152,18,12,WS_GROUP
+    PUSHBUTTON      "色の追加(&A)",COLOR_ADD,152,166,142,14,WS_GROUP
+END
+
+OPERATOR_SIGNON_DIALOG DIALOG DISCARDABLE  0, 0, 165, 109
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "オペレーターを任命する事"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "オペレーター",-1,45,5,60,8,NOT WS_GROUP
+    LTEXT           "機番",-1,2,5,31,9
+    DEFPUSHBUTTON   "OK",IDOK,64,89,50,14,BS_CENTER
+    LISTBOX         OPERATOR_LISTBOX,44,15,100,70,WS_VSCROLL | WS_TABSTOP
+    LISTBOX         OPERATOR_MACHINE_LISTBOX,2,15,31,58,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "全",ALL_OPERATOR_MACHINES_BUTTON,2,77,31,14,BS_CENTER
+    PUSHBUTTON      "編集(&E)",EDIT_OPERATORS_BUTTON,134,1,31,11,BS_CENTER | 
+                    WS_DISABLED
+END
+
+EXPORT_SHOTS_DIALOG DIALOG DISCARDABLE  0, 0, 290, 164
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "ショットパラメータを出力"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "ショット番号　　　年月日時",SHOT_TITLE_STATIC,8,2,126,9,
+                    NOT WS_GROUP
+    LTEXT           "パラメータ",PARAM_TITLE_STATIC,143,3,66,8,NOT WS_GROUP
+    LISTBOX         SHOT_LISTBOX,8,12,129,79,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "全",ALL_SHOTS_BUTTON,8,93,50,14,BS_CENTER
+    LISTBOX         PARAM_NAME_LISTBOX,143,12,144,79,LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "全",ALL_PARAMETERS_BUTTON,144,93,50,14,BS_CENTER
+    PUSHBUTTON      "OK",IDOK,120,144,50,14,BS_CENTER
+    CONTROL         "Export to Clipboard",EXPORT_TO_CLIPBOARD_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,12,116,101,8
+    CONTROL         "Export to CSV File:",EXPORT_CSV_FILE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,12,127,98,8
+    EDITTEXT        CSV_FILE_NAME_EBOX,114,123,169,13,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,8,111,279,29
+END
+
+REALTIME_MACHINE_LIST DIALOG DISCARDABLE  0, 0, 187, 153
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "リアルタイムモードの機械"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "機番",-1,8,6,32,8,NOT WS_GROUP
+    LTEXT           "表示",-1,51,6,45,8,NOT WS_GROUP
+    LTEXT           "チェックマークを付ける",-1,119,20,52,27,NOT WS_GROUP
+    LISTBOX         RT_MACHINE_LISTBOX,8,17,99,135,LBS_SORT | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "OK",IDOK,123,68,50,14,BS_CENTER
+    PUSHBUTTON      "全",RT_DISPLAY_ALL_BUTTON,130,111,36,12,BS_CENTER
+    PUSHBUTTON      "なし",RT_DISPLAY_NONE_BUTTON,130,127,36,12,BS_CENTER
+END
+
+ABOUT_DIALOG DIALOG DISCARDABLE  0, 0, 147, 93
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,48,76,50,14,BS_CENTER
+    CTEXT           "True Trak 2020 ",-1,28,7,89,8,NOT WS_GROUP
+    CTEXT           "プロセス モニトリング システム",-1,12,20,124,8,NOT 
+                    WS_GROUP
+    RTEXT           "パージョン",-1,34,34,41,8,NOT WS_GROUP
+    LTEXT           "5.08",ABOUT_VERSION_TEXTBOX,80,34,24,8,NOT WS_GROUP
+    RTEXT           "Serial Number:",-1,13,52,56,11,NOT WS_GROUP
+    EDITTEXT        ABOUT_SERIAL_EBOX,73,51,30,11,WS_GROUP
+END
+
+ALARM_SUMMARY_DIALOG DIALOGEX 0, 0, 371, 242
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_DLGMODALFRAME
+CAPTION "パアラームデータの総合"
+FONT 10, "ＭＳ 明朝", 0, 0, 0x1
+BEGIN
+    LISTBOX         ALARM_SUMMARY_LISTBOX,12,39,252,170,LBS_USETABSTOPS | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL
+    LTEXT           "パラメータ",-1,23,27,43,8,NOT WS_GROUP
+    CTEXT           "低アラーム",ALARM_LOW_TITLE_TBOX,80,19,41,18,NOT 
+                    WS_GROUP
+    CTEXT           "下限値",-1,129,19,32,18,NOT WS_GROUP
+    CTEXT           "高アラーム",ALARM_HIGH_TITLE_TBOX,165,19,37,18,NOT 
+                    WS_GROUP
+    CTEXT           "上限値",-1,211,19,32,18,NOT WS_GROUP
+    GROUPBOX        "数量",-1,278,9,80,48,WS_GROUP
+    GROUPBOX        "表示時間の間隔",-1,278,67,80,60,WS_GROUP
+    GROUPBOX        "アラーム形式",-1,278,136,80,53,WS_GROUP
+    CONTROL         "パーセント",PERCENT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,294,24,49,12
+    CONTROL         "回数",COUNT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,37,44,12
+    CONTROL         "切替",BY_SHIFT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,294,83,44,12
+    CONTROL         "日",BY_DAY_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,95,44,12
+    CONTROL         "全",ALL_DATA_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,107,28,12
+    CONTROL         "警報",WARNING_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,294,152,44,12
+    CONTROL         "アラーム",ALARM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,165,44,12
+    PUSHBUTTON      "前状態へ移動",PREV_BUTTON,286,200,64,14,BS_CENTER | 
+                    WS_GROUP
+    PUSHBUTTON      "次へ移動",NEXT_BUTTON,286,219,64,14,BS_CENTER
+    RTEXT           "全ショット :",-1,12,214,56,8,NOT WS_GROUP
+    LTEXT           "543",ALARM_TOTAL_SHOTS_TBOX,72,214,36,8,NOT WS_GROUP
+    RTEXT           "全アラームショット :",ALARM_OUT_TITLE_TBOX,131,214,81,8,
+                    NOT WS_GROUP
+    LTEXT           "10%",ALARM_OUT_TBOX,216,214,28,8,NOT WS_GROUP
+    LTEXT           "M02",ALARM_MACHINE_TBOX,32,2,24,8,NOT WS_GROUP
+    LTEXT           "VISITRAK",ALARM_PART_TBOX,72,2,44,8,NOT WS_GROUP
+    LTEXT           "10/27/97",ALARM_DATE_TBOX,122,2,40,8,NOT WS_GROUP
+    LTEXT           "2目の切替 ",ALARM_SHIFT_TBOX,174,2,40,8,NOT WS_GROUP
+    PUSHBUTTON      "全アラームデータを削除",DEL_ALARM_DATA_BUTTON,1,227,113,
+                    12,BS_CENTER
+END
+
+PASSWORD_DIALOG DIALOGEX 0, 0, 240, 108
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "パスワードレベルの設定"
+FONT 10, "ＭＳ 明朝", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,61,73,50,14,BS_CENTER
+    PUSHBUTTON      "キャンセル",IDCANCEL,129,73,50,14,BS_CENTER
+    EDITTEXT        ENTER_PASSWORD_EBOX,105,36,132,12
+    PUSHBUTTON      "パスワードの編集(&E)",EDIT_PASSWORDS_BUTTON,138,0,102,
+                    14,BS_CENTER
+    LTEXT           "パスワードを入力する :",-1,16,38,85,8,NOT WS_GROUP
+    LTEXT           "0",CURRENT_PASSWORD_LEVEL_TBOX,103,4,16,8,NOT WS_GROUP
+    RTEXT           "現在のパスワードレベル :",-1,4,4,94,8,NOT WS_GROUP
+    PUSHBUTTON      "Edit &Options",CO_OPTIONS_BUTTON,184,15,56,14,BS_CENTER
+END
+
+EDIT_PASSWORDS_DIALOG DIALOGEX 0, 0, 249, 188
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "パスワードの編集"
+FONT 10, "ＭＳ 明朝", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "上書き保存",IDOK,87,174,64,14,BS_CENTER
+    CONTROL         "Copy to Network",COPY_TO_NETWORK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,180,178,69,10
+END
+
+TREND_CONFIG_DIALOG DIALOG DISCARDABLE  0, 0, 441, 159
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "トレンドやチャート設定"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    GROUPBOX        "図の種類",IDC_STATIC,4,24,64,52,WS_GROUP
+    GROUPBOX        "表示終了時間",IDC_STATIC,74,36,157,44
+    GROUPBOX        "X 軸",IDC_STATIC,4,79,64,55
+    LTEXT           "相加平均",IDC_STATIC,26,11,38,8,NOT WS_GROUP
+    LTEXT           "点",IDC_STATIC,121,49,27,8,NOT WS_GROUP
+    EDITTEXT        N_TO_AVG_EBOX,4,10,20,12,WS_GROUP
+    CONTROL         "ショット",AVG_SHOTS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,83,6,42,12
+    CONTROL         "分",AVG_MINUTES_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,132,6,24,12
+    CONTROL         "時間",AVG_HOURS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,167,6,23,12
+    CONTROL         "切替",AVG_SHIFTS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,198,6,27,12
+    CONTROL         "日",AVG_DAYS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,83,17,32,11
+    CONTROL         "週",AVG_WEEKS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,133,16,24,12
+    CONTROL         "月",AVG_MONTHS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,168,16,25,12
+    CONTROL         "前",LAST_N_RANGE_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,78,47,21,12
+    CONTROL         "ショット範囲",SHOT_RANGE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,77,62,64,12
+    EDITTEXT        LAST_N_RANGE_EBOX,99,47,20,12,WS_GROUP
+    EDITTEXT        SHOT_RANGE_FROM_EBOX,141,63,28,12
+    LTEXT           "から",IDC_STATIC,169,64,15,8,NOT WS_GROUP
+    EDITTEXT        SHOT_RANGE_TO_EBOX,184,63,28,12
+    CONTROL         "ショット号",SHOT_X_AXIS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,88,53,12
+    CONTROL         "時間と日",HOUR_DAY_X_AXIS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,12,99,45,12
+    CONTROL         "切替と日",SHIFT_DAY_X_AXIS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,12,110,44,12
+    CONTROL         "日月",DAY_MONTH_X_AXIS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,12,121,35,11
+    CONTROL         "トレンド",TREND_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,8,32,40,10
+    CONTROL         "X-Bar",XBAR_RADIO,"Button",BS_AUTORADIOBUTTON,8,42,56,
+                    10
+    CONTROL         "範囲",RANGE_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,8,52,40,10
+    CONTROL         "ヒストグラム",HISTOGRAM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,8,62,55,10
+    CONTROL         "アラーム限界",ALARM_LIMITS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,78,87,60,12
+    CONTROL         "警報限界値",WARNING_LIMITS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX,78,99,60,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,75,85,67,30
+    PUSHBUTTON      "上書き保存",TREND_CHART_SAVE_CHANGES_BUTTON,148,136,60,
+                    16,BS_CENTER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,74,4,156,26
+    LISTBOX         TREND_PARAMETER_LISTBOX,236,11,150,133,LBS_MULTIPLESEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "なし",NO_TREND_PARAMS_BUTTON,305,146,28,10,BS_CENTER
+    LTEXT           "まで",IDC_STATIC,214,64,16,8
+    LTEXT           "表示パラメータ",PARAM_COL_TBOX,237,1,81,9,SS_SUNKEN
+    LTEXT           "最小",MIN_COL_TBOX,317,1,27,9,SS_SUNKEN
+    LTEXT           "最高",MAX_COL_TBOX,345,1,27,9,SS_SUNKEN
+    LTEXT           "用",USE_COL_TBOX,372,1,14,9,SS_SUNKEN
+    EDITTEXT        PLOT_MAX_EBOX,395,49,34,12,ES_AUTOHSCROLL
+    EDITTEXT        PLOT_MIN_EBOX,395,70,34,12,ES_AUTOHSCROLL
+    CONTROL         "リミット",USE_LIMITS_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,396,85,41,9
+    LTEXT           "最高",IDC_STATIC,395,41,26,8
+    LTEXT           "最小",IDC_STATIC,395,62,24,8
+    PUSHBUTTON      "Choose Summary Parameters",CHOOSE_VISIBLE_PB,396,126,43,
+                    30,BS_MULTILINE
+END
+
+SHUT_DOWN_DIALOG DIALOG DISCARDABLE  0, 0, 159, 81
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "ビジトラックプログラムを終了する"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    CONTROL         "ビジトラック全プログラムを終了する",SHUT_DOWN_ALL_RADIO,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,
+                    14,137,12
+    CONTROL         "プロットプログラムだけを終了する",SHUT_DOWN_PLOT_RADIO,
+                    "Button",BS_AUTORADIOBUTTON,12,30,137,12
+    PUSHBUTTON      "はい",IDOK,23,52,50,14,BS_CENTER | WS_GROUP
+    PUSHBUTTON      "いいえ",IDCANCEL,83,52,50,14,BS_CENTER
+END
+
+DOWNTIME_REPORT_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 434, 154
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "休止時間レポートの設定"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           ":",-1,111,55,8,8,NOT WS_GROUP
+    LTEXT           ":",-1,111,70,8,8,NOT WS_GROUP
+    GROUPBOX        "休止時間レポートの範囲",-1,4,21,132,80
+    LTEXT           "日",-1,56,41,14,8,NOT WS_GROUP
+    LTEXT           "まで：",-1,13,69,23,8,NOT WS_GROUP
+    LTEXT           "年月日",-1,143,12,23,8,NOT WS_GROUP
+    LTEXT           "時間",-1,182,12,20,8,NOT WS_GROUP
+    LTEXT           "種類",-1,217,13,32,8,NOT WS_GROUP
+    LTEXT           "亜級",-1,266,12,47,8,NOT WS_GROUP
+    LTEXT           "型番",-1,334,12,17,8,NOT WS_GROUP
+    LTEXT           "オペレーター",-1,367,13,43,8,NOT WS_GROUP
+    LTEXT           "M01",-1,235,1,25,8,NOT WS_GROUP
+    LTEXT           "機番 :",-1,207,1,25,8,NOT WS_GROUP
+    CONTROL         "全",DTR_ALL_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,12,29,21,12
+    CONTROL         "前",DTR_LAST_N_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,12,40,20,12
+    CONTROL         "から：",DTR_FROM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,12,54,32,12
+    EDITTEXT        DTR_LAST_N_EBOX,35,39,20,12,WS_GROUP
+    EDITTEXT        DTR_FROM_DATE_EBOX,51,54,45,12
+    EDITTEXT        DTR_FROM_HOUR_EBOX,99,54,12,12
+    EDITTEXT        DTR_FROM_MINUTE_EBOX,114,54,12,12
+    EDITTEXT        DTR_TO_DATE_EBOX,51,69,45,12
+    EDITTEXT        DTR_TO_HOUR_EBOX,99,68,12,12
+    EDITTEXT        DTR_TO_MINUTE_EBOX,114,68,12,12
+    PUSHBUTTON      "OK",IDOK,193,136,50,14,BS_CENTER
+    CONTROL         "",DTR_TO_DATE_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,39,69,12,12
+    CONTROL         "今日",DTR_TO_PRESENT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,39,81,52,12
+    PUSHBUTTON      "始動値を保存",DTR_RANGE_START_BUTTON,144,116,129,14,
+                    BS_CENTER | WS_GROUP
+    PUSHBUTTON      "最終値を保存",DTR_RANGE_END_BUTTON,286,116,130,14,
+                    BS_CENTER
+    SCROLLBAR       DOWNTIME_SCROLLBAR,416,23,9,93,SBS_VERT
+    LISTBOX         DOWNTIME_LISTBOX,144,24,273,95,LBS_USETABSTOPS | 
+                    LBS_WANTKEYBOARDINPUT | WS_TABSTOP
+    PUSHBUTTON      "クリップボードへ転送",EXPORT_DOWNTIMES_BUTTON,2,140,79,
+                    12,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "選択した物を削除",PURGE_SELECTION_BUTTON,2,126,79,12,
+                    BS_CENTER | NOT WS_TABSTOP
+    CONTROL         "Show All Sub-Categories",SHOW_ALL_SUBS_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,258,139,92,8
+    CONTROL         "Sort Sub-Categories by Category",SORT_SUBS_BY_CAT_XBOX,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,355,
+                    134,77,16
+END
+
+LOAD_FROM_NETWORK_DIALOG DIALOG DISCARDABLE  0, 0, 162, 72
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    CTEXT           "ネットワークから機番を登録する",-1,18,18,123,8,NOT 
+                    WS_GROUP
+    RTEXT           "コンピュータ :",-1,36,40,55,8,NOT WS_GROUP
+    LTEXT           "???",NETWORK_COMPUTER_TBOX,95,40,16,8,NOT WS_GROUP
+END
+
+PRINT_MULTIPLE_SHOTS_DIALOG DIALOG DISCARDABLE  0, 0, 231, 110
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "数多ショットを印刷する事"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "印刷開始",MP_OK_BUTTON,85,95,60,14,BS_CENTER
+    LISTBOX         MP_MACHINE_LISTBOX,2,12,28,80,LBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         MP_PART_LISTBOX,34,12,78,80,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         MP_SHOT_LISTBOX,116,12,112,80,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ショット番号　　　年月日時",-1,116,2,110,9
+    LTEXT           "機番",-1,2,2,31,9
+    LTEXT           "型番",-1,35,2,17,9
+    LTEXT           "ショット",-1,70,2,35,9
+END
+
+EDIT_OPERATORS_DIALOG DIALOGEX 0, 0, 364, 209
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "機械オペレーターの編集"
+FONT 10, "ＭＳ 明朝", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "上書き保存(&S)",EDITOP_SAVE_CHANGES_BUTTON,117,188,56,
+                    14,BS_CENTER
+    CONTROL         "",GRID_POSITION_BORDER,"Static",SS_ETCHEDFRAME,9,7,345,
+                    176
+    PUSHBUTTON      "挿入(&I)",INSERT_OPERATOR_BUTTON,300,188,54,14,
+                    BS_CENTER
+    PUSHBUTTON      "削除(&D)",DELETE_OPERATOR_BUTTON,9,188,54,14,BS_CENTER
+    PUSHBUTTON      "キャンセル(&C)",EDITOP_CANCEL_BUTTON,189,188,56,14,
+                    BS_CENTER
+END
+
+INPUT_ERROR_DIALOG DIALOG DISCARDABLE  0, 0, 213, 56
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "入力エラー"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,83,28,52,14,BS_CENTER
+    LTEXT           "この フィルド は ",-1,14,10,61,10
+    LTEXT           "12",INPUT_ERROR_MAX_CHARS_TBOX,77,9,12,8,NOT WS_GROUP
+    LTEXT           "字サイズを越えられません",-1,90,10,99,8,NOT WS_GROUP
+END
+
+KILL_ALARMSUM_DATA_DIALOG DIALOGEX 0, 0, 235, 49
+STYLE DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST
+CAPTION "全アラームデータを削除しますが、よろしいですか"
+FONT 10, "ＭＳ 明朝", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "はい",IDOK,64,22,50,14,BS_CENTER
+    PUSHBUTTON      "いいえ",IDCANCEL,120,22,50,14,BS_CENTER
+    CTEXT           "続けますか？",ALARMSUM_KILL_TBOX,73,6,92,8,NOT WS_GROUP
+END
+
+ALARM_LOG_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 286, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "アラームログの設定"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    CONTROL         "アラームをファイルに保存：",ALARM_LOG_TO_FILE_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,8,106,10
+    CONTROL         "アラームをプリンタに保存：",ALARM_LOG_TO_PRINTER_XBXO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,50,108,10
+    EDITTEXT        ALARM_LOG_FILE_EBOX,123,6,156,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "プリンタを選択",CHOOSE_ALARM_LOG_PRINTER_BUTTON,28,63,
+                    58,11
+    LTEXT           "Epson LQ-570",ALARM_LOG_PRINTER_TBOX,126,50,153,11,
+                    WS_BORDER
+    PUSHBUTTON      "上書き保存",ALARM_LOG_SETUP_OK_BUTTON,114,80,56,14
+    PUSHBUTTON      "ファイルを選択",CHOOSE_ALARM_LOG_FILE_BUTTON,28,25,58,
+                    11
+    LTEXT           "ファイルには最大多数の行：",IDC_STATIC,93,27,97,8
+    EDITTEXT        ALARM_LOG_MAX_LINES_EBOX,191,25,40,12,ES_AUTOHSCROLL
+END
+
+EDIT_SHIFTS_DIALOG DIALOG DISCARDABLE  0, 0, 334, 172
+STYLE DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "切替の設定"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LISTBOX         SHIFT_LISTBOX,7,23,180,127,LBS_USETABSTOPS | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "日曜日",SUNDAY_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,209,45,40,10
+    CONTROL         "月曜日",MONDAY_RADIO,"Button",BS_AUTORADIOBUTTON,209,56,
+                    39,10
+    CONTROL         "火曜日",TUESDAY_RADIO,"Button",BS_AUTORADIOBUTTON,209,
+                    67,41,10
+    CONTROL         "水曜日",WEDNESDAY_RADIO,"Button",BS_AUTORADIOBUTTON,209,
+                    78,54,10
+    CONTROL         "木曜日",THURSDAY_RADIO,"Button",BS_AUTORADIOBUTTON,268,
+                    45,47,10
+    CONTROL         "金曜日",FRIDAY_RADIO,"Button",BS_AUTORADIOBUTTON,268,56,
+                    35,10
+    CONTROL         "土曜日",SATURDAY_RADIO,"Button",BS_AUTORADIOBUTTON,268,
+                    67,44,10
+    EDITTEXT        SHIFT_NAME_EBOX,205,113,15,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        SHIFT_HOUR_EBOX,236,113,15,14,ES_AUTOHSCROLL
+    EDITTEXT        SHIFT_MINUTE_EBOX,258,113,15,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "上書保存(&S)",SAVE_CHANGES_BUTTON,136,154,60,14,
+                    BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "新しい(&N)",NEW_SHIFT_BUTTON,206,10,50,14,BS_CENTER | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "取り除く(&R)",REMOVE_SHIFT_BUTTON,260,10,50,14,
+                    BS_CENTER | NOT WS_TABSTOP
+    GROUPBOX        "今日",-1,198,33,123,60
+    LTEXT           "切替",-1,205,101,15,8
+    LTEXT           "切替の開始時間",-1,234,101,59,8
+    LTEXT           ":",-1,253,115,3,8
+    LTEXT           "日",-1,13,10,18,8
+    LTEXT           "切替",-1,53,10,16,8
+    LTEXT           "今日",-1,85,10,36,8
+    LTEXT           "開始時間",-1,144,10,33,8
+    PUSHBUTTON      "日は全てこの日のようにします(&M)",COPY_THIS_DAY_BUTTON,
+                    201,134,122,11,BS_CENTER | NOT WS_TABSTOP
+END
+
+EXPORT_ALARMS_DIALOG DIALOG DISCARDABLE  0, 0, 374, 223
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "アラームデータの集計を転送し或いは削除する"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LISTBOX         EXPORT_ALARMS_LISTBOX,8,28,355,177,LBS_USETABSTOPS | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "選択した物を削除(&D)",DEL_ALARM_RANGE_BUTTON,96,201,80,
+                    14
+    PUSHBUTTON      "クリップボードへ転送(&P)",EXPORT_ALARM_RANGE_BUTTON,196,
+                    201,88,14
+    LTEXT           "年月日時",IDC_STATIC,14,16,36,8
+    LTEXT           "切替",ALARMSUM_SHIFT_STATIC,55,16,15,8
+    LTEXT           "パラメータ",ALARMSUM_PARAMETER_STATIC,77,16,41,8
+    LTEXT           "低",LOW_WARNING_COUNT_STATIC,146,17,14,7
+    LTEXT           "高",HIGH_WARNING_COUNT_STATIC,176,17,16,8
+    LTEXT           "低",LOW_ALARM_COUNT_STATIC,208,18,14,7
+    LTEXT           "高",HIGH_ALARM_COUNT_STATIC,238,18,16,8
+    LTEXT           "全警報ショット数",TOTAL_WARNINGS_STATIC,264,8,35,18
+    LTEXT           "全アラームショット数",TOTAL_ALARMS_STATIC,297,2,37,19
+    LTEXT           "全数",TOTAL_ALARM_COUNT_STATIC,337,15,22,13
+    CTEXT           "警報回数",IDC_STATIC,143,4,56,10
+    CTEXT           "アラーム回数",IDC_STATIC,206,4,56,10,NOT WS_GROUP
+END
+
+DOWNTIME_ENTRY_DIALOG DIALOG DISCARDABLE  0, 0, 184, 230
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter Downtime Category and Subcategory"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        CAT_AND_SUBCAT_EBOX,10,28,56,14,ES_AUTOHSCROLL
+    LISTBOX         CAT_AND_SUBCAT_LB,0,44,183,185,LBS_SORT | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,72,29,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,128,29,50,14
+    RTEXT           "Down Time:",IDC_STATIC,14,13,58,12,SS_CENTERIMAGE
+    LTEXT           "01/01/2002 00:00:00",EVENT_TIME_TBOX,75,13,107,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Machine",IDC_STATIC,64,3,28,8
+    LTEXT           "M03",EVENT_MACHINE_TBOX,98,3,15,8
+END
+
+CO_OPTIONS_DIALOG DIALOGEX 0, 0, 451, 263
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Use Part Based Corner Parameters and Trend Chart Setups",
+                    PART_BASED_DISPLAY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,2,0,126,18
+    CONTROL         "Use Popup Downtime Entry Screen",POPUP_DOWNTIME_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,2,19,127,10
+    CONTROL         "Pressing the Print Screen button prints current profile.",
+                    ENABLE_SNAPSHOT_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,2,30,123,18
+    CONTROL         "Default to Shut Down ALL Programs",
+                    EXIT_ALL_DEFAULT_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,149,0,131,10
+    EDITTEXT        ALARM_ON_DOWN_WIRE_EBOX,142,11,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Alarm on Down Wire ( 0 for None )",
+                    ALARM_ON_DOWN_WIRE_TBOX,161,13,111,10
+    CONTROL         "Save All Alarm Shots",SAVE_ALL_ALARM_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,149,24,81,10
+    CONTROL         "Subtract Timeout from Downtime",SUB_TIMEOUT_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,303,0,118,10
+    EDITTEXT        MONITOR_WIRE_EBOX,296,11,15,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Monitor Wire ( 0 for None )",MONITOR_WIRE_TBOX,315,13,
+                    86,10
+    CONTROL         "Clear Monitor Wire on Down",
+                    CLEAR_MONITOR_WIRE_ON_DOWN_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,303,26,104,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,50,451,1
+    CTEXT           "Multipart Runlist Settings",IDC_STATIC,0,55,78,8,NOT 
+                    WS_GROUP
+    CONTROL         "Use Multipart Runlist ( This REPLACES the Warmup Part )",
+                    MULTIPART_RUNTIME_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,89,55,197,10
+    EDITTEXT        WIRE_1_MULTIPART_RUNTIME_EBOX,294,53,15,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Wire 1",WIRE_1_TBOX,314,55,22,8
+    EDITTEXT        WIRE_2_MULTIPART_RUNTIME_EBOX,342,53,15,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Wire 2",WIRE_2_TBOX,361,55,22,8
+    EDITTEXT        WIRE_3_MULTIPART_RUNTIME_EBOX,393,53,15,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Wire 3",WIRE_3_TBOX,411,55,22,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,67,451,1
+    CTEXT           "Password Levels",IDC_STATIC,95,70,54,8,NOT WS_GROUP
+    GROUPBOX        "FasTrak Board Monitor",IDC_STATIC,0,96,233,54
+    EDITTEXT        READ_CURRENT_ANALOG_EBOX,13,106,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Read Current Pos./Analog Values appears on the main menu",
+                    READ_CURRENT_ANALOG_TBOX,33,108,193,8
+    EDITTEXT        SHOW_BOARD_MONITOR_LEVEL_EBOX,13,120,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "FasTrak Board Interface appears on the main menu. ",
+                    SHOW_BOARD_MONITOR_LEVEL_TBOX,33,122,167,8
+    EDITTEXT        IOEX4_GRAY_LEVEL_EBOX,13,135,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Opto Test, Command Port Access, etc.",
+                    IOEX4_GRAY_LEVEL_TBOX,31,137,124,8
+    GROUPBOX        "Sure-Trak Control Interface",IDC_STATIC,1,156,232,66
+    CONTROL         "Have Sure-Trak Control",HAVE_SURETRAK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,167,93,10
+    CONTROL         "Use Valve Test Output",USE_VALVE_TEST_OUTPUT_XBOX,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,
+                    187,87,10
+    CONTROL         "Use Null Valve Output",USE_NULL_VALVE_OUTPUT_XBOX,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,
+                    197,87,10
+    EDITTEXT        EDIT_CONTROL_PROGRAM_EBOX,107,176,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit the Control Program button",
+                    EDIT_CONTROL_PROGRAM_TBOX,127,179,99,8
+    EDITTEXT        SERVICE_TOOLS_EBOX,107,190,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Service Tools Button",SERVICE_TOOLS_TBOX,126,192,67,8
+    EDITTEXT        ST_EXIT_LEVEL_EBOX,107,204,15,12,ES_AUTOHSCROLL
+    LTEXT           "Exit Menu",IDC_STATIC,126,207,32,8
+    EDITTEXT        PURGE_DOWNTIMES_EBOX,246,81,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Purge Alarms and Downtimes",PURGE_DOWNTIMES_TBOX,265,84,
+                    96,8
+    EDITTEXT        EDIT_OPERATORS_EBOX,363,81,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit Operators Button",EDIT_OPERATORS_TBOX,382,84,68,8
+    GROUPBOX        "Part Setup",IDC_STATIC,241,98,210,114
+    EDITTEXT        CHANGE_PARAM_LEVEL_EBOX,252,110,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Change Parameter Setups",CHANGE_PARAM_LEVEL_TBOX,272,
+                    112,84,8
+    EDITTEXT        OTHER_COMPUTER_EBOX,252,124,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit part on another computer",OTHER_COMPUTER_TBOX,272,
+                    126,94,8
+    EDITTEXT        OTHER_CURRENT_PART_EBOX,252,138,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit current part on another computer",
+                    OTHER_CURRENT_PART_TBOX,272,140,118,8
+    EDITTEXT        OTHER_SURETRAK_EBOX,252,152,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit sure-trak setup on another computer",
+                    OTHER_SURETRAK_TBOX,272,154,129,8
+    CONTROL         "Show setup sheet on Part Setup",SHOW_SETUP_SHEET_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,168,116,10
+    EDITTEXT        EDIT_SETUP_SHEET_EBOX,252,181,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit the setup sheet",EDIT_SETUP_SHEET_TBOX,271,183,64,
+                    8
+    EDITTEXT        VELOCITY_CHANGES_EBOX,343,181,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Velocity Changes Button",VELOCITY_CHANGES_TBOX,362,183,
+                    78,8
+    LTEXT           "You must restart the affected programs for the changes to take place.",
+                    IDC_STATIC,6,244,125,18
+    GROUPBOX        "Plot Program",IDC_STATIC,241,70,210,26
+    CONTROL         "Print parameters with Setup",PRINT_PARAMETERS_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,303,38,104,10
+    CONTROL         "Clear from Popup Downtime Entry",CLEAR_FROM_POPUP_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,35,121,10
+    CONTROL         "No Network",NO_NETWORK_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,376,249,54,10
+    LTEXT           "Corner Parameter Display Limits",IDC_STATIC,15,229,101,
+                    8
+    LTEXT           "Low",IDC_STATIC,123,223,14,8
+    LTEXT           "High",IDC_STATIC,124,233,16,8
+    CONTROL         "Low Alarm",LOW_LIMIT_LOW_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,150,223,49,10
+    CONTROL         "Low Warning",LOW_LIMIT_LOW_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,215,223,58,10
+    CONTROL         "High Warning",LOW_LIMIT_HIGH_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,280,223,59,10
+    CONTROL         "High Alarm",LOW_LIMIT_HIGH_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,345,223,50,10
+    CONTROL         "Low Alarm",HIGH_LIMIT_LOW_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,150,233,49,10
+    CONTROL         "Low Warning",HIGH_LIMIT_LOW_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,215,233,58,10
+    CONTROL         "High Warning",HIGH_LIMIT_HIGH_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,280,233,59,10
+    CONTROL         "High Alarm",HIGH_LIMIT_HIGH_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,345,233,50,10
+    DEFPUSHBUTTON   "Save Changes",IDOK,157,247,58,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,227,247,50,14
+    CONTROL         "Copy to Network",COPY_TO_NETWORK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,299,249,69,10
+    GROUPBOX        "FT2 Only",IDC_STATIC,1,178,99,34
+    EDITTEXT        SAVE_CHANGES_LEVEL_EBOX,374,107,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Save Changes",IDC_STATIC,392,109,48,8
+    EDITTEXT        PASSWORD_LEVEL_TIMEOUT_EBOX,10,79,23,12,ES_AUTOHSCROLL
+    LTEXT           "Restore DEFAULT password after this many minutes.",
+                    PASSWORD_LEVEL_TIMEOUT_TBOX,38,81,168,8
+    CONTROL         "Hide Sure-Trak Limit Switch Wires",
+                    HIDE_SURETRAK_LS_WIRES_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,109,165,121,10
+    EDITTEXT        PC_PROFILE_LEVEL_EBOX,252,197,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit Pres Control Profile",PC_PROFILE_LEVEL_TBOX,271,
+                    199,74,8
+    EDITTEXT        PC_SETUP_LEVEL_EBOX,347,197,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit Pres Control Setup",PC_SETUP_LEVEL_TBOX,366,199,74,
+                    8
+    EDITTEXT        SAVE_ALL_PARTS_LEVEL_EBOX,374,122,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Save All Parts",SAVE_ALL_PARTS_LEVEL_TBOX,393,124,48,8
+END
+
+MACHINE_LIST_DIALOG DIALOG DISCARDABLE  0, 0, 301, 322
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "List of Machines"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         MACHINE_LIST_LB,0,10,300,311,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Machine",MACHINE_NAME_STATIC,0,1,28,8
+    LTEXT           "Computer",COMPUTER_NAME_STATIC,51,1,31,8
+    LTEXT           "Directory",COMPUTER_DIR_STATIC,100,2,29,8
+END
+
+SHIFT_REPORT_DIALOG DIALOG DISCARDABLE  6, 15, 474, 373
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Shift Report"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Table",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,0,0,51,14
+    CONTROL         "Graph",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,51,0,51,14
+    CONTROL         "Parameters",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,115,0,83,14
+    CONTROL         "Downtime Summary",IDC_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,199,0,83,14
+    CONTROL         "Alarms Summary",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,283,0,83,14
+    CONTROL         "Shift",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,386,0,29,14
+    CONTROL         "Day",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,416,0,29,14
+    CONTROL         "Week",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,445,0,29,14
+END
+
+TC_VISIBLE_DIALOG DIALOG DISCARDABLE  0, 0, 213, 250
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Parameters to Display"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Highlight the parameters you wish to diplay in the Statistical Summary and press OK.",
+                    IDC_STATIC,123,19,82,39
+    LISTBOX         TC_VISIBLE_LB,0,0,114,243,LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,139,64,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "CHOOSE_PART", DIALOG
+    BEGIN
+        RIGHTMARGIN, 148
+    END
+
+    "CHOOSE_PARAMETER_LIST", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 161
+    END
+
+    "PARAM_HISTORY_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 131
+    END
+
+    "DISPLAY_CONFIGURATION", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 175
+    END
+
+    "COLOR_DEFINITION_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 245
+    END
+
+    "CHOOSECOLOR", DIALOG
+    BEGIN
+        TOPMARGIN, 4
+    END
+
+    "EXPORT_SHOTS_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 247
+        BOTTOMMARGIN, 127
+    END
+
+    "REALTIME_MACHINE_LIST", DIALOG
+    BEGIN
+        RIGHTMARGIN, 182
+    END
+
+    "ABOUT_DIALOG", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 75
+    END
+
+    "TREND_CONFIG_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 353
+        BOTTOMMARGIN, 158
+    END
+
+    "KILL_ALARMSUM_DATA_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 229
+    END
+
+    "ALARM_LOG_SETUP_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    "EXPORT_ALARMS_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    "CO_OPTIONS_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 433
+        BOTTOMMARGIN, 250
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+PROFILE_HOT_KEYS ACCELERATORS MOVEABLE PURE 
+BEGIN
+    VK_ESCAPE,      ESCAPE_KEY,             VIRTKEY, NOINVERT
+    VK_F10,         F10_KEY,                VIRTKEY, NOINVERT
+    VK_F5,          F5_KEY,                 VIRTKEY, NOINVERT
+    VK_F6,          F6_KEY,                 VIRTKEY, NOINVERT
+    VK_F7,          F7_KEY,                 VIRTKEY, NOINVERT
+    VK_F8,          F8_KEY,                 VIRTKEY, NOINVERT
+    VK_F9,          F9_KEY,                 VIRTKEY, NOINVERT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrcj.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "#include ""colordlg.h""\r\n"
+    "#include ""dlgs.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+PROFILE                 ICON    DISCARDABLE     "profile.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    1                       "コーナーパラメータのボックスが満杯です。"
+    2                       "実施することが出来ません"
+    3                       "先頭"
+    4                       "ロッド"
+    5                       "ディファ"
+    6                       "距離"
+    7                       "位置"
+    8                       "圧力"
+    9                       "温度"
+    10                      "時間"
+    11                      "間"
+    12                      "速度"
+    13                      "量"
+    14                      "面積"
+    15                      "不明です"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    16                      "Ch 1"
+    17                      "Ch 2"
+    18                      "Ch 3"
+    19                      "Ch 4"
+    20                      "ヘッド圧力"
+    21                      "ロッド圧力"
+    22                      "差圧"
+    23                      "FasTrak4チャンネル"
+    24                      "ヘッド圧力"
+    25                      "ロッド圧力"
+    26                      "差圧"
+    27                      "FasTrak4チャンネル"
+    28                      "FasTrak1チャンネル"
+    29                      "FasTrak2チャンネル"
+    30                      "FasTrak3チャンネル"
+    31                      "FasTrak4チャンネル"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    32                      "FasTrak1チャンネル"
+    33                      "FasTrak2チャンネル"
+    34                      "FasTrak3チャンネル"
+    35                      "FasTrak4チャンネル"
+    36                      "チャンネル"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    TIME_ONLY_MENU_HELP     "時間対ショットデータ"
+    LAST_50_SCREEN_MENU_HELP "最終５０ショットのコーナーパラメータ表示"
+    STD_SCREEN_MENU_HELP    "コーナーパラメータの表示"
+    VIEW_REFERENCE_TRACE_MENU_HELP "現在の記録と参照の記録を同時に表示します"
+    VIEW_PARAMETERS_MENU_HELP "現ショットの全パラメータ表示"
+    BOX_SCREEN_MENU_HELP    "全モニタマシンの情報ボックス表示"
+    TREND_SCREEN_MENU_HELP  "現行金型のトレンドチャート表示"
+    PROFILE_SCREEN_MENU_HELP "現在なショットのプロフィールを見せます"
+    DOWNBAR_SCREEN_MENU_HELP "機械停止時間棒グラフ"
+    PART_EDITOR_MENU_HELP   "基礎設定と高度設定とパラメータと位置と記号とチャンネルとSureTrak"
+    MACHINE_EDITOR_MENU_HELP "機番設定と高度機械条件"
+    ZOOM_MENU               "ズーム"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    UNZOOM_MENU             "ズーム取消"
+    MAX_OVERLAY_REACHED_STRING "表示最高ショット数"
+    DEL_SOME_FIRST_STRING   "他を表示するために取り除いて下さい"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    501                     "位置/時間軸表示"
+    502                     "位置軸表示"
+    503                     "時間軸表示"
+    504                     "最終50ショット画面"
+    505                     "標準画面"
+    EMPTY_LIST              "このリストには何もありません。"
+    NO_MACHINES_HERE        "このコンピュータには機番がありません。"
+    OPERATOR_NOT_FOUND      "オペレーター見つかりません。"
+    SHOT_NUMBER_STRING      "ショット号"
+    DATE_NAME_STRING        "年月日"
+    TIME_NAME_STRING        "時間"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NO_MEMORY_STRING        "メモリーを配置できません"
+    PRINTER_LIST_STRING     "プリンタのリスト [EnumPrinters]"
+    UNITS_TITLE_STRING      "単位"
+    REALTIME_ON_MENU_STRING "生きショット"
+    NO_ALARM_STRING         "仕様数値関係"
+    WARNING_STRING          "警報"
+    ALARM_STRING            "アラーム"
+    NO_DOWN_STRING          "休止？？？"
+    HUMAN_DOWN_STRING       "休止"
+    AUTO_DOWN_STRING        "自動的に終了"
+    PROG_DOWN_STRING        "モニタタスクがありません"
+    PROG_UP_STRING          "マニトル"
+    MACH_UP_STRING          "動作中"
+    NO_MONITOR_STRING       "モニタしていません"
+    BOX_SCREEN_MENU_STRING  "ボックス画面"
+    MACHINE_TT_STRING       "ダイカスト機の名称"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NEXT_SHIFT_STRING       "次へ移動"
+    PREV_SHIFT_STRING       "前状態へ移動"
+    NEXT_DAY_STRING         "次の日"
+    PREV_DAY_STRING         "前の日"
+    NEXT_STRING             "次の"
+    PREV_STRING             "前の"
+    NO_ALARM_DATA_STRING    "アラームデータなし"
+    NOTHING_TO_DISPLAY_STRING "表示するものなし"
+    SHIFT_STRING            "切替"
+    PARAMETER_STRING        "パラメータ"
+    LOW_LIMIT_STRING        "低限界"
+    HIGH_LIMIT_STRING       "高限界"
+    PARAMETER_VALUE_STRING  "量"
+    ALARM_TT_STRING         "設定値を外れたパラメータがある時は警報または警告をします"
+    REALTIME_OFF_MENU_STRING "選択ショット番号"
+    REALTIME_SINGLE_MENU_STRING "ライブショット、ワンマシン"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    PART_TT_STRING          "現在の型番または型名称"
+    SHOT_TT_STRING          "最新のショット番号"
+    DATE_TT_STRING          "最新ショットの時間"
+    NO_DOWN_TT_STRING       "新機番または停止時間の設定なし"
+    HUMAN_DOWN_TT_STRING    "人による機番停止"
+    AUTO_DOWN_TT_STRING     "機械動作時間終了、条件未定"
+    PROG_DOWN_TT_STRING     "ボードモニタータスクが不作動"
+    PROG_UP_TT_STRING       "モニタ開始、未射出"
+    MACH_UP_TT_STRING       "機械動作中"
+    NO_MONITOR_TT_STRING    "この機番のモニタリングを止めている"
+    TOTAL_ALARM_SHOTS_STRING "アラームショット数:"
+    TOTAL_WARNING_SHOTS_STRING "全警報ショット数:"
+    LOW_ALARM_STRING        "低アラーム"
+    HIGH_ALARM_STRING       "高アラーム"
+    LOW_WARNING_STRING      "低警報"
+    HIGH_WARNING_STRING     "高警報"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    TIME_AXIS_LABEL_STRING  "時間 (秒)"
+    TREND_ALLSHOTS_MENU_STRING "全ショット表示８鋳造変数(F8)"
+    TREND_CONFIG_MENU_STRING "トレンドチャートの設定"
+    TREND_SCREEN_MENU_STRING "トレンド画面"
+    NO_GRAPHS_FOUND_STRING  "波形が見当たらず"
+    TREND_REALTIME_MENU_STRING "ライブショット変化状態図"
+    N_EQUALS_STRING         "  ( グループサイズ = "
+    END_PARENS_STRING       " )"
+    TOO_MANY_GRAPHS_STRING  "これ以上表示できません"
+    TIMEOUT_STRING          "FasTrak 合間 "
+    DOWNBAR_TITLE_STRING    "停止止間の総合報告"
+    TOTAL_HOURS_STRING      "全記録時間"
+    TOTAL_HOURS_UP_STRING   "全稼働時間"
+    TOTAL_HOURS_DOWN_STRING "機械停止時間合計"
+    MACH_UTILIZATION_STRING "機械使用条件"
+    MAX_DOWNTIME_HOURS_STRING "99999.99"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAX_DOWNTIME_PERCENT_STRING "100.00%"
+    DOWNTIME_FROM_STRING    "から："
+    DOWNTIME_TO_STRING      "まで："
+    HOURS_STRING            "時間"
+    CATEGORY_TITLE_STRING   " : 種類  = "
+    DOWNBAR_CONFIG_MENU_STRING "データ範囲の選択"
+    NO_DOWNTIME_DATA_STRING "ダウンタイムデータなし"
+    CHOOSE_PART_MENU_HELP   "現行表示型番の選択"
+    CHOOSE_SHOT_MENU_HELP   "現行表示ショットの選択"
+    EXIT_MENU_HELP          "プログラムを終了"
+    MINIMIZE_MENU_HELP      "ウィンドウの最小化"
+    SAVE_MENU_HELP          "最終５０ショットを常時保存しますか"
+    SAVE_AS_MASTER_MENU_HELP "現在の射出条件を参考値とし保存"
+    PRINT_MENU_HELP         "印刷（ワンショット）"
+    POS_TIME_MENU_HELP      "充填前データの位置軸表示と充填後データの時間軸表示"
+    POS_ONLY_MENU_HELP      "充填前データ表示"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SEC_TIME_LABEL_STRING   "時間 (SEC)"
+    SHOT_LABEL_STRING       "シャット"
+    MULTIPLE_SHOT_PRINT_MENU_HELP "一度に印刷するショット数を選択して下さい"
+    MULTIPLE_PRINT_STRING   "数ショットを印刷します"
+    PRINTING_COMPLETE_STRING "印刷して仕舞いました。"
+    STAT_N_EQUALS_STRING    "N = "
+    ALARM_LIMITS_STRING     "アラーム限界"
+    ALARM_SHOT_LABEL_STRING "ショット"
+    ALARM_DATE_LABEL_STRING "年月日"
+    ALARM_TIME_LABEL_STRING "時間"
+    TREND_REALTIME_MENU_HELP 
+                            "最近のＮショットの表示とトレンドチャートのＮショットの表示"
+    TREND_ALLSHOTS_MENU_HELP "この型番に登録された全ショットを表示します"
+    TREND_CONFIG_MENU_HELP  "変化状態図を設定します。"
+    STAT_SUMMARY_MENU_STRING "統計総合"
+    STAT_SUMMARY_MENU_HELP  "選択したショットの範囲でパラメータの統計の概要を表示します"
+    NO_STAT_SUMMARY_MENU_STRING "統計総合を取消します"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MONITOR_CONFIG_MENU_HELP 
+                            "現行型の選択、アラームモニタ、充填完了後の記録時間、射出スキップ"
+    BACKUP_AND_RESTORE_MENU_HELP 
+                            "バックアップ／リストア　金型条件、パラメータデータ、射出波形"
+    SETUPS_MENU_HELP        "このコンピュータのFasTrakボードは、機械をFasTrakボード、コンピュータパス名に割り当てます"
+    DOWNTIME_MENU_HELP      "休止時間の主分類名と副分類名を変更します"
+    EDITDOWN_MENU_HELP      "機械停止理由を説明している記録を変更、または追加をします"
+    SURETRAK_CONTROL_MENU_HELP 
+                            "コントロールボードの診断、設定、コントロールプログラムのダウンロード"
+    OPERATOR_SIGNON_MENU_HELP "機番に対するオペレーターを選択します"
+    EXPORT_SHOTS_MENU_HELP  "他のプログラムで使用するために、パラメータデータをウィンドウズクリッボードにコピーします"
+    ALARM_SUMMARY_MENU_HELP "アラーム回数とその内容表示"
+    PASSWORDS_MENU_HELP     "現在のパスワードレベルを変更し、パスワードリストを編集します"
+    RESTORE_PASSWORD_MENU_HELP 
+                            "現在のパスワードレベルを初期設定レベルと等しくして下さい"
+    BOARD_MONITOR_MENU_HELP "FasTrakデータエクイジッションボードからショットデータを取り集めます"
+    HELP_MENU_HELP          "メインヘルプファイルの表示"
+    UNZOOM_MENU_HELP        "全画面表示に戻ります"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ZOOM_MENU_HELP          "Ｘ－軸の小分範囲の限定表示"
+    DISPLAY_CONFIGURATION_MENU_HELP "表示するアナログチャンネルを選択します"
+    COLOR_DEFINITION_MENU_HELP "表示カラー選択"
+    CHOOSE_RT_MACHINES_MENU_HELP "射出時にライブ表示する機番を選択します"
+    CORNER_PARAMETERS_MENU_HELP 
+                            "スクリーン下部に表示するパラメータを選択します"
+    OVERLAY_MENU_HELP       "前のショットプロフィールを消さずに新ショットプロフィールを重ねて表示します。"
+    MACHINE_INTRO_STRING    "機番 ："
+    PART_INTRO_STRING       "型番 ："
+    TOTAL_SHOTS_INTRO_STRING "全ショット = "
+    TOTAL_ALARM_SHOTS_INTRO_STRING "全アラームショット = "
+    TOTAL_WARNING_SHOTS_INTRO_STRING "全警報ショット = "
+    QUANTITY_BELOW_STRING   "下の量"
+    QUANTITY_ABOVE_STRING   "上の量"
+    CANNOT_COMPLY_STRING    "実施することが出来ません"
+    PASSWORD_NOT_FOUND_STRING "パスワードが見当たりません"
+    MS_TIME_LABEL_STRING    "時間 (MS)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NO_STAT_SUMMARY_MENU_HELP "統計概要を移動します"
+    ZOOM_PRINT_POSITION_STRING "位置"
+    ZOOM_PRINT_TIME_STRING  "時間"
+    ZOOM_PRINT_VELOCITY_STRING "速度"
+    ZOOM_PRINT_ROD_PRES_STRING "ロッド圧力"
+    ZOOM_PRINT_HEAD_PRES_STRING "ヘッド圧力"
+    ZOOM_PRINT_START_STRING "始まり"
+    ZOOM_PRINT_END_STRING   "終わり"
+    ZOOM_PRINT_DELTA_STRING "デルタ"
+    FIELD_TOO_LONG_STRING   "文字の最高数 ＝"
+    INPUT_ERROR_STRING      "入力エラー"
+    NO_DEL_ALL_ROWS_STRING  "全列を削除することはできません"
+    ATTEMPT_DEL_ALL_ROWS_STRING "全列削除を試みにやってみます"
+    NOTHING_SELECTED_STRING "未選択"
+    SELECT_ROW_STRING       "列番号をクリックして１つ以上の列を選択して下さい"
+    N_PER_GROUP_STRING      "グループサイズ = "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    KILLING_ALARMSUM_DATA_STRING "アラームデータの総合を削除しています．．．"
+    OPERATOR_ABREVIATION_STRING "略語"
+    OPERATOR_FIRST_NAME_STRING "名"
+    OPERATOR_LAST_NAME_STRING "名字"
+    STATSUM_MAX_STRING      "最高"
+    STATSUM_MIN_STRING      "極小"
+    STATSUM_AVERAGE_STRING  "平均"
+    STATSUM_RANGE_STRING    "範囲"
+    STATSUM_STDDEV_STRING   "標準偏差"
+    STATSUM_LOW_STRING      "低"
+    STATSUM_HIGH_STRING     "高"
+    STATSUM_LCL_STRING      "LCL"
+    STATSUM_UCL_STRING      "UCL"
+    STATSUM_ZLCL_STRING     "Zlcl"
+    STATSUM_ZUCL_STRING     "Zucl"
+    STATSUM_ZMIN_STRING     "Zmin"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    STATSUM_CPK_STRING      "Cpk"
+    STATSUM_PERCENT_OUT_STRING "%Out"
+    SHIFT_TIME_TITLE_STRING "切替時間の設定"
+    MUST_HAVE_ONE_STRING    "日毎に一目の切替項目を少なくとも登録して下さい。"
+    RESTART_MONITOR_STRING  "FasTrakボードモニタを再起動して下さい"
+    SHIFT_CHANGES_STRING    "切替の変更内容は保存されました。"
+    NOTHING_TO_EXPORT_STRING "転送するものは在りません"
+    NO_MEM_FOR_SORT_STRING  "分類のためにメモリーを配置できません"
+    DBARCFG_HEADING_STRING  "年月日時\t種類\t亜級\tオペレーター\t型番\r\n"
+    VISIEDIT_MENU_HELP      "初期化及びメニュファイルを変化するのためにエディター。"
+    ALARM_LOG_SETUP_MENU_HELP "アラーム情報をファイルやプリンタに転送する。"
+    TOTAL_SHOTS_STRING      "全ショット："
+    TOTALS_STRING           "全数"
+    ALARMSUM_EXPORT_HEADER_STRING 
+                            "年月日時\t切替\tパラメータ\t低警報\t高警報\t低アラーム\t高アラーム\t全警報ショット数\t全アラームショット数\t全ショット"
+    YES_STRING              "はい"
+    NO_STRING               "いいえ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EDIT_SHIFTS_MENU_HELP   "Edit the shift start times"
+    EXPORT_NO_CSV_STRING    "No CSV file name specified"
+    EXPORT_TOO_SMALL_STRING "Disk too small"
+    EXPORT_OF_STRING        " of "
+    EXPORT_WRITTEN_STRING   " bytes written."
+    PW_COL_0_STRING         "Level"
+    PW_COL_1_STRING         "Password"
+    PW_COL_2_STRING         "User Name"
+    PW_DUPLICATE_STRING     "Duplicate Password"
+    PW_BLANK_STRING         "You cannot have blank levels or passwords"
+    NO_DOWNTIME_SELECTED_STRING "No Downtime Selected"
+    SEMAPHOR_FAIL_STRING    "Cannot own machine semaphor db"
+    FIXED_AXIS_STRING       "Fixed"
+    CLEAR_BACKUP_LIST_MENU_HELP "Begin a new backup list file"
+    ADD_TO_BACKUP_LIST_MENU_HELP 
+                            "Add the current shot to the backup list file"
+    ADDING_TO_BACKUP_STRING "Adding to Backup List..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    CHOOSE_DOWNTIME_MACHINE_MENU_STRING "Choose Machine"
+    STATUS_SCREEN_MENU_STRING "Status Screen"
+    EDIT_STATUS_SCREEN_MENU_STRING "Edit Status Screen Setup"
+    SAVE_STATUS_SCREEN_MENU_STRING "Save Status Screen Setup"
+    SAVING_STRING           "Saving..."
+    STATUS_SCREEN_MENU_HELP "Display current shot, downtime, and production counts"
+    EDIT_STATUS_SCREEN_MENU_HELP "Edit column widths of the Status Screen"
+    SAVE_STATUS_SCREEN_MENU_HELP "Save changes to the Status Screen"
+    CHANNEL_5_LABEL_STRING  "Ch 1"
+    CHANNEL_6_LABEL_STRING  "Ch 2"
+    CHANNEL_7_LABEL_STRING  "Ch 3"
+    CHANNEL_8_LABEL_STRING  "Ch 4"
+    XDCR_MENU_STRING        "Transducer Plot"
+    EXPORT_ALARMS_MENU_HELP "Copy alarm summary data to the windows clipboard for use by other programs."
+    XDCR_MENU_HELP          "Display plots of the separate transducer signals (FasTrak2 only)"
+    STANDARD_DOWNTIMES_MENU_HELP 
+                            "Setup standard codes for auto down at break times, etc."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SHIFT_REPORT_MENU_HELP  "Plot the downtime status of machines vs time."
+    WHATS_NEW_MENU_HELP     "Show the help describing changes to the program."
+    ABOUT_BOX_MENU_HELP     "Display the software version number."
+    FONT_STATUS_SCREEN_MENU_STRING "Choose Font"
+    FONT_STATUS_SCREEN_MENU_HELP "Choose the font for the Status Screen"
+    MASTER_EXISTS_STRING    "A MASTER trace already exists"
+    REPLACE_MASTER_STRING   "Do you want to replace it?"
+    CANT_CREATE_DEST_DIR_STRING "Unable to create Destination Directory"
+    FIELD_TOO_SHORT_STRING  "Field cannot be empty"
+    OFF_LINE_STRING         "Off Line"
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,1658 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcc.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resrcc.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+#include "colordlg.h"
+#include "dlgs.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ABOUT_DIALOG DIALOG DISCARDABLE  0, 0, 147, 82
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+FONT 12, "PMingLiU"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,48,63,50,14,BS_CENTER
+    CTEXT           "True-Trak  2020 ",-1,43,7,60,8,NOT WS_GROUP
+    CTEXT           "壓鑄監測系統",-1,27,20,92,8,NOT WS_GROUP
+    RTEXT           "版本",-1,38,34,32,8,NOT WS_GROUP
+    LTEXT           "6.11",ABOUT_VERSION_TEXTBOX,75,34,36,8,NOT WS_GROUP
+    RTEXT           "Serial Number:",-1,47,47,24,7,NOT WS_GROUP
+    EDITTEXT        ABOUT_SERIAL_EBOX,75,46,30,8,WS_GROUP
+END
+
+ALARM_LOG_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 286, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "警示資料設定"
+FONT 12, "PMingLiU"
+BEGIN
+    CONTROL         "儲存警示資料到檔案:",ALARM_LOG_TO_FILE_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,8,78,10
+    CONTROL         "送警示資料到印表機:",ALARM_LOG_TO_PRINTER_XBXO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,50,83,10
+    EDITTEXT        ALARM_LOG_FILE_EBOX,92,6,176,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "選擇印表機...",CHOOSE_ALARM_LOG_PRINTER_BUTTON,28,63,58,
+                    11
+    LTEXT           "Epson LQ-570",ALARM_LOG_PRINTER_TBOX,103,50,164,11,
+                    WS_BORDER
+    PUSHBUTTON      "儲存改變",ALARM_LOG_SETUP_OK_BUTTON,114,80,56,14
+    PUSHBUTTON      "選擇檔案...",CHOOSE_ALARM_LOG_FILE_BUTTON,28,22,58,11
+    LTEXT           "檔案的最大行數:",IDC_STATIC,93,24,56,8
+    EDITTEXT        ALARM_LOG_MAX_LINES_EBOX,152,22,40,12,ES_AUTOHSCROLL
+END
+
+CHOOSE_PART DIALOG DISCARDABLE  6, 15, 148, 94
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "選取鑄件型號"
+FONT 12, "PMingLiU"
+BEGIN
+    LISTBOX         112,4,15,28,58,LBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         121,36,15,110,58,LBS_SORT | LBS_USETABSTOPS | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,54,77,35,14
+    LTEXT           "機號",-1,2,4,31,9
+    LTEXT           "鑄件型號",-1,36,4,31,10
+    LTEXT           "射出參數",-1,81,4,30,9
+    LTEXT           "射出數",-1,114,4,26,9
+END
+
+CHOOSE_SHOTS DIALOG DISCARDABLE  5, 18, 229, 97
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION " 選擇 Shot(s)"
+FONT 12, "PMingLiU"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,88,82,50,14,NOT WS_TABSTOP
+    LISTBOX         101,113,11,112,66,LBS_SORT | LBS_WANTKEYBOARDINPUT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         102,113,11,112,79,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         CS_MACHINE_LISTBOX,3,9,28,80,LBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         CS_PART_LISTBOX,33,9,78,80,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "射出號數   日期",-1,113,0,112,9
+    LTEXT           "機號",-1,2,0,31,9
+    LTEXT           "鑄件型號",-1,35,0,29,9
+    LTEXT           "射出次數",-1,79,0,31,9
+END
+
+CHOOSECOLOR DIALOGEX 2, 0, 150, 124
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "顏色"
+FONT 12, "PMingLiU", 0, 0, 0x1
+BEGIN
+    LTEXT           "&基本顏色:",-1,4,4,140,9
+    CONTROL         "",COLOR_BOX1,"Static",SS_SIMPLE | WS_GROUP | WS_TABSTOP,
+                    4,14,140,86
+    DEFPUSHBUTTON   "OK",IDOK,22,106,44,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,78,106,44,14,WS_GROUP
+    LTEXT           "&Custom Colors:",-1,4,1666,140,9
+    CONTROL         "",COLOR_CUSTOM1,"Static",SS_SIMPLE | WS_GROUP,4,166,140,
+                    28
+    PUSHBUTTON      "設定特殊顏色...",COLOR_MIX,4,150,140,14,WS_GROUP
+    PUSHBUTTON      "&Help",1038,100,166,44,14,WS_GROUP
+    CONTROL         "",COLOR_RAINBOW,"Static",SS_BLACKFRAME,152,4,118,116
+    CONTROL         "",COLOR_LUMSCROLL,"Static",SS_SIMPLE,280,4,8,116
+    CONTROL         "",COLOR_CURRENT,"Static",SS_BLACKFRAME,152,124,40,26
+    PUSHBUTTON      "&o",COLOR_SOLID,300,200,4,14,WS_GROUP
+    RTEXT           "Color|",-1,152,151,20,9
+    LTEXT           "S&olid",-1,172,151,20,9
+    RTEXT           "&Hue:",COLOR_HUEACCEL,194,126,20,9
+    EDITTEXT        COLOR_HUE,216,124,18,12,WS_GROUP
+    RTEXT           "&Sat:",COLOR_SATACCEL,194,140,20,9
+    EDITTEXT        COLOR_SAT,216,138,18,12,WS_GROUP
+    RTEXT           "&Lum:",COLOR_LUMACCEL,194,154,20,9
+    EDITTEXT        COLOR_LUM,216,152,18,12,WS_GROUP
+    RTEXT           "紅:",COLOR_REDACCEL,243,126,24,9
+    EDITTEXT        COLOR_RED,269,124,18,12,WS_GROUP
+    RTEXT           "綠:",COLOR_GREENACCEL,243,140,24,9
+    EDITTEXT        COLOR_GREEN,269,138,18,12,WS_GROUP
+    RTEXT           "籃:",COLOR_BLUEACCEL,243,154,24,9
+    EDITTEXT        COLOR_BLUE,269,152,18,12,WS_GROUP
+    PUSHBUTTON      "加入特殊顏色群",COLOR_ADD,152,166,142,14,WS_GROUP,0,
+                    HCOLOR_ADD
+END
+
+CO_OPTIONS_DIALOG DIALOGEX 0, 0, 451, 281
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "設定選擇"
+FONT 10, "PMingLiU"
+BEGIN
+    CONTROL         "Use Part Based Corner Parameters and Trend Chart Setups",
+                    PART_BASED_DISPLAY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,3,0,126,17
+    CONTROL         "Use Popup Downtime Entry Screen",POPUP_DOWNTIME_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,3,17,127,10
+    CONTROL         "Pressing the Print Screen button prints current profile.",
+                    ENABLE_SNAPSHOT_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,3,29,124,16
+    CONTROL         "Default to Shut Down ALL Programs",
+                    EXIT_ALL_DEFAULT_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,136,0,131,10
+    EDITTEXT        ALARM_ON_DOWN_WIRE_EBOX,129,11,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Alarm on Down Wire ( 0 for None )",
+                    ALARM_ON_DOWN_WIRE_TBOX,148,13,111,10
+    CONTROL         "Save All Alarm Shots",SAVE_ALL_ALARM_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,135,25,81,10
+    CONTROL         "Subtract Timeout from Downtime",SUB_TIMEOUT_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,278,0,118,10
+    EDITTEXT        MONITOR_WIRE_EBOX,271,11,15,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Monitor Wire ( 0 for None )",MONITOR_WIRE_TBOX,290,13,
+                    86,10
+    CONTROL         "Clear Monitor Wire on Down",
+                    CLEAR_MONITOR_WIRE_ON_DOWN_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,278,24,104,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,48,451,1
+    LTEXT           "Multipart Runlist Settings",IDC_STATIC,0,51,85,8,NOT 
+                    WS_GROUP
+    CONTROL         "Use Multipart Runlist ( This REPLACES the Warmup Part )",
+                    MULTIPART_RUNTIME_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,88,52,197,10
+    EDITTEXT        WIRE_1_MULTIPART_RUNTIME_EBOX,293,50,15,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Wire 1",WIRE_1_TBOX,313,52,22,8
+    EDITTEXT        WIRE_2_MULTIPART_RUNTIME_EBOX,341,50,15,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Wire 2",WIRE_2_TBOX,360,52,22,8
+    EDITTEXT        WIRE_3_MULTIPART_RUNTIME_EBOX,392,50,15,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Wire 3",WIRE_3_TBOX,411,52,22,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,64,451,1
+    CTEXT           "Password Levels",IDC_STATIC,95,74,66,8,NOT WS_GROUP
+    GROUPBOX        "FasTrak Board Monitor",IDC_STATIC,6,98,227,67
+    EDITTEXT        READ_CURRENT_ANALOG_EBOX,13,115,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Read Current Pos./Analog Values appears on the main menu",
+                    READ_CURRENT_ANALOG_TBOX,33,117,193,8
+    EDITTEXT        SHOW_BOARD_MONITOR_LEVEL_EBOX,13,129,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "FasTrak Board Interface appears on the main menu. ",
+                    SHOW_BOARD_MONITOR_LEVEL_TBOX,33,131,167,8
+    EDITTEXT        IOEX4_GRAY_LEVEL_EBOX,13,144,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Opto Test, Command Port Access, etc.",
+                    IOEX4_GRAY_LEVEL_TBOX,31,146,124,8
+    GROUPBOX        "Sure-Trak控制介面",IDC_STATIC,6,170,227,56
+    CONTROL         "有Sure-Trak控制器",HAVE_SURETRAK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,180,71,10
+    EDITTEXT        EDIT_CONTROL_PROGRAM_EBOX,112,176,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit the Control Program button",
+                    EDIT_CONTROL_PROGRAM_TBOX,130,178,105,8
+    EDITTEXT        SERVICE_TOOLS_EBOX,112,190,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Service Tools Button",SERVICE_TOOLS_TBOX,131,192,67,8
+    EDITTEXT        ST_EXIT_LEVEL_EBOX,112,207,15,12,ES_AUTOHSCROLL
+    LTEXT           "Exit Menu",IDC_STATIC,130,209,34,8
+    EDITTEXT        PURGE_DOWNTIMES_EBOX,254,80,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Purge Alarms and Downtimes",PURGE_DOWNTIMES_TBOX,274,83,
+                    96,8
+    EDITTEXT        EDIT_OPERATORS_EBOX,254,94,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit Operators Button",EDIT_OPERATORS_TBOX,274,97,68,8
+    GROUPBOX        "Part Setup",IDC_STATIC,241,114,209,112
+    EDITTEXT        CHANGE_PARAM_LEVEL_EBOX,252,126,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Change Parameter Setups",CHANGE_PARAM_LEVEL_TBOX,272,
+                    128,90,8
+    EDITTEXT        OTHER_COMPUTER_EBOX,252,140,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit part on another computer",OTHER_COMPUTER_TBOX,272,
+                    142,97,8
+    EDITTEXT        OTHER_CURRENT_PART_EBOX,252,154,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit current part on another computer",
+                    OTHER_CURRENT_PART_TBOX,272,156,122,8
+    EDITTEXT        OTHER_SURETRAK_EBOX,252,168,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit sure-trak setup on another computer",
+                    OTHER_SURETRAK_TBOX,272,170,135,8
+    CONTROL         "Show setup sheet on Part Setup",SHOW_SETUP_SHEET_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,258,184,116,10
+    EDITTEXT        EDIT_SETUP_SHEET_EBOX,252,197,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Edit the setup sheet",EDIT_SETUP_SHEET_TBOX,271,199,66,
+                    8
+    EDITTEXT        VELOCITY_CHANGES_EBOX,344,196,15,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Velocity Changes Button",VELOCITY_CHANGES_TBOX,361,198,
+                    82,8
+    LTEXT           "You must restart the affected programs for the changes to take place.",
+                    IDC_STATIC,6,256,138,18
+    GROUPBOX        "Plot Program",IDC_STATIC,241,69,185,43
+    CONTROL         "Print parameters with Setup",PRINT_PARAMETERS_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,278,35,104,10
+    CONTROL         "Clear from Popup Downtime Entry",CLEAR_FROM_POPUP_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,135,36,121,10
+    CONTROL         "沒網路",NO_NETWORK_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,376,259,54,10
+    LTEXT           "選擇顯示參數上下限",IDC_STATIC,15,235,101,8
+    LTEXT           "低",IDC_STATIC,123,229,14,8
+    LTEXT           "高",IDC_STATIC,124,239,16,8
+    CONTROL         "低警報",LOW_LIMIT_LOW_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,150,229,49,10
+    CONTROL         "低警示",LOW_LIMIT_LOW_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,215,229,58,10
+    CONTROL         "高警示",LOW_LIMIT_HIGH_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,280,229,59,10
+    CONTROL         "高警報",LOW_LIMIT_HIGH_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,345,229,50,10
+    CONTROL         "低警報",HIGH_LIMIT_LOW_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,150,239,49,10
+    CONTROL         "低警示",HIGH_LIMIT_LOW_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,215,239,58,10
+    CONTROL         "高警示",HIGH_LIMIT_HIGH_WARN_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,280,239,59,10
+    CONTROL         "高警報",HIGH_LIMIT_HIGH_ALARM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,345,239,50,10
+    DEFPUSHBUTTON   "儲存改變",IDOK,157,257,58,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,227,257,50,14
+    CONTROL         "拷貝到網路",COPY_TO_NETWORK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,299,259,69,10
+    CONTROL         "Use Valve Test Output",USE_VALVE_TEST_OUTPUT_XBOX,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,14,
+                    202,85,8
+    CONTROL         "Use Null Valve Output",USE_NULL_VALVE_OUTPUT_XBOX,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,14,
+                    213,83,8
+    GROUPBOX        "FT2 Only",IDC_STATIC,12,192,90,34
+    EDITTEXT        SAVE_CHANGES_LEVEL_EBOX,373,126,12,10,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Save Changes",IDC_STATIC,388,128,48,7
+    EDITTEXT        PASSWORD_LEVEL_TIMEOUT_EBOX,8,84,18,10,ES_AUTOHSCROLL
+    LTEXT           "Restore DEFAULT password after this many minutes.",
+                    PASSWORD_LEVEL_TIMEOUT_TBOX,29,86,178,7
+    EDITTEXT        CHANGE_CHANNELS_LEVEL_EBOX,373,139,12,10,ES_NUMBER
+    LTEXT           "Change Channels",IDC_STATIC,388,141,60,7
+END
+
+COLOR_DEFINITION_DIALOG DIALOG DISCARDABLE  0, 0, 227, 242
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "設定顯示顏色"
+FONT 12, "PMingLiU"
+BEGIN
+    PUSHBUTTON      "儲存改變",IDOK,39,225,57,14,BS_CENTER
+    PUSHBUTTON      "回復原先的顏面",IDCANCEL,105,225,83,14,BS_CENTER
+    LTEXT           "時間軸",-1,130,34,41,8,NOT WS_GROUP
+    LTEXT           "Y 位置",-1,130,45,60,8,NOT WS_GROUP
+    LTEXT           "X 位置",-1,130,55,60,8,NOT WS_GROUP
+    LTEXT           "速度",-1,130,65,60,8,NOT WS_GROUP
+    LTEXT           "頭壓力/第1頻道",-1,130,75,87,8,NOT WS_GROUP
+    LTEXT           "桿壓力/第2頻道",-1,130,85,80,8,NOT WS_GROUP
+    LTEXT           "模壓力/第3頻道",-1,130,95,71,8,NOT WS_GROUP
+    LTEXT           "第4頻道",-1,130,105,60,8,NOT WS_GROUP
+    CONTROL         "",SCREEN_NORMAL_SQUARE_ONE,"Button",BS_OWNERDRAW,13,34,
+                    8,8
+    CONTROL         "",101,"Button",BS_OWNERDRAW,13,44,8,8
+    CONTROL         "",102,"Button",BS_OWNERDRAW,13,54,8,8
+    CONTROL         "",103,"Button",BS_OWNERDRAW,13,64,8,8
+    CONTROL         "",104,"Button",BS_OWNERDRAW,13,74,8,8
+    CONTROL         "",105,"Button",BS_OWNERDRAW,13,84,8,8
+    CONTROL         "",106,"Button",BS_OWNERDRAW,13,94,8,8
+    CONTROL         "",107,"Button",BS_OWNERDRAW,13,104,8,8
+    CONTROL         "",108,"Button",BS_OWNERDRAW,13,124,8,8
+    CONTROL         "",109,"Button",BS_OWNERDRAW,13,134,8,8
+    CONTROL         "",110,"Button",BS_OWNERDRAW,13,144,8,8
+    CONTROL         "",111,"Button",BS_OWNERDRAW,13,154,8,8
+    CONTROL         "",112,"Button",BS_OWNERDRAW,13,164,8,8
+    CONTROL         "",SCREEN_REF_SQUARE_ONE,"Button",BS_OWNERDRAW,41,34,8,8
+    CONTROL         "",121,"Button",BS_OWNERDRAW,41,44,8,8
+    CONTROL         "",122,"Button",BS_OWNERDRAW,41,54,8,8
+    CONTROL         "",123,"Button",BS_OWNERDRAW,41,64,8,8
+    CONTROL         "",124,"Button",BS_OWNERDRAW,41,74,8,8
+    CONTROL         "",125,"Button",BS_OWNERDRAW,41,84,8,8
+    CONTROL         "",126,"Button",BS_OWNERDRAW,41,94,8,8
+    CONTROL         "",127,"Button",BS_OWNERDRAW,41,104,8,8
+    CONTROL         "",PRINT_NORMAL_SQUARE_ONE,"Button",BS_OWNERDRAW,77,34,8,
+                    8
+    CONTROL         "",141,"Button",BS_OWNERDRAW,77,45,8,8
+    CONTROL         "",142,"Button",BS_OWNERDRAW,77,54,8,8
+    CONTROL         "",143,"Button",BS_OWNERDRAW,77,64,8,8
+    CONTROL         "",144,"Button",BS_OWNERDRAW,77,74,8,8
+    CONTROL         "",145,"Button",BS_OWNERDRAW,77,85,8,8
+    CONTROL         "",146,"Button",BS_OWNERDRAW,77,94,8,8
+    CONTROL         "",147,"Button",BS_OWNERDRAW,77,104,8,8
+    CONTROL         "",148,"Button",BS_OWNERDRAW,77,124,8,8
+    CONTROL         "",149,"Button",BS_OWNERDRAW,77,134,8,8
+    CONTROL         "",150,"Button",BS_OWNERDRAW,77,144,8,8
+    CONTROL         "",151,"Button",BS_OWNERDRAW,77,154,8,8
+    CONTROL         "",152,"Button",BS_OWNERDRAW,77,164,8,8
+    CONTROL         "",PRINT_REF_SQUARE_ONE,"Button",BS_OWNERDRAW,105,34,8,8
+    CONTROL         "",161,"Button",BS_OWNERDRAW,105,45,8,8
+    CONTROL         "",162,"Button",BS_OWNERDRAW,105,54,8,8
+    CONTROL         "",163,"Button",BS_OWNERDRAW,105,64,8,8
+    CONTROL         "",164,"Button",BS_OWNERDRAW,105,74,8,8
+    CONTROL         "",165,"Button",BS_OWNERDRAW,105,85,8,8
+    CONTROL         "",166,"Button",BS_OWNERDRAW,105,94,8,8
+    CONTROL         "",167,"Button",BS_OWNERDRAW,105,104,8,8
+    LTEXT           "正常",-1,5,20,26,8,NOT WS_GROUP
+    LTEXT           "參考",-1,31,20,38,8,NOT WS_GROUP
+    LTEXT           "正常",-1,69,21,26,8,NOT WS_GROUP
+    LTEXT           "參考",-1,95,21,38,8,NOT WS_GROUP
+    CTEXT           "銀幕     ",-1,20,9,31,8,NOT WS_GROUP
+    CTEXT           "印表機   ",-1,81,9,31,8,NOT WS_GROUP
+    LTEXT           "背景顏色",-1,130,124,46,8,NOT WS_GROUP
+    LTEXT           "邊際",-1,130,135,26,8,NOT WS_GROUP
+    LTEXT           "Grid",-1,130,145,19,8,NOT WS_GROUP
+    LTEXT           "字樣",-1,130,154,19,8,NOT WS_GROUP
+    LTEXT           "趨勢圖背景顏色",-1,130,164,66,8,NOT WS_GROUP
+    CONTROL         "",ALARM_COLOR_SQUARE,"Button",BS_OWNERDRAW | BS_CENTER,
+                    13,178,8,8
+    CONTROL         "",WARNING_COLOR_SQUARE,"Button",BS_OWNERDRAW | 
+                    BS_CENTER,13,188,8,8
+    CONTROL         "",NO_ALARM_COLOR_SQUARE,"Button",BS_OWNERDRAW | 
+                    BS_CENTER,13,198,8,8
+    CONTROL         "",DIALOG_TEXT_COLOR_SQUARE,"Button",BS_OWNERDRAW | 
+                    BS_CENTER,13,208,8,8
+    LTEXT           "警報顏色",-1,38,178,60,8,NOT WS_GROUP
+    LTEXT           "警示顏色",-1,38,188,48,8,NOT WS_GROUP
+    LTEXT           "無警報顯示顏色",-1,38,198,75,8,NOT WS_GROUP
+    LTEXT           "無警報字樣顏色",-1,38,208,75,8,NOT WS_GROUP
+END
+
+ALARM_SUMMARY_DIALOG DIALOGEX 0, 0, 371, 242
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_DLGMODALFRAME
+CAPTION "警告總結"
+FONT 12, "PMingLiU", 0, 0, 0x1
+BEGIN
+    LISTBOX         ALARM_SUMMARY_LISTBOX,12,39,252,170,LBS_USETABSTOPS | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL
+    LTEXT           "射出參數",-1,23,27,36,8,NOT WS_GROUP
+    CTEXT           "    低     警報",ALARM_LOW_TITLE_TBOX,89,19,32,18,NOT 
+                    WS_GROUP
+    CTEXT           "  低警報數量",-1,129,19,32,18,NOT WS_GROUP
+    CTEXT           "    高     警報",ALARM_HIGH_TITLE_TBOX,167,19,32,18,NOT 
+                    WS_GROUP
+    CTEXT           "  高警報數量",-1,211,19,32,18,NOT WS_GROUP
+    GROUPBOX        "數量型式",-1,278,9,80,48,WS_GROUP
+    GROUPBOX        "時間間格",-1,278,67,80,60,WS_GROUP
+    GROUPBOX        "警示型式",-1,278,136,80,53,WS_GROUP
+    CONTROL         "百分比",PERCENT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,294,24,44,12
+    CONTROL         "數量",COUNT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,37,44,12
+    CONTROL         "每班次",BY_SHIFT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,294,83,44,12
+    CONTROL         "每天",BY_DAY_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,95,44,12
+    CONTROL         "所有",ALL_DATA_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,107,28,12
+    CONTROL         "警告",WARNING_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,294,152,44,12
+    CONTROL         "警報",ALARM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,294,165,44,12
+    PUSHBUTTON      "&前班次",PREV_BUTTON,286,200,64,14,BS_CENTER | WS_GROUP
+    PUSHBUTTON      "&下班次",NEXT_BUTTON,286,219,64,14,BS_CENTER
+    RTEXT           "總射出數:",-1,20,214,48,8,NOT WS_GROUP
+    LTEXT           "543",ALARM_TOTAL_SHOTS_TBOX,72,214,36,8,NOT WS_GROUP
+    RTEXT           "總警報射出數:",ALARM_OUT_TITLE_TBOX,152,214,60,8,NOT 
+                    WS_GROUP
+    LTEXT           "10%",ALARM_OUT_TBOX,216,214,28,8,NOT WS_GROUP
+    LTEXT           "M02",ALARM_MACHINE_TBOX,32,2,24,8,NOT WS_GROUP
+    LTEXT           "VISITRAK",ALARM_PART_TBOX,72,2,44,8,NOT WS_GROUP
+    LTEXT           "10/27/97",ALARM_DATE_TBOX,122,2,40,8,NOT WS_GROUP
+    LTEXT           "SHIFT 2",ALARM_SHIFT_TBOX,174,2,40,8,NOT WS_GROUP
+END
+
+CHOOSE_DOWNTIME_MACHINE_DIALOG DIALOG DISCARDABLE  6, 15, 151, 95
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "選擇停機機器"
+FONT 12, "PMingLiU"
+BEGIN
+    LISTBOX         DOWNTIME_MACHINE_LISTBOX,4,15,142,70,LBS_SORT | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "關閉視窗",IDOK,58,78,35,14
+    LTEXT           "機器",-1,5,4,31,9
+    LTEXT           "最近停機事件",DOWNTIME_MACHINE_DATE_TBOX,49,4,98,9
+END
+
+CHOOSE_MASTER_TRACE DIALOG DISCARDABLE  0, 0, 141, 131
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CONTEXTHELP | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "選取新參考射出曲線"
+FONT 12, "PMingLiU"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,42,114,50,14,BS_CENTER
+    COMBOBOX        101,15,23,104,90,CBS_SORT | WS_TABSTOP
+    CTEXT           "目前的參考射出曲線",-1,16,8,104,10,SS_SUNKEN | NOT 
+                    WS_GROUP
+END
+
+CHOOSE_PARAMETER_LIST DIALOG DISCARDABLE  0, 0, 243, 170
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "重要射出參數的選擇和設定"
+FONT 12, "PMingLiU"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,96,154,50,14
+    LISTBOX         101,6,20,114,136,WS_VSCROLL | WS_TABSTOP
+    LISTBOX         102,121,20,114,136,WS_VSCROLL | WS_TABSTOP
+    CTEXT           "顯示下列參數",-1,6,8,114,10,SS_SUNKEN
+    CTEXT           "選擇下列參數",-1,121,8,114,10,SS_SUNKEN
+END
+
+CSV_SHOT_FILE_DIALOG DIALOG DISCARDABLE  6, 15, 205, 41
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "儲存CSV型檔案"
+FONT 12, "PMingLiU"
+BEGIN
+    EDITTEXT        CSV_SHOT_FILE_EBOX,50,4,152,12,WS_GROUP
+    DEFPUSHBUTTON   "儲存",IDOK,63,22,35,14
+    LTEXT           "檔案名稱",IDC_STATIC,5,4,37,9
+    PUSHBUTTON      "取消",IDCANCEL,107,22,35,14
+    CONTROL         "Raw Counts",SAVE_RAW_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,154,21,46,10
+END
+
+DISPLAY_CONFIGURATION DIALOG DISCARDABLE  0, 0, 371, 189
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "設定顯示曲線"
+FONT 12, "PMingLiU"
+BEGIN
+    GROUPBOX        "充填曲線",IDC_STATIC,6,35,89,108,WS_GROUP
+    GROUPBOX        "顯示曲線",103,6,6,171,24,WS_GROUP
+    PUSHBUTTON      "OK",IDOK,131,169,50,14,BS_CENTER
+    CONTROL         "壓力曲線",PRESSURES_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,19,16,60,12
+    CONTROL         "一般曲線",CHANNELS_RADIO_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,82,16,84,12
+    CONTROL         "頭壓力",PRE_CHANNEL_1_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,44,79,12
+    CONTROL         "軸壓力",PRE_CHANNEL_2_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,56,79,12
+    CONTROL         "模壓力/第3頻道",PRE_CHANNEL_3_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,68,79,12
+    CONTROL         "第4頻道",PRE_CHANNEL_4_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,80,79,12
+    GROUPBOX        "增壓曲線",IDC_STATIC,99,35,89,108,WS_GROUP
+    CONTROL         "頭壓力",POST_CHANNEL_1_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,44,79,12
+    CONTROL         "軸壓力",POST_CHANNEL_2_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,56,79,12
+    CONTROL         "模壓力/第3頻道",POST_CHANNEL_3_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,105,68,79,12
+    CONTROL         "第4頻道",POST_CHANNEL_4_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,80,79,12
+    PUSHBUTTON      "全選",ALL_CHANNELS_BUTTON,166,144,22,10,BS_CENTER
+    CONTROL         "第5頻道",PRE_CHANNEL_5_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,12,92,79,12
+    CONTROL         "第6頻道",PRE_CHANNEL_6_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,12,104,79,12
+    CONTROL         "第7頻道",PRE_CHANNEL_7_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,12,116,79,12
+    CONTROL         "第8頻道",PRE_CHANNEL_8_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,12,128,79,12
+    CONTROL         "第5頻道",POST_CHANNEL_5_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,105,92,79,12
+    CONTROL         "第6頻道",POST_CHANNEL_6_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,105,104,79,12
+    CONTROL         "第7頻道",POST_CHANNEL_7_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,105,116,79,12
+    CONTROL         "第8頻道",POST_CHANNEL_8_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,105,128,79,12
+    CONTROL         "軸壓力",FIX_FTCHAN_1_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,200,32,78,12
+    CONTROL         "頭壓力",FIX_FTCHAN_2_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,200,44,78,12
+    CONTROL         "模壓力/第3頻道",FIX_FTCHAN_3_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,200,56,78,12
+    CONTROL         "速度",FIX_VELOCITY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,200,128,64,12
+    LTEXT           "下限",IDC_STATIC,278,20,32,8,NOT WS_GROUP
+    LTEXT           "上限",IDC_STATIC,318,20,32,8,NOT WS_GROUP
+    CTEXT           "顯示軸上下限",IDC_STATIC,281,8,62,9,NOT WS_GROUP
+    LTEXT           "選固定顯示軸",IDC_STATIC,200,20,60,8,NOT WS_GROUP
+    CONTROL         "第4頻道",FIX_FTCHAN_4_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,200,68,78,12
+    CONTROL         "第5頻道",FIX_FTCHAN_5_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,200,80,78,12
+    CONTROL         "第6頻道",FIX_FTCHAN_6_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,200,92,78,12
+    CONTROL         "第7頻道",FIX_FTCHAN_7_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,200,104,78,12
+    CONTROL         "第8頻道",FIX_FTCHAN_8_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,199,116,78,12
+    EDITTEXT        MIN_FTCHAN_1_EBOX,278,32,32,12
+    EDITTEXT        MIN_FTCHAN_2_EBOX,278,44,32,12
+    EDITTEXT        MIN_FTCHAN_3_EBOX,278,56,32,12
+    EDITTEXT        MIN_FTCHAN_4_EBOX,278,68,32,12
+    EDITTEXT        MIN_FTCHAN_5_EBOX,278,80,32,12,WS_DISABLED
+    EDITTEXT        MIN_FTCHAN_6_EBOX,278,92,32,12,WS_DISABLED
+    EDITTEXT        MIN_FTCHAN_7_EBOX,278,104,32,12,WS_DISABLED
+    EDITTEXT        MIN_FTCHAN_8_EBOX,278,116,32,12,WS_DISABLED
+    EDITTEXT        MIN_VELOCITY_EBOX,278,128,32,12
+    EDITTEXT        MAX_FTCHAN_1_EBOX,318,32,32,12
+    EDITTEXT        MAX_FTCHAN_2_EBOX,318,44,32,12
+    EDITTEXT        MAX_FTCHAN_3_EBOX,318,56,32,12
+    EDITTEXT        MAX_FTCHAN_4_EBOX,318,68,32,12
+    EDITTEXT        MAX_FTCHAN_5_EBOX,318,80,32,12,WS_DISABLED
+    EDITTEXT        MAX_FTCHAN_6_EBOX,318,92,32,12,WS_DISABLED
+    EDITTEXT        MAX_FTCHAN_7_EBOX,318,104,32,12,WS_DISABLED
+    EDITTEXT        MAX_FTCHAN_8_EBOX,318,116,32,12,WS_DISABLED
+    EDITTEXT        MAX_VELOCITY_EBOX,318,128,32,12
+    CONTROL         "",SMOOTH_P1_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    235,173,8,8
+    CONTROL         "",SMOOTH_P2_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    249,173,8,8
+    CONTROL         "",SMOOTH_P3_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    263,173,8,8
+    CONTROL         "",SMOOTH_P4_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    277,173,8,8
+    CONTROL         "",SMOOTH_P5_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    291,173,8,8
+    CONTROL         "",SMOOTH_P6_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    305,173,8,8
+    CONTROL         "",SMOOTH_P7_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    319,173,8,8
+    CONTROL         "",SMOOTH_P8_XBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    333,173,8,8
+    CONTROL         "",SMOOTH_VELOCITY_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,349,173,8,8
+    LTEXT           "平滑",IDC_STATIC,205,173,25,8
+    EDITTEXT        SMOOTH_N_EBOX,262,148,20,12,ES_AUTOHSCROLL
+    EDITTEXT        SMOOTH_MULTIPLIER_EBOX,326,148,21,12,ES_AUTOHSCROLL
+    GROUPBOX        "平滑曲線",IDC_STATIC,201,144,166,43
+    LTEXT           "多點平滑點數",IDC_STATIC,204,153,55,8
+    LTEXT           "乘數",IDC_STATIC,295,150,28,8
+    CTEXT           "1",IDC_STATIC,235,162,8,8
+    LTEXT           "頻道",IDC_STATIC,205,162,27,8
+    LTEXT           "速度",IDC_STATIC,347,162,16,8
+    CTEXT           "2",IDC_STATIC,249,162,8,8
+    CTEXT           "3",IDC_STATIC,263,162,8,8
+    CTEXT           "4",IDC_STATIC,277,162,8,8
+    CTEXT           "5",IDC_STATIC,291,162,8,8
+    CTEXT           "6",IDC_STATIC,305,162,8,8
+    CTEXT           "7",IDC_STATIC,319,162,8,8
+    CTEXT           "8",IDC_STATIC,333,162,8,8
+    PUSHBUTTON      "Save as the Default Configuration",
+                    SAVE_DEFAULT_DISPLAY_CONFIG_PB,0,172,73,17,BS_CENTER | 
+                    BS_MULTILINE
+    EDITTEXT        CURVE_PEN_WIDTH_EBOX,0,148,17,10,ES_AUTOHSCROLL
+    LTEXT           "Curve Width",IDC_STATIC,20,149,41,7
+END
+
+DOWNTIME_ENTRY_DIALOG DIALOG DISCARDABLE  0, 0, 184, 230
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "設定停機主要/次要原因"
+FONT 12, "PMingLiU"
+BEGIN
+    EDITTEXT        CAT_AND_SUBCAT_EBOX,10,28,56,14,ES_AUTOHSCROLL
+    LISTBOX         CAT_AND_SUBCAT_LB,0,44,183,185,LBS_SORT | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,72,29,50,14
+    PUSHBUTTON      "取消",IDCANCEL,128,29,50,14
+    RTEXT           "停機時間:",IDC_STATIC,14,13,58,12,SS_CENTERIMAGE
+    LTEXT           "01/01/2002 00:00:00",EVENT_TIME_TBOX,75,13,107,12,
+                    SS_CENTERIMAGE
+    LTEXT           "機號",IDC_STATIC,64,3,28,8
+    LTEXT           "M03",EVENT_MACHINE_TBOX,98,3,15,8
+END
+
+DOWNTIME_REPORT_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 479, 154
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "停機原因/時間報告"
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           ":",-1,111,55,8,8,NOT WS_GROUP
+    LTEXT           ":",-1,111,70,8,8,NOT WS_GROUP
+    GROUPBOX        "停機總結報告範圍選定",-1,4,21,132,80
+    LTEXT           "天",-1,68,41,24,8,NOT WS_GROUP
+    LTEXT           "到:",-1,23,69,16,8,NOT WS_GROUP
+    LTEXT           "日期",-1,143,12,20,8,NOT WS_GROUP
+    LTEXT           "時間",-1,182,12,20,8,NOT WS_GROUP
+    LTEXT           "主因",-1,230,12,32,8,NOT WS_GROUP
+    LTEXT           "次因",-1,300,12,47,8,NOT WS_GROUP
+    LTEXT           "鑄件型號",-1,350,12,43,8,NOT WS_GROUP
+    LTEXT           "操作員",-1,410,12,33,8,NOT WS_GROUP
+    LTEXT           "M01",-1,235,1,25,8,NOT WS_GROUP
+    LTEXT           "機號:",-1,199,1,33,8,NOT WS_GROUP
+    CONTROL         "所有",DTR_ALL_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,12,29,28,12
+    CONTROL         "最近",DTR_LAST_N_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,12,40,32,12
+    CONTROL         "從:",DTR_FROM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,12,54,32,12
+    EDITTEXT        DTR_LAST_N_EBOX,44,39,20,12,WS_GROUP
+    EDITTEXT        DTR_FROM_DATE_EBOX,51,54,45,12
+    EDITTEXT        DTR_FROM_HOUR_EBOX,99,54,12,12
+    EDITTEXT        DTR_FROM_MINUTE_EBOX,114,54,12,12
+    EDITTEXT        DTR_TO_DATE_EBOX,51,69,45,12
+    EDITTEXT        DTR_TO_HOUR_EBOX,99,68,12,12
+    EDITTEXT        DTR_TO_MINUTE_EBOX,114,68,12,12
+    PUSHBUTTON      "OK",IDOK,203,136,50,14,BS_CENTER
+    PUSHBUTTON      "輸出到Clipboard",EXPORT_DOWNTIMES_BUTTON,10,136,79,14,
+                    BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "刪除選定的範圍",PURGE_SELECTION_BUTTON,10,120,79,14,
+                    BS_CENTER | NOT WS_TABSTOP
+    CONTROL         "",DTR_TO_DATE_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,39,69,12,12
+    CONTROL         "目前",DTR_TO_PRESENT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,39,81,52,12
+    PUSHBUTTON      "選為範圍起點",DTR_RANGE_START_BUTTON,197,116,76,14,
+                    BS_CENTER | WS_GROUP
+    PUSHBUTTON      "選為範圍終點",DTR_RANGE_END_BUTTON,316,116,76,14,
+                    BS_CENTER
+    SCROLLBAR       DOWNTIME_SCROLLBAR,452,23,9,93,SBS_VERT
+    LISTBOX         DOWNTIME_LISTBOX,144,24,308,95,LBS_USETABSTOPS | 
+                    LBS_WANTKEYBOARDINPUT | WS_TABSTOP
+    CONTROL         "顯示次因",SHOW_ALL_SUBS_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,119,93,10
+    CONTROL         "顯示主因--次因",SORT_SUBS_BY_CAT_XBOX,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,96,130,92,19
+END
+
+EDIT_OPERATORS_DIALOG DIALOGEX 0, 0, 364, 209
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "設定操作員名單"
+FONT 12, "PMingLiU", 0, 0, 0x1
+BEGIN
+    CONTROL         "",GRID_POSITION_BORDER,"Static",SS_ETCHEDFRAME,9,7,345,
+                    176
+    PUSHBUTTON      "儲存改變",EDITOP_SAVE_CHANGES_BUTTON,117,188,56,14,
+                    BS_CENTER
+    PUSHBUTTON      "新加",INSERT_OPERATOR_BUTTON,300,188,54,14,BS_CENTER
+    PUSHBUTTON      "刪除",DELETE_OPERATOR_BUTTON,9,188,54,14,BS_CENTER
+    PUSHBUTTON      "取消",EDITOP_CANCEL_BUTTON,189,188,56,14,BS_CENTER
+END
+
+EDIT_PASSWORDS_DIALOG DIALOGEX 0, 0, 300, 191
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "設定密碼"
+FONT 12, "PMingLiU", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "儲存改變",IDOK,130,177,55,14
+    CONTROL         "拷貝到網路",COPY_TO_NETWORK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,229,181,69,10
+END
+
+EDIT_SHIFTS_DIALOG DIALOG DISCARDABLE  0, 0, 334, 172
+STYLE DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "工作班次(工班)設定"
+FONT 12, "PMingLiU"
+BEGIN
+    LISTBOX         SHIFT_LISTBOX,7,23,180,127,LBS_USETABSTOPS | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "星期日",SUNDAY_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,209,45,38,10
+    CONTROL         "星期一",MONDAY_RADIO,"Button",BS_AUTORADIOBUTTON,209,56,
+                    38,10
+    CONTROL         "星期二",TUESDAY_RADIO,"Button",BS_AUTORADIOBUTTON,209,
+                    67,41,10
+    CONTROL         "星期三",WEDNESDAY_RADIO,"Button",BS_AUTORADIOBUTTON,209,
+                    78,54,10
+    CONTROL         "星期四",THURSDAY_RADIO,"Button",BS_AUTORADIOBUTTON,268,
+                    45,43,10
+    CONTROL         "星期五",FRIDAY_RADIO,"Button",BS_AUTORADIOBUTTON,268,56,
+                    35,10
+    CONTROL         "星期六",SATURDAY_RADIO,"Button",BS_AUTORADIOBUTTON,268,
+                    67,44,10
+    EDITTEXT        SHIFT_NAME_EBOX,205,113,15,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        SHIFT_HOUR_EBOX,236,113,15,14,ES_AUTOHSCROLL
+    EDITTEXT        SHIFT_MINUTE_EBOX,258,113,15,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "儲存改變",SAVE_CHANGES_BUTTON,136,154,60,14,BS_CENTER | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "新加",NEW_SHIFT_BUTTON,206,10,50,14,BS_CENTER | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "去除",REMOVE_SHIFT_BUTTON,260,10,50,14,BS_CENTER | NOT 
+                    WS_TABSTOP
+    GROUPBOX        "實際日期",-1,198,33,123,60
+    LTEXT           "工班",-1,205,101,15,8
+    LTEXT           "開始時間",-1,234,101,41,8
+    LTEXT           ":",-1,253,115,3,8
+    LTEXT           "工班日期",-1,13,10,31,8
+    LTEXT           "班次",-1,53,10,16,8
+    LTEXT           "實際日期",-1,85,10,36,8
+    LTEXT           "開始時間",-1,144,10,33,8
+    PUSHBUTTON      "設定他日如同本日",COPY_THIS_DAY_BUTTON,201,134,122,11,
+                    BS_CENTER | NOT WS_TABSTOP
+END
+
+EXPORT_ALARMS_DIALOG DIALOG DISCARDABLE  0, 0, 374, 223
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "輸出/刪除警示資料總結報告數據"
+FONT 12, "PMingLiU"
+BEGIN
+    LISTBOX         EXPORT_ALARMS_LISTBOX,8,29,355,163,LBS_USETABSTOPS | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "刪除所選 範圍",DEL_ALARM_RANGE_BUTTON,96,201,80,14
+    PUSHBUTTON      "輸出到視窗的Clipboard",EXPORT_ALARM_RANGE_BUTTON,196,
+                    201,80,14
+    LTEXT           "日期",IDC_STATIC,14,16,16,8
+    LTEXT           "工班",ALARMSUM_SHIFT_STATIC,55,16,15,8
+    LTEXT           "射出參數",ALARMSUM_PARAMETER_STATIC,75,16,33,8
+    LTEXT           "下限",LOW_WARNING_COUNT_STATIC,146,17,18,8
+    LTEXT           "上限",HIGH_WARNING_COUNT_STATIC,176,17,16,8
+    LTEXT           "下限",LOW_ALARM_COUNT_STATIC,208,18,19,8
+    LTEXT           "上限",HIGH_ALARM_COUNT_STATIC,238,18,16,8
+    LTEXT           "            警示總數",TOTAL_WARNINGS_STATIC,258,8,29,18
+    LTEXT           "            警報總數",TOTAL_ALARMS_STATIC,292,7,29,19
+    LTEXT           "             射出總數",TOTAL_ALARM_COUNT_STATIC,327,8,
+                    29,16
+    CTEXT           "警示總數",IDC_STATIC,142,8,56,8
+    CTEXT           "警報總數",IDC_STATIC,202,8,56,8,NOT WS_GROUP
+    LTEXT           "模壓力/第3頻道",IDC_STATIC,130,95,71,8,NOT WS_GROUP
+END
+
+EXPORT_SHOTS_DIALOG DIALOG DISCARDABLE  0, 0, 245, 173
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "輸出射出參數資料"
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "射出號數       日期",SHOT_TITLE_STATIC,8,2,114,9,NOT 
+                    WS_GROUP
+    LTEXT           "射出參數",PARAM_TITLE_STATIC,127,3,47,8,NOT WS_GROUP
+    LISTBOX         SHOT_LISTBOX,8,12,115,91,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "全選",ALL_SHOTS_BUTTON,8,103,50,11,BS_CENTER
+    LISTBOX         PARAM_NAME_LISTBOX,127,12,107,91,LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "全選",ALL_PARAMETERS_BUTTON,128,103,50,11,BS_CENTER
+    PUSHBUTTON      "開始輸出",IDOK,95,154,50,14,BS_CENTER
+    CONTROL         "輸出到視窗的Clipboard",EXPORT_TO_CLIPBOARD_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,7,122,89,10
+    CONTROL         "輸出到CSV檔案:",EXPORT_CSV_FILE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,7,135,75,10
+    EDITTEXT        CSV_FILE_NAME_EBOX,85,134,149,12,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,4,118,236,32
+END
+
+INPUT_ERROR_DIALOG DIALOG DISCARDABLE  0, 0, 187, 56
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "輸入錯誤"
+FONT 12, "PMingLiU"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,64,28,52,14,BS_CENTER
+    LTEXT           "這欄不能多過",-1,58,10,50,10
+    LTEXT           "12",INPUT_ERROR_MAX_CHARS_TBOX,119,10,16,8,NOT WS_GROUP
+    LTEXT           "  字",-1,131,10,16,8,NOT WS_GROUP
+END
+
+KILL_ALARMSUM_DATA_DIALOG DIALOGEX 0, 0, 154, 49
+STYLE DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST
+CAPTION "你即將刪除所有的警示資料總結報告."
+FONT 12, "PMingLiU", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "是",IDOK,18,24,50,14,BS_CENTER
+    PUSHBUTTON      "否",IDCANCEL,74,24,50,14,BS_CENTER
+    CTEXT           "請確認",ALARMSUM_KILL_TBOX,27,8,92,8,NOT WS_GROUP
+END
+
+LOAD_FROM_NETWORK_DIALOG DIALOG DISCARDABLE  0, 0, 162, 72
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 12, "PMingLiU"
+BEGIN
+    CTEXT           "從網路下載機器相關資料中...",-1,25,18,112,8,NOT 
+                    WS_GROUP
+    RTEXT           "電腦:",-1,44,40,38,8,NOT WS_GROUP
+    LTEXT           "???",NETWORK_COMPUTER_TBOX,86,40,16,8,NOT WS_GROUP
+END
+
+OPERATOR_SIGNON_DIALOG DIALOG DISCARDABLE  0, 0, 165, 109
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "操作員簽入"
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "操作員",-1,45,5,60,8,NOT WS_GROUP
+    LTEXT           "機號",-1,2,5,31,9
+    LISTBOX         OPERATOR_MACHINE_LISTBOX,2,15,31,70,LBS_SORT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "全選",ALL_OPERATOR_MACHINES_BUTTON,2,74,31,12,BS_CENTER
+    LISTBOX         OPERATOR_LISTBOX,44,15,100,70,WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,64,89,50,14,BS_CENTER
+    PUSHBUTTON      "&Edit",EDIT_OPERATORS_BUTTON,134,1,31,10,BS_CENTER | 
+                    WS_DISABLED | NOT WS_TABSTOP
+END
+
+PARAM_HISTORY_DIALOG DIALOG DISCARDABLE  0, 0, 210, 74
+STYLE DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "1",201,4,0,34,8
+    RTEXT           "50",202,164,0,39,8
+END
+
+PASSWORD_DIALOG DIALOGEX 0, 0, 240, 108
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "設定使用者密碼"
+FONT 12, "PMingLiU", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "完成",IDOK,61,73,50,14,BS_CENTER
+    PUSHBUTTON      "取消",IDCANCEL,129,73,50,14,BS_CENTER
+    EDITTEXT        ENTER_PASSWORD_EBOX,68,36,132,12,ES_PASSWORD
+    PUSHBUTTON      "改變密碼",EDIT_PASSWORDS_BUTTON,180,0,60,14,BS_CENTER
+    PUSHBUTTON      "設定Options",CO_OPTIONS_BUTTON,190,15,50,12,BS_CENTER
+    RTEXT           "設定密碼:",-1,4,39,60,8,NOT WS_GROUP
+    LTEXT           "0",CURRENT_PASSWORD_LEVEL_TBOX,88,4,16,8,NOT WS_GROUP
+    RTEXT           "目前密碼階層:",-1,4,4,80,8,NOT WS_GROUP
+END
+
+PRINT_MULTIPLE_SHOTS_DIALOG DIALOG DISCARDABLE  0, 0, 231, 110
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "印出預選的射出曲線組"
+FONT 12, "PMingLiU"
+BEGIN
+    PUSHBUTTON      "開始印",MP_OK_BUTTON,85,95,60,14,BS_CENTER
+    LISTBOX         MP_MACHINE_LISTBOX,2,12,28,80,LBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         MP_PART_LISTBOX,34,12,78,80,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         MP_SHOT_LISTBOX,116,12,112,80,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "射出號數       日期",-1,116,2,72,9
+    LTEXT           "機號",-1,2,2,31,9
+    LTEXT           "鑄件型號",-1,35,2,29,9
+    LTEXT           "射出數",-1,79,2,26,9
+END
+
+REALTIME_MACHINE_LIST DIALOG DISCARDABLE  0, 0, 140, 153
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "實時顯示機器名單"
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "機號",-1,8,6,32,8,NOT WS_GROUP
+    LTEXT           "顯示",-1,40,6,28,8,NOT WS_GROUP
+    LTEXT           "按機號來選否",-1,84,20,28,20,NOT WS_GROUP
+    LISTBOX         RT_MACHINE_LISTBOX,8,17,72,135,LBS_SORT | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "選定",IDOK,84,68,50,14,BS_CENTER
+    PUSHBUTTON      "全選",RT_DISPLAY_ALL_BUTTON,91,111,36,12,BS_CENTER
+    PUSHBUTTON      "無",RT_DISPLAY_NONE_BUTTON,91,127,36,12,BS_CENTER
+END
+
+SHIFT_REPORT_DIALOG DIALOG DISCARDABLE  6, 15, 474, 373
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "工班報告"
+FONT 12, "PMingLiU"
+BEGIN
+    CONTROL         "表",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,0,0,51,14
+    CONTROL         "圖",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,51,0,51,14
+    CONTROL         "射出參數",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,115,0,83,14
+    CONTROL         "停機原因/時間總結報告",IDC_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,199,0,83,14
+    CONTROL         "警示資料總結報告",IDC_RADIO5,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE,283,0,83,14
+    CONTROL         "工班",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP | WS_TABSTOP,386,0,29,14
+    CONTROL         "日",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,416,0,29,14
+    CONTROL         "週",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,445,0,29,14
+END
+
+SMALL_CHOOSE_SHOTS DIALOG DISCARDABLE  0, 0, 222, 74
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "射出號數       日期",-1,114,0,112,9
+    LTEXT           "機號",-1,0,0,28,9
+    LTEXT           "鑄件型號",-1,34,0,30,9
+    LTEXT           "射出數",-1,78,0,26,9
+    PUSHBUTTON      "",IDOK,83,68,50,6,NOT WS_TABSTOP
+    LISTBOX         101,108,8,112,62,LBS_SORT | LBS_WANTKEYBOARDINPUT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         102,108,8,112,61,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         CS_MACHINE_LISTBOX,0,8,28,62,LBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         CS_PART_LISTBOX,30,8,78,62,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+SMALL_ZOOM_BOX_DIALOG DIALOG DISCARDABLE  0, 0, 291, 41
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "位置",IDC_STATIC,33,2,16,8,NOT WS_GROUP
+    LTEXT           "時間",IDC_STATIC,68,2,17,8,NOT WS_GROUP
+    LTEXT           "速度",IDC_STATIC,98,2,16,8,NOT WS_GROUP
+    LTEXT           "桿壓",CHAN_1_ZOOM_TITLE_TBOX,136,2,16,8,NOT WS_GROUP
+    LTEXT           "頭壓",CHAN_2_ZOOM_TITLE_TBOX,170,2,34,8,NOT WS_GROUP
+    LTEXT           "差壓",CHAN_3_ZOOM_TITLE_TBOX,209,2,32,8,NOT WS_GROUP
+    LTEXT           "第4頻道",CHAN_4_ZOOM_TITLE_TBOX,243,2,29,8,NOT WS_GROUP
+    LTEXT           "起點",IDC_STATIC,4,13,18,9,NOT WS_GROUP
+    LTEXT           "終點",IDC_STATIC,4,21,16,9,NOT WS_GROUP
+    LTEXT           "差距",IDC_STATIC,4,29,20,9,NOT WS_GROUP
+    LTEXT           "0.00",110,36,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",111,36,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",112,36,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",120,69,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",121,69,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",122,69,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",130,104,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",131,104,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",132,104,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",140,141,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",141,141,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",142,141,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",150,176,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",151,176,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",152,176,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",160,212,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",161,212,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",162,212,30,30,8,NOT WS_GROUP
+    LTEXT           "0.00",170,249,14,30,8,NOT WS_GROUP
+    LTEXT           "0.00",171,249,22,30,8,NOT WS_GROUP
+    LTEXT           "0.00",172,249,30,30,8,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,27,10,
+                    257,30
+END
+
+TC_VISIBLE_DIALOG DIALOG DISCARDABLE  0, 0, 213, 250
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "選擇顯示射出參數"
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "挑選統計總結報告中要顯示的射出參數然後按OK.",IDC_STATIC,
+                    123,19,82,39
+    LISTBOX         TC_VISIBLE_LB,0,0,114,243,LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,139,64,50,14
+END
+
+TREND_CONFIG_DIALOG DIALOG DISCARDABLE  0, 0, 477, 159
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "統計趨勢圖設定"
+FONT 12, "PMingLiU"
+BEGIN
+    GROUPBOX        "Chart Type",IDC_STATIC,4,24,64,52,WS_GROUP
+    GROUPBOX        "顯示範圍",IDC_STATIC,74,32,150,45
+    GROUPBOX        "X軸",IDC_STATIC,4,79,76,55
+    LTEXT           "平均每",IDC_STATIC,25,11,31,8,NOT WS_GROUP
+    LTEXT           "點",IDC_STATIC,134,46,27,8,NOT WS_GROUP
+    EDITTEXT        N_TO_AVG_EBOX,56,10,20,12,WS_GROUP
+    CONTROL         "射出數",AVG_SHOTS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,83,6,33,12
+    CONTROL         "Minutes",AVG_MINUTES_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,119,6,40,12
+    CONTROL         "Hours",AVG_HOURS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,160,6,36,12
+    CONTROL         "Shifts",AVG_SHIFTS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,198,6,34,12
+    CONTROL         "Days",AVG_DAYS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,83,17,32,12
+    CONTROL         "Weeks",AVG_WEEKS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,119,17,40,12
+    CONTROL         "Months",AVG_MONTHS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,160,17,37,12
+    CONTROL         "最近",LAST_N_RANGE_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,78,44,32,12
+    CONTROL         "射出號數範圍從",SHOT_RANGE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,77,59,68,12
+    EDITTEXT        LAST_N_RANGE_EBOX,109,45,20,12,WS_GROUP
+    EDITTEXT        SHOT_RANGE_FROM_EBOX,145,60,28,12
+    LTEXT           "到",IDC_STATIC,175,61,12,8,NOT WS_GROUP
+    EDITTEXT        SHOT_RANGE_TO_EBOX,190,60,28,12
+    CONTROL         "射出號數",SHOT_X_AXIS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,12,88,60,12
+    CONTROL         "Hour and Day",HOUR_DAY_X_AXIS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,12,99,60,12
+    CONTROL         "Shift and Day",SHIFT_DAY_X_AXIS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,12,110,60,12
+    CONTROL         "Day and Month",DAY_MONTH_X_AXIS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,12,121,64,12
+    CONTROL         "趨勢圖",TREND_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,8,32,38,10
+    CONTROL         "X-Bar平均圖",XBAR_RADIO,"Button",BS_AUTORADIOBUTTON,8,
+                    42,56,10
+    CONTROL         "Range",RANGE_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,8,52,40,10
+    CONTROL         "Histogram",HISTOGRAM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,8,62,48,10
+    CONTROL         "警報上下限",ALARM_LIMITS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,87,84,60,12
+    CONTROL         "警示上下限",WARNING_LIMITS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX,87,96,60,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,84,82,67,30
+    PUSHBUTTON      "Save Changes",TREND_CHART_SAVE_CHANGES_BUTTON,148,136,
+                    60,16,BS_CENTER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,80,4,152,26
+    LISTBOX         TREND_PARAMETER_LISTBOX,236,12,185,136,LBS_MULTIPLESEL | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "無",NO_TREND_PARAMS_BUTTON,317,142,28,10,BS_CENTER
+    LTEXT           "射出參數",PARAM_COL_TBOX,236,2,94,10,SS_SUNKEN
+    LTEXT           "最小值",MIN_COL_TBOX,330,2,31,10,SS_SUNKEN
+    LTEXT           "最大值",MAX_COL_TBOX,362,2,31,10,SS_SUNKEN
+    LTEXT           "應用",USE_COL_TBOX,394,2,16,10,SS_SUNKEN
+    EDITTEXT        PLOT_MAX_EBOX,426,30,40,12,ES_AUTOHSCROLL
+    EDITTEXT        PLOT_MIN_EBOX,426,55,40,12,ES_AUTOHSCROLL
+    CONTROL         "使用上下限",USE_LIMITS_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,426,71,48,10
+    LTEXT           "最大值",IDC_STATIC,426,20,23,8
+    LTEXT           "最小值",IDC_STATIC,426,46,23,8
+    PUSHBUTTON      "選擇所要顯示射出參數",CHOOSE_VISIBLE_PB,431,124,42,29,
+                    BS_MULTILINE
+END
+
+VIEW_PARAMETERS_DIALOG DIALOG DISCARDABLE  0, 0, 312, 258
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "射出參數顯示"
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "射出參數",-1,5,12,37,10,NOT WS_GROUP
+    LISTBOX         101,3,22,303,233,LBS_OWNERDRAWFIXED | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "下限",-1,83,12,21,9,NOT WS_GROUP
+    LTEXT           "上限",-1,123,12,20,9,NOT WS_GROUP
+    LTEXT           "下限",-1,163,12,19,9,NOT WS_GROUP
+    LTEXT           "上限",-1,198,12,23,9,NOT WS_GROUP
+    LTEXT           "現值",-1,235,12,24,9,NOT WS_GROUP
+    LTEXT           "警報",-1,181,4,24,10,NOT WS_GROUP
+    LTEXT           "警示",-1,102,4,19,10,NOT WS_GROUP
+END
+
+ZOOM_BOX_DIALOG DIALOG DISCARDABLE  0, 0, 288, 74
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP
+FONT 12, "PMingLiU"
+BEGIN
+    LTEXT           "位置",IDC_STATIC,33,8,30,9,NOT WS_GROUP
+    LTEXT           "時間",IDC_STATIC,68,8,30,9,NOT WS_GROUP
+    LTEXT           "速度",IDC_STATIC,98,8,30,9,NOT WS_GROUP
+    LTEXT           "桿壓力",CHAN_1_ZOOM_TITLE_TBOX,136,8,23,8,NOT WS_GROUP
+    LTEXT           "頭壓力",CHAN_2_ZOOM_TITLE_TBOX,170,8,36,8,NOT WS_GROUP
+    LTEXT           "壓力差",CHAN_3_ZOOM_TITLE_TBOX,209,8,28,8,NOT WS_GROUP
+    LTEXT           "第4頻道",CHAN_4_ZOOM_TITLE_TBOX,243,8,28,8,NOT WS_GROUP
+    LTEXT           "起點",IDC_STATIC,4,25,20,9,NOT WS_GROUP
+    LTEXT           "終點",IDC_STATIC,4,35,16,9,NOT WS_GROUP
+    LTEXT           "差距",IDC_STATIC,4,45,20,9,NOT WS_GROUP
+    LTEXT           "0.00",110,36,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",111,36,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",112,36,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",120,69,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",121,69,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",122,69,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",130,104,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",131,104,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",132,104,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",140,141,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",141,141,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",142,141,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",150,176,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",151,176,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",152,176,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",160,212,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",161,212,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",162,212,45,30,9,NOT WS_GROUP
+    LTEXT           "0.00",170,249,25,30,9,NOT WS_GROUP
+    LTEXT           "0.00",171,249,35,30,9,NOT WS_GROUP
+    LTEXT           "0.00",172,249,45,30,9,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,29,20,
+                    258,38
+END
+
+MACHINE_LIST_DIALOG DIALOG DISCARDABLE  0, 0, 321, 322
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "List of Machines"
+FONT 12, "PMingLiU"
+BEGIN
+    LISTBOX         MACHINE_LIST_LB,0,10,318,311,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Machine",MACHINE_NAME_STATIC,0,1,28,8
+    LTEXT           "Computer",COMPUTER_NAME_STATIC,32,1,31,8
+    LTEXT           "Directory",COMPUTER_DIR_STATIC,66,2,29,8
+    LTEXT           "Monitor",IS_MONITORED_STATIC,200,1,24,8
+    LTEXT           "Tcp/Ip Address",ADDRESS_STATIC,249,1,52,8
+    LTEXT           "Board",BOARD_NUMBER_STATIC,227,1,21,8
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "ALARM_LOG_SETUP_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    "CHOOSE_SHOTS", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 95
+    END
+
+    "CO_OPTIONS_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 433
+        BOTTOMMARGIN, 268
+    END
+
+    "CHOOSE_PARAMETER_LIST", DIALOG
+    BEGIN
+        RIGHTMARGIN, 240
+        BOTTOMMARGIN, 161
+    END
+
+    "DOWNTIME_ENTRY_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    "EXPORT_ALARMS_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    "EXPORT_SHOTS_DIALOG", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 170
+    END
+
+    "SMALL_CHOOSE_SHOTS", DIALOG
+    BEGIN
+        RIGHTMARGIN, 138
+    END
+
+    "SMALL_ZOOM_BOX_DIALOG", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 40
+    END
+
+    "TREND_CONFIG_DIALOG", DIALOG
+    BEGIN
+        TOPMARGIN, 2
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+PROFILE_HOT_KEYS ACCELERATORS MOVEABLE PURE 
+BEGIN
+    VK_ESCAPE,      ESCAPE_KEY,             VIRTKEY 
+    VK_F5,          F5_KEY,                 VIRTKEY 
+    VK_F6,          F6_KEY,                 VIRTKEY 
+    VK_F7,          F7_KEY,                 VIRTKEY 
+    VK_F8,          F8_KEY,                 VIRTKEY 
+    VK_F9,          F9_KEY,                 VIRTKEY 
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrcc.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "#include ""colordlg.h""\r\n"
+    "#include ""dlgs.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+PROFILE                 ICON    DISCARDABLE     "profile.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    1                       "重要參數區已滿."
+    2                       "無法從命"
+    3                       "頭"
+    4                       "軸"
+    5                       "分壓"
+    6                       "距離"
+    7                       "位置"
+    8                       "壓力"
+    9                       "溫度"
+    10                      "時間"
+    11                      "時間_區間"
+    12                      "速度"
+    13                      "體積"
+    14                      "面積"
+    15                      "未知"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    16                      "Ch 1"
+    17                      "Ch 2"
+    18                      "Ch 3"
+    19                      "Ch 4"
+    20                      "頭壓力"
+    21                      "軸壓力"
+    22                      "Differential 壓力"
+    23                      "FasTrak 頻道 4"
+    24                      "頭壓力"
+    25                      "軸壓力"
+    26                      "Differential 壓力"
+    27                      "FasTrak 頻道 4"
+    28                      "FasTrak 頻道 1"
+    29                      "FasTrak 頻道 2"
+    30                      "FasTrak 頻道 3"
+    31                      "FasTrak 頻道 4"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    32                      "FasTrak 頻道 1"
+    33                      "FasTrak 頻道 2"
+    34                      "FasTrak 頻道 3"
+    35                      "FasTrak 頻道 4"
+    36                      "頻道"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    TIME_ONLY_MENU_HELP     "顯示時間基準的整個射出曲線"
+    LAST_50_SCREEN_MENU_HELP "顯示最近50次重要射出參數的警示狀態"
+    STD_SCREEN_MENU_HELP    "重要射出參數的標準顯示"
+    VIEW_REFERENCE_TRACE_MENU_HELP "同時顯示參考曲線和射出曲線."
+    VIEW_PARAMETERS_MENU_HELP "顯示本射出曲線的所有射出參數."
+    BOX_SCREEN_MENU_HELP    "顯示監測的所有機器資料在方框中"
+    TREND_SCREEN_MENU_HELP  "顯示現今鑄件型號射出參數的統計趨勢圖."
+    PROFILE_SCREEN_MENU_HELP "顯示射出曲線."
+    DOWNBAR_SCREEN_MENU_HELP "顯示停機時間柱狀圖"
+    PART_EDITOR_MENU_HELP   "基本設定, 進階設定, 射出參數, 位置, 標示, 類比頻道, SureTrak控制"
+    MACHINE_EDITOR_MENU_HELP "機器設定, 進階機器設定"
+    ZOOM_MENU               "放大"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    UNZOOM_MENU             "回復正常顯示"
+    MAX_OVERLAY_REACHED_STRING "顯示的射出曲線數已達上限"
+    DEL_SOME_FIRST_STRING   "你必須去除一舊曲線才能顯示一新曲線"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    501                     "位置/時間基準"
+    502                     "位置基準"
+    503                     "時間基準"
+    504                     "最近50射出顯示幕"
+    505                     "標準顯示幕"
+    EMPTY_LIST              "這名單是空的."
+    NO_MACHINES_HERE        "此電腦未設定任何機器."
+    OPERATOR_NOT_FOUND      "操作員不在名單中."
+    SHOT_NUMBER_STRING      "射出號碼"
+    DATE_NAME_STRING        "日期"
+    TIME_NAME_STRING        "時間"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NO_MEMORY_STRING        "無法取得記憶體"
+    PRINTER_LIST_STRING     "印表機明單[EnumPrinters]"
+    UNITS_TITLE_STRING      "單位"
+    REALTIME_ON_MENU_STRING "實時曲線"
+    NO_ALARM_STRING         "在規格範圍內"
+    WARNING_STRING          "警示"
+    ALARM_STRING            "警報"
+    NO_DOWN_STRING          "停機??? "
+    HUMAN_DOWN_STRING       "停機"
+    AUTO_DOWN_STRING        "無因停機"
+    PROG_DOWN_STRING        " NoMonTask "
+    PROG_UP_STRING          "監測"
+    MACH_UP_STRING          "運行中"
+    NO_MONITOR_STRING       "未監測"
+    BOX_SCREEN_MENU_STRING  "方框型機器資料顯示幕"
+    MACHINE_TT_STRING       "壓鑄機名稱"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NEXT_SHIFT_STRING       "下一工班"
+    PREV_SHIFT_STRING       "前一工班"
+    NEXT_DAY_STRING         "下一天"
+    PREV_DAY_STRING         "前一天"
+    NEXT_STRING             "前一個"
+    PREV_STRING             "下一個"
+    NO_ALARM_DATA_STRING    "無警報資料"
+    NOTHING_TO_DISPLAY_STRING "無資料可顯示"
+    SHIFT_STRING            "工班"
+    PARAMETER_STRING        "射出參數"
+    LOW_LIMIT_STRING        "下限"
+    HIGH_LIMIT_STRING       "上限"
+    PARAMETER_VALUE_STRING  "值"
+    ALARM_TT_STRING         "警示或警報當單一或多個射出參數超出上下限"
+    REALTIME_OFF_MENU_STRING "所選的射出資料"
+    REALTIME_SINGLE_MENU_STRING "實時射出曲線,單一機器"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    PART_TT_STRING          "現用的鑄件型號"
+    SHOT_TT_STRING          "最近的射出號碼"
+    DATE_TT_STRING          "最近的射出時間"
+    NO_DOWN_TT_STRING       "新機號或是無停機設定"
+    HUMAN_DOWN_TT_STRING    "人員受傷"
+    AUTO_DOWN_TT_STRING     "機器逾期未運作但未給任何原因"
+    PROG_DOWN_TT_STRING     "資料收集板監測程式不在運行中"
+    PROG_UP_TT_STRING       "才開始監測,機器尚未射出"
+    MACH_UP_TT_STRING       "機器正常運行中"
+    NO_MONITOR_TT_STRING    "此機器的監測功能被停止"
+    TOTAL_ALARM_SHOTS_STRING "總警報次數:"
+    TOTAL_WARNING_SHOTS_STRING "總警示次數:"
+    LOW_ALARM_STRING        "低警報"
+    HIGH_ALARM_STRING       "高警報"
+    LOW_WARNING_STRING      "低警示"
+    HIGH_WARNING_STRING     "高警示"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    TIME_AXIS_LABEL_STRING  "時間 (秒 )"
+    TREND_ALLSHOTS_MENU_STRING "顯示所有的射出資料 - F8"
+    TREND_CONFIG_MENU_STRING "統計趨勢圖設定"
+    TREND_SCREEN_MENU_STRING "統計趨勢圖"
+    NO_GRAPHS_FOUND_STRING  "無任何射出曲線存在"
+    TREND_REALTIME_MENU_STRING "實時統計趨勢圖"
+    N_EQUALS_STRING         "  ( 組群大小 = "
+    END_PARENS_STRING       " )"
+    TOO_MANY_GRAPHS_STRING  "過多圖形無法顯示"
+    TIMEOUT_STRING          "FasTrak 逾時未運作"
+    DOWNBAR_TITLE_STRING    "機器的停機時間總結"
+    TOTAL_HOURS_STRING      "記錄的總時數"
+    TOTAL_HOURS_UP_STRING   "機器運作的總時數"
+    TOTAL_HOURS_DOWN_STRING "停機的總時數"
+    MACH_UTILIZATION_STRING "機器使用率"
+    MAX_DOWNTIME_HOURS_STRING "99999.99"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAX_DOWNTIME_PERCENT_STRING "100.00%"
+    DOWNTIME_FROM_STRING    "從: "
+    DOWNTIME_TO_STRING      "到: "
+    HOURS_STRING            "小時"
+    CATEGORY_TITLE_STRING   " : 主因= "
+    DOWNBAR_CONFIG_MENU_STRING "選擇資料範圍"
+    NO_DOWNTIME_DATA_STRING "無停機資料存在"
+    CHOOSE_PART_MENU_HELP   "選擇要顯示的鑄件型號"
+    CHOOSE_SHOT_MENU_HELP   "選擇要顯示的射出資料"
+    EXIT_MENU_HELP          "終止本程式"
+    MINIMIZE_MENU_HELP      "極小本顯示幕"
+    SAVE_MENU_HELP          "翻覆設定是否儲存本射出曲線"
+    SAVE_AS_MASTER_MENU_HELP "儲存本 射出曲線為參考射出曲線"
+    PRINT_MENU_HELP         "印出本射出曲線"
+    POS_TIME_MENU_HELP      "顯示位置基準的填模曲線和時間基準的增壓曲線"
+    POS_ONLY_MENU_HELP      "只顯示填模曲線."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SEC_TIME_LABEL_STRING   "時間(SEC)"
+    SHOT_LABEL_STRING       "射出"
+    MULTIPLE_SHOT_PRINT_MENU_HELP "選擇需要同時印出的射出曲線組"
+    MULTIPLE_PRINT_STRING   "印出多張射出曲線圖"
+    PRINTING_COMPLETE_STRING "印表完畢"
+    STAT_N_EQUALS_STRING    "N = "
+    ALARM_LIMITS_STRING     "警報上下限"
+    ALARM_SHOT_LABEL_STRING "射出"
+    ALARM_DATE_LABEL_STRING "日期"
+    ALARM_TIME_LABEL_STRING "時間"
+    TREND_REALTIME_MENU_HELP 
+                            "顯示這鑄件型號最新的n次射出資料,n 定義在統計趨勢圖設定中"
+    TREND_ALLSHOTS_MENU_HELP "顯示這鑄件型號所有的射出資料"
+    TREND_CONFIG_MENU_HELP  "統計趨勢圖的設定"
+    STAT_SUMMARY_MENU_STRING "統計總結報告"
+    STAT_SUMMARY_MENU_HELP  "顯示射出參數的在所選範圍的統計總結報告"
+    NO_STAT_SUMMARY_MENU_STRING "無統計總結報告"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MONITOR_CONFIG_MENU_HELP "選擇鑄件型號, 監測警示, 增壓取樣時間, 儲存設定"
+    BACKUP_AND_RESTORE_MENU_HELP 
+                            "拷貝儲存/回存 鑄件型號設定,  射出參數,和射出曲線"
+    SETUPS_MENU_HELP        "設定此電腦的FasTrak界面板, 設定機器到FasTrak界面板, 電腦的 pathnames"
+    DOWNTIME_MENU_HELP      "改變停機主因和副因名稱."
+    EDITDOWN_MENU_HELP      "改變或增加機器停機記錄."
+    SURETRAK_CONTROL_MENU_HELP "控制界面板解析, 設定, 和控制程式下載."
+    OPERATOR_SIGNON_MENU_HELP "選擇機器操作員."
+    EXPORT_SHOTS_MENU_HELP  "拷貝射出參數數據到視窗的clipboard提供其他程式使用 ."
+    ALARM_SUMMARY_MENU_HELP "看警示資料的總數."
+    PASSWORDS_MENU_HELP     "改變現有密碼層次和密碼名單."
+    RESTORE_PASSWORD_MENU_HELP "設定現有密碼改變現有密碼層次為基本密碼層次."
+    BOARD_MONITOR_MENU_HELP "程式用來從FasTrak 資料收集板收取資料"
+    HELP_MENU_HELP          "查閱協助的主題檔案."
+    UNZOOM_MENU_HELP        "回復到標準顯示."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ZOOM_MENU_HELP          "放大局部顯示"
+    DISPLAY_CONFIGURATION_MENU_HELP "選擇要顯示的類比頻道."
+    COLOR_DEFINITION_MENU_HELP "選擇顯示的顏色."
+    CHOOSE_RT_MACHINES_MENU_HELP "選擇要實時顯示的機器."
+    CORNER_PARAMETERS_MENU_HELP "選擇射出曲線下方要顯示的射出參數."
+    OVERLAY_MENU_HELP       "在舊射出曲線上重疊顯示新射出曲線"
+    MACHINE_INTRO_STRING    "機器 : "
+    PART_INTRO_STRING       "鑄件型號 : "
+    TOTAL_SHOTS_INTRO_STRING "總射出數 = "
+    TOTAL_ALARM_SHOTS_INTRO_STRING "總警報次數 ="
+    TOTAL_WARNING_SHOTS_INTRO_STRING "總警示次數 = "
+    QUANTITY_BELOW_STRING   "數量低過"
+    QUANTITY_ABOVE_STRING   "數量高出"
+    CANNOT_COMPLY_STRING    "無法從命"
+    PASSWORD_NOT_FOUND_STRING "密碼不存在"
+    MS_TIME_LABEL_STRING    "時間MS)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NO_STAT_SUMMARY_MENU_HELP "刪除統計總結報告"
+    ZOOM_PRINT_POSITION_STRING "位置"
+    ZOOM_PRINT_TIME_STRING  "時間"
+    ZOOM_PRINT_VELOCITY_STRING "速度"
+    ZOOM_PRINT_ROD_PRES_STRING "軸壓力"
+    ZOOM_PRINT_HEAD_PRES_STRING "頭壓力"
+    ZOOM_PRINT_START_STRING "起點"
+    ZOOM_PRINT_END_STRING   "終點"
+    ZOOM_PRINT_DELTA_STRING "間隔區間"
+    FIELD_TOO_LONG_STRING   "字數上限 ="
+    INPUT_ERROR_STRING      "輸入錯誤"
+    NO_DEL_ALL_ROWS_STRING  "不能同時刪除所有行"
+    ATTEMPT_DEL_ALL_ROWS_STRING "嘗試同時刪除所有行"
+    NOTHING_SELECTED_STRING "請選擇"
+    SELECT_ROW_STRING       "請按行號選擇一行或多行"
+    N_PER_GROUP_STRING      "組大小 = "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    KILLING_ALARMSUM_DATA_STRING "刪除統計總結報告資料..."
+    OPERATOR_ABREVIATION_STRING "縮寫"
+    OPERATOR_FIRST_NAME_STRING "名"
+    OPERATOR_LAST_NAME_STRING "姓"
+    STATSUM_MAX_STRING      "最大值"
+    STATSUM_MIN_STRING      "最小值"
+    STATSUM_AVERAGE_STRING  "平均值"
+    STATSUM_RANGE_STRING    "範圍"
+    STATSUM_STDDEV_STRING   "Std.Dev"
+    STATSUM_LOW_STRING      "低"
+    STATSUM_HIGH_STRING     "高"
+    STATSUM_LCL_STRING      "LCL"
+    STATSUM_UCL_STRING      "UCL"
+    STATSUM_ZLCL_STRING     "Zlcl"
+    STATSUM_ZUCL_STRING     "Zucl"
+    STATSUM_ZMIN_STRING     "Zmin"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    STATSUM_CPK_STRING      "Cpk"
+    STATSUM_PERCENT_OUT_STRING "%Out"
+    SHIFT_TIME_TITLE_STRING "工班時間設定"
+    MUST_HAVE_ONE_STRING    "每天至少需要有一工班設定."
+    RESTART_MONITOR_STRING  "請重新開始FasTrak界面板監測程式"
+    SHIFT_CHANGES_STRING    "工班時間設定改變已儲存."
+    NOTHING_TO_EXPORT_STRING "無數據可輸出"
+    NO_MEM_FOR_SORT_STRING  "記憶體不足無法分類"
+    DBARCFG_HEADING_STRING  "日期\t主因\t次因\t操作員\t鑄件型號\r\n"
+    VISIEDIT_MENU_HELP      "程式用來更改原始設定值和菜單檔案."
+    ALARM_LOG_SETUP_MENU_HELP "儲存警報 到一檔案或印表機."
+    TOTAL_SHOTS_STRING      "總射出數:"
+    TOTALS_STRING           "總數"
+    ALARMSUM_EXPORT_HEADER_STRING 
+                            "日期\t工班\t射出參數\t低警示\t高警示\t低警報\t高警報\t總警示數\t總警報數\t總射出數"
+    YES_STRING              "是"
+    NO_STRING               "否"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    EDIT_SHIFTS_MENU_HELP   "改變每班啟始時間"
+    EXPORT_NO_CSV_STRING    "無CSV檔案名稱設立"
+    EXPORT_TOO_SMALL_STRING "磁碟太小"
+    EXPORT_OF_STRING        " of "
+    EXPORT_WRITTEN_STRING   "字數"
+    PW_COL_0_STRING         "層次"
+    PW_COL_1_STRING         "密碼"
+    PW_COL_2_STRING         "使用者名稱"
+    PW_DUPLICATE_STRING     "重覆的密碼"
+    PW_BLANK_STRING         "密碼和密碼層次必須設定不能是空白"
+    NO_DOWNTIME_SELECTED_STRING "請選擇停機原因"
+    SEMAPHOR_FAIL_STRING    "無法取得機器semaphor db"
+    FIXED_AXIS_STRING       "固定值軸"
+    CLEAR_BACKUP_LIST_MENU_HELP "開始新的 拷貝儲存名單檔案"
+    ADD_TO_BACKUP_LIST_MENU_HELP "將現射出曲線加入拷貝儲存名單檔案"
+    ADDING_TO_BACKUP_STRING "加入拷貝儲存名單..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    CHOOSE_DOWNTIME_MACHINE_MENU_STRING "選擇機器"
+    STATUS_SCREEN_MENU_STRING "機台狀態顯示幕"
+    EDIT_STATUS_SCREEN_MENU_STRING "改變機台狀態顯示幕設定"
+    SAVE_STATUS_SCREEN_MENU_STRING "儲存機台狀態顯示幕設定"
+    SAVING_STRING           "儲存..."
+    STATUS_SCREEN_MENU_HELP "顯示目前各機台射出, 停機, 和生產數據"
+    EDIT_STATUS_SCREEN_MENU_HELP "改變機台狀態顯示幕行列寬窄的設定"
+    SAVE_STATUS_SCREEN_MENU_HELP "儲存機台狀態顯示幕設定改變"
+    CHANNEL_5_LABEL_STRING  "Ch 1"
+    CHANNEL_6_LABEL_STRING  "Ch 2"
+    CHANNEL_7_LABEL_STRING  "Ch 3"
+    CHANNEL_8_LABEL_STRING  "Ch 4"
+    XDCR_MENU_STRING        "位置測試頭輸出顯示(FasTrak2 only)"
+    EXPORT_ALARMS_MENU_HELP "拷貝警示資料總結數據到視窗的clipboard提供其他程式使用."
+    XDCR_MENU_HELP          "顯示一組不同測試頭的訊號曲線(FasTrak2 only)"
+    STANDARD_DOWNTIMES_MENU_HELP "設定間歇自動停機的標準號碼."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SHIFT_REPORT_MENU_HELP  "繪圖 - 機器停機狀態vs時間."
+    WHATS_NEW_MENU_HELP     "顯示不同版本程式的改變和新功能."
+    ABOUT_BOX_MENU_HELP     "顯示軟體的版本號碼."
+    FONT_STATUS_SCREEN_MENU_STRING "選擇字體"
+    FONT_STATUS_SCREEN_MENU_HELP "選擇機台狀態顯示幕的字體"
+    MASTER_EXISTS_STRING    "A MASTER trace already exists"
+    REPLACE_MASTER_STRING   "Do you want to replace it?                  "
+    CANT_CREATE_DEST_DIR_STRING "Unable to create Destination Directory"
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

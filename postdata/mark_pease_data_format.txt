@@ -1,0 +1,101 @@
+1.0	Available URLs
+
+/init_vt.aspx
+· Used to provide initialization data to Symphony
+· Invoking clears all previous definition data for this machine
+· Must send a listing of all parameters and their initialization data
+
+/update_vt.aspx
+· Used to provide data updates to Symphony
+· Invoking simply updates existing dataset with new data
+· Can send a subset of parameters, and parameter XML needs to only contain attributes that have changed
+
+2.0 Initialization data XML format
+
+Data is to be sent using an HTTP POST, enclosing XML form data.
+
+Sample:
+<parameter ParameterID="EOSV" Description="Target End-Of-Shot Velocity" Units="in/sec" Precision="1" HelValue="205" HalEnabled="False" HalValue="0" HwlEnabled="False" HwlValue="0" CurrentValueType="2" CurrentValue="1" LwlEnabled="False" LwlValue="0" LalEnabled="False" LalValue="0" LelValue="0" />
+
+Definitions:
+ParameterID 	 unique identifier for parameter
+Description 	 <optional> description for parameter
+Units 	         <optional> units for parameter
+Precision 	     <optional, default is 0> number decimal places to display
+HelValue 	     high entry limit value for entered values
+HalEnabled	     high alarm limit enabled
+HalValue 	     high alarm limit value
+HwlEnabled 	     high warning limit enabled
+HwlValue 	     high warning limit value
+CurrentValueType not used (0), read (1) or write (2) value
+CurrentValue 	 value of parameter
+LwlEnabled 	     low warning limit enabled
+LwlValue 	     low warning limit value
+LalEnabled 	     low alarm limit enabled
+LalValue 	     low alarm limit value
+LelValue 	     low entry limit value for entered values
+
+
+3.0 Data Updates
+
+After the webapp is initialized, all subsequent updates are sent to /update_vt.aspx similar to:
+
+<parameter ParameterID="EOSV" CurrentValue="23.4" />
+
+These can all be sent in one POST for all updated parameters.  If any
+other properties of the parameter change, they can be sent as well.  So,
+if the High Warning Limit Value changes, you can send:
+
+<parameter ParameterID="EOSV" CurrentValue="23.4" HwlValue="24.5" />
+
+OR, if the current value didn't change:
+
+<parameter ParameterID="EOSV" HwlValue="24.5" />
+
+
+4.0 Shot Data Format
+
+For the shot data, position and time based data are sent seperately.
+The shot data is only sent to the /update_vt.aspx address, and would be
+simlar to:
+
+<parameter ParameterID="Velocity_Pos" v0="119" v1="2.288853"
+v2="3.545596" v3="3.674309" v4="5.142093" v5="3.006133" v6="2.975305"
+v7="2.948403" ... />
+
+v0 designates the number of points that were taken
+v1 - v<v0> are the actual data values
+
+Currently, the following parameters exist that pertain to the shot data:
+
+Velocity_Pos    velocity values in the position-based domain
+Analog0_Pos	    analog channel 0 values in the position-based domain
+Analog1_Pos
+Analog2_Pos
+Analog3_Pos
+Time_Pos        corresponding time (in msec) values for each point in the position-based domain
+
+Position_Time	position values in the time-based domain
+Analog0_Time	analog values in the time-based domain
+Analog1_Time
+Analog2_Time
+Analog3_Time
+Velocity_Time	velocity values in the time-based domain
+
+
+Additionally, there are two standard parameters that define the intervals between values:
+PosInc	distance between position points
+TimeInc	time span between time points
+
+5.0	Return Codes
+
+As a result of sending the HTTP POST to either URL, Symphony will return a status code.
+The codes are as follows:
+
+0	data parsed successfully
+-1	error parsing data, or error in web application
+
+In the event that a -1 is returned when sending data to /init_vt.aspx,
+there is probably an error with the XML format.  If a -1 is returned
+when sending data to /update_vt.aspx, the webapp was restarted and
+requires the initialization data to be sent.

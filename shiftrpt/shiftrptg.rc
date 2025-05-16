@@ -1,0 +1,284 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcg.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Reload Downtime Cagegories", RELOAD_DOWNTIME_CATEGORIES_MENU_CHOICE
+
+        MENUITEM "&Print",                      PRINT_MENU_CHOICE
+        MENUITEM "E&xit",                       EXIT_MENU_CHOICE
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "F5 Select Machines",          SELECT_MACHINES_MENU_CHOICE
+        MENUITEM "F6 Time Range",               TIME_RANGE_MENU_CHOICE
+        MENUITEM "F7 Color",                    COLOR_MENU_CHOICE
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "F8 Show All",                 SHOW_ALL_MENU_CHOICE
+        MENUITEM "&Zoom",                       ZOOM_MENU_CHOICE
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrcg.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MAIN_DIALOG DIALOG DISCARDABLE  0, 0, 563, 196
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Schicht",SHIFTS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP,0,0,30,12
+    CONTROL         "Tage",DAYS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,30,0,30,12
+    CONTROL         "Wochn",WEEKS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,60,0,30,12
+    CONTROL         "Monat",MONTHS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,90,0,30,12
+    CONTROL         "Alle",ALL_DATES_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,120,0,24,12
+    PUSHBUTTON      "Zurück",PREV_PB,145,0,24,12,WS_GROUP
+    PUSHBUTTON      "Vor",NEXT_PB,170,0,23,12
+    CONTROL         "Verein.",ADD_NEW_DATA_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,197,0,35,12
+    PUSHBUTTON      "Zurückl",RELOAD_PB,232,0,35,12
+    PUSHBUTTON      "Maschin",SELECT_MACHINES_PB,279,0,28,12
+    PUSHBUTTON      "Drucke",PRINT_PB,308,0,32,12
+    PUSHBUTTON      "CSV schreib",WRITE_CSV_PB,342,0,54,12
+    CONTROL         "Bemerkg",SHOW_LEGEND_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,397,-1,39,12
+    PUSHBUTTON      "Speich",SAVE_CONFIG_PB,439,-1,23,12
+    PUSHBUTTON      "Laden",LOAD_CONFIG_PB,465,-2,24,12
+    PUSHBUTTON      "Bereichs-&Anfang",EDIT_RANGE_PB,493,-2,57,12
+END
+
+SELECT_MACHINES_DIALOG DIALOG DISCARDABLE  0, 0, 154, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Maschinen zur Anzeige wählen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,9,155,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,61,155,50,14
+    LISTBOX         MACHINE_LB,10,26,64,123,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Maschinen",IDC_STATIC,25,12,36,8
+    LTEXT           "Die im Schichtprotokoll erwünschten Maschinen wählen.",
+                    IDC_STATIC,81,36,59,46
+    PUSHBUTTON      "Alle",ALL_MACHINES_PB,80,116,29,11
+    PUSHBUTTON      "Keine",NO_MACHINES_PB,80,129,29,11
+END
+
+SAVE_AS_DIALOG DIALOG DISCARDABLE  0, 0, 175, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Protokoll speichern"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Speichern",IDOK,29,124,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,89,124,50,14
+    COMBOBOX        SAVE_AS_CBOX,7,6,158,116,CBS_SIMPLE | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+REPORT_TIME_RANGE_DIALOG DIALOG DISCARDABLE  0, 0, 400, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Protokollzeitbereich "
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Protokollname",IDC_STATIC,3,8,46,8
+    EDITTEXT        PLOT_TITLE_EBOX,62,6,331,12,ES_AUTOHSCROLL
+    LTEXT           "Monate",IDC_STATIC,59,27,24,12,SS_CENTERIMAGE
+    LTEXT           "Wochen",IDC_STATIC,116,26,29,12,SS_CENTERIMAGE
+    LTEXT           "Tage",IDC_STATIC,185,27,17,12,SS_CENTERIMAGE
+    LTEXT           "Schichten",IDC_STATIC,241,27,34,12,SS_CENTERIMAGE
+    EDITTEXT        START_MONTHS_EBOX,89,27,25,12,ES_AUTOHSCROLL
+    EDITTEXT        START_WEEKS_EBOX,152,27,25,12,ES_AUTOHSCROLL
+    EDITTEXT        START_DAYS_EBOX,209,27,25,12,ES_AUTOHSCROLL
+    EDITTEXT        START_SHIFTS_EBOX,285,27,25,12,ES_AUTOHSCROLL
+    LTEXT           "Monate",IDC_STATIC,60,44,24,12,SS_CENTERIMAGE
+    LTEXT           "Wochen",IDC_STATIC,116,44,31,12,SS_CENTERIMAGE
+    LTEXT           "Tage",IDC_STATIC,186,44,17,12,SS_CENTERIMAGE
+    LTEXT           "Schichten",IDC_STATIC,242,44,33,12,SS_CENTERIMAGE
+    EDITTEXT        END_MONTHS_EBOX,90,44,25,12,ES_AUTOHSCROLL
+    EDITTEXT        END_WEEKS_EBOX,152,44,25,12,ES_AUTOHSCROLL
+    EDITTEXT        END_DAYS_EBOX,210,44,25,12,ES_AUTOHSCROLL
+    EDITTEXT        END_SHIFTS_EBOX,285,44,25,12,ES_AUTOHSCROLL
+    LTEXT           "Start",IDC_STATIC,20,27,24,12,SS_CENTERIMAGE
+    LTEXT           "End",IDC_STATIC,20,44,24,12,SS_CENTERIMAGE
+    LTEXT           "Das Protokoll wird alle Daten von Begin der ersten Schicht bis Ende der letzten Schicht enthalten.",
+                    IDC_STATIC,7,65,308,8
+    LTEXT           "Ausn. 1 Einschluss aller gestrigen Daten durch Eingabe von -1 unter Start-Tage und End-Tage - übriges leer lassen. ",
+                    IDC_STATIC,7,79,366,8
+    LTEXT           "Ausn.2 Einschluss v. Daten d. laufenden Schicht mit Eingabe v. 0 unter Start-Schicht u. End-Schicht - übriges leer lassen. ",
+                    IDC_STATIC,7,90,441,8
+    LTEXT           "Ausn.3 Einschluss d. heutigen Daten bis zur vorhergeh. Schicht mit Eingabe v. 0 unter Start-Tage u. -1 unter End-Schicht",
+                    IDC_STATIC,7,102,382,8
+    DEFPUSHBUTTON   "Speichern",IDOK,146,117,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,203,117,50,14
+    LTEXT           "Bemerk: Die Änderungen werden zum aktuellen Protokoll gespeichert. Wollen Sie ein neues Protokoll erstellen, dann zuerst unter einem neuen Namen speichern und dann ändern.",
+                    IDC_STATIC,11,136,377,18
+END
+
+WRITE_CSV_DIALOG DIALOG DISCARDABLE  0, 0, 351, 41
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CSV-Datei schreiben"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        CSV_FILE_NAME_EBOX,57,6,281,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Abbrechen",IDCANCEL,169,23,50,14
+    DEFPUSHBUTTON   "Datei schreiben",IDOK,89,23,72,14
+    LTEXT           "CSV-Dateiname:",IDC_STATIC,3,8,53,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "MAIN_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 353
+        BOTTOMMARGIN, 195
+    END
+
+    "SELECT_MACHINES_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    "SAVE_AS_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    "REPORT_TIME_RANGE_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MY_ICON                 ICON    DISCARDABLE     "shiftrpt.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Schichtprotokoll"
+    CREATE_FAILED_STRING    "Fehler beim Einrichten"
+    THREAD_STRING           "Teileprogramm"
+    HOURS_STRING            "Stunden"
+    DAYS_STRING             "Tage"
+    MONTHS_STRING           "Monate"
+    SAVE_REPORT_STRING      "Protokoll speichern"
+    LOAD_REPORT_STRING      "Protokoll einlesen"
+    LOAD_STRING             "Einlesen"
+    SAVE_STRING             "Speichern"
+    ZOOM_POPUP_STRING       "Größer/kleiner"
+    FONT_POPUP_STRING       "Schriftart wählen"
+    PRINTER_LIST_STRING     "Auflistung von Druckern [EnumPrinters]"
+    NO_MEMORY_STRING        "Kein Arbeitsspeicher verfügbar"
+    PRINTER_FONT_POPUP_STRING "Schriftart für Drucker wählen"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,140 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DOWNTIME_CATEGORY_DIALOG DIALOG DISCARDABLE  0, 0, 421, 181
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         SUBCAT_LISTBOX,3,18,220,156,LBS_USETABSTOPS | WS_VSCROLL
+    EDITTEXT        CAT_INDEX_EDITBOX,281,39,27,12
+    EDITTEXT        CAT_NAME_EDITBOX,313,39,90,12
+    EDITTEXT        SUBCAT_INDEX_EDITBOX,280,55,29,12
+    EDITTEXT        SUBCAT_NAME_EDITBOX,313,55,90,12
+    EDITTEXT        RED_EBOX,271,85,18,12,ES_AUTOHSCROLL
+    EDITTEXT        GREEN_EBOX,271,98,18,12,ES_AUTOHSCROLL
+    EDITTEXT        BLUE_EBOX,271,111,18,12,ES_AUTOHSCROLL
+    SCROLLBAR       RED_HS,292,86,100,9,WS_TABSTOP
+    SCROLLBAR       GREEN_HS,292,99,100,9,WS_TABSTOP
+    SCROLLBAR       BLUE_HS,292,112,100,9,WS_TABSTOP
+    SCROLLBAR       MOVEALL_HS,292,125,100,9,WS_TABSTOP
+    LTEXT           "Red",INDEX_LBTITLE_STATIC,395,86,14,8
+    LTEXT           "Green",INDEX_LBTITLE_STATIC,395,99,20,8
+    LTEXT           "Blue",INDEX_LBTITLE_STATIC,395,112,15,8
+    LTEXT           "All",INDEX_LBTITLE_STATIC,395,126,15,8
+    PUSHBUTTON      "Save Changes",SAVE_BUTTON,296,140,60,14,BS_CENTER
+    CONTROL         "Subtract Timeout Seconds from Auto Down",
+                    SUBTRACT_TIMEOUT_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,247,159,153,6
+    PUSHBUTTON      "New",INSERT_SUBCAT_BUTTON,233,8,50,14,BS_CENTER
+    PUSHBUTTON      "Remove",REMOVE_SUBCAT_BUTTON,287,8,50,14,BS_CENTER
+    LTEXT           "Index",INDEX_LBTITLE_STATIC,3,8,24,8,NOT WS_GROUP
+    LTEXT           "Category",INDEX_LBTITLE_STATIC,28,8,33,8,NOT WS_GROUP
+    LTEXT           "Sub-Index",INDEX_LBTITLE_STATIC,90,8,35,8,NOT WS_GROUP
+    LTEXT           "Sub-Cagegory",INDEX_LBTITLE_STATIC,128,8,47,8,NOT
+                    WS_GROUP
+    LTEXT           "Index",INDEX_LBTITLE_STATIC,280,27,29,8,NOT WS_GROUP
+    LTEXT           "Description",INDEX_LBTITLE_STATIC,313,27,41,8,NOT
+                    WS_GROUP
+    LTEXT           "Category",INDEX_LBTITLE_STATIC,233,42,37,8,NOT WS_GROUP
+    LTEXT           "Sub-Category",INDEX_LBTITLE_STATIC,233,58,45,8,NOT
+                    WS_GROUP
+    CONTROL         "",COLOR_SWATCH,"Button",BS_OWNERDRAW | WS_DISABLED,230,
+                    85,38,38
+    LTEXT           "Color",INDEX_LBTITLE_STATIC,187,8,17,8
+    LTEXT           "Plot Color",INDEX_LBTITLE_STATIC,234,75,31,8
+    CONTROL         "Copy to Network",COPY_TO_NETWORK_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,247,167,69,10
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+DOWNTIME_ICON           ICON    DISCARDABLE     "downtime.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Down-Time Setup"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

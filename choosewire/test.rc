@@ -1,0 +1,248 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MY_ICON                 ICON    DISCARDABLE     "test.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       EXIT_CHOICE
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "C&Hoose Directory",           CHOOSE_DIRS_CHOICE
+        MENUITEM "&Create",                     CREATE_CHOICE
+        MENUITEM "&Delete",                     DELETE_CHOICE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Advanced Machine Setup",      ADV_MACHINE_SETUP_CHOICE
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 231, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Opto Wire"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,1,60,50,71
+    CONTROL         "",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,11,92,8,8
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,32,92,8,8
+    CONTROL         "",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,12,111,8,8
+    CONTROL         "",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,32,111,8,8
+    LTEXT           "1",IDC_STATIC,14,100,8,8
+    LTEXT           "3",IDC_STATIC,34,100,8,8
+    LTEXT           "2",IDC_STATIC,14,121,8,8
+    LTEXT           "4",IDC_STATIC,34,121,8,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,58,60,50,71
+    CONTROL         "",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,68,92,8,8
+    CONTROL         "",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,88,92,8,8
+    CONTROL         "",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,68,112,8,8
+    CONTROL         "",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,88,112,8,8
+    LTEXT           "1",IDC_STATIC,70,101,8,8
+    LTEXT           "3",IDC_STATIC,90,101,8,8
+    LTEXT           "2",IDC_STATIC,70,121,8,8
+    LTEXT           "4",IDC_STATIC,90,121,8,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,114,60,50,71
+    CONTROL         "",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,124,92,8,8
+    CONTROL         "",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,144,92,8,8
+    CONTROL         "",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,124,112,8,8
+    CONTROL         "",IDC_RADIO12,"Button",BS_AUTORADIOBUTTON,144,112,8,8
+    LTEXT           "1",IDC_STATIC,126,101,8,8
+    LTEXT           "3",IDC_STATIC,146,101,8,8
+    LTEXT           "2",IDC_STATIC,126,121,8,8
+    LTEXT           "4",IDC_STATIC,146,121,8,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,171,60,50,71
+    CONTROL         "",IDC_RADIO13,"Button",BS_AUTORADIOBUTTON,181,92,8,8
+    CONTROL         "",IDC_RADIO14,"Button",BS_AUTORADIOBUTTON,201,92,8,8
+    CONTROL         "",IDC_RADIO15,"Button",BS_AUTORADIOBUTTON,181,113,8,8
+    CONTROL         "",IDC_RADIO16,"Button",BS_AUTORADIOBUTTON,201,113,8,8
+    LTEXT           "1",IDC_STATIC,183,102,8,8
+    LTEXT           "3",IDC_STATIC,203,102,8,8
+    LTEXT           "2",IDC_STATIC,183,121,8,8
+    LTEXT           "4",IDC_STATIC,203,121,8,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,1,40,220,15
+    LTEXT           "1 2",IDC_STATIC,9,3,8,18
+    LTEXT           "C C",IDC_STATIC,27,3,8,18
+    LTEXT           "C C",IDC_STATIC,81,3,8,18
+    LTEXT           "C C",IDC_STATIC,137,3,8,18
+    LTEXT           "C C",IDC_STATIC,188,3,8,18
+    CONTROL         "",IDC_RADIO17,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    8,27,8,8
+    CONTROL         "",IDC_RADIO18,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    26,27,8,8
+    CONTROL         "",IDC_RADIO19,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    44,27,8,8
+    CONTROL         "",IDC_RADIO20,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    62,27,8,8
+    CONTROL         "",IDC_RADIO21,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    80,27,8,8
+    CONTROL         "",IDC_RADIO22,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    98,27,8,8
+    CONTROL         "",IDC_RADIO23,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    116,27,8,8
+    CONTROL         "",IDC_RADIO24,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    134,27,8,8
+    CONTROL         "",IDC_RADIO25,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    152,27,8,8
+    CONTROL         "",IDC_RADIO26,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    170,27,8,8
+    CONTROL         "",IDC_RADIO27,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    188,27,8,8
+    CONTROL         "",IDC_RADIO28,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    206,27,8,8
+    CONTROL         "",IDC_RADIO29,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    8,43,8,8
+    CONTROL         "",IDC_RADIO30,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    26,43,8,8
+    CONTROL         "",IDC_RADIO31,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    44,43,8,8
+    CONTROL         "",IDC_RADIO32,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    62,43,8,8
+    CONTROL         "",IDC_RADIO33,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    80,43,8,8
+    CONTROL         "",IDC_RADIO34,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    98,43,8,8
+    CONTROL         "",IDC_RADIO35,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    116,43,8,8
+    CONTROL         "",IDC_RADIO36,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    134,43,8,8
+    CONTROL         "",IDC_RADIO37,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    152,43,8,8
+    CONTROL         "",IDC_RADIO38,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    170,43,8,8
+    CONTROL         "",IDC_RADIO39,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    188,43,8,8
+    CONTROL         "",IDC_RADIO40,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,
+                    206,43,8,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,1,23,220,15
+    LTEXT           "3 4",IDC_STATIC,46,3,8,18
+    LTEXT           "1 2",IDC_STATIC,63,3,8,18
+    LTEXT           "1 2",IDC_STATIC,96,3,8,18
+    LTEXT           "1 2",IDC_STATIC,116,3,8,18
+    LTEXT           "11 12",IDC_STATIC,153,3,8,18
+    LTEXT           "11 12",IDC_STATIC,171,3,8,18
+    LTEXT           "11 12",IDC_STATIC,205,3,8,18
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Main Window Title"
+    PARAMETER_TITLE_STRING  "Parameter"
+    LOW_ALARM_STRING        "Low Alarm"
+    HIGH_ALARM_STRING       "High Alarm"
+    VALUE_STRING            "Value"
+    UNITS_STRING            "Units"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

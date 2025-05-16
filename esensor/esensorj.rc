@@ -1,0 +1,162 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc2.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+GENERALMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "終了(&X)",                    EXIT_CHOICE
+    END
+    POPUP "編集(&E)"
+    BEGIN
+        MENUITEM "新規作成(&C)\tIns",           CREATE_CHOICE
+        MENUITEM "削除(&e)\tDel",               DELETE_CHOICE
+        MENUITEM "直線変換の計算（＆Ｌ）",      CALC_LINEAR_CONVERT_CHOICE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CALC_LINEAR_CONVERT_DIALOG DIALOG DISCARDABLE  0, 0, 187, 89
+STYLE DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "直線変換情報の計算"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "出力の最小電圧",-1,24,20,84,8,NOT WS_GROUP
+    LTEXT           "出力の最高電圧",-1,24,37,84,8,NOT WS_GROUP
+    EDITTEXT        MIN_VOLTS_EBOX,116,17,36,12
+    EDITTEXT        MAX_VOLTS_EBOX,116,34,36,12
+    PUSHBUTTON      "方程式の計算",CALC_LINEAR_EQUATION_BUTTON,44,61,92,14,
+                    BS_CENTER
+END
+
+EDIT_ANALOG_SENSOR DIALOG DISCARDABLE  0, 0, 400, 141
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LISTBOX         SENSOR_NUMBER_LISTBOX,36,6,30,111,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        VARTYPE_CBOX,75,23,71,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        UNITS_CBOX,75,42,71,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        MAX_VALUE_EBOX,82,76,53,12
+    EDITTEXT        MIN_VALUE_EBOX,82,92,53,12
+    EDITTEXT        SENSOR_DESCRIPTION_EBOX,190,17,124,13
+    EDITTEXT        GAIN_EBOX,190,36,20,12
+    EDITTEXT        SUB_EBOX,192,76,53,12
+    EDITTEXT        MUL_EBOX,192,92,53,12
+    EDITTEXT        ADD_EBOX,294,94,53,12
+    EDITTEXT        DIV_EBOX,294,78,52,12
+    DEFPUSHBUTTON   "上書き保存",SAVE_CHANGES_BUTTON,163,119,54,14
+    GROUPBOX        "トランスデューサの出力範囲",-1,71,62,115,46
+    GROUPBOX        "直線変換情報",-1,189,54,208,54
+    LTEXT           "記録仕様",-1,190,6,40,8
+    LTEXT           "変数の型",-1,150,26,36,10
+    CTEXT           "アナログセンサ\n番号",-1,1,45,33,24
+    LTEXT           "最高",-1,137,78,35,8
+    LTEXT           "最小",-1,137,94,35,8
+    LTEXT           "単位",-1,150,44,20,9
+    LTEXT           "ゲイン",-1,219,38,27,8
+    LTEXT           "乗数（Ｍ）",-1,247,94,46,10
+    LTEXT           "減数（Ｓ）",-1,246,78,46,10
+    CONTROL         "除数（Ｄ）",-1,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,
+                    348,78,46,10
+    CONTROL         "加数（Ａ）",-1,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,
+                    348,94,45,10
+    LTEXT           "計測値＝[(入力 - S )＊M]/D+A",-1,196,65,165,11
+    LTEXT           "（ゲイン＊最大電圧＝１０Ｖ）",-1,255,36,125,10
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc2.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NONE_STRING             "なし"
+    CANNOT_COMPLY_STRING    "実施することが出来ません"
+    SENSOR_LIST_FULL_STRING "センサーリストが一杯です"
+    MAIN_WINDOW_TITLE_STRING "アナログセンサ設定"
+    UNABLE_TO_CONTINUE_STRING "続けられません"
+    NO_VARIABLE_TYPES_STRING "変数型が見つかりません"
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

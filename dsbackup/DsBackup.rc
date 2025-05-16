@@ -1,0 +1,382 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MAINDIALOG DIALOGEX 0, 0, 227, 242
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_DLGMODALFRAME
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Zip after every",ZIP_COUNT_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,49,36,62,12
+    EDITTEXT        ZIP_COUNT_EBOX,111,36,36,12,ES_RIGHT
+    CONTROL         "Zip every day at",ZIP_TIME_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,49,56,68,12
+    PUSHBUTTON      "Zip Now",ZIP_NOW_BUTTON,87,222,50,14,BS_CENTER
+    LTEXT           "shots.",-1,149,38,24,8,NOT WS_GROUP
+    GROUPBOX        "Status",-1,3,192,220,23,WS_GROUP
+    CTEXT           "Waiting For Update...",DS_STATUS_TBOX,7,202,208,10,NOT 
+                    WS_GROUP
+    LISTBOX         ZIP_COUNT_LISTBOX,23,112,176,86,LBS_SORT | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Machine",-1,24,100,32,8,NOT WS_GROUP
+    LTEXT           "Part",-1,63,100,20,8,NOT WS_GROUP
+    LTEXT           "Profile Count",-1,95,93,24,15,NOT WS_GROUP
+    LTEXT           "Time of Last Shot",-1,131,100,60,8,NOT WS_GROUP
+    EDITTEXT        TIME_1_EBOX,115,56,28,12
+    EDITTEXT        TIME_2_EBOX,115,68,28,12
+    EDITTEXT        TIME_3_EBOX,115,80,28,12
+    RTEXT           "2037",K_FREE_TBOX,95,8,48,8,NOT WS_GROUP
+    LTEXT           "Free Disk Space:",-1,33,8,60,8,NOT WS_GROUP
+    LTEXT           "Megabytes",-1,147,8,36,8,NOT WS_GROUP
+    CONTROL         "",-1,"Static",SS_ETCHEDFRAME,23,4,177,16
+    CTEXT           "DISK FULL",DISK_FULL_TBOX,82,24,60,10,NOT WS_VISIBLE | 
+                    NOT WS_GROUP
+    CONTROL         "Do NOT Zip Downtime Data",IGNORE_DOWNTIME_XBOX,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,168,60,56,36
+    CONTROL         "Keep a Log",USE_LOG_FILE_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,174,230,53,10
+END
+
+SAVE_OPTIONS DIALOG DISCARDABLE  0, 0, 327, 204
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Data Archiver Shot Save Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Parameters",IDC_STATIC,4,96,156,81
+    GROUPBOX        "Profiles",IDC_STATIC,166,96,156,81
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,171,109,64,62
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,8,109,64,62
+    CONTROL         "Acquire All",PARM_ACQUIRE_ALL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,114,51,12
+    CONTROL         "Acquire None",PARM_ACQUIRE_NONE,"Button",
+                    BS_AUTORADIOBUTTON,11,127,57,12
+    CONTROL         "Time Skip",PARM_TIME_SKIP,"Button",BS_AUTORADIOBUTTON,
+                    11,141,52,12
+    CONTROL         "Shot Skip",PARM_SKIP_COUNT,"Button",BS_AUTORADIOBUTTON,
+                    11,155,49,12
+    LTEXT           "Acquire Count",PARM_ACQUIRE_LABEL,110,112,47,8,NOT 
+                    WS_GROUP
+    LTEXT           "Skip Time",PARM_SKIP_LABEL,110,135,45,8,NOT WS_GROUP
+    EDITTEXT        PARM_ACQUIRE_EBOX,74,110,33,10,WS_GROUP
+    EDITTEXT        PARM_SKIP_EBOX,74,133,33,11
+    CONTROL         "Acquire All",PROF_ACQUIRE_ALL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,175,113,51,12
+    CONTROL         "Acquire None",PROF_ACQUIRE_NONE,"Button",
+                    BS_AUTORADIOBUTTON,175,127,57,12
+    CONTROL         "Time Skip",PROF_TIME_SKIP,"Button",BS_AUTORADIOBUTTON,
+                    175,141,52,12
+    CONTROL         "Shot Skip",PROF_SKIP_COUNT,"Button",BS_AUTORADIOBUTTON,
+                    175,155,49,12
+    LTEXT           "Acquire Count",PROF_ACQUIRE_LABEL,273,112,47,8,NOT 
+                    WS_GROUP
+    LTEXT           "Skip Time",PROF_SKIP_LABEL,273,135,46,8,NOT WS_GROUP
+    EDITTEXT        PROF_ACQUIRE_EBOX,237,110,33,11,WS_GROUP
+    EDITTEXT        PROF_SKIP_EBOX,237,133,33,11
+    PUSHBUTTON      "&Save Changes",SAVE_CHANGES_BUTTON,133,186,61,14
+    LTEXT           "Machine",IDC_STATIC,34,18,29,8
+    LTEXT           "Acquire",IDC_STATIC,118,18,27,8
+    CTEXT           "Parameters",IDC_STATIC,72,7,94,9,SS_SUNKEN
+    LTEXT           "Skip",IDC_STATIC,71,18,17,8
+    LTEXT           "Acquire",IDC_STATIC,229,18,27,8
+    CTEXT           "Profiles",IDC_STATIC,180,7,96,9,SS_SUNKEN
+    LTEXT           "Skip",IDC_STATIC,181,18,17,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,90,328,1
+    LISTBOX         MACHINE_LISTBOX,32,28,256,60,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+GLOBAL_FILE_SETTINGS_DIALOG DIALOG DISCARDABLE  0, 0, 315, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Data Archiver File Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Network Shot Parameter File",IDC_STATIC,5,5,91,8
+    LTEXT           "File Name:",IDC_STATIC,20,23,34,8
+    EDITTEXT        NET_SHOT_PARAM_FILE_EBOX,57,22,232,11,ES_AUTOHSCROLL
+    LTEXT           "Record Format:",IDC_STATIC,6,39,50,8
+    EDITTEXT        NET_SHOT_PARAM_FORMAT_EBOX,57,38,232,11,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,60,293,1
+    CONTROL         "Use a different setting for each machine",
+                    MACHINE_BASED_ZIP_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,4,65,85,17
+    LTEXT           "Machine",IDC_STATIC,6,84,28,8
+    LISTBOX         MACHINE_LISTBOX,0,93,40,53,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Zip Files",IDC_STATIC,131,67,27,8
+    RTEXT           "Part Results File:",IDC_STATIC,49,100,60,8,NOT WS_GROUP
+    EDITTEXT        PART_PATH_EBOX,112,98,195,12,ES_AUTOHSCROLL
+    RTEXT           "Machine Results File:",IDC_STATIC,42,115,68,8
+    EDITTEXT        MACHINE_PATH_EBOX,112,113,195,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Save Changes",IDOK,132,134,52,14
+END
+
+PART_SAVE_ERROR_DIALOG DIALOG DISCARDABLE  0, 0, 403, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Unable to Zip Files"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Close",IDOK,196,94,50,14
+    LTEXT           "Static",PSERROR_CMD_TBOX,0,12,403,33
+    LTEXT           "Command",IDC_STATIC,0,2,32,8
+    LTEXT           "Backup Directory",IDC_STATIC,2,50,56,8
+    LTEXT           "Static",PSERROR_BACKUP_PATH_TBOX,1,62,398,22
+    PUSHBUTTON      "&Save to Log File",SAVE_TO_LOG_PB,5,94,62,14
+    EDITTEXT        LOG_FILE_EBOX,70,94,108,14,ES_AUTOHSCROLL
+    LTEXT           "PKZip.exe not found",NO_PKZIP_TBOX,300,96,73,8,NOT 
+                    WS_VISIBLE
+END
+
+ABOUT_DIALOG DIALOG DISCARDABLE  0, 0, 140, 50
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Data Archiver Backup Program"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Version 6.58",-1,44,10,50,8,NOT WS_GROUP
+    DEFPUSHBUTTON   "Close",IDCANCEL,47,29,44,14,BS_CENTER
+END
+
+MACHINE_LIST_DIALOG DIALOG DISCARDABLE  0, 0, 301, 322
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "List of Network Machines (local copys not shown)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         MACHINE_LIST_LB,0,10,300,311,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Machine",MACHINE_NAME_STATIC,0,1,28,8
+    LTEXT           "Computer",COMPUTER_NAME_STATIC,51,1,31,8
+    LTEXT           "Directory",COMPUTER_DIR_STATIC,100,2,29,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Display Machine and Computer List", MACHINE_LIST_MENU
+        MENUITEM "&Minimize",                   MINIMIZE_MENU
+        MENUITEM "E&xit",                       EXIT_MENU
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Shot Save Configuration",    SAVE_CONFIG_MENU
+        MENUITEM "&Global File Settings",       GLOBAL_FILE_SETTINGS_MENU
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                HELP_MENU
+        MENUITEM "&About",                      ABOUT_MENU
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+DATA_SERVER_ICON        ICON    DISCARDABLE     "DsBackup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "GLOBAL_FILE_SETTINGS_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    "PART_SAVE_ERROR_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 396
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAILSLOT_EVENT_FAIL_STRING "Failed to create Mailslot event"
+    MAILSLOT_WAIT_FAIL_STRING "Failure of WaitForSingleObject in MAIL"
+    CREATE_FAILED_STRING    "Create Failed"
+    MAILSLOT_THREAD_STRING  "Mailslot Thread"
+    MAILSLOT_STRING         "Mailslot"
+    UNABLE_TO_CONTINUE_STRING "Data Archiver Backup: Unable to Continue"
+    BACKUP_NOT_FOUND_STRING "Backup Directory Not Found"
+    ADD_BUP_FAILED_STRING   "Unable to add backup computer name"
+    DIR_CREATE_FAIL         "Directory Creation Failure"
+    CANT_DO_THAT_STRING     "Unable to comply"
+    ZIP_COMPLETE_STRING     "Zip Complete"
+    MACHINE_LABEL_STRING    "Machine"
+    PART_LABEL_STRING       "Part"
+    SHOT_LABEL_STRING       "Shot"
+    ZIP_COUNT_LABEL_STRING  "Zip Count"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SECONDS_ABREVIATION_STRING "Sec."
+    ALL_STRING              "All"
+    SHOTS_LABEL_STRING      "Shots"
+    SKIP_TIME_STRING        "Skip Seconds"
+    SKIP_COUNT_STRING       "Skip Count"
+    CANT_GET_SEMAPHORE_STRING "Can't get semaphore"
+    MAZ_ZIP_ERROR_STRING    "Machine Data Zip Failed"
+    PAZ_ZIP_ERROR_STRING    "Part Data Zip Failed"
+    NO_MACHINES_FOUND_STRING "No Machines Found"
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,58,0,0
+ PRODUCTVERSION 6,58,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "C:\\V5DS\\Exes\\DsBackup.exe\0"
+            VALUE "CompanyName", "Visi-Trak Worldwide, LLC\0"
+            VALUE "FileDescription", "DsBackup\0"
+            VALUE "FileVersion", "6, 58, 0, 0\0"
+            VALUE "InternalName", "DsBackup\0"
+            VALUE "LegalCopyright", "Copyright © 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DsBackup.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Visi-Trak Worldwide, LLC DsBackup\0"
+            VALUE "ProductVersion", "6, 58, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

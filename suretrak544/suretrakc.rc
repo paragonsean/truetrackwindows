@@ -1,0 +1,751 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcc.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "檔案"
+    BEGIN
+        MENUITEM "縮小",                        MINIMIZE_SCREEN_MENU
+        MENUITEM "退出同時停止控制的更新",      EXIT_TASK_MENU
+    END
+END
+
+CONTROL_PROGRAM_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "檔案"
+    BEGIN
+        MENUITEM "開啟",                        CP_OPEN_OTHER_MENU
+        MENUITEM "儲存在..",                    CP_SAVE_AS_MENU
+        MENUITEM SEPARATOR
+        MENUITEM "退出",                        CP_EXIT_MENU
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+BLOCK_MODE_RAM_DIALOG DIALOG DISCARDABLE  0, 0, 317, 226
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Block Mode Ram Display"
+FONT 8, "Courier New"
+BEGIN
+    LISTBOX         BLOCK_RAM_LISTBOX,39,12,273,209,LBS_SORT | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "0x9000",BLOCK_9000_BUTTON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,2,23,36,12
+    CONTROL         "0xA000",BLOCK_A000_BUTTON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,2,34,36,12
+    CONTROL         "0xB000",BLOCK_B000_BUTTON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,2,45,36,12
+    CONTROL         "0xC000",BLOCK_C000_BUTTON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,2,56,36,12
+    CONTROL         "0xD000",BLOCK_D000_BUTTON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,2,67,36,12
+    CONTROL         "0xE000",BLOCK_E000_BUTTON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,2,78,36,12
+    CONTROL         "0xF000",BLOCK_F000_BUTTON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,2,89,36,12
+    CTEXT           "Block",-1,6,11,28,8,NOT WS_GROUP
+    LTEXT           "0",-1,76,1,12,9,NOT WS_GROUP
+    LTEXT           "1",-1,101,1,12,9,NOT WS_GROUP
+    LTEXT           "2",-1,125,1,12,9,NOT WS_GROUP
+    LTEXT           "3",-1,149,1,12,9,NOT WS_GROUP
+    LTEXT           "4",-1,174,1,12,9,NOT WS_GROUP
+    LTEXT           "5",-1,198,1,12,9,NOT WS_GROUP
+    LTEXT           "6",-1,222,1,12,9,NOT WS_GROUP
+    LTEXT           "7",-1,246,1,12,9,NOT WS_GROUP
+    LTEXT           "8",-1,269,1,12,9,NOT WS_GROUP
+    LTEXT           "9",-1,293,1,12,9,NOT WS_GROUP
+    CONTROL         "High",HIGH_RAM_BUTTON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,0,108,32,12
+    CONTROL         "Low",LOW_RAM_BUTTON,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,0,120,32,12
+END
+
+COMMAND_PORT_DIALOG DIALOG DISCARDABLE  0, 0, 142, 122
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Control Port and Data Port Access"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Control Port",-1,4,4,128,52,WS_GROUP
+    PUSHBUTTON      "Clear",CLEAR_COMMAND_PORT_BUTTON,15,34,50,14,BS_CENTER
+    PUSHBUTTON      "Send",SEND_COMMAND_BUTTON,71,34,50,14,BS_CENTER
+    EDITTEXT        COMMAND_VALUE_EBOX,59,15,33,12
+    RTEXT           "Hex Value",-1,7,17,44,8,NOT WS_GROUP
+    PUSHBUTTON      "Read",READ_DATA_PORT_BUTTON,15,93,50,14,BS_CENTER
+    PUSHBUTTON      "Send",SEND_DATA_PORT_BUTTON,71,93,50,14,BS_CENTER
+    EDITTEXT        DATA_PORT_VALUE_EBOX,59,75,33,12
+    RTEXT           "Hex Value",-1,7,77,44,8,NOT WS_GROUP
+    GROUPBOX        "Data Port",-1,4,64,128,52,WS_GROUP
+END
+
+CONTROL_MODS_DIALOG DIALOG DISCARDABLE  0, 0, 285, 164
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Control Program Modifications"
+FONT 10, "Courier New"
+BEGIN
+    GROUPBOX        "Alternate Start Step and then Accumulator On",
+                    IDC_STATIC,5,2,268,66,WS_GROUP
+    GROUPBOX        "Step Type",IDC_STATIC,13,19,82,39,WS_GROUP
+    GROUPBOX        "Valve Start Voltage",IDC_STATIC,4,74,140,70,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,170,11,94,12
+    LTEXT           "Generated Step:",IDC_STATIC,104,13,64,8,NOT WS_GROUP
+    GROUPBOX        "Valve Park Voltage",IDC_STATIC,145,74,138,70,WS_GROUP
+    LTEXT           "Generated Step:",IDC_STATIC,147,101,63,8,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,211,99,68,12
+    RTEXT           "Voltage:",IDC_STATIC,171,126,36,8,NOT WS_GROUP
+    RTEXT           "Slow Shot Velocity",START_VEL_NAME_TBOX,109,28,95,8,NOT 
+                    WS_GROUP
+    RTEXT           "Acceleration",START_ACCEL_NAME_TBOX,109,41,95,8,NOT 
+                    WS_GROUP
+    RTEXT           "Accumulator On Position",START_POS_NAME_TBOX,105,54,99,
+                    8
+    CONTROL         "Normal Step",TIME_STEP_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,29,60,12
+    CONTROL         "Alternate Step",POS_STEP_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,18,41,73,12
+    EDITTEXT        START_VEL_EBOX,211,27,25,12,WS_GROUP
+    EDITTEXT        START_ACCEL_EBOX,211,40,25,12
+    EDITTEXT        START_POS_EBOX,211,53,25,12
+    LTEXT           "IPS",START_VEL_UNITS_TBOX,238,29,16,8,NOT WS_GROUP
+    LTEXT           "",START_ACCEL_UNITS_TBOX,238,41,10,8,NOT WS_GROUP
+    LTEXT           "IN",START_POS_UNITS_TBOX,238,55,15,8,NOT WS_GROUP
+    LTEXT           ".044 V4AC1P.25 E1.2",START_STEP_TBOX,173,13,76,8,NOT 
+                    WS_GROUP
+    LTEXT           ".004 T6800 N",RETR_STEP_TBOX,215,101,60,8,NOT WS_GROUP
+    EDITTEXT        RETR_VOLTS_EBOX,211,125,32,12,WS_GROUP
+    PUSHBUTTON      "Save Changes",SAVE_CONTROL_MODS_BUTTON,115,148,69,14,
+                    BS_CENTER
+    LTEXT           "Generated Step:",IDC_STATIC,7,88,60,8
+    LTEXT           ".042 T-4LD0.25 N",VALVE_START_STEP_TBOX,70,88,70,8
+    CONTROL         "Normal Step",NORMAL_VALVE_START_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,101,60,8
+    CONTROL         "Alternate Step",ALT_VALVE_START_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,7,111,72,8
+    RTEXT           "Voltage:",VALVE_START_VOLTAGE_TBOX,29,126,36,8
+    EDITTEXT        VALVE_START_VOLTAGE_EBOX,70,125,32,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,67,86,76,12
+END
+
+CONTROL_PROGRAM_DIALOG DIALOG DISCARDABLE  0, 0, 322, 231
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "SureTrak Control File Download"
+MENU CONTROL_PROGRAM_MENU
+FONT 10, "Courier"
+BEGIN
+    PUSHBUTTON      "Save Changes and Download to SureTrak",
+                    SAVE_CONTROL_PROGRAM_BUTTON,81,214,160,14,BS_CENTER
+    EDITTEXT        CONTROL_PROGRAM_EBOX,0,8,170,200,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+    EDITTEXT        CONTROL_MESSAGE_EBOX,171,8,150,200,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+    LTEXT           "Control Program",-1,52,0,60,8,NOT WS_GROUP
+    LTEXT           "Status Messages",-1,209,0,60,8,NOT WS_GROUP
+END
+
+CURRENT_PARAMETERS_DIALOG DIALOG DISCARDABLE  0, 0, 175, 252
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Current Control Parameter Values"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         CURRENT_PARAMETER_VALUE_LISTBOX,8,16,152,236,
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Parameter Name",-1,9,7,60,8,NOT WS_GROUP
+    LTEXT           "Current Value",-1,82,7,60,8,NOT WS_GROUP
+END
+
+CURRENT_POS_AND_ANALOG_DIALOG DIALOG DISCARDABLE  0, 0, 181, 64
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Current Velocity and Analog Values"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Null Voltage",-1,16,4,70,8,NOT WS_GROUP
+    RTEXT           "Analog Channel #2",-1,16,16,70,8,NOT WS_GROUP
+    RTEXT           "Analog Channel #3",-1,16,28,70,8,NOT WS_GROUP
+    RTEXT           "Analog Channel #4",-1,16,40,70,8,NOT WS_GROUP
+    RTEXT           "Velocity",-1,16,51,70,8,NOT WS_GROUP
+    LTEXT           "16.786",CURRENT_NULL_VOLTAGE_TEXTBOX,97,4,36,8,NOT 
+                    WS_GROUP
+    LTEXT           "1432.55",CURRENT_ANALOG_2_TEXTBOX,97,16,36,8,NOT 
+                    WS_GROUP
+    LTEXT           "1400",CURRENT_ANALOG_3_TEXTBOX,97,28,36,8,NOT WS_GROUP
+    LTEXT           "1854.45",CURRENT_ANALOG_4_TEXTBOX,97,40,36,8,NOT 
+                    WS_GROUP
+    LTEXT           "150.34",CURRENT_VELOCITY_TEXTBOX,97,51,36,8,NOT 
+                    WS_GROUP
+    LTEXT           "Volts",NULL_VOLTAGE_UNITS_TEXTBOX,138,4,30,8,NOT 
+                    WS_GROUP
+    LTEXT           "Volts",ANALOG_2_UNITS_TEXTBOX,138,16,30,8,NOT WS_GROUP
+    LTEXT           "Volts",ANALOG_3_UNITS_TEXTBOX,138,28,30,8,NOT WS_GROUP
+    LTEXT           "Volts",ANALOG_4_UNITS_TEXTBOX,138,40,30,8,NOT WS_GROUP
+    LTEXT           "IPS",VELOCITY_UNITS_TEXTBOX,138,51,30,8,NOT WS_GROUP
+END
+
+DAC_PORT_DIALOG DIALOG DISCARDABLE  0, 0, 231, 55
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DAC Access"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Voltage (-10 to +10 Volts )",-1,8,31,88,8,NOT WS_GROUP
+    EDITTEXT        DAC_VOLTAGE_EBOX,99,29,56,12
+    PUSHBUTTON      "Set Voltage",SET_DAC_VOLTAGE_BUTTON,160,28,50,14,
+                    BS_CENTER
+    RTEXT           "Null Voltage(+-5V):",-1,60,8,64,8,NOT WS_GROUP
+    LTEXT           "0.005",NULL_VOLTAGE_TBOX,129,8,30,8,NOT WS_GROUP
+    CONTROL         "",-1,"Static",SS_ETCHEDFRAME,64,5,100,13
+END
+
+EPROM_NUMBER_DIALOG DIALOG DISCARDABLE  0, 0, 137, 63
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Current Eprom Version Number"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,43,35,50,14,BS_CENTER
+    CTEXT           "",EPROM_NUMBER_TBOX,38,12,60,8,SS_SUNKEN | NOT WS_GROUP
+END
+
+LOAD_STATUS_DIALOG DIALOG DISCARDABLE  0, 0, 95, 78
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,20,56,50,14,BS_CENTER
+    CTEXT           "Reading SureTrak Ram...",-1,3,12,88,8,NOT WS_GROUP
+    RTEXT           "Loc:",-1,8,28,20,8,NOT WS_GROUP
+    RTEXT           "Value:",-1,5,40,24,8,NOT WS_GROUP
+    LTEXT           "",RAM_LOC_TBOX,36,28,52,8,NOT WS_GROUP
+    LTEXT           "",RAM_VALUE_TBOX,36,40,52,8,NOT WS_GROUP
+END
+
+MAIN_SCREEN DIALOG DISCARDABLE  0, 0, 347, 182
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Restart",RESTART_BUTTON,280,32,60,12,BS_CENTER
+    PUSHBUTTON      "&Null Valve",NULL_VALVE_BUTTON,280,48,60,12,BS_CENTER
+    PUSHBUTTON      "&Valve Test",VALVE_TEST_BUTTON,280,64,60,12,BS_CENTER
+    PUSHBUTTON      "&Service Tools",SERVICE_TOOLS_BUTTON,280,80,60,12,
+                    BS_CENTER
+    PUSHBUTTON      "&TransducerTest",TRANSDUCER_TEST_BUTTON,280,96,60,12,
+                    BS_CENTER
+    PUSHBUTTON      "&Current Readings",CURRENT_VALUES_BUTTON,280,112,60,12,
+                    BS_CENTER
+    PUSHBUTTON      "&Download",FORCE_DOWNLOAD_BUTTON,280,128,60,12,
+                    BS_CENTER
+    PUSHBUTTON      "&Global SureTrak Parameters",PARAMETERS_BUTTON,244,16,
+                    96,12,BS_CENTER
+    LTEXT           "The current postion is",-1,4,4,76,8,NOT WS_GROUP
+    LTEXT           "The current valve command is",-1,4,14,100,8,NOT 
+                    WS_GROUP
+    LTEXT           "STATUS",-1,6,26,32,8,NOT WS_GROUP
+    LTEXT           "INPUTS",-1,99,26,32,8,NOT WS_GROUP
+    LTEXT           "OUTPUTS",-1,193,26,40,8,NOT WS_GROUP
+    LTEXT           "Main program status is:",-1,166,144,72,8,NOT WS_GROUP
+    LTEXT           "Block",-1,300,144,21,8,NOT WS_GROUP
+    CTEXT           "PUMP ON",PUMP_ON_RADIO,92,36,81,9,NOT WS_GROUP
+    CTEXT           "START SHOT",START_SHOT_RADIO,92,47,81,9,NOT WS_GROUP
+    CTEXT           "FOLLOW THROUGH",FOLLOW_THROUGH_RADIO,92,58,81,9,NOT 
+                    WS_GROUP
+    CTEXT           "RETRACT",RETRACT_RADIO,92,69,81,9,NOT WS_GROUP
+    CTEXT           "JOG SHOT",JOG_SHOT_RADIO,92,80,81,9,NOT WS_GROUP
+    CTEXT           "MANUAL",MANUAL_RADIO,92,91,81,9,NOT WS_GROUP
+    CTEXT           "AT HOME",AT_HOME_RADIO,92,102,81,9,NOT WS_GROUP
+    CTEXT           "OK FOR VAC FAST",OK_FOR_VAC_FAST_RADIO,92,113,81,9,NOT 
+                    WS_GROUP
+    CTEXT           "VACUUM ON",VACUUM_ON_RADIO,92,124,65,9,NOT WS_GROUP
+    CTEXT           "LOW IMPACT",LOW_IMPACT_RADIO,92,135,65,9,NOT WS_GROUP
+    CTEXT           "FILL TEST",FILL_TEST_RADIO,92,146,65,9,NOT WS_GROUP
+    CTEXT           "VACUUM ABORT",E_STOP_RADIO,92,157,68,9,NOT WS_GROUP
+    CTEXT           "SLOW SHOT OUTPUT",SLOW_SHOT_OUTPUT_RADIO,182,36,90,9,
+                    NOT WS_GROUP
+    CTEXT           "ACCUMULATOR",ACCUMULATOR_RADIO,182,47,90,9,NOT WS_GROUP
+    CTEXT           "LS1",LS1_RADIO,182,58,90,9,NOT WS_GROUP
+    CTEXT           "LS2",LS2_RADIO,182,69,90,9,NOT WS_GROUP
+    CTEXT           "LS3",LS3_RADIO,182,80,90,9,NOT WS_GROUP
+    CTEXT           "LS4",LS4_RADIO,182,91,90,9,NOT WS_GROUP
+    LTEXT           "25.950",CURRENT_MAIN_POSITION_TEXTBOX,75,4,29,8,NOT 
+                    WS_GROUP
+    LTEXT           "-10.000 ",CURRENT_VALVE_COMMAND_TEXTBOX,105,14,35,7,NOT 
+                    WS_GROUP
+    LTEXT           "Wait for START SHOT or JOG SHOT",WAITING_FOR_TEXTBOX,
+                    165,157,180,8,NOT WS_GROUP
+    LTEXT           "RUNNING",MAIN_PROGRAM_STATUS_TEXTBOX,240,144,60,8,NOT 
+                    WS_GROUP
+    LTEXT           "0",BLOCK_NUMBER_TEXTBOX,321,144,20,8,NOT WS_GROUP
+    LTEXT           "Control Active",CONTROL_ACTIVE_TEXTBOX,6,36,60,8,NOT 
+                    WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "Control Disabled",CONTROL_DISABLED_STATUS_TEXTBOX,6,45,
+                    60,8,NOT WS_GROUP
+    LTEXT           "Busy",BUSY_STATUS_TEXTBOX,6,54,60,8,NOT WS_VISIBLE | 
+                    NOT WS_GROUP
+    LTEXT           "Fatal Error",FATAL_ERROR_STATUS_TEXTBOX,6,63,35,8,NOT 
+                    WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "Warning",WARNING_STATUS_TEXTBOX,6,72,60,8,NOT 
+                    WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "Shot In Progress",SHOT_IN_PROGRESS_STATUS_TEXTBOX,6,81,
+                    60,8,NOT WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "??? Bit #11",BIT_11_STATUS_TEXTBOX,6,90,60,8,NOT 
+                    WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "Power Up",POWER_UP_STATUS_TEXTBOX,6,99,60,8,NOT 
+                    WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "Interrupts Disabled",INT_DISABLED_STATUS_TEXTBOX,6,108,
+                    60,8,NOT WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "??? Bit #8",BIT_8_STATUS_TEXTBOX,6,117,60,8,NOT 
+                    WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "Pos. Transducer Warning",
+                    POS_XDCR_WARNING_STATUS_TEXTBOX,6,126,82,8,NOT 
+                    WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "Memory Error",MEMORY_ERROR_STATUS_TEXTBOX,6,135,60,8,
+                    NOT WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "Internal Error",INTERNAL_ERROR_STATUS_TEXTBOX,6,144,60,
+                    8,NOT WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "Invalid Command",INVALID_COMMAND_STATUS_TEXTBOX,6,153,
+                    60,8,NOT WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "??? Bit #2",BIT_2_STATUS_TEXTBOX,6,162,60,8,NOT 
+                    WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "??? Bit #1",BIT_1_STATUS_TEXTBOX,6,171,60,8,NOT 
+                    WS_VISIBLE | NOT WS_GROUP
+    LTEXT           "Volts",-1,142,14,20,7,NOT WS_GROUP
+    LTEXT           "",-1,160,0,184,12,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "Computer",-1,166,2,32,8,NOT WS_GROUP
+    LTEXT           "Machine",-1,219,2,32,8,NOT WS_GROUP
+    LTEXT           "Part",-1,276,2,16,8,NOT WS_GROUP
+    LTEXT           "C01",COMPUTER_NAME_TBOX,199,2,16,8,NOT WS_GROUP
+    LTEXT           "M01",MACHINE_NAME_TBOX,252,2,20,8,NOT WS_GROUP
+    LTEXT           "VISITRAK",PART_NAME_TBOX,294,2,46,8,NOT WS_GROUP
+    LTEXT           "IN",MAIN_POSITION_UNITS_TBOX,107,4,32,8,NOT WS_GROUP
+    LTEXT           "2",FATAL_ERROR_NUMBER_TBOX,49,63,8,8
+END
+
+NULL_VALVE_DIALOG DIALOG DISCARDABLE  0, 0, 129, 90
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "Set Null Compensation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Auto Null",AUTO_NULL_BUTTON,7,48,50,14,BS_CENTER
+    PUSHBUTTON      "Manual Null",MANUAL_NULL_BUTTON,65,48,50,14,BS_CENTER
+    PUSHBUTTON      "Save Changes",NULL_VALVE_SAVE_BUTTON,6,68,52,14,
+                    BS_CENTER
+    PUSHBUTTON      "Cancel",IDCANCEL,65,68,50,14,BS_CENTER
+    LTEXT           "0.005",NULL_VOLTAGE_TBOX,68,12,36,8,NOT WS_GROUP
+    LTEXT           "Null Voltage:",-1,22,12,42,8,NOT WS_GROUP
+    CONTROL         "",-1,"Static",SS_ETCHEDFRAME,15,9,92,14
+    CTEXT           "",NULL_STATUS_TBOX,7,30,108,8,NOT WS_GROUP
+END
+
+SERVICE_TOOLS_DIALOG DIALOG DISCARDABLE  0, 0, 254, 129
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Service Tools"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Set control active",SET_CONTROL_ACTIVE_BUTTON,3,5,120,
+                    13,BS_CENTER | WS_GROUP
+    PUSHBUTTON      "Clear control mode",CLEAR_CONTROL_MODE_BUTTON,3,19,120,
+                    13,BS_CENTER
+    PUSHBUTTON      "Get PROM version number",GET_PROM_VERSION_NUMBER_BUTTON,
+                    3,33,120,13,BS_CENTER
+    PUSHBUTTON      "Command and Data Port Access",
+                    SEND_CLEAR_COMMAND_WORD_BUTTON,3,47,120,13,BS_CENTER
+    PUSHBUTTON      "View Ram in block form",RAM_BLOCK_BUTTON,3,61,120,13,
+                    BS_CENTER
+    PUSHBUTTON      "Send word to the dac",SEND_DAC_WORD_BUTTON,3,75,120,13,
+                    BS_CENTER
+    PUSHBUTTON      "Read Current Parameters",CURRENT_PARAMETERS_BUTTON,3,89,
+                    120,13,BS_CENTER
+    PUSHBUTTON      "Clear error status bits",CLEAR_ERROR_BUTTON,128,5,120,
+                    13,BS_CENTER
+    PUSHBUTTON      "Test Ram Memory",RAM_TEST_BUTTON,128,19,120,13,
+                    BS_CENTER
+    PUSHBUTTON      "Test Opto Ports",OPTO_PORT_TEST_BUTTON,128,33,120,13,
+                    BS_CENTER
+    PUSHBUTTON      "Test I/O Ports",IO_PORT_TEST_BUTTON,128,47,120,13,
+                    BS_CENTER
+    PUSHBUTTON      "Read / set variables",READ_OR_SET_VARIABLES_BUTTON,128,
+                    61,120,13,BS_CENTER
+    PUSHBUTTON      "Edit the Control Program",EDIT_CONTROL_PGM_BUTTON,128,
+                    75,120,13,BS_CENTER | WS_DISABLED
+    PUSHBUTTON      "Control Program Modifications",CONTROL_MODS_BUTTON,128,
+                    90,120,13,BS_CENTER
+    CTEXT           "",ACTION_STATUS_TEXTBOX,5,109,240,11,SS_SUNKEN | NOT 
+                    WS_GROUP
+END
+
+SURETRAK_PARAMETER_SETUP DIALOG DISCARDABLE  0, 0, 315, 166
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "SureTrak Setup Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Limit Switch Descriptions",-1,4,50,170,88,WS_GROUP
+    EDITTEXT        NULL_DAC_EDITBOX,267,5,43,12
+    EDITTEXT        LVDT_DAC_EDITBOX,267,19,40,12
+    EDITTEXT        JOG_SHOT_VALVE_EDITBOX,267,34,40,12
+    EDITTEXT        RETRACT_VALVE_EDITBOX,267,49,40,12
+    EDITTEXT        FT_VALVE_EDITBOX,267,64,40,12
+    EDITTEXT        MIN_LI_EDITBOX,267,79,40,12
+    EDITTEXT        ZERO_SPEED_CHECK_EDITBOX,267,94,40,12
+    EDITTEXT        MAX_VELOCITY_EDITBOX,267,110,40,12
+    LTEXT           "",VELOCITY_DIV_TBOX,86,7,49,12,NOT WS_GROUP
+    LTEXT           "",COUNTS_PER_UNIT_TBOX,86,20,43,12,NOT WS_GROUP
+    LTEXT           "",VELOCITY_MULTIPLIER_TBOX,86,36,40,12,NOT WS_GROUP
+    EDITTEXT        LS1_DESCRIPTION_EDITBOX,40,71,100,12
+    EDITTEXT        LS2_DESCRIPTION_EDITBOX,40,86,100,12
+    EDITTEXT        LS3_DESCRIPTION_EDITBOX,40,101,100,12
+    EDITTEXT        LS4_DESCRIPTION_EDITBOX,40,116,100,12
+    RTEXT           "Velocity Div. x10000",VELOCITY_DIV_LABEL,2,7,78,8,NOT 
+                    WS_GROUP
+    RTEXT           "Counts Per Unit",COUNTS_PER_UNIT_LABEL,2,20,78,8,NOT 
+                    WS_GROUP
+    RTEXT           "Velocity Multiplier",VELOCITY_MULTIPLIER_LABEL,2,36,78,
+                    8,NOT WS_GROUP
+    RTEXT           "Null DAC Compensation (mv)",NULL_DAC_LABEL,171,7,93,8,
+                    NOT WS_GROUP
+    RTEXT           "LVDT DAC Compensation (mv)",LVDT_DAC_LABEL,165,21,99,8,
+                    NOT WS_GROUP
+    RTEXT           "Jog Shot Valve Setting (%)",JOG_SHOT_VALVE_LABEL,174,36,
+                    90,8,NOT WS_GROUP
+    RTEXT           "Retract Valve Setting (%)",RETRACT_VALVE_LABEL,182,50,
+                    82,8,NOT WS_GROUP
+    RTEXT           "FT Valve Setting (%)",FT_VALVE_LABEL,187,66,77,8,NOT 
+                    WS_GROUP
+    RTEXT           "Zero Speed Check Pos",ZERO_SPEED_CHECK_LABEL,187,96,77,
+                    8,NOT WS_GROUP
+    RTEXT           "Min Low Impact Setting (%)",MIN_LI_LABEL,179,81,86,8,
+                    NOT WS_GROUP
+    RTEXT           "Max Velocity (Estimated)",MAX_VELOCITY_LABEL,184,113,80,
+                    8,NOT WS_GROUP
+    RTEXT           "Switch 1",LS1_DESCRIPTION_LABEL,5,73,30,8,NOT WS_GROUP
+    RTEXT           "Switch 2",LS2_DESCRIPTION_LABEL,5,89,30,8,NOT WS_GROUP
+    RTEXT           "Switch 3",LS3_DESCRIPTION_LABEL,5,103,30,8,NOT WS_GROUP
+    RTEXT           "Switch 4",LS4_DESCRIPTION_LABEL,5,118,30,8,NOT WS_GROUP
+    CONTROL         "",VACUUM_1_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,149,72,16,12
+    CONTROL         "",VACUUM_2_RADIO,"Button",BS_AUTORADIOBUTTON,149,86,16,
+                    12
+    CONTROL         "",VACUUM_3_RADIO,"Button",BS_AUTORADIOBUTTON,149,101,16,
+                    12
+    CONTROL         "",VACUUM_4_RADIO,"Button",BS_AUTORADIOBUTTON,149,116,16,
+                    12
+    PUSHBUTTON      "Save Changes",SAVE_CHANGES_BUTTON,91,145,60,14,
+                    BS_CENTER | WS_GROUP
+    PUSHBUTTON      "Cancel",CANCEL_CHANGES_BUTTON,167,145,60,14,BS_CENTER
+    CTEXT           "Vacuum Switch",-1,139,56,32,16,NOT WS_GROUP
+END
+
+TRANSDUCER_TEST_DIALOG DIALOG DISCARDABLE  0, 0, 361, 146
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "SureTrak Transducer Test"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "New Sample",NEW_SAMPLE_BUTTON,151,128,57,16,BS_CENTER
+    CONTROL         "",CHANNEL_FRAME,"Static",SS_GRAYFRAME,20,2,332,122
+    LTEXT           "C H A",IDC_STATIC,7,16,8,28,NOT WS_GROUP
+    LTEXT           "C H B",IDC_STATIC,7,76,8,28,NOT WS_GROUP
+    LTEXT           "Jog the Cylinder, then press ""New Sample""",IDC_STATIC,
+                    10,133,136,8
+END
+
+VALVE_TEST_DIALOG DIALOG DISCARDABLE  0, 0, 375, 249
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Valve Test"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Save as Master Trace",SAVE_VALVE_TEST_MASTER_BUTTON,284,
+                    235,84,12,BS_CENTER
+END
+
+VARIABLES_READ_AND_SET_DIALOG DIALOG DISCARDABLE  0, 0, 133, 71
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Read/Set Variables"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Variable Number",-1,4,8,60,8,NOT WS_GROUP
+    RTEXT           "Value",-1,16,26,48,8,NOT WS_GROUP
+    LTEXT           "( 0-99 )",-1,98,8,26,8,NOT WS_GROUP
+    EDITTEXT        VARIABLE_NUMBER_EBOX,70,6,20,12
+    EDITTEXT        VARIABLE_VALUE_EBOX,69,25,32,12
+    PUSHBUTTON      "Read",READ_VARIABLE_BUTTON,13,50,50,14,BS_CENTER
+    PUSHBUTTON      "Set",SET_VARIABLE_BUTTON,69,50,50,14,BS_CENTER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+SURETRAK_HOT_KEYS ACCELERATORS MOVEABLE PURE 
+BEGIN
+    VK_TAB,         TAB_KEY,                VIRTKEY 
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+SURETRAK_ICON           ICON    DISCARDABLE     "suretrak.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    PARAMETER_SETUP_NAME_STRING "SureTrak 設定參數群"
+    VALVE_TEST_NAME_STRING  "閥門測試"
+    MAIN_WINDOW_TITLE_STRING "射出控制界面"
+    NULL_VALVE_NAME_STRING  "設定Null Compensation"
+    CONTROL_ACTIVATED_STRING "控制已經動員"
+    DONE_STRING             "完成"
+    CONTROL_DEACTIVATED_STRING "控制解除動員"
+    CONTROL_RESET_STRING    "控制已經重設."
+    PROM_VERSION_STRING     "介面卡 PROM 版本號碼是"
+    CREATE_FAILED_STRING    "Create 失敗"
+    SURETRAK_THREAD_STRING  "SureTrak Monitor Thread"
+    SURETRAK_EVENT_FAIL_STRING "SureTrak Monitor Event"
+    UNABLE_TO_CONTINUE_STRING "無法繼續"
+    SURETRAK_WAIT_FAIL_STRING "SureTrak等候Event Failure訊號"
+    RUNNING_STATUS_STRING   "操作中"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NOT_RUNNING_STATUS_STRING "非操作中"
+    NO_PROGRAM_STATUS_STRING "沒有操作程式"
+    PUMP_ON_STRING          "等候PUMP ON訊號"
+    AT_HOME_STRING          "等候AT HOME訊號"
+    TRAP_START_STRING       "截收START SHOT或JOG SHOT訊號"
+    WAIT_FOR_START_STRING   "等候START SHOT或JOG SHOT訊號"
+    MAKING_SHOT_STRING      "正在射出中"
+    WAIT_FOR_FT_STRING      "等候 follow through"
+    WAIT_FOR_RETRACT_STRING "等候射出軸回退"
+    MAKING_JOG_STRING       "正在作慢速射出測試"
+    TESTING_VALVE_STRING    "正在閥門測試中"
+    BLANK_STRING            " "
+    BAD_READ_STRING         "???"
+    OUT_OF_MEMORY           "沒有剩餘記憶體可用"
+    RAM_BLOCK_ALLOCATE      "Block Ram Memory Block"
+    CANT_SET_NULL_STRING    "無法設定 Null Compensation"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NULL_VALVE_INIT_STRING  "起始設定中..."
+    MANUAL_NULLING_STRING   "使能手動NULLING"
+    AUTO_NULL_BEGIN_STRING  "開始自動NULL..."
+    AUTO_NULL_FAIL_STRING   "不能 COMPENSATE"
+    AUTO_NULL_SUCCESS_STRING "自動 NULL 成功"
+    AUTO_NULL_ZERO_SUCCESS_STRING "NULL TRUE ZEROED, OK"
+    NULL_ALREADY_GOOD_STRING "NULL ALREADY GOOD"
+    UNUSABLE_NULL_LEVEL_STRING "NULL NOT IN BALLPARK"
+    PARAMETER_READ_FAIL_STRING "SureTrak參數讀取失敗"
+    NOT_MANUAL_MODE_STRING  "控制不在手動控制 mode"
+    PRESS_OK_WHEN_READY_STRING "請按 Ok 繼續.      "
+    NO_CURRENT_PART_STRING  "Suretrak 沒有鑄件型號設定"
+    WILL_TURN_OFF_CONTROL_STRING "控制功能將被 DEACTIVATED"
+    IS_THIS_OK_STRING       "這 OK?"
+    AUTO_NULL_SETTING_STRING "Setting to "
+    TESTING_RAM_STRING      "測試Ram中..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NO_RAM_ERRORS_STRING    "RAM測試結果正常"
+    HIGH_RAM_ERROR_STRING   "High RAM 錯誤在位置"
+    LOW_RAM_ERROR_STRING    "Low RAM 錯誤在位置 "
+    TESTING_OPTO_PORT_STRING "測試Opto Port中..."
+    OPTO_PORT_OK_STRING     "Opto port 測試結果無問題"
+    OPTO_PORT_ERROR_STRING  "Opto port 測試有問題"
+    TESTING_IO_PORT_STRING  "測試 I/O Port 中..."
+    IO_PORT_OK_STRING       " I/O ports測試沒問題"
+    IO_PORT_DATA_ERROR_STRING "Data, status or data out register測試有問題"
+    IO_PORT_COMMAND_ERROR_STRING 
+                            " command, status or data out ports測試有問題"
+    VAR_OUT_OF_RANGE_ERROR_STRING "Variable 超出範圍."
+    INPUT_OUT_OF_RANGE_ERROR_STRING "輸入 # 超出 [17-31] 範圍."
+    WHILE_WO_1_OR_0_ERROR_STRING "W 後面只能跟 0 或 1."
+    NO_INPUT_DOT_ERROR_STRING "錯誤: I0, I1, W0, or W1後面缺據點 ('.')."
+    B_WO_1_OR_0_ERROR_STRING "B 後面只能跟 0 或 1."
+    D_WO_1_ERROR_STRING     "D 後面只能跟 1."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    E_WO_1_OR_0_ERROR_STRING "E 後面只能跟 0 或 1."
+    NO_OUTPUT_DOT_ERROR_STRING "B0, B1, E0, 或 E1 後面只能跟據點 ('.')."
+    LD_OUT_OF_RANGE_ERROR_STRING "dwell time太長 - 超出範圍."
+    SD_OUT_OF_RANGE_ERROR_STRING "dwell time太短 - 超出範圍."
+    ERROR_TITLE_ID_STRING   "錯誤"
+    TOO_MANY_BLOCKS_ERROR_STRING "太多程式 blocks或是零block"
+    TOO_MANY_PARAMS_ERROR_STRING "太多參數或是無參數"
+    POSITION_FIRST_STEP_STRING "位置:"
+    BLOCK_NUMBER_STRING     "Block 號碼: "
+    OUTPUT_OUT_OF_RANGE_STRING "輸出 # 超出 [1-16] 範圍."
+    BAD_DAC_CHANNEL_STRING  "造句錯誤, DAC channel # 超出範圍"
+    UNKNOWN_UPDATE_TYPE_STRING "造句錯誤, unknown update type"
+    NO_EQUALS_SIGN_STRING   "造句錯誤, Update block中缺等號"
+    BAD_ADC_CHANNEL_STRING  "造句錯誤, ADC 頻道超出範圍"
+    BAD_VELOCITY_STRING     "造句錯誤, 速度超出範圍"
+    BAD_VOLTAGE_STRING      "造句錯誤, 電壓超出範圍"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    BAD_CONVERT_TYPE_STRING "造句錯誤, unknown conversion type"
+    BAD_1ST_OPERAND_STRING  "造句錯誤, 第一 operand不正確"
+    BAD_CONSTANT_STRING     "造句錯誤, 錯誤常數"
+    BEGIN_TURN_OFF_STRING   "設定 BEGINNING TURN OFF 輸出"
+    BEGIN_TURN_ON_STRING    "設定 BEGINNING TURN ON 輸出"
+    DURING_TURN_ON_STRING   "設定 DURING TURN ON 輸出"
+    AT_END_TURN_OFF_STRING  "設定 AT END TURN OFF 輸出"
+    AT_END_TURN_ON_STRING   "設定 AT END TURN ON 輸出"
+    CONTROL_PROG_OPEN_ERROR_STRING "無法開啟控制檔案"
+    VALVE_STEP_ERROR_STRING "閥門步驟錯誤"
+    VEL_CONTROL_STEP_ERROR_STRING "速度控制步驟錯誤"
+    SET_POSITION_STEP_ERROR_STRING "設定位置步驟錯誤"
+    UNKNOWN_BLOCK_TYPE_ERROR_STRING "未定義的 Block Type"
+    SEND_DATA_AND_CMD_ERROR_STRING "錯誤: 傳送資料和指令"
+    SET_PARAMETER_ERROR_STRING "錯誤: 參數的設定"
+    SEND_DATA_ERROR_STRING  "錯誤: 傳送資料"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SET_VEL_DIVIDEND_STRING "錯誤: ST 速度除數的設定"
+    STATUS_SUFFIX_STRING    " : ST Status = "
+    SEND_CMD_BUSY_ERROR_STRING "錯誤: Send Command Busy"
+    PROFILE_DOWNLOAD_ERROR_STRING "錯誤: 下載 Profile"
+    RING_BUFFER_FULL_STRING "ST Ring Buffer 滿載"
+    CC_ERROR_STRING         "錯誤: compile_and_send"
+    CLEAR_CONTROL_MODE_ERROR_STRING "無法清除 control mode"
+    SURETRAK_STRING         "SureTrak"
+    SEND_CMD_ERROR_STRING   "錯誤: ST 指令傳送"
+    CONDITIONAL_STRING      "條件 ["
+    SEND_BLOCK_TYPE_ERROR_STRING "Send Block Type"
+    MINUS_TYPE_IF_REL_ERROR_STRING "Minus type if rel indicator"
+    REL_FORWARD_TYPE_ERROR_STRING "Rel forward type if rel indicator"
+    SEND_0_NO_REL_ERROR_STRING "Send 0 type if no rel indicator"
+    BAD_VARIABLE_JUMP_ERROR_STRING "錯誤: 跳到錯的 variable 地址"
+    BAD_BLOCK_JUMP_ERROR_STRING "錯誤: 跳到Bad block "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    JUMP_SYNTAX_ERROR_STRING "造句錯誤, Jump type NOT {0,1,2}"
+    CANT_PARSE_CONDITIONAL_STRING "無法 parse 條件"
+    CANT_SEND_VAR_INDICATOR_STRING "Can't send variable indicator"
+    DOWNLOADING_STRING      "下載中..."
+    BAD_ENDING_TIME_STRING  "增壓控制終止時間未設定或超出範圍 "
+    NO_DAC_OUTPUT_CHANNEL_STRING "沒選定DAC 輸出頻道"
+    BAD_DAC_OUTPUT_CHANNEL_STRING "DAC 輸出頻道必須介於 1 和 4"
+    NO_ADC_INPUT_CHANNEL_STRING "沒選定ADC 輸入頻道"
+    BAD_ADC_INPUT_CHANNEL_STRING "ADC 輸入頻道必須介於 1 和 4"
+    TIME_IN_MILLISECONDS_STRING "時間 (毫秒)"
+    VOLTS_STRING            "伏特"
+    CHOOSE_CONTROL_PROGRAM_STRING "選擇要上載的控制程式"
+    SAVE_CONTROL_PROGRAM_STRING "選擇要儲存的控制程式"
+    CANT_FIND_STRING        "無法找到"
+    SURETRAK_PARAMETERS_STRING "Suretrak 的參數s"
+    SURETRAK_STEPS_STRING   "Suretrak 的步驟s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    DOWNLOADING_PROFILE_STRING "下載射出曲線中"
+    MORE_THAN_ONE_MACHINE_STRING "多過單一機器!"
+    NOTE_CURRENT_MACHINE_STRING "標明顯示正在操作的機器."
+    INVALID_FIRST_STEP_STRING "這不是"
+    INVALID_FIRST_STEP_STRING2 "第一個步驟"
+    NO_SURETRAK_BOARD_STRING "Sure-Trak 介面卡缺失或是不功能"
+    SURETRAK_NOT_ACTIVE_STRING "控制停止功能: 請按Restart"
+    SURETRAK_FATAL_STRING   "控制停止功能: 請按Restart, F1協助資料"
+    SURETRAK_NULL_VALVE_STRING "控制停止功能: by 歸零的對話"
+    NO_WARMUP_PART_STRING   "熱機鑄件型號未設定!"
+    SAVING_STRING           "儲存中..."
+    NO_STEP_FOUND_STRING    "無控制步驟"
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,690 @@
+{2872}normal block at 0x00DD7198,   20 bytes long.  Data: <24,Pretend2,NS,4> 32 34 2C 50 72 65 74 65 6E 64 32 2C 4E 53 2C 34
+{2836}normal block at 0x00D87D28,    6 bytes long.  Data: <      > 20 20 20 0D 0A 00
+{2835}normal block at 0x00DA7088,    6 bytes long.  Data: <      > 20 20 20 0D 0A 00
+{298} normal block at 0x008A2440,   16 bytes long.  Data: <V427=H20080000  > 56 34 32 37 3D 48 32 30 30 38 30 30 30 30 0D 00
+{290} normal block at 0x008A8BF0,   72 bytes long.  Data: <04 02 07:00:00 0> 30 34 00 30 32 00 30 37 3A 30 30 3A 30 30 00 30
+{286} normal block at 0x008A9D18, 1044 bytes long.  Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+{283} normal block at 0x008A8B40,    3 bytes long.  Data: <24 > 32 34 00
+{282} normal block at 0x008A8AE8,   16 bytes long.  Data: <                > FB 01 00 00 10 03 01 00 02 02 00 00 20 03 01 00
+{281} normal block at 0x008A8A90,   16 bytes long.  Data: <                > FA 01 00 00 0E 03 01 00 01 02 00 00 1E 03 01 00
+{280} normal block at 0x008A8A38,   16 bytes long.  Data: <                > F9 01 00 00 0C 03 01 00 00 02 00 00 1C 03 01 00
+{279} normal block at 0x008A89E0,   16 bytes long.  Data: <                > F8 01 00 00 0A 03 01 00 FF 01 00 00 1A 03 01 00
+{278} normal block at 0x008A5E40,   16 bytes long.  Data: <                > F7 01 00 00 08 03 01 00 FE 01 00 00 18 03 01 00
+{277} normal block at 0x008A5DE8,   16 bytes long.  Data: <                > F6 01 00 00 06 03 01 00 FD 01 00 00 16 03 01 00
+{276} normal block at 0x008A52F8,   16 bytes long.  Data: <                > F5 01 00 00 04 03 01 00 FC 01 00 00 14 03 01 00
+{146} normal block at 0x008A5DA0,    5 bytes long.  Data: <UD1= > 55 44 31 3D 00
+{145} normal block at 0x008A5D58,    6 bytes long.  Data: <-1000 > 2D 31 30 30 30 00
+{144} normal block at 0x008A5D10,    6 bytes long.  Data: <.022  > 2E 30 32 32 20 00
+{143} normal block at 0x008A5CC8,    3 bytes long.  Data: <60 > 36 30 00
+{142} normal block at 0x008A5C80,    2 bytes long.  Data: <0 > 30 00
+{141} normal block at 0x008A5C38,    3 bytes long.  Data: <80 > 38 30 00
+{140} normal block at 0x008A56C0,    2 bytes long.  Data: <P > 50 00
+{139} normal block at 0x008A5678,    3 bytes long.  Data: <AC > 41 43 00
+{138} normal block at 0x008A5630,    4 bytes long.  Data: <VA1 > 56 41 31 00
+{137} normal block at 0x008A55E8,    7 bytes long.  Data: <_E1.34 > 5F 45 31 2E 33 34 00
+{136} normal block at 0x008A55A0,    6 bytes long.  Data: <.025  > 2E 30 32 35 20 00
+{135} normal block at 0x008A5548,   16 bytes long.  Data: <    T D ^       > 01 00 00 00 54 84 44 00 5E 01 00 00 00 00 00 00
+{134} normal block at 0x008A5BF0,    4 bytes long.  Data: <LS6 > 4C 53 36 00
+{133} normal block at 0x008A5BA8,    4 bytes long.  Data: <LS5 > 4C 53 35 00
+{132} normal block at 0x008A5B60,    4 bytes long.  Data: <LS4 > 4C 53 34 00
+{131} normal block at 0x008A5B18,    4 bytes long.  Data: <LS3 > 4C 53 33 00
+{130} normal block at 0x008A5AD0,    4 bytes long.  Data: <LS2 > 4C 53 32 00
+{129} normal block at 0x008A5A88,    4 bytes long.  Data: <LS1 > 4C 53 31 00
+{128} normal block at 0x008A5A40,   12 bytes long.  Data: <ACCUMULATOR > 41 43 43 55 4D 55 4C 41 54 4F 52 00
+{127} normal block at 0x008A59E8,   17 bytes long.  Data: <SLOW SHOT OUTPUT> 53 4C 4F 57 20 53 48 4F 54 20 4F 55 54 50 55 54
+{126} normal block at 0x008A59A0,   10 bytes long.  Data: <FILL TEST > 46 49 4C 4C 20 54 45 53 54 00
+{125} normal block at 0x008A5958,   11 bytes long.  Data: <LOW IMPACT > 4C 4F 57 20 49 4D 50 41 43 54 00
+{124} normal block at 0x008A5910,   10 bytes long.  Data: <VACUUM ON > 56 41 43 55 55 4D 20 4F 4E 00
+{123} normal block at 0x008A58B8,   16 bytes long.  Data: <OK FOR VAC FAST > 4F 4B 20 46 4F 52 20 56 41 43 20 46 41 53 54 00
+{122} normal block at 0x008A5870,    8 bytes long.  Data: <AT HOME > 41 54 20 48 4F 4D 45 00
+{121} normal block at 0x008A5828,   12 bytes long.  Data: <MANUAL MODE > 4D 41 4E 55 41 4C 20 4D 4F 44 45 00
+{120} normal block at 0x008A57E0,    9 bytes long.  Data: <JOG SHOT > 4A 4F 47 20 53 48 4F 54 00
+{119} normal block at 0x008A5798,    8 bytes long.  Data: <RETRACT > 52 45 54 52 41 43 54 00
+{118} normal block at 0x008A5740,   15 bytes long.  Data: <FOLLOW THROUGH > 46 4F 4C 4C 4F 57 20 54 48 52 4F 55 47 48 00
+{117} normal block at 0x008A5500,   11 bytes long.  Data: <START SHOT > 53 54 41 52 54 20 53 48 4F 54 00
+{111} normal block at 0x008A5460,   14 bytes long.  Data: <Not Connected > 4E 6F 74 20 43 6F 6E 6E 65 63 74 65 64 00
+{110} normal block at 0x008A5408,   14 bytes long.  Data: <Connecting... > 43 6F 6E 6E 65 63 74 69 6E 67 2E 2E 2E 00
+{109} normal block at 0x008A53C0,   10 bytes long.  Data: <Connected > 43 6F 6E 6E 65 63 74 65 64 00
+{108} normal block at 0x008A5368,   14 bytes long.  Data: <Not Monitored > 4E 6F 74 20 4D 6F 6E 69 74 6F 72 65 64 00
+{107} normal block at 0x008A28D0,   12 bytes long.  Data: <Not Started > 4E 6F 74 20 53 74 61 72 74 65 64 00
+{103} normal block at 0x008A51D8,    8 bytes long.  Data: <    8Q  > 00 00 00 00 38 51 8A 00
+{102} normal block at 0x008A5180,   18 bytes long.  Data: <Testing the VALV> 54 65 73 74 69 6E 67 20 74 68 65 20 56 41 4C 56
+{101} normal block at 0x008A5138,   12 bytes long.  Data: <d   k    Q  > 64 00 00 00 6B 00 00 00 80 51 8A 00
+{100} normal block at 0x008A50F0,    8 bytes long.  Data: < Q  PP  > D8 51 8A 00 50 50 8A 00
+{99}  normal block at 0x008A5098,   18 bytes long.  Data: <Making a JOG SHO> 4D 61 6B 69 6E 67 20 61 20 4A 4F 47 20 53 48 4F
+{98}  normal block at 0x008A5050,   12 bytes long.  Data: <Z   _    P  > 5A 00 00 00 5F 00 00 00 98 50 8A 00
+{97}  normal block at 0x008A5008,    8 bytes long.  Data: < P  hO  > F0 50 8A 00 68 4F 8A 00
+{96}  normal block at 0x008A4FB0,   24 bytes long.  Data: <Waiting for MANU> 57 61 69 74 69 6E 67 20 66 6F 72 20 4D 41 4E 55
+{95}  normal block at 0x008A4F68,   12 bytes long.  Data: <L   O    O  > 4C 00 00 00 4F 00 00 00 B0 4F 8A 00
+{94}  normal block at 0x008A4F20,    8 bytes long.  Data: < P   N  > 08 50 8A 00 80 4E 8A 00
+{93}  normal block at 0x008A4EC8,   21 bytes long.  Data: <Waiting for JOG > 57 61 69 74 69 6E 67 20 66 6F 72 20 4A 4F 47 20
+{92}  normal block at 0x008A4E80,   12 bytes long.  Data: <F   G    N  > 46 00 00 00 47 00 00 00 C8 4E 8A 00
+{91}  normal block at 0x008A4E38,    8 bytes long.  Data: < O   M  > 20 4F 8A 00 98 4D 8A 00
+{90}  normal block at 0x008A4DE0,   20 bytes long.  Data: <Waiting for At H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 74 20 48
+{89}  normal block at 0x008A4D98,   12 bytes long.  Data: <<   ?    M  > 3C 00 00 00 3F 00 00 00 E0 4D 8A 00
+{88}  normal block at 0x008A4D50,    8 bytes long.  Data: <8N   L  > 38 4E 8A 00 B0 4C 8A 00
+{87}  normal block at 0x008A4CF8,   20 bytes long.  Data: <Waiting for RETR> 57 61 69 74 69 6E 67 20 66 6F 72 20 52 45 54 52
+{86}  normal block at 0x008A4CB0,   12 bytes long.  Data: <6   8    L  > 36 00 00 00 38 00 00 00 F8 4C 8A 00
+{85}  normal block at 0x008A4C68,    8 bytes long.  Data: <PM   K  > 50 4D 8A 00 C8 4B 8A 00
+{84}  normal block at 0x008A4C10,   27 bytes long.  Data: <Waiting for FOLL> 57 61 69 74 69 6E 67 20 66 6F 72 20 46 4F 4C 4C
+{83}  normal block at 0x008A4BC8,   12 bytes long.  Data: <1   3    L  > 31 00 00 00 33 00 00 00 10 4C 8A 00
+{82}  normal block at 0x008A4B80,    8 bytes long.  Data: <hL   J  > 68 4C 8A 00 E0 4A 8A 00
+{81}  normal block at 0x008A4B28,   14 bytes long.  Data: <Making a SHOT > 4D 61 6B 69 6E 67 20 61 20 53 48 4F 54 00
+{80}  normal block at 0x008A4AE0,   12 bytes long.  Data: <    .   (K  > 14 00 00 00 2E 00 00 00 28 4B 8A 00
+{79}  normal block at 0x008A4A98,    8 bytes long.  Data: < K   I  > 80 4B 8A 00 F8 49 8A 00
+{78}  normal block at 0x008A4A40,   23 bytes long.  Data: <Waiting for STAR> 57 61 69 74 69 6E 67 20 66 6F 72 20 53 54 41 52
+{77}  normal block at 0x008A49F8,   12 bytes long.  Data: <        @J  > 0C 00 00 00 10 00 00 00 40 4A 8A 00
+{76}  normal block at 0x008A49B0,    8 bytes long.  Data: < J   D  > 98 4A 8A 00 80 44 8A 00
+{75}  normal block at 0x008A4958,   20 bytes long.  Data: <Trapping START S> 54 72 61 70 70 69 6E 67 20 53 54 41 52 54 20 53
+{74}  normal block at 0x008A4480,   12 bytes long.  Data: <        XI  > 0A 00 00 00 0B 00 00 00 58 49 8A 00
+{73}  normal block at 0x008A4438,    8 bytes long.  Data: < I   C  > B0 49 8A 00 98 43 8A 00
+{72}  normal block at 0x008A43E0,   20 bytes long.  Data: <Waiting for AT H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 54 20 48
+{71}  normal block at 0x008A4398,   12 bytes long.  Data: <         C  > 06 00 00 00 08 00 00 00 E0 43 8A 00
+{70}  normal block at 0x008A4350,    8 bytes long.  Data: <8D   %  > 38 44 8A 00 B0 25 8A 00
+{69}  normal block at 0x008A3F78,    8 bytes long.  Data: <Startup > 53 74 61 72 74 75 70 00
+{68}  normal block at 0x008A25B0,   12 bytes long.  Data: <        x?  > 01 00 00 00 05 00 00 00 78 3F 8A 00
+{65}  normal block at 0x008A4500, 1044 bytes long.  Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+{49}  normal block at 0x008A2568,    4 bytes long.  Data: <WS0 > 57 53 30 00
+{48}  normal block at 0x008A2600,  269 bytes long.  Data: <    WS0 C:\V5\DA> 00 00 00 00 57 53 30 00 43 3A 5C 56 35 5C 44 41
+{44}  normal block at 0x008A3F30,   12 bytes long.  Data: <C:\v5\exes\ > 43 3A 5C 76 35 5C 65 78 65 73 5C 00
+
+
+
+
+
+{2852} normal block at 0x00E344D0,   20 bytes long.  Data: <24,Pretend2,NS,4> 32 34 2C 50 72 65 74 65 6E 64 32 2C 4E 53 2C 34
+{2807} normal block at 0x00E2B440,    6 bytes long.  Data: <      > 20 20 20 0D 0A 00
+{2806} normal block at 0x00E2B3F8,    6 bytes long.  Data: <      > 20 20 20 0D 0A 00
+{298}  normal block at 0x008AE778,   16 bytes long.  Data: <V427=H20080000  > 56 34 32 37 3D 48 32 30 30 38 30 30 30 30 0D 00
+{290}  normal block at 0x008ADA30,   72 bytes long.  Data: <04 02 07:00:00 0> 30 34 00 30 32 00 30 37 3A 30 30 3A 30 30 00 30
+{286}  normal block at 0x008AD4B0, 1044 bytes long.  Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+{283}  normal block at 0x008AD2B8,    3 bytes long.  Data: <24 > 32 34 00
+{282}  normal block at 0x008AD260,   16 bytes long.  Data: <    X       h   > FB 01 00 00 58 03 01 00 02 02 00 00 68 03 01 00
+{281}  normal block at 0x008AD208,   16 bytes long.  Data: <    V       f   > FA 01 00 00 56 03 01 00 01 02 00 00 66 03 01 00
+{280}  normal block at 0x008AD1B0,   16 bytes long.  Data: <    T       d   > F9 01 00 00 54 03 01 00 00 02 00 00 64 03 01 00
+{279}  normal block at 0x008AD158,   16 bytes long.  Data: <    R       b   > F8 01 00 00 52 03 01 00 FF 01 00 00 62 03 01 00
+{278}  normal block at 0x008AD100,   16 bytes long.  Data: <    P       `   > F7 01 00 00 50 03 01 00 FE 01 00 00 60 03 01 00
+{277}  normal block at 0x008AD0A8,   16 bytes long.  Data: <    N       ^   > F6 01 00 00 4E 03 01 00 FD 01 00 00 5E 03 01 00
+{276}  normal block at 0x008AD050,   16 bytes long.  Data: <    L       \   > F5 01 00 00 4C 03 01 00 FC 01 00 00 5C 03 01 00
+{146}  normal block at 0x008A67B0,    5 bytes long.  Data: <UD1= > 55 44 31 3D 00
+{145}  normal block at 0x008A6768,    6 bytes long.  Data: <-1000 > 2D 31 30 30 30 00
+{144}  normal block at 0x008A6720,    6 bytes long.  Data: <.022  > 2E 30 32 32 20 00
+{143}  normal block at 0x008A66D8,    3 bytes long.  Data: <60 > 36 30 00
+{142}  normal block at 0x008A6690,    2 bytes long.  Data: <0 > 30 00
+{141}  normal block at 0x008A6648,    3 bytes long.  Data: <80 > 38 30 00
+{140}  normal block at 0x008A6600,    2 bytes long.  Data: <P > 50 00
+{139}  normal block at 0x008A65B8,    3 bytes long.  Data: <AC > 41 43 00
+{138}  normal block at 0x008A6570,    4 bytes long.  Data: <VA1 > 56 41 31 00
+{137}  normal block at 0x008A6528,    7 bytes long.  Data: <_E1.34 > 5F 45 31 2E 33 34 00
+{136}  normal block at 0x008A64E0,    6 bytes long.  Data: <.025  > 2E 30 32 35 20 00
+{135}  normal block at 0x008A6488,   16 bytes long.  Data: <    T D ^       > 01 00 00 00 54 84 44 00 5E 01 00 00 00 00 00 00
+{134}  normal block at 0x008A6440,    4 bytes long.  Data: <LS6 > 4C 53 36 00
+{133}  normal block at 0x008A63F8,    4 bytes long.  Data: <LS5 > 4C 53 35 00
+{132}  normal block at 0x008A63B0,    4 bytes long.  Data: <LS4 > 4C 53 34 00
+{131}  normal block at 0x008A6368,    4 bytes long.  Data: <LS3 > 4C 53 33 00
+{130}  normal block at 0x008A6320,    4 bytes long.  Data: <LS2 > 4C 53 32 00
+{129}  normal block at 0x008A62D8,    4 bytes long.  Data: <LS1 > 4C 53 31 00
+{128}  normal block at 0x008A6290,   12 bytes long.  Data: <ACCUMULATOR > 41 43 43 55 4D 55 4C 41 54 4F 52 00
+{127}  normal block at 0x008A6238,   17 bytes long.  Data: <SLOW SHOT OUTPUT> 53 4C 4F 57 20 53 48 4F 54 20 4F 55 54 50 55 54
+{126}  normal block at 0x008A61F0,   10 bytes long.  Data: <FILL TEST > 46 49 4C 4C 20 54 45 53 54 00
+{125}  normal block at 0x008A61A8,   11 bytes long.  Data: <LOW IMPACT > 4C 4F 57 20 49 4D 50 41 43 54 00
+{124}  normal block at 0x008A6160,   10 bytes long.  Data: <VACUUM ON > 56 41 43 55 55 4D 20 4F 4E 00
+{123}  normal block at 0x008A6108,   16 bytes long.  Data: <OK FOR VAC FAST > 4F 4B 20 46 4F 52 20 56 41 43 20 46 41 53 54 00
+{122}  normal block at 0x008A60C0,    8 bytes long.  Data: <AT HOME > 41 54 20 48 4F 4D 45 00
+{121}  normal block at 0x008A6078,   12 bytes long.  Data: <MANUAL MODE > 4D 41 4E 55 41 4C 20 4D 4F 44 45 00
+{120}  normal block at 0x008A6030,    9 bytes long.  Data: <JOG SHOT > 4A 4F 47 20 53 48 4F 54 00
+{119}  normal block at 0x008A5FE8,    8 bytes long.  Data: <RETRACT > 52 45 54 52 41 43 54 00
+{118}  normal block at 0x008A5F90,   15 bytes long.  Data: <FOLLOW THROUGH > 46 4F 4C 4C 4F 57 20 54 48 52 4F 55 47 48 00
+{117}  normal block at 0x008A5F48,   11 bytes long.  Data: <START SHOT > 53 54 41 52 54 20 53 48 4F 54 00
+{111}  normal block at 0x008A5C68,   14 bytes long.  Data: <Not Connected > 4E 6F 74 20 43 6F 6E 6E 65 63 74 65 64 00
+{110}  normal block at 0x008A5C10,   14 bytes long.  Data: <Connecting... > 43 6F 6E 6E 65 63 74 69 6E 67 2E 2E 2E 00
+{109}  normal block at 0x008A5BC8,   10 bytes long.  Data: <Connected > 43 6F 6E 6E 65 63 74 65 64 00
+{108}  normal block at 0x008A5B70,   14 bytes long.  Data: <Not Monitored > 4E 6F 74 20 4D 6F 6E 69 74 6F 72 65 64 00
+{107}  normal block at 0x008A5B28,   12 bytes long.  Data: <Not Started > 4E 6F 74 20 53 74 61 72 74 65 64 00
+{103}  normal block at 0x008A58F8,    8 bytes long.  Data: <    XX  > 00 00 00 00 58 58 8A 00
+{102}  normal block at 0x008A58A0,   18 bytes long.  Data: <Testing the VALV> 54 65 73 74 69 6E 67 20 74 68 65 20 56 41 4C 56
+{101}  normal block at 0x008A5858,   12 bytes long.  Data: <d   k    X  > 64 00 00 00 6B 00 00 00 A0 58 8A 00
+{100}  normal block at 0x008A5810,    8 bytes long.  Data: < X  pW  > F8 58 8A 00 70 57 8A 00
+{99}   normal block at 0x008A57B8,   18 bytes long.  Data: <Making a JOG SHO> 4D 61 6B 69 6E 67 20 61 20 4A 4F 47 20 53 48 4F
+{98}   normal block at 0x008A5770,   12 bytes long.  Data: <Z   _    W  > 5A 00 00 00 5F 00 00 00 B8 57 8A 00
+{97}   normal block at 0x008A5728,    8 bytes long.  Data: < X   V  > 10 58 8A 00 88 56 8A 00
+{96}   normal block at 0x008A56D0,   24 bytes long.  Data: <Waiting for MANU> 57 61 69 74 69 6E 67 20 66 6F 72 20 4D 41 4E 55
+{95}   normal block at 0x008A5688,   12 bytes long.  Data: <L   O    V  > 4C 00 00 00 4F 00 00 00 D0 56 8A 00
+{94}   normal block at 0x008A5640,    8 bytes long.  Data: <(W   U  > 28 57 8A 00 A0 55 8A 00
+{93}   normal block at 0x008A55E8,   21 bytes long.  Data: <Waiting for JOG > 57 61 69 74 69 6E 67 20 66 6F 72 20 4A 4F 47 20
+{92}   normal block at 0x008A55A0,   12 bytes long.  Data: <F   G    U  > 46 00 00 00 47 00 00 00 E8 55 8A 00
+{91}   normal block at 0x008A5558,    8 bytes long.  Data: <@V   T  > 40 56 8A 00 B8 54 8A 00
+{90}   normal block at 0x008A5500,   20 bytes long.  Data: <Waiting for At H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 74 20 48
+{89}   normal block at 0x008A54B8,   12 bytes long.  Data: <<   ?    U  > 3C 00 00 00 3F 00 00 00 00 55 8A 00
+{88}   normal block at 0x008A5470,    8 bytes long.  Data: <XU   S  > 58 55 8A 00 D0 53 8A 00
+{87}   normal block at 0x008A5418,   20 bytes long.  Data: <Waiting for RETR> 57 61 69 74 69 6E 67 20 66 6F 72 20 52 45 54 52
+{86}   normal block at 0x008A53D0,   12 bytes long.  Data: <6   8    T  > 36 00 00 00 38 00 00 00 18 54 8A 00
+{85}   normal block at 0x008A5388,    8 bytes long.  Data: <pT   R  > 70 54 8A 00 E8 52 8A 00
+{84}   normal block at 0x008A5330,   27 bytes long.  Data: <Waiting for FOLL> 57 61 69 74 69 6E 67 20 66 6F 72 20 46 4F 4C 4C
+{83}   normal block at 0x008A52E8,   12 bytes long.  Data: <1   3   0S  > 31 00 00 00 33 00 00 00 30 53 8A 00
+{82}   normal block at 0x008A52A0,    8 bytes long.  Data: < S   R  > 88 53 8A 00 00 52 8A 00
+{81}   normal block at 0x008A5248,   14 bytes long.  Data: <Making a SHOT > 4D 61 6B 69 6E 67 20 61 20 53 48 4F 54 00
+{80}   normal block at 0x008A5200,   12 bytes long.  Data: <    .   HR  > 14 00 00 00 2E 00 00 00 48 52 8A 00
+{79}   normal block at 0x008A51B8,    8 bytes long.  Data: < R   Q  > A0 52 8A 00 18 51 8A 00
+{78}   normal block at 0x008A5160,   23 bytes long.  Data: <Waiting for STAR> 57 61 69 74 69 6E 67 20 66 6F 72 20 53 54 41 52
+{77}   normal block at 0x008A5118,   12 bytes long.  Data: <        `Q  > 0C 00 00 00 10 00 00 00 60 51 8A 00
+{76}   normal block at 0x008A50D0,    8 bytes long.  Data: < Q  0P  > B8 51 8A 00 30 50 8A 00
+{75}   normal block at 0x008A5078,   20 bytes long.  Data: <Trapping START S> 54 72 61 70 70 69 6E 67 20 53 54 41 52 54 20 53
+{74}   normal block at 0x008A5030,   12 bytes long.  Data: <        xP  > 0A 00 00 00 0B 00 00 00 78 50 8A 00
+{73}   normal block at 0x008A4FE8,    8 bytes long.  Data: < P  HO  > D0 50 8A 00 48 4F 8A 00
+{72}   normal block at 0x008A4F90,   20 bytes long.  Data: <Waiting for AT H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 54 20 48
+{71}   normal block at 0x008A4F48,   12 bytes long.  Data: <         O  > 06 00 00 00 08 00 00 00 90 4F 8A 00
+{70}   normal block at 0x008A4F00,    8 bytes long.  Data: < O   )  > E8 4F 8A 00 00 29 8A 00
+{69}   normal block at 0x008A4EB8,    8 bytes long.  Data: <Startup > 53 74 61 72 74 75 70 00
+{68}   normal block at 0x008A2900,   12 bytes long.  Data: <         N  > 01 00 00 00 05 00 00 00 B8 4E 8A 00
+{65}   normal block at 0x008A4970, 1044 bytes long.  Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+{49}   normal block at 0x008A2758,    4 bytes long.  Data: <WS0 > 57 53 30 00
+{48}   normal block at 0x008A2600,  269 bytes long.  Data: <    WS0 C:\V5\DA> 00 00 00 00 57 53 30 00 43 3A 5C 56 35 5C 44 41
+{44}   normal block at 0x008A3F30,   12 bytes long.  Data: <C:\v5\exes\ > 43 3A 5C 76 35 5C 65 78 65 73 5C 00
+
+
+
+
+
+2569} normal block at 0x00DFA900, 15 bytes long.      Data: <RESET_MACHINE  > 52 45 53 45 54 5F 4D 41 43 48 49 4E 45 0D 00
+{298} normal block at 0x008AE778, 16 bytes long.      Data: <V427=H20080000  > 56 34 32 37 3D 48 32 30 30 38 30 30 30 30 0D 00
+{290} normal block at 0x008ADA30, 72 bytes long.      Data: <04 02 07:00:00 0> 30 34 00 30 32 00 30 37 3A 30 30 3A 30 30 00 30
+{286} normal block at 0x008AD4B0, 1044 bytes long.    Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+{283} normal block at 0x008AD2B8, 3 bytes long.       Data: <24 > 32 34 00
+{282} normal block at 0x008AD260, 16 bytes long.      Data: <            6   > FB 01 00 00 B6 02 04 00 02 02 00 00 36 03 03 00
+{281} normal block at 0x008AD208, 16 bytes long.      Data: <            4   > FA 01 00 00 BA 02 04 00 01 02 00 00 34 03 04 00
+{280} normal block at 0x008AD1B0, 16 bytes long.      Data: <                > F9 01 00 00 BC 02 04 00 00 02 00 00 AA 02 04 00
+{279} normal block at 0x008AD158, 16 bytes long.      Data: <                > F8 01 00 00 BE 02 04 00 FF 01 00 00 AC 02 04 00
+{278} normal block at 0x008AD100, 16 bytes long.      Data: <                > F7 01 00 00 C0 02 04 00 FE 01 00 00 AE 02 04 00
+{277} normal block at 0x008AD0A8, 16 bytes long.      Data: <                > F6 01 00 00 C2 02 04 00 FD 01 00 00 B0 02 04 00
+{276} normal block at 0x008AD050, 16 bytes long.      Data: <                > F5 01 00 00 C4 02 04 00 FC 01 00 00 DE 02 04 00
+{146} normal block at 0x008A67B0, 5 bytes long.       Data: <UD1= > 55 44 31 3D 00
+{145} normal block at 0x008A6768, 6 bytes long.       Data: <-1000 > 2D 31 30 30 30 00
+{144} normal block at 0x008A6720, 6 bytes long.       Data: <.022  > 2E 30 32 32 20 00
+{143} normal block at 0x008A66D8, 3 bytes long.       Data: <60 > 36 30 00
+{142} normal block at 0x008A6690, 2 bytes long.       Data: <0 > 30 00
+{141} normal block at 0x008A6648, 3 bytes long.       Data: <80 > 38 30 00
+{140} normal block at 0x008A6600, 2 bytes long.       Data: <P > 50 00
+{139} normal block at 0x008A65B8, 3 bytes long.       Data: <AC > 41 43 00
+{138} normal block at 0x008A6570, 4 bytes long.       Data: <VA1 > 56 41 31 00
+{137} normal block at 0x008A6528, 7 bytes long.       Data: <_E1.34 > 5F 45 31 2E 33 34 00
+{136} normal block at 0x008A64E0, 6 bytes long.       Data: <.025  > 2E 30 32 35 20 00
+{135} normal block at 0x008A6488, 16 bytes long.      Data: <    T D ^       > 01 00 00 00 54 84 44 00 5E 01 00 00 00 00 00 00
+{134} normal block at 0x008A6440, 4 bytes long.       Data: <LS6 > 4C 53 36 00
+{133} normal block at 0x008A63F8, 4 bytes long.       Data: <LS5 > 4C 53 35 00
+{132} normal block at 0x008A63B0, 4 bytes long.       Data: <LS4 > 4C 53 34 00
+{131} normal block at 0x008A6368, 4 bytes long.       Data: <LS3 > 4C 53 33 00
+{130} normal block at 0x008A6320, 4 bytes long.       Data: <LS2 > 4C 53 32 00
+{129} normal block at 0x008A62D8, 4 bytes long.       Data: <LS1 > 4C 53 31 00
+{128} normal block at 0x008A6290, 12 bytes long.      Data: <ACCUMULATOR > 41 43 43 55 4D 55 4C 41 54 4F 52 00
+{127} normal block at 0x008A6238, 17 bytes long.      Data: <SLOW SHOT OUTPUT> 53 4C 4F 57 20 53 48 4F 54 20 4F 55 54 50 55 54
+{126} normal block at 0x008A61F0, 10 bytes long.      Data: <FILL TEST > 46 49 4C 4C 20 54 45 53 54 00
+{125} normal block at 0x008A61A8, 11 bytes long.      Data: <LOW IMPACT > 4C 4F 57 20 49 4D 50 41 43 54 00
+{124} normal block at 0x008A6160, 10 bytes long.      Data: <VACUUM ON > 56 41 43 55 55 4D 20 4F 4E 00
+{123} normal block at 0x008A6108, 16 bytes long.      Data: <OK FOR VAC FAST > 4F 4B 20 46 4F 52 20 56 41 43 20 46 41 53 54 00
+{122} normal block at 0x008A60C0, 8 bytes long.       Data: <AT HOME > 41 54 20 48 4F 4D 45 00
+{121} normal block at 0x008A6078, 12 bytes long.      Data: <MANUAL MODE > 4D 41 4E 55 41 4C 20 4D 4F 44 45 00
+{120} normal block at 0x008A6030, 9 bytes long.       Data: <JOG SHOT > 4A 4F 47 20 53 48 4F 54 00
+{119} normal block at 0x008A5FE8, 8 bytes long.       Data: <RETRACT > 52 45 54 52 41 43 54 00
+{118} normal block at 0x008A5F90, 15 bytes long.      Data: <FOLLOW THROUGH > 46 4F 4C 4C 4F 57 20 54 48 52 4F 55 47 48 00
+{117} normal block at 0x008A5F48, 11 bytes long.      Data: <START SHOT > 53 54 41 52 54 20 53 48 4F 54 00
+{111} normal block at 0x008A5C68, 14 bytes long.      Data: <Not Connected > 4E 6F 74 20 43 6F 6E 6E 65 63 74 65 64 00
+{110} normal block at 0x008A5C10, 14 bytes long.      Data: <Connecting... > 43 6F 6E 6E 65 63 74 69 6E 67 2E 2E 2E 00
+{109} normal block at 0x008A5BC8, 10 bytes long.      Data: <Connected > 43 6F 6E 6E 65 63 74 65 64 00
+{108} normal block at 0x008A5B70, 14 bytes long.      Data: <Not Monitored > 4E 6F 74 20 4D 6F 6E 69 74 6F 72 65 64 00
+{107} normal block at 0x008A5B28, 12 bytes long.      Data: <Not Started > 4E 6F 74 20 53 74 61 72 74 65 64 00
+{103} normal block at 0x008A58F8, 8 bytes long.       Data: <    XX  > 00 00 00 00 58 58 8A 00
+{102} normal block at 0x008A58A0, 18 bytes long.      Data: <Testing the VALV> 54 65 73 74 69 6E 67 20 74 68 65 20 56 41 4C 56
+{101} normal block at 0x008A5858, 12 bytes long.      Data: <d   k    X  > 64 00 00 00 6B 00 00 00 A0 58 8A 00
+{100} normal block at 0x008A5810, 8 bytes long.       Data: < X  pW  > F8 58 8A 00 70 57 8A 00
+{99} normal block at 0x008A57B8, 18 bytes long.       Data: <Making a JOG SHO> 4D 61 6B 69 6E 67 20 61 20 4A 4F 47 20 53 48 4F
+{98} normal block at 0x008A5770, 12 bytes long.       Data: <Z   _    W  > 5A 00 00 00 5F 00 00 00 B8 57 8A 00
+{97} normal block at 0x008A5728, 8 bytes long.        Data: < X   V  > 10 58 8A 00 88 56 8A 00
+{96} normal block at 0x008A56D0, 24 bytes long.       Data: <Waiting for MANU> 57 61 69 74 69 6E 67 20 66 6F 72 20 4D 41 4E 55
+{95} normal block at 0x008A5688, 12 bytes long.       Data: <L   O    V  > 4C 00 00 00 4F 00 00 00 D0 56 8A 00
+{94} normal block at 0x008A5640, 8 bytes long.        Data: <(W   U  > 28 57 8A 00 A0 55 8A 00
+{93} normal block at 0x008A55E8, 21 bytes long.       Data: <Waiting for JOG > 57 61 69 74 69 6E 67 20 66 6F 72 20 4A 4F 47 20
+{92} normal block at 0x008A55A0, 12 bytes long.       Data: <F   G    U  > 46 00 00 00 47 00 00 00 E8 55 8A 00
+{91} normal block at 0x008A5558, 8 bytes long.        Data: <@V   T  > 40 56 8A 00 B8 54 8A 00
+{90} normal block at 0x008A5500, 20 bytes long.       Data: <Waiting for At H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 74 20 48
+{89} normal block at 0x008A54B8, 12 bytes long.       Data: <<   ?    U  > 3C 00 00 00 3F 00 00 00 00 55 8A 00
+{88} normal block at 0x008A5470, 8 bytes long.        Data: <XU   S  > 58 55 8A 00 D0 53 8A 00
+{87} normal block at 0x008A5418, 20 bytes long.       Data: <Waiting for RETR> 57 61 69 74 69 6E 67 20 66 6F 72 20 52 45 54 52
+{86} normal block at 0x008A53D0, 12 bytes long.       Data: <6   8    T  > 36 00 00 00 38 00 00 00 18 54 8A 00
+{85} normal block at 0x008A5388, 8 bytes long.        Data: <pT   R  > 70 54 8A 00 E8 52 8A 00
+{84} normal block at 0x008A5330, 27 bytes long.       Data: <Waiting for FOLL> 57 61 69 74 69 6E 67 20 66 6F 72 20 46 4F 4C 4C
+{83} normal block at 0x008A52E8, 12 bytes long.       Data: <1   3   0S  > 31 00 00 00 33 00 00 00 30 53 8A 00
+{82} normal block at 0x008A52A0, 8 bytes long.        Data: < S   R  > 88 53 8A 00 00 52 8A 00
+{81} normal block at 0x008A5248, 14 bytes long.       Data: <Making a SHOT > 4D 61 6B 69 6E 67 20 61 20 53 48 4F 54 00
+{80} normal block at 0x008A5200, 12 bytes long.       Data: <    .   HR  > 14 00 00 00 2E 00 00 00 48 52 8A 00
+{79} normal block at 0x008A51B8, 8 bytes long.        Data: < R   Q  > A0 52 8A 00 18 51 8A 00
+{78} normal block at 0x008A5160, 23 bytes long.       Data: <Waiting for STAR> 57 61 69 74 69 6E 67 20 66 6F 72 20 53 54 41 52
+{77} normal block at 0x008A5118, 12 bytes long.       Data: <        `Q  > 0C 00 00 00 10 00 00 00 60 51 8A 00
+{76} normal block at 0x008A50D0, 8 bytes long.        Data: < Q  0P  > B8 51 8A 00 30 50 8A 00
+{75} normal block at 0x008A5078, 20 bytes long.       Data: <Trapping START S> 54 72 61 70 70 69 6E 67 20 53 54 41 52 54 20 53
+{74} normal block at 0x008A5030, 12 bytes long.       Data: <        xP  > 0A 00 00 00 0B 00 00 00 78 50 8A 00
+{73} normal block at 0x008A4FE8, 8 bytes long.        Data: < P  HO  > D0 50 8A 00 48 4F 8A 00
+{72} normal block at 0x008A4F90, 20 bytes long.       Data: <Waiting for AT H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 54 20 48
+{71} normal block at 0x008A4F48, 12 bytes long.       Data: <         O  > 06 00 00 00 08 00 00 00 90 4F 8A 00
+{70} normal block at 0x008A4F00, 8 bytes long.        Data: < O   )  > E8 4F 8A 00 00 29 8A 00
+{69} normal block at 0x008A4EB8, 8 bytes long.        Data: <Startup > 53 74 61 72 74 75 70 00
+{68} normal block at 0x008A2900, 12 bytes long.       Data: <         N  > 01 00 00 00 05 00 00 00 B8 4E 8A 00
+{65} normal block at 0x008A4970, 1044 bytes long.     Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+{49} normal block at 0x008A2758, 4 bytes long.        Data: <WS0 > 57 53 30 00
+{48} normal block at 0x008A2600, 269 bytes long.      Data: <    WS0 C:\V5\DA> 00 00 00 00 57 53 30 00 43 3A 5C 56 35 5C 44 41
+{44} normal block at 0x008A3F30, 12 bytes long.       Data: <C:\v5\exes\ > 43 3A 5C 76 35 5C 65 78 65 73 5C 00
+
+
+Died at the end
+
+{12661} normal block at 0x02EC9D18, 12 bytes long.    Data: <         '  > D0 9C EC 02 00 00 00 00 90 27 DA 00
+{12660} normal block at 0x02EC9CD0, 12 bytes long.    Data: <X       PM  > 58 B8 EA 02 18 9D EC 02 50 4D DB 00
+{12659} normal block at 0x02EC9B98, 246 bytes long.   Data: <  WS0 24  Preten> 00 01 57 53 30 00 32 34 00 CD 50 72 65 74 65 6E
+{12658} normal block at 0x02EC9B50, 12 bytes long.    Data: < q          > E0 71 E8 02 00 00 00 00 D0 0B DD 00
+{12641} normal block at 0x02EC93D8, 480 bytes long.   Data: <     4I@_  J   @> A4 AB D7 01 D8 34 49 40 5F 1E C5 4A BD B1 85 40
+{12622} normal block at 0x02EACA60, 28000 bytes long. Data: <  @ R     p     > FF FF 40 20 52 00 00 08 82 00 70 01 96 09 02 10
+{12621} normal block at 0x02EABA28, 4092 bytes long.  Data: <                > FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+{12619} normal block at 0x02EAB988, 12 bytes long.    Data: <         Q  > C8 B7 EA 02 00 00 00 00 F0 51 DF 00
+{12615} normal block at 0x02EAB858, 12 bytes long.    Data: <8       pG  > 38 B7 EA 02 D0 9C EC 02 70 47 DB 00
+{12613} normal block at 0x02EAB7C8, 12 bytes long.    Data: <            > 00 00 00 00 88 B9 EA 02 C8 BB DD 00
+{12611} normal block at 0x02EAB738, 12 bytes long.    Data: <    X       > 18 B6 EA 02 58 B8 EA 02 10 00 DD 00
+{12607} normal block at 0x02EAB618, 12 bytes long.    Data: <    8   h   > F8 B4 EA 02 38 B7 EA 02 68 ED 8A 00
+{12603} normal block at 0x02EAB4F8, 12 bytes long.    Data: <         Y  > D8 B3 EA 02 18 B6 EA 02 E8 59 D9 00
+{12599} normal block at 0x02EAB3D8, 12 bytes long.    Data: <        0   > B8 B2 EA 02 F8 B4 EA 02 30 FA DC 00
+{12595} normal block at 0x02EAB2B8, 12 bytes long.    Data: <         _  > 98 B1 EA 02 D8 B3 EA 02 C8 5F D9 00
+{12591} normal block at 0x02EAB198, 12 bytes long.    Data: <x        !  > 78 B0 EA 02 B8 B2 EA 02 B0 21 DA 00
+{12587} normal block at 0x02EAB078, 12 bytes long.    Data: <X       P   > 58 AF EA 02 98 B1 EA 02 50 F4 DC 00
+{12583} normal block at 0x02EAAF58, 12 bytes long.    Data: <8   x    A  > 38 AE EA 02 78 B0 EA 02 90 41 DB 00
+{12579} normal block at 0x02EAAE38, 12 bytes long.    Data: <    X   h   > 18 AD EA 02 58 AF EA 02 68 86 D8 00
+{12575} normal block at 0x02EAAD18, 12 bytes long.    Data: <    8    ;  > F8 AB EA 02 38 AE EA 02 B0 3B DB 00
+{12571} normal block at 0x02EAABF8, 12 bytes long.    Data: <        p   > 90 AA EA 02 18 AD EA 02 70 EE DC 00
+{12566} normal block at 0x02EAAA90, 12 bytes long.    Data: <            > B8 A9 EA 02 F8 AB EA 02 F0 15 DA 00
+{12563} normal block at 0x02EAA9B8, 12 bytes long.    Data: <            > 98 A8 EA 02 90 AA EA 02 D0 1B DA 00
+{12559} normal block at 0x02EAA898, 12 bytes long.    Data: <x        /  > 78 A7 EA 02 B8 A9 EA 02 F0 2F DB 00
+{12555} normal block at 0x02EAA778, 12 bytes long.    Data: <X           > 58 A6 EA 02 98 A8 EA 02 D0 DC DC 00
+{12551} normal block at 0x02EAA658, 12 bytes long.    Data: <8   x       > 38 A5 EA 02 78 A7 EA 02 90 E8 DC 00
+{12547} normal block at 0x02EAA538, 12 bytes long.    Data: <    X       > 18 A4 EA 02 58 A6 EA 02 B0 E2 DC 00
+{12543} normal block at 0x02EAA418, 12 bytes long.    Data: <    8       > F8 A2 EA 02 38 A5 EA 02 88 80 D8 00
+{12539} normal block at 0x02EAA2F8, 12 bytes long.    Data: <         5  > D8 A1 EA 02 18 A4 EA 02 D0 35 DB 00
+{12535} normal block at 0x02EAA1D8, 12 bytes long.    Data: <            > B8 A0 EA 02 F8 A2 EA 02 A8 D8 D8 00
+{12531} normal block at 0x02EAA0B8, 12 bytes long.    Data: <H        T  > 48 9F EA 02 D8 A1 EA 02 08 54 D9 00
+{12526} normal block at 0x02EA9F48, 12 bytes long.    Data: <p           > 70 9E EA 02 B8 A0 EA 02 F0 D6 DC 00
+{12523} normal block at 0x02EA9E70, 12 bytes long.    Data: <P   H    K  > 50 9D EA 02 48 9F EA 02 A8 4B D8 00
+{12519} normal block at 0x02EA9D50, 12 bytes long.    Data: <0   p       > 30 9C EA 02 70 9E EA 02 10 10 DA 00
+{12515} normal block at 0x02EA9C30, 12 bytes long.    Data: <    P       > 10 9B EA 02 50 9D EA 02 10 D1 DC 00
+{12511} normal block at 0x02EA9B10, 12 bytes long.    Data: <    0    *  > F0 99 EA 02 30 9C EA 02 10 2A DB 00
+{12507} normal block at 0x02EA99F0, 12 bytes long.    Data: <        0$  > D0 98 EA 02 10 9B EA 02 30 24 DB 00
+{12503} normal block at 0x02EA98D0, 12 bytes long.    Data: <h       0   > 68 97 EA 02 F0 99 EA 02 30 CB DC 00
+{12498} normal block at 0x02EA9768, 12 bytes long.    Data: <H       0   > 48 96 EA 02 D0 98 EA 02 30 0A DA 00
+{12494} normal block at 0x02EA9648, 12 bytes long.    Data: <p   h    "  > 70 95 EA 02 68 97 EA 02 88 22 D8 00
+{12491} normal block at 0x02EA9570, 12 bytes long.    Data: <P   H   P   > 50 94 EA 02 48 96 EA 02 50 C5 DC 00
+{12487} normal block at 0x02EA9450, 12 bytes long.    Data: <    p       > E8 92 EA 02 70 95 EA 02 C8 D2 D8 00
+{12482} normal block at 0x02EA92E8, 12 bytes long.    Data: <    P       > C8 91 EA 02 50 94 EA 02 98 0B D8 00
+{12478} normal block at 0x02EA91C8, 12 bytes long.    Data: <        p   > F0 90 EA 02 E8 92 EA 02 70 BF DC 00
+{12475} normal block at 0x02EA90F0, 12 bytes long.    Data: <        P   > 88 8F EA 02 C8 91 EA 02 50 1E DB 00
+{12470} normal block at 0x02EA8F88, 12 bytes long.    Data: <        p   > B0 8E EA 02 F0 90 EA 02 70 18 DB 00
+{12467} normal block at 0x02EA8EB0, 12 bytes long.    Data: <            > 90 8D EA 02 88 8F EA 02 90 B9 DC 00
+{12463} normal block at 0x02EA8D90, 12 bytes long.    Data: <(       (N  > 28 8C EA 02 B0 8E EA 02 28 4E D9 00
+{12458} normal block at 0x02EA8C28, 12 bytes long.    Data: <        p   > 08 8B EA 02 90 8D EA 02 70 FE D9 00
+{12454} normal block at 0x02EA8B08, 12 bytes long.    Data: <0   (       > 30 8A EA 02 28 8C EA 02 B0 B3 DC 00
+{12451} normal block at 0x02EA8A30, 12 bytes long.    Data: <        P   > C8 88 EA 02 08 8B EA 02 50 04 DA 00
+{12446} normal block at 0x02EA88C8, 12 bytes long.    Data: <    0       > F0 87 EA 02 30 8A EA 02 90 12 DB 00
+{12443} normal block at 0x02EA87F0, 12 bytes long.    Data: <         E  > 08 AB E9 02 C8 88 EA 02 C8 45 D8 00
+{12438} normal block at 0x02E9AB08, 12 bytes long.    Data: <            > E8 A9 E9 02 F0 87 EA 02 D0 AD DC 00
+{12434} normal block at 0x02E9A9E8, 12 bytes long.    Data: <        hB  > C8 A8 E9 02 08 AB E9 02 68 42 D9 00
+{12430} normal block at 0x02E9A8C8, 12 bytes long.    Data: <            > A8 A7 E9 02 E8 A9 E9 02 B0 0C DB 00
+{12426} normal block at 0x02E9A7A8, 12 bytes long.    Data: <            > 88 A6 E9 02 C8 A8 E9 02 F0 A7 DC 00
+{12422} normal block at 0x02E9A688, 12 bytes long.    Data: <@       0   > 40 90 E9 02 A8 A7 E9 02 30 B6 DD 00
+{12417} normal block at 0x02E99040, 12 bytes long.    Data: <8           > 38 8F E9 02 88 A6 E9 02 10 A2 DC 00
+{12414} normal block at 0x02E98F38, 12 bytes long.    Data: <    @   HH  > 18 8E E9 02 40 90 E9 02 48 48 D9 00
+{12410} normal block at 0x02E98E18, 12 bytes long.    Data: <@   8       > 40 8D E9 02 38 8F E9 02 90 F8 D9 00
+{12407} normal block at 0x02E98D40, 12 bytes long.    Data: <        0   > B0 8C E9 02 18 8E E9 02 30 9C DC 00
+{12405} normal block at 0x02E98CB0, 12 bytes long.    Data: <    @       > D8 8B E9 02 40 8D E9 02 D0 06 DB 00
+{12402} normal block at 0x02E98BD8, 12 bytes long.    Data: <H           > 48 8B E9 02 B0 8C E9 02 F0 00 DB 00
+{12400} normal block at 0x02E98B48, 12 bytes long.    Data: <        P   > 00 8B E9 02 D8 8B E9 02 50 96 DC 00
+{12399} normal block at 0x02E98B00, 12 bytes long.    Data: <    H       > E0 89 E9 02 48 8B E9 02 B0 F2 D9 00
+{12395} normal block at 0x02E989E0, 12 bytes long.    Data: <         z  > 98 89 E9 02 00 8B E9 02 A8 7A D8 00
+{12394} normal block at 0x02E98998, 12 bytes long.    Data: <x       p   > 78 88 E9 02 E0 89 E9 02 70 90 DC 00
+{12390} normal block at 0x02E98878, 12 bytes long.    Data: <0           > 30 88 E9 02 98 89 E9 02 08 C7 D8 00
+{12389} normal block at 0x02E98830, 12 bytes long.    Data: <    x       > 10 87 E9 02 78 88 E9 02 E8 CC D8 00
+{12385} normal block at 0x02E98710, 12 bytes long.    Data: <    0       > C8 86 E9 02 30 88 E9 02 90 8A DC 00
+{12384} normal block at 0x02E986C8, 12 bytes long.    Data: <            > A8 85 E9 02 10 87 E9 02 10 FB DA 00
+{12380} normal block at 0x02E985A8, 12 bytes long.    Data: <0           > 30 84 E9 02 C8 86 E9 02 D0 EC D9 00
+{12375} normal block at 0x02E98430, 12 bytes long.    Data: <         <  > E8 83 E9 02 A8 85 E9 02 88 3C D9 00
+{12374} normal block at 0x02E983E8, 12 bytes long.    Data: <    0   0   > C8 82 E9 02 30 84 E9 02 30 F5 DA 00
+{12370} normal block at 0x02E982C8, 12 bytes long.    Data: <            > 80 82 E9 02 E8 83 E9 02 B0 84 DC 00
+{12369} normal block at 0x02E98280, 12 bytes long.    Data: <8        ~  > 38 82 E9 02 C8 82 E9 02 D0 7E DC 00
+{12368} normal block at 0x02E98238, 12 bytes long.    Data: <         x  > 18 81 E9 02 80 82 E9 02 F0 78 DC 00
+{12364} normal block at 0x02E98118, 12 bytes long.    Data: <    8   P   > 88 80 E9 02 38 82 E9 02 50 EF DA 00
+{12362} normal block at 0x02E98088, 12 bytes long.    Data: <            > B0 7F E9 02 18 81 E9 02 F0 E6 D9 00
+{12359} normal block at 0x02E97FB0, 12 bytes long.    Data: <h        6  > 68 7F E9 02 88 80 E9 02 A8 36 D9 00
+{12358} normal block at 0x02E97F68, 12 bytes long.    Data: <H~      p   > 48 7E E9 02 B0 7F E9 02 70 E9 DA 00
+{12354} normal block at 0x02E97E48, 12 bytes long.    Data: < }  h    s  > B8 7D E9 02 68 7F E9 02 10 73 DC 00
+{12352} normal block at 0x02E97DB8, 12 bytes long.    Data: < |  H~      > E0 7C E9 02 48 7E E9 02 A8 1C D8 00
+{12349} normal block at 0x02E97CE0, 12 bytes long.    Data: <P|   }   t  > 50 7C E9 02 B8 7D E9 02 C8 74 D8 00
+{12347} normal block at 0x02E97C50, 12 bytes long.    Data: <x{   |  0m  > 78 7B E9 02 E0 7C E9 02 30 6D DC 00
+{12344} normal block at 0x02E97B78, 12 bytes long.    Data: < z  P|      > A0 7A E9 02 50 7C E9 02 88 E1 8A 00
+{12341} normal block at 0x02E97AA0, 12 bytes long.    Data: < z  x{      > 10 7A E9 02 78 7B E9 02 10 E1 D9 00
+{12339} normal block at 0x02E97A10, 12 bytes long.    Data: <8y   z  Pg  > 38 79 E9 02 A0 7A E9 02 50 67 DC 00
+{12336} normal block at 0x02E97938, 12 bytes long.    Data: < x   z      > A8 78 E9 02 10 7A E9 02 90 E3 DA 00
+{12334} normal block at 0x02E978A8, 12 bytes long.    Data: <`x  8y  pa  > 60 78 E9 02 38 79 E9 02 70 61 DC 00
+{12333} normal block at 0x02E97860, 12 bytes long.    Data: < w   x   *  > 88 77 E9 02 A8 78 E9 02 E8 2A D9 00
+{12330} normal block at 0x02E97788, 12 bytes long.    Data: <hv  `x   [  > 68 76 E9 02 60 78 E9 02 90 5B DC 00
+{12326} normal block at 0x02E97668, 12 bytes long.    Data: < u   w  (   > D8 75 E9 02 88 77 E9 02 28 C1 D8 00
+{12324} normal block at 0x02E975D8, 12 bytes long.    Data: < u  hv   0  > 90 75 E9 02 68 76 E9 02 C8 30 D9 00
+{12323} normal block at 0x02E97590, 12 bytes long.    Data: < t   u   U  > B8 74 E9 02 D8 75 E9 02 B0 55 DC 00
+{12320} normal block at 0x02E974B8, 12 bytes long.    Data: <(t   u      > 28 74 E9 02 90 75 E9 02 D0 D7 DA 00
+{12318} normal block at 0x02E97428, 12 bytes long.    Data: < s   t      > 08 73 E9 02 B8 74 E9 02 F0 D1 DA 00
+{12314} normal block at 0x02E97308, 12 bytes long.    Data: < r  (t   O  > C0 72 E9 02 28 74 E9 02 D0 4F DC 00
+{12313} normal block at 0x02E972C0, 12 bytes long.    Data: < q   s  H   > A0 71 E9 02 08 73 E9 02 48 BB D8 00
+{12309} normal block at 0x02E971A0, 12 bytes long.    Data: < q   r   n  > 10 71 E9 02 C0 72 E9 02 E8 6E D8 00
+{12307} normal block at 0x02E97110, 12 bytes long.    Data: < p   q   I  > 80 70 E9 02 A0 71 E9 02 F0 49 DC 00
+{12305} normal block at 0x02E97080, 12 bytes long.    Data: <`o   q   ?  > 60 6F E9 02 10 71 E9 02 E8 3F D8 00
+{12301} normal block at 0x02E96F60, 12 bytes long.    Data: < n   p   D  > D0 6E E9 02 80 70 E9 02 10 44 DC 00
+{12299} normal block at 0x02E96ED0, 12 bytes long.    Data: < n  `o      > 88 6E E9 02 60 6F E9 02 10 CC DA 00
+{12298} normal block at 0x02E96E88, 12 bytes long.    Data: <hm   n   :  > 68 6D E9 02 D0 6E E9 02 08 3A D8 00
+{12294} normal block at 0x02E96D68, 12 bytes long.    Data: <     n  0   > 10 91 E8 02 88 6E E9 02 30 C6 DA 00
+{12291} normal block at 0x02E89110, 12 bytes long.    Data: <8   hm  0>  > 38 90 E8 02 68 6D E9 02 30 3E DC 00
+{12288} normal block at 0x02E89038, 12 bytes long.    Data: <         %  > F0 8F E8 02 10 91 E8 02 08 25 D9 00
+{12287} normal block at 0x02E88FF0, 12 bytes long.    Data: <    8   P8  > D0 8E E8 02 38 90 E8 02 50 38 DC 00
+{12283} normal block at 0x02E88ED0, 12 bytes long.    Data: <        p   > 88 8E E8 02 F0 8F E8 02 70 CF D9 00
+{12282} normal block at 0x02E88E88, 12 bytes long.    Data: <@x          > 40 78 E8 02 D0 8E E8 02 90 C9 D9 00
+{12277} normal block at 0x02E87840, 12 bytes long.    Data: <`v      p2  > 60 76 E8 02 88 8E E8 02 70 32 DC 00
+{12271} normal block at 0x02E87660, 12 bytes long.    Data: <    @x  P   > 98 C8 E6 02 40 78 E8 02 50 C0 DA 00
+{12255} normal block at 0x02E871E0, 12 bytes long.    Data: < q  P       > 98 71 E8 02 50 9B EC 02 B0 DD DA 00
+{12254} normal block at 0x02E87198, 12 bytes long.    Data: < ^   q  0   > 80 5E E8 02 E0 71 E8 02 30 DB D9 00
+{12218} normal block at 0x02E862B8, 246 bytes long.   Data: <  WS0 24  Preten> 00 01 57 53 30 00 32 34 00 CD 50 72 65 74 65 6E
+{12203} normal block at 0x02E85E80, 12 bytes long.    Data: <     q  P   > B8 BB E4 02 98 71 E8 02 50 D5 D9 00
+{12164} normal block at 0x02E850B8, 480 bytes long.   Data: <  (  4I@#?     @> CB B1 28 F9 D9 34 49 40 23 3F AF 89 BD B1 85 40
+{12136} normal block at 0x02E6DAD8, 21308 bytes long. Data: <  @       p     > FF FF 40 20 92 00 00 08 82 00 70 01 8F 09 02 10
+{12135} normal block at 0x02E6CAA0, 4092 bytes long.  Data: <                > FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+{12128} normal block at 0x02E6C898, 12 bytes long.    Data: <x   `v  p   > 78 C7 E6 02 60 76 E8 02 70 BA DA 00
+{12124} normal block at 0x02E6C778, 12 bytes long.    Data: <X        ,  > 58 C6 E6 02 98 C8 E6 02 90 2C DC 00
+{12120} normal block at 0x02E6C658, 12 bytes long.    Data: <8   x       > 38 C5 E6 02 78 C7 E6 02 B0 C3 D9 00
+{12116} normal block at 0x02E6C538, 12 bytes long.    Data: <    X       > 18 C4 E6 02 58 C6 E6 02 88 AF D8 00
+{12112} normal block at 0x02E6C418, 12 bytes long.    Data: <    8    &  > F8 C2 E6 02 38 C5 E6 02 B0 26 DC 00
+{12108} normal block at 0x02E6C2F8, 12 bytes long.    Data: <        h   > D8 C1 E6 02 18 C4 E6 02 68 B5 D8 00
+{12104} normal block at 0x02E6C1D8, 12 bytes long.    Data: <         i  > B8 C0 E6 02 F8 C2 E6 02 08 69 D8 00
+{12100} normal block at 0x02E6C0B8, 12 bytes long.    Data: <            > 90 BF E6 02 D8 C1 E6 02 D0 20 DC 00
+{12096} normal block at 0x02E6BF90, 12 bytes long.    Data: <p           > 70 BE E6 02 B8 C0 E6 02 90 B4 DA 00
+{12092} normal block at 0x02E6BE70, 12 bytes long.    Data: <P           > 50 BD E6 02 90 BF E6 02 00 06 D8 00
+
+
+{12136} normal block at 0x02E6DAD8, 21308 bytes long. Data: <  @       p     > FF FF 40 20 92 00 00 08 82 00 70 01 8F 09 02 10
+{12622} normal block at 0x02EACA60, 28000 bytes long. Data: <  @ R     p     > FF FF 40 20 52 00 00 08 82 00 70 01 96 09 02 10
+
+This is after I added an empty destructor function to the BIT_CONTROL struct
+
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {285} normal block at 0x008ADFF0, 16 bytes long.      Data: <V427=H20080000  > 56 34 32 37 3D 48 32 30 30 38 30 30 30 30 0D 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {277} normal block at 0x008AD2B8, 72 bytes long.      Data: <04 02 07:00:00 0> 30 34 00 30 32 00 30 37 3A 30 30 3A 30 30 00 30
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {273} normal block at 0x008ACD38, 1044 bytes long.    Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {270} normal block at 0x008ACB40, 3 bytes long.       Data: <24 > 32 34 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {269} normal block at 0x008ACAE8, 16 bytes long.      Data: <                > FB 01 00 00 DC 02 08 00 02 02 00 00 F6 02 08 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {268} normal block at 0x008ACA90, 16 bytes long.      Data: <                > FA 01 00 00 0E 03 08 00 01 02 00 00 F8 02 08 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {267} normal block at 0x008ACA38, 16 bytes long.      Data: <                > F9 01 00 00 10 03 08 00 00 02 00 00 FA 02 08 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {266} normal block at 0x008AC9E0, 16 bytes long.      Data: <                > F8 01 00 00 12 03 08 00 FF 01 00 00 E2 02 08 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {265} normal block at 0x008AC988, 16 bytes long.      Data: <                > F7 01 00 00 14 03 08 00 FE 01 00 00 04 03 08 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {264} normal block at 0x008AC930, 16 bytes long.      Data: <                > F6 01 00 00 16 03 08 00 FD 01 00 00 06 03 08 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {263} normal block at 0x008AC8D8, 16 bytes long.      Data: <                > F5 01 00 00 FE 02 08 00 FC 01 00 00 08 03 08 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {146} normal block at 0x008A67B0, 5 bytes long.       Data: <UD1= > 55 44 31 3D 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {145} normal block at 0x008A6768, 6 bytes long.       Data: <-1000 > 2D 31 30 30 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {144} normal block at 0x008A6720, 6 bytes long.       Data: <.022  > 2E 30 32 32 20 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {143} normal block at 0x008A66D8, 3 bytes long.       Data: <60 > 36 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {142} normal block at 0x008A6690, 2 bytes long.       Data: <0 > 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {141} normal block at 0x008A6648, 3 bytes long.       Data: <80 > 38 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {140} normal block at 0x008A6600, 2 bytes long.       Data: <P > 50 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {139} normal block at 0x008A65B8, 3 bytes long.       Data: <AC > 41 43 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {138} normal block at 0x008A6570, 4 bytes long.       Data: <VA1 > 56 41 31 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {137} normal block at 0x008A6528, 7 bytes long.       Data: <_E1.34 > 5F 45 31 2E 33 34 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {136} normal block at 0x008A64E0, 6 bytes long.       Data: <.025  > 2E 30 32 35 20 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {135} normal block at 0x008A6488, 16 bytes long.      Data: <    T D ^       > 01 00 00 00 54 84 44 00 5E 01 00 00 00 00 00 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {134} normal block at 0x008A6440, 4 bytes long.       Data: <LS6 > 4C 53 36 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {133} normal block at 0x008A63F8, 4 bytes long.       Data: <LS5 > 4C 53 35 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {132} normal block at 0x008A63B0, 4 bytes long.       Data: <LS4 > 4C 53 34 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {131} normal block at 0x008A6368, 4 bytes long.       Data: <LS3 > 4C 53 33 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {130} normal block at 0x008A6320, 4 bytes long.       Data: <LS2 > 4C 53 32 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {129} normal block at 0x008A62D8, 4 bytes long.       Data: <LS1 > 4C 53 31 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {128} normal block at 0x008A6290, 12 bytes long.      Data: <ACCUMULATOR > 41 43 43 55 4D 55 4C 41 54 4F 52 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {127} normal block at 0x008A6238, 17 bytes long.      Data: <SLOW SHOT OUTPUT> 53 4C 4F 57 20 53 48 4F 54 20 4F 55 54 50 55 54
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {126} normal block at 0x008A61F0, 10 bytes long.      Data: <FILL TEST > 46 49 4C 4C 20 54 45 53 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {125} normal block at 0x008A61A8, 11 bytes long.      Data: <LOW IMPACT > 4C 4F 57 20 49 4D 50 41 43 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {124} normal block at 0x008A6160, 10 bytes long.      Data: <VACUUM ON > 56 41 43 55 55 4D 20 4F 4E 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {123} normal block at 0x008A6108, 16 bytes long.      Data: <OK FOR VAC FAST > 4F 4B 20 46 4F 52 20 56 41 43 20 46 41 53 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {122} normal block at 0x008A60C0, 8 bytes long.       Data: <AT HOME > 41 54 20 48 4F 4D 45 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {121} normal block at 0x008A6078, 12 bytes long.      Data: <MANUAL MODE > 4D 41 4E 55 41 4C 20 4D 4F 44 45 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {120} normal block at 0x008A6030, 9 bytes long.       Data: <JOG SHOT > 4A 4F 47 20 53 48 4F 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {119} normal block at 0x008A5FE8, 8 bytes long.       Data: <RETRACT > 52 45 54 52 41 43 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {118} normal block at 0x008A5F90, 15 bytes long.      Data: <FOLLOW THROUGH > 46 4F 4C 4C 4F 57 20 54 48 52 4F 55 47 48 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {117} normal block at 0x008A5F48, 11 bytes long.      Data: <START SHOT > 53 54 41 52 54 20 53 48 4F 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {111} normal block at 0x008A5C68, 14 bytes long.      Data: <Not Connected > 4E 6F 74 20 43 6F 6E 6E 65 63 74 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {110} normal block at 0x008A5C10, 14 bytes long.      Data: <Connecting... > 43 6F 6E 6E 65 63 74 69 6E 67 2E 2E 2E 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {109} normal block at 0x008A5BC8, 10 bytes long.      Data: <Connected > 43 6F 6E 6E 65 63 74 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {108} normal block at 0x008A5B70, 14 bytes long.      Data: <Not Monitored > 4E 6F 74 20 4D 6F 6E 69 74 6F 72 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {107} normal block at 0x008A5B28, 12 bytes long.      Data: <Not Started > 4E 6F 74 20 53 74 61 72 74 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {103} normal block at 0x008A58F8, 8 bytes long.       Data: <    XX  > 00 00 00 00 58 58 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {102} normal block at 0x008A58A0, 18 bytes long.      Data: <Testing the VALV> 54 65 73 74 69 6E 67 20 74 68 65 20 56 41 4C 56
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {101} normal block at 0x008A5858, 12 bytes long.      Data: <d   k    X  > 64 00 00 00 6B 00 00 00 A0 58 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {100} normal block at 0x008A5810, 8 bytes long.       Data: < X  pW  > F8 58 8A 00 70 57 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {99} normal block at 0x008A57B8, 18 bytes long.       Data: <Making a JOG SHO> 4D 61 6B 69 6E 67 20 61 20 4A 4F 47 20 53 48 4F
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {98} normal block at 0x008A5770, 12 bytes long.       Data: <Z   _    W  > 5A 00 00 00 5F 00 00 00 B8 57 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {97} normal block at 0x008A5728, 8 bytes long.        Data: < X   V  > 10 58 8A 00 88 56 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {96} normal block at 0x008A56D0, 24 bytes long.       Data: <Waiting for MANU> 57 61 69 74 69 6E 67 20 66 6F 72 20 4D 41 4E 55
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {95} normal block at 0x008A5688, 12 bytes long.       Data: <L   O    V  > 4C 00 00 00 4F 00 00 00 D0 56 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {94} normal block at 0x008A5640, 8 bytes long.        Data: <(W   U  > 28 57 8A 00 A0 55 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {93} normal block at 0x008A55E8, 21 bytes long.       Data: <Waiting for JOG > 57 61 69 74 69 6E 67 20 66 6F 72 20 4A 4F 47 20
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {92} normal block at 0x008A55A0, 12 bytes long.       Data: <F   G    U  > 46 00 00 00 47 00 00 00 E8 55 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {91} normal block at 0x008A5558, 8 bytes long.        Data: <@V   T  > 40 56 8A 00 B8 54 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {90} normal block at 0x008A5500, 20 bytes long.       Data: <Waiting for At H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 74 20 48
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {89} normal block at 0x008A54B8, 12 bytes long.       Data: <<   ?    U  > 3C 00 00 00 3F 00 00 00 00 55 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {88} normal block at 0x008A5470, 8 bytes long.        Data: <XU   S  > 58 55 8A 00 D0 53 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {87} normal block at 0x008A5418, 20 bytes long.       Data: <Waiting for RETR> 57 61 69 74 69 6E 67 20 66 6F 72 20 52 45 54 52
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {86} normal block at 0x008A53D0, 12 bytes long.       Data: <6   8    T  > 36 00 00 00 38 00 00 00 18 54 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {85} normal block at 0x008A5388, 8 bytes long.        Data: <pT   R  > 70 54 8A 00 E8 52 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {84} normal block at 0x008A5330, 27 bytes long.       Data: <Waiting for FOLL> 57 61 69 74 69 6E 67 20 66 6F 72 20 46 4F 4C 4C
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {83} normal block at 0x008A52E8, 12 bytes long.       Data: <1   3   0S  > 31 00 00 00 33 00 00 00 30 53 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {82} normal block at 0x008A52A0, 8 bytes long.        Data: < S   R  > 88 53 8A 00 00 52 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {81} normal block at 0x008A5248, 14 bytes long.       Data: <Making a SHOT > 4D 61 6B 69 6E 67 20 61 20 53 48 4F 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {80} normal block at 0x008A5200, 12 bytes long.       Data: <    .   HR  > 14 00 00 00 2E 00 00 00 48 52 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {79} normal block at 0x008A51B8, 8 bytes long.        Data: < R   Q  > A0 52 8A 00 18 51 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {78} normal block at 0x008A5160, 23 bytes long.       Data: <Waiting for STAR> 57 61 69 74 69 6E 67 20 66 6F 72 20 53 54 41 52
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {77} normal block at 0x008A5118, 12 bytes long.       Data: <        `Q  > 0C 00 00 00 10 00 00 00 60 51 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {76} normal block at 0x008A50D0, 8 bytes long.        Data: < Q  0P  > B8 51 8A 00 30 50 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {75} normal block at 0x008A5078, 20 bytes long.       Data: <Trapping START S> 54 72 61 70 70 69 6E 67 20 53 54 41 52 54 20 53
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {74} normal block at 0x008A5030, 12 bytes long.       Data: <        xP  > 0A 00 00 00 0B 00 00 00 78 50 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {73} normal block at 0x008A4FE8, 8 bytes long.        Data: < P  HO  > D0 50 8A 00 48 4F 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {72} normal block at 0x008A4F90, 20 bytes long.       Data: <Waiting for AT H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 54 20 48
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {71} normal block at 0x008A4F48, 12 bytes long.       Data: <         O  > 06 00 00 00 08 00 00 00 90 4F 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {70} normal block at 0x008A4F00, 8 bytes long.        Data: < O   )  > E8 4F 8A 00 00 29 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {69} normal block at 0x008A4EB8, 8 bytes long.        Data: <Startup > 53 74 61 72 74 75 70 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {68} normal block at 0x008A2900, 12 bytes long.       Data: <         N  > 01 00 00 00 05 00 00 00 B8 4E 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {65} normal block at 0x008A4970, 1044 bytes long.     Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {49} normal block at 0x008A2758, 4 bytes long.        Data: <WS0 > 57 53 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {48} normal block at 0x008A2600, 269 bytes long.      Data: <    WS0 C:\V5\DA> 00 00 00 00 57 53 30 00 43 3A 5C 56 35 5C 44 41
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {44} normal block at 0x008A3F30, 12 bytes long.       Data: <C:\v5\exes\ > 43 3A 5C 76 35 5C 65 78 65 73 5C 00
+
+Just another try
+
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {2834} normal block at 0x00E03F90, 20 bytes long.     Data: <24,Pretend2,NS,4> 32 34 2C 50 72 65 74 65 6E 64 32 2C 4E 53 2C 34
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {2801} normal block at 0x00D98508, 6 bytes long.      Data: <      > 20 20 20 0D 0A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {2800} normal block at 0x00DBD668, 6 bytes long.      Data: <      > 20 20 20 0D 0A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {285} normal block at 0x008A2440, 16 bytes long.      Data: <V427=H20080000  > 56 34 32 37 3D 48 32 30 30 38 30 30 30 30 0D 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {277} normal block at 0x008A8BF0, 72 bytes long.      Data: <04 02 07:00:00 0> 30 34 00 30 32 00 30 37 3A 30 30 3A 30 30 00 30
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {273} normal block at 0x008A9C80, 1044 bytes long.    Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {270} normal block at 0x008A8B40, 3 bytes long.       Data: <24 > 32 34 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {269} normal block at 0x008A8AE8, 16 bytes long.      Data: <            0   > FB 01 00 00 10 03 09 00 02 02 00 00 30 03 0B 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {268} normal block at 0x008A8A90, 16 bytes long.      Data: <            P   > FA 01 00 00 0E 03 09 00 01 02 00 00 50 03 0B 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {267} normal block at 0x008A8A38, 16 bytes long.      Data: <            $   > F9 01 00 00 DC 02 09 00 00 02 00 00 24 03 0B 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {266} normal block at 0x008A89E0, 16 bytes long.      Data: <            b   > F8 01 00 00 0A 03 09 00 FF 01 00 00 62 03 09 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {265} normal block at 0x008A5E40, 16 bytes long.      Data: <                > F7 01 00 00 08 03 09 00 FE 01 00 00 FE 02 09 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {264} normal block at 0x008A5DE8, 16 bytes long.      Data: <                > F6 01 00 00 06 03 09 00 FD 01 00 00 16 03 09 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {263} normal block at 0x008A52F8, 16 bytes long.      Data: <                > F5 01 00 00 04 03 09 00 FC 01 00 00 14 03 09 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {146} normal block at 0x008A5DA0, 5 bytes long.       Data: <UD1= > 55 44 31 3D 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {145} normal block at 0x008A5D58, 6 bytes long.       Data: <-1000 > 2D 31 30 30 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {144} normal block at 0x008A5D10, 6 bytes long.       Data: <.022  > 2E 30 32 32 20 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {143} normal block at 0x008A5CC8, 3 bytes long.       Data: <60 > 36 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {142} normal block at 0x008A5C80, 2 bytes long.       Data: <0 > 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {141} normal block at 0x008A5C38, 3 bytes long.       Data: <80 > 38 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {140} normal block at 0x008A56C0, 2 bytes long.       Data: <P > 50 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {139} normal block at 0x008A5678, 3 bytes long.       Data: <AC > 41 43 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {138} normal block at 0x008A5630, 4 bytes long.       Data: <VA1 > 56 41 31 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {137} normal block at 0x008A55E8, 7 bytes long.       Data: <_E1.34 > 5F 45 31 2E 33 34 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {136} normal block at 0x008A55A0, 6 bytes long.       Data: <.025  > 2E 30 32 35 20 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {135} normal block at 0x008A5548, 16 bytes long.      Data: <    T D ^       > 01 00 00 00 54 84 44 00 5E 01 00 00 00 00 00 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {134} normal block at 0x008A5BF0, 4 bytes long.       Data: <LS6 > 4C 53 36 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {133} normal block at 0x008A5BA8, 4 bytes long.       Data: <LS5 > 4C 53 35 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {132} normal block at 0x008A5B60, 4 bytes long.       Data: <LS4 > 4C 53 34 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {131} normal block at 0x008A5B18, 4 bytes long.       Data: <LS3 > 4C 53 33 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {130} normal block at 0x008A5AD0, 4 bytes long.       Data: <LS2 > 4C 53 32 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {129} normal block at 0x008A5A88, 4 bytes long.       Data: <LS1 > 4C 53 31 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {128} normal block at 0x008A5A40, 12 bytes long.      Data: <ACCUMULATOR > 41 43 43 55 4D 55 4C 41 54 4F 52 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {127} normal block at 0x008A59E8, 17 bytes long.      Data: <SLOW SHOT OUTPUT> 53 4C 4F 57 20 53 48 4F 54 20 4F 55 54 50 55 54
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {126} normal block at 0x008A59A0, 10 bytes long.      Data: <FILL TEST > 46 49 4C 4C 20 54 45 53 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {125} normal block at 0x008A5958, 11 bytes long.      Data: <LOW IMPACT > 4C 4F 57 20 49 4D 50 41 43 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {124} normal block at 0x008A5910, 10 bytes long.      Data: <VACUUM ON > 56 41 43 55 55 4D 20 4F 4E 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {123} normal block at 0x008A58B8, 16 bytes long.      Data: <OK FOR VAC FAST > 4F 4B 20 46 4F 52 20 56 41 43 20 46 41 53 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {122} normal block at 0x008A5870, 8 bytes long.       Data: <AT HOME > 41 54 20 48 4F 4D 45 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {121} normal block at 0x008A5828, 12 bytes long.      Data: <MANUAL MODE > 4D 41 4E 55 41 4C 20 4D 4F 44 45 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {120} normal block at 0x008A57E0, 9 bytes long.       Data: <JOG SHOT > 4A 4F 47 20 53 48 4F 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {119} normal block at 0x008A5798, 8 bytes long.       Data: <RETRACT > 52 45 54 52 41 43 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {118} normal block at 0x008A5740, 15 bytes long.      Data: <FOLLOW THROUGH > 46 4F 4C 4C 4F 57 20 54 48 52 4F 55 47 48 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {117} normal block at 0x008A5500, 11 bytes long.      Data: <START SHOT > 53 54 41 52 54 20 53 48 4F 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {111} normal block at 0x008A5460, 14 bytes long.      Data: <Not Connected > 4E 6F 74 20 43 6F 6E 6E 65 63 74 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {110} normal block at 0x008A5408, 14 bytes long.      Data: <Connecting... > 43 6F 6E 6E 65 63 74 69 6E 67 2E 2E 2E 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {109} normal block at 0x008A53C0, 10 bytes long.      Data: <Connected > 43 6F 6E 6E 65 63 74 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {108} normal block at 0x008A5368, 14 bytes long.      Data: <Not Monitored > 4E 6F 74 20 4D 6F 6E 69 74 6F 72 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {107} normal block at 0x008A28D0, 12 bytes long.      Data: <Not Started > 4E 6F 74 20 53 74 61 72 74 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {103} normal block at 0x008A51D8, 8 bytes long.       Data: <    8Q  > 00 00 00 00 38 51 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {102} normal block at 0x008A5180, 18 bytes long.      Data: <Testing the VALV> 54 65 73 74 69 6E 67 20 74 68 65 20 56 41 4C 56
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {101} normal block at 0x008A5138, 12 bytes long.      Data: <d   k    Q  > 64 00 00 00 6B 00 00 00 80 51 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {100} normal block at 0x008A50F0, 8 bytes long.       Data: < Q  PP  > D8 51 8A 00 50 50 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {99} normal block at 0x008A5098, 18 bytes long.       Data: <Making a JOG SHO> 4D 61 6B 69 6E 67 20 61 20 4A 4F 47 20 53 48 4F
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {98} normal block at 0x008A5050, 12 bytes long.       Data: <Z   _    P  > 5A 00 00 00 5F 00 00 00 98 50 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {97} normal block at 0x008A5008, 8 bytes long.        Data: < P  hO  > F0 50 8A 00 68 4F 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {96} normal block at 0x008A4FB0, 24 bytes long.       Data: <Waiting for MANU> 57 61 69 74 69 6E 67 20 66 6F 72 20 4D 41 4E 55
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {95} normal block at 0x008A4F68, 12 bytes long.       Data: <L   O    O  > 4C 00 00 00 4F 00 00 00 B0 4F 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {94} normal block at 0x008A4F20, 8 bytes long.        Data: < P   N  > 08 50 8A 00 80 4E 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {93} normal block at 0x008A4EC8, 21 bytes long.       Data: <Waiting for JOG > 57 61 69 74 69 6E 67 20 66 6F 72 20 4A 4F 47 20
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {92} normal block at 0x008A4E80, 12 bytes long.       Data: <F   G    N  > 46 00 00 00 47 00 00 00 C8 4E 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {91} normal block at 0x008A4E38, 8 bytes long.        Data: < O   M  > 20 4F 8A 00 98 4D 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {90} normal block at 0x008A4DE0, 20 bytes long.       Data: <Waiting for At H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 74 20 48
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {89} normal block at 0x008A4D98, 12 bytes long.       Data: <<   ?    M  > 3C 00 00 00 3F 00 00 00 E0 4D 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {88} normal block at 0x008A4D50, 8 bytes long.        Data: <8N   L  > 38 4E 8A 00 B0 4C 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {87} normal block at 0x008A4CF8, 20 bytes long.       Data: <Waiting for RETR> 57 61 69 74 69 6E 67 20 66 6F 72 20 52 45 54 52
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {86} normal block at 0x008A4CB0, 12 bytes long.       Data: <6   8    L  > 36 00 00 00 38 00 00 00 F8 4C 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {85} normal block at 0x008A4C68, 8 bytes long.        Data: <PM   K  > 50 4D 8A 00 C8 4B 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {84} normal block at 0x008A4C10, 27 bytes long.       Data: <Waiting for FOLL> 57 61 69 74 69 6E 67 20 66 6F 72 20 46 4F 4C 4C
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {83} normal block at 0x008A4BC8, 12 bytes long.       Data: <1   3    L  > 31 00 00 00 33 00 00 00 10 4C 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {82} normal block at 0x008A4B80, 8 bytes long.        Data: <hL   J  > 68 4C 8A 00 E0 4A 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {81} normal block at 0x008A4B28, 14 bytes long.       Data: <Making a SHOT > 4D 61 6B 69 6E 67 20 61 20 53 48 4F 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {80} normal block at 0x008A4AE0, 12 bytes long.       Data: <    .   (K  > 14 00 00 00 2E 00 00 00 28 4B 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {79} normal block at 0x008A4A98, 8 bytes long.        Data: < K   I  > 80 4B 8A 00 F8 49 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {78} normal block at 0x008A4A40, 23 bytes long.       Data: <Waiting for STAR> 57 61 69 74 69 6E 67 20 66 6F 72 20 53 54 41 52
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {77} normal block at 0x008A49F8, 12 bytes long.       Data: <        @J  > 0C 00 00 00 10 00 00 00 40 4A 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {76} normal block at 0x008A49B0, 8 bytes long.        Data: < J   D  > 98 4A 8A 00 80 44 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {75} normal block at 0x008A4958, 20 bytes long.       Data: <Trapping START S> 54 72 61 70 70 69 6E 67 20 53 54 41 52 54 20 53
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {74} normal block at 0x008A4480, 12 bytes long.       Data: <        XI  > 0A 00 00 00 0B 00 00 00 58 49 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {73} normal block at 0x008A4438, 8 bytes long.        Data: < I   C  > B0 49 8A 00 98 43 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {72} normal block at 0x008A43E0, 20 bytes long.       Data: <Waiting for AT H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 54 20 48
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {71} normal block at 0x008A4398, 12 bytes long.       Data: <         C  > 06 00 00 00 08 00 00 00 E0 43 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {70} normal block at 0x008A4350, 8 bytes long.        Data: <8D   %  > 38 44 8A 00 B0 25 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {69} normal block at 0x008A3F78, 8 bytes long.        Data: <Startup > 53 74 61 72 74 75 70 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {68} normal block at 0x008A25B0, 12 bytes long.       Data: <        x?  > 01 00 00 00 05 00 00 00 78 3F 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {65} normal block at 0x008A4500, 1044 bytes long.     Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {49} normal block at 0x008A2568, 4 bytes long.        Data: <WS0 > 57 53 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {48} normal block at 0x008A2600, 269 bytes long.      Data: <    WS0 C:\V5\DA> 00 00 00 00 57 53 30 00 43 3A 5C 56 35 5C 44 41
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {44} normal block at 0x008A3F30, 12 bytes long.       Data: <C:\v5\exes\ > 43 3A 5C 76 35 5C 65 78 65 73 5C 00
+
+
+
+
+And another, many shots
+
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {2852} normal block at 0x00DE61A8, 20 bytes long.     Data: <24,Pretend2,NS,4> 32 34 2C 50 72 65 74 65 6E 64 32 2C 4E 53 2C 34
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {2804} normal block at 0x00DBD6E8, 6 bytes long.      Data: <      > 20 20 20 0D 0A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {2803} normal block at 0x008A9458, 6 bytes long.      Data: <      > 20 20 20 0D 0A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {298} normal block at 0x008A2440, 16 bytes long.      Data: <V427=H20080000  > 56 34 32 37 3D 48 32 30 30 38 30 30 30 30 0D 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {290} normal block at 0x008A8BF0, 72 bytes long.      Data: <04 02 07:00:00 0> 30 34 00 30 32 00 30 37 3A 30 30 3A 30 30 00 30
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {286} normal block at 0x008A9D18, 1044 bytes long.    Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {283} normal block at 0x008A8B40, 3 bytes long.       Data: <24 > 32 34 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {282} normal block at 0x008A8AE8, 16 bytes long.      Data: <                > FB 01 00 00 08 03 0A 00 02 02 00 00 EC 02 0A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {281} normal block at 0x008A8A90, 16 bytes long.      Data: <                > FA 01 00 00 0A 03 0A 00 01 02 00 00 EE 02 0A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {280} normal block at 0x008A8A38, 16 bytes long.      Data: <                > F9 01 00 00 DC 02 0A 00 00 02 00 00 F0 02 0A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {279} normal block at 0x008A89E0, 16 bytes long.      Data: <                > F8 01 00 00 0E 03 0A 00 FF 01 00 00 F2 02 0A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {278} normal block at 0x008A5E40, 16 bytes long.      Data: <                > F7 01 00 00 10 03 0A 00 FE 01 00 00 F4 02 0A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {277} normal block at 0x008A5DE8, 16 bytes long.      Data: <                > F6 01 00 00 12 03 0A 00 FD 01 00 00 20 03 0A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {276} normal block at 0x008A52F8, 16 bytes long.      Data: <                > F5 01 00 00 14 03 0A 00 FC 01 00 00 04 03 0A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {146} normal block at 0x008A5DA0, 5 bytes long.       Data: <UD1= > 55 44 31 3D 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {145} normal block at 0x008A5D58, 6 bytes long.       Data: <-1000 > 2D 31 30 30 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {144} normal block at 0x008A5D10, 6 bytes long.       Data: <.022  > 2E 30 32 32 20 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {143} normal block at 0x008A5CC8, 3 bytes long.       Data: <60 > 36 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {142} normal block at 0x008A5C80, 2 bytes long.       Data: <0 > 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {141} normal block at 0x008A5C38, 3 bytes long.       Data: <80 > 38 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {140} normal block at 0x008A56C0, 2 bytes long.       Data: <P > 50 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {139} normal block at 0x008A5678, 3 bytes long.       Data: <AC > 41 43 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {138} normal block at 0x008A5630, 4 bytes long.       Data: <VA1 > 56 41 31 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {137} normal block at 0x008A55E8, 7 bytes long.       Data: <_E1.34 > 5F 45 31 2E 33 34 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {136} normal block at 0x008A55A0, 6 bytes long.       Data: <.025  > 2E 30 32 35 20 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {135} normal block at 0x008A5548, 16 bytes long.      Data: <    T D ^       > 01 00 00 00 54 84 44 00 5E 01 00 00 00 00 00 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {134} normal block at 0x008A5BF0, 4 bytes long.       Data: <LS6 > 4C 53 36 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {133} normal block at 0x008A5BA8, 4 bytes long.       Data: <LS5 > 4C 53 35 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {132} normal block at 0x008A5B60, 4 bytes long.       Data: <LS4 > 4C 53 34 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {131} normal block at 0x008A5B18, 4 bytes long.       Data: <LS3 > 4C 53 33 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {130} normal block at 0x008A5AD0, 4 bytes long.       Data: <LS2 > 4C 53 32 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {129} normal block at 0x008A5A88, 4 bytes long.       Data: <LS1 > 4C 53 31 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {128} normal block at 0x008A5A40, 12 bytes long.      Data: <ACCUMULATOR > 41 43 43 55 4D 55 4C 41 54 4F 52 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {127} normal block at 0x008A59E8, 17 bytes long.      Data: <SLOW SHOT OUTPUT> 53 4C 4F 57 20 53 48 4F 54 20 4F 55 54 50 55 54
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {126} normal block at 0x008A59A0, 10 bytes long.      Data: <FILL TEST > 46 49 4C 4C 20 54 45 53 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {125} normal block at 0x008A5958, 11 bytes long.      Data: <LOW IMPACT > 4C 4F 57 20 49 4D 50 41 43 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {124} normal block at 0x008A5910, 10 bytes long.      Data: <VACUUM ON > 56 41 43 55 55 4D 20 4F 4E 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {123} normal block at 0x008A58B8, 16 bytes long.      Data: <OK FOR VAC FAST > 4F 4B 20 46 4F 52 20 56 41 43 20 46 41 53 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {122} normal block at 0x008A5870, 8 bytes long.       Data: <AT HOME > 41 54 20 48 4F 4D 45 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {121} normal block at 0x008A5828, 12 bytes long.      Data: <MANUAL MODE > 4D 41 4E 55 41 4C 20 4D 4F 44 45 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {120} normal block at 0x008A57E0, 9 bytes long.       Data: <JOG SHOT > 4A 4F 47 20 53 48 4F 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {119} normal block at 0x008A5798, 8 bytes long.       Data: <RETRACT > 52 45 54 52 41 43 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {118} normal block at 0x008A5740, 15 bytes long.      Data: <FOLLOW THROUGH > 46 4F 4C 4C 4F 57 20 54 48 52 4F 55 47 48 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {117} normal block at 0x008A5500, 11 bytes long.      Data: <START SHOT > 53 54 41 52 54 20 53 48 4F 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {111} normal block at 0x008A5460, 14 bytes long.      Data: <Not Connected > 4E 6F 74 20 43 6F 6E 6E 65 63 74 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {110} normal block at 0x008A5408, 14 bytes long.      Data: <Connecting... > 43 6F 6E 6E 65 63 74 69 6E 67 2E 2E 2E 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {109} normal block at 0x008A53C0, 10 bytes long.      Data: <Connected > 43 6F 6E 6E 65 63 74 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {108} normal block at 0x008A5368, 14 bytes long.      Data: <Not Monitored > 4E 6F 74 20 4D 6F 6E 69 74 6F 72 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {107} normal block at 0x008A28D0, 12 bytes long.      Data: <Not Started > 4E 6F 74 20 53 74 61 72 74 65 64 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {103} normal block at 0x008A51D8, 8 bytes long.       Data: <    8Q  > 00 00 00 00 38 51 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {102} normal block at 0x008A5180, 18 bytes long.      Data: <Testing the VALV> 54 65 73 74 69 6E 67 20 74 68 65 20 56 41 4C 56
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {101} normal block at 0x008A5138, 12 bytes long.      Data: <d   k    Q  > 64 00 00 00 6B 00 00 00 80 51 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {100} normal block at 0x008A50F0, 8 bytes long.       Data: < Q  PP  > D8 51 8A 00 50 50 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {99} normal block at 0x008A5098, 18 bytes long.       Data: <Making a JOG SHO> 4D 61 6B 69 6E 67 20 61 20 4A 4F 47 20 53 48 4F
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {98} normal block at 0x008A5050, 12 bytes long.       Data: <Z   _    P  > 5A 00 00 00 5F 00 00 00 98 50 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {97} normal block at 0x008A5008, 8 bytes long.        Data: < P  hO  > F0 50 8A 00 68 4F 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {96} normal block at 0x008A4FB0, 24 bytes long.       Data: <Waiting for MANU> 57 61 69 74 69 6E 67 20 66 6F 72 20 4D 41 4E 55
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {95} normal block at 0x008A4F68, 12 bytes long.       Data: <L   O    O  > 4C 00 00 00 4F 00 00 00 B0 4F 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {94} normal block at 0x008A4F20, 8 bytes long.        Data: < P   N  > 08 50 8A 00 80 4E 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {93} normal block at 0x008A4EC8, 21 bytes long.       Data: <Waiting for JOG > 57 61 69 74 69 6E 67 20 66 6F 72 20 4A 4F 47 20
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {92} normal block at 0x008A4E80, 12 bytes long.       Data: <F   G    N  > 46 00 00 00 47 00 00 00 C8 4E 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {91} normal block at 0x008A4E38, 8 bytes long.        Data: < O   M  > 20 4F 8A 00 98 4D 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {90} normal block at 0x008A4DE0, 20 bytes long.       Data: <Waiting for At H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 74 20 48
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {89} normal block at 0x008A4D98, 12 bytes long.       Data: <<   ?    M  > 3C 00 00 00 3F 00 00 00 E0 4D 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {88} normal block at 0x008A4D50, 8 bytes long.        Data: <8N   L  > 38 4E 8A 00 B0 4C 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {87} normal block at 0x008A4CF8, 20 bytes long.       Data: <Waiting for RETR> 57 61 69 74 69 6E 67 20 66 6F 72 20 52 45 54 52
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {86} normal block at 0x008A4CB0, 12 bytes long.       Data: <6   8    L  > 36 00 00 00 38 00 00 00 F8 4C 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {85} normal block at 0x008A4C68, 8 bytes long.        Data: <PM   K  > 50 4D 8A 00 C8 4B 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {84} normal block at 0x008A4C10, 27 bytes long.       Data: <Waiting for FOLL> 57 61 69 74 69 6E 67 20 66 6F 72 20 46 4F 4C 4C
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {83} normal block at 0x008A4BC8, 12 bytes long.       Data: <1   3    L  > 31 00 00 00 33 00 00 00 10 4C 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {82} normal block at 0x008A4B80, 8 bytes long.        Data: <hL   J  > 68 4C 8A 00 E0 4A 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {81} normal block at 0x008A4B28, 14 bytes long.       Data: <Making a SHOT > 4D 61 6B 69 6E 67 20 61 20 53 48 4F 54 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {80} normal block at 0x008A4AE0, 12 bytes long.       Data: <    .   (K  > 14 00 00 00 2E 00 00 00 28 4B 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {79} normal block at 0x008A4A98, 8 bytes long.        Data: < K   I  > 80 4B 8A 00 F8 49 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {78} normal block at 0x008A4A40, 23 bytes long.       Data: <Waiting for STAR> 57 61 69 74 69 6E 67 20 66 6F 72 20 53 54 41 52
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {77} normal block at 0x008A49F8, 12 bytes long.       Data: <        @J  > 0C 00 00 00 10 00 00 00 40 4A 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {76} normal block at 0x008A49B0, 8 bytes long.        Data: < J   D  > 98 4A 8A 00 80 44 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {75} normal block at 0x008A4958, 20 bytes long.       Data: <Trapping START S> 54 72 61 70 70 69 6E 67 20 53 54 41 52 54 20 53
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {74} normal block at 0x008A4480, 12 bytes long.       Data: <        XI  > 0A 00 00 00 0B 00 00 00 58 49 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {73} normal block at 0x008A4438, 8 bytes long.        Data: < I   C  > B0 49 8A 00 98 43 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {72} normal block at 0x008A43E0, 20 bytes long.       Data: <Waiting for AT H> 57 61 69 74 69 6E 67 20 66 6F 72 20 41 54 20 48
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {71} normal block at 0x008A4398, 12 bytes long.       Data: <         C  > 06 00 00 00 08 00 00 00 E0 43 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {70} normal block at 0x008A4350, 8 bytes long.        Data: <8D   %  > 38 44 8A 00 B0 25 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {69} normal block at 0x008A3F78, 8 bytes long.        Data: <Startup > 53 74 61 72 74 75 70 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {68} normal block at 0x008A25B0, 12 bytes long.       Data: <        x?  > 01 00 00 00 05 00 00 00 78 3F 8A 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {65} normal block at 0x008A4500, 1044 bytes long.     Data: <                > 1A 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {49} normal block at 0x008A2568, 4 bytes long.        Data: <WS0 > 57 53 30 00
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {48} normal block at 0x008A2600, 269 bytes long.      Data: <    WS0 C:\V5\DA> 00 00 00 00 57 53 30 00 43 3A 5C 56 35 5C 44 41
+C:\PROGRA~1\msc6\VC98\INCLUDE\crtdbg.h(552) : {44} normal block at 0x008A3F30, 12 bytes long.       Data: <C:\v5\exes\ > 43 3A 5C 76 35 5C 65 78 65 73 5C 00

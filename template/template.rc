@@ -1,0 +1,36 @@
+#include "windows.h"
+#include "resource.h"
+
+MY_ICON  ICON    DISCARDABLE     "template.ico"
+
+MAINMENU MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       EXIT_CHOICE
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Create",                     CREATE_CHOICE
+        MENUITEM "&Delete",                     DELETE_CHOICE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Advanced Machine Setup",      ADV_MACHINE_SETUP_CHOICE
+    END
+END
+
+BROUSE_DIALOG DIALOG 0, 0, 240, 120
+STYLE WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+{
+ CONTROL "OK",     IDOK,              "BUTTON",  BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 186, 6, 50, 14
+ CONTROL "Cancel", IDCANCEL,          "BUTTON",  BS_PUSHBUTTON | BS_CENTER | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 186, 26, 50, 14
+ CONTROL "",       DIRECTORY_LISTBOX, "listbox", LBS_STANDARD | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 28, 28, 116, 66, 0
+}
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Main Window Title"
+END
+

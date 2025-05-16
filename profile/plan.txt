@@ -1,0 +1,36 @@
+New Status Screen
+
+Columns
+
+Each column is chosen by the user from a list of available column types.
+The height of the header control can be set as well as the width and the
+text.
+
+The font can be changed as well. One font is used for both the header
+control and the rows.
+
+The column type is just a number. 0 = cycle start, 1 = machine name,
+etc. Numbers beginning with 100 are parameters from the most recent
+shot.
+
+Rows
+
+Each row shows the values for one die cast machine. All machines will be
+displayed (? Runlist, my own list?)
+
+The following are events that will update the row.
+    1. Monitor change. I will check to see if the part name has changed.
+    2. New shot
+    3. Downtime status change
+    4. 1 minute timer. If I am displaying downtime minutes I will update
+       them every minute.
+
+Parameter values will display in red if they are in alarm.
+
+Downtime
+total minutes = now - start_of_shift
+total up      = sum of times from start_of_shift until now
+
+SYSTEMTIME & start_of_shift( const SYSTEMTIME & now );
+unsigned long downtime_seconds(                        const SYSTEMTIME & start_time, CONST SYSTEMTIME & end_time );
+

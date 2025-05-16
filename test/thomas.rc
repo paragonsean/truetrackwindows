@@ -1,0 +1,27 @@
+#include "windows.h"
+
+#include "resrc2.h"
+#include "thomas.h"
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+MY_ICON                 ICON    DISCARDABLE     "thomas.ico"
+
+BROUSE_DIALOG DIALOG DISCARDABLE  0, 0, 251, 78
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Begin",IDOK,64,51,50,14,BS_CENTER
+    PUSHBUTTON      "Cancel",IDCANCEL,127,51,50,14,BS_CENTER
+    LTEXT           "This program will add a setup screen to the part editor. The executables folder on your system is:",
+                    IDC_STATIC,0,0,241,18
+    LTEXT           "Static",EXES_PATH_TBOX,41,23,200,10
+END
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Part Editor Update"
+END
+

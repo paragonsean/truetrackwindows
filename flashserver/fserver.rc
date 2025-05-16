@@ -1,0 +1,135 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MY_ICON                 ICON    DISCARDABLE     "fserver.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+TCPIP_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 141, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Flash Server Tcp/Ip Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Tcp/Ip Address",IDC_STATIC,5,4,50,8,NOT WS_GROUP
+    EDITTEXT        TCP_IP_ADDRESS_EBOX,60,3,78,10,WS_GROUP
+    DEFPUSHBUTTON   "Connect",TCPIP_CONNECT_BUTTON,30,37,50,12
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,85,37,40,12
+    EDITTEXT        TCP_IP_PORT_EBOX,60,20,78,10,WS_GROUP
+    RTEXT           "Port Number",IDC_STATIC,5,19,50,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Enable Board",               ENABLE_BOARD_CHOICE
+        MENUITEM "E&xit",                       EXIT_CHOICE
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Edit &Address",               EDIT_ADDRESS_CHOICE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Clear Listbox",              CLEAR_LISTBOX_CHOICE
+        MENUITEM "&Enable Listing",             ENABLE_LISTING_CHOICE
+        MENUITEM "&Send Test Message",          TEST_MESSAGE_CHOICE
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    CREATE_FAILED_STRING    "Create Failed"
+    UNABLE_TO_CONTINUE_STRING "Unable to Continue"
+    MAIN_WINDOW_TITLE_STRING "Flash Server"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

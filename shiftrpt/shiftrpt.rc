@@ -1,0 +1,283 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Reload Downtime Cagegories", RELOAD_DOWNTIME_CATEGORIES_MENU_CHOICE
+
+        MENUITEM "&Print",                      PRINT_MENU_CHOICE
+        MENUITEM "E&xit",                       EXIT_MENU_CHOICE
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "F5 Select Machines",          SELECT_MACHINES_MENU_CHOICE
+        MENUITEM "F6 Time Range",               TIME_RANGE_MENU_CHOICE
+        MENUITEM "F7 Color",                    COLOR_MENU_CHOICE
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "F8 Show All",                 SHOW_ALL_MENU_CHOICE
+        MENUITEM "&Zoom",                       ZOOM_MENU_CHOICE
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MAIN_DIALOG DIALOG DISCARDABLE  0, 0, 512, 196
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Shifts",SHIFTS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP,0,0,30,12
+    CONTROL         "Days",DAYS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,30,0,30,12
+    CONTROL         "Weeks",WEEKS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,60,0,30,12
+    CONTROL         "Months",MONTHS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,90,0,30,12
+    CONTROL         "All",ALL_DATES_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,120,0,30,12
+    PUSHBUTTON      "Prev",PREV_PB,157,0,24,12,WS_GROUP
+    PUSHBUTTON      "Next",NEXT_PB,181,0,24,12
+    CONTROL         "Combine",ADD_NEW_DATA_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,214,0,45,12
+    PUSHBUTTON      "Reload",RELOAD_PB,259,0,30,12
+    PUSHBUTTON      "Machines",SELECT_MACHINES_PB,290,0,39,12
+    PUSHBUTTON      "Print...",PRINT_PB,330,0,27,12
+    PUSHBUTTON      "Write CSV",WRITE_CSV_PB,357,0,36,12
+    CONTROL         "Legend",SHOW_LEGEND_XBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,396,0,39,12
+    PUSHBUTTON      "Save",SAVE_CONFIG_PB,437,0,24,12
+    PUSHBUTTON      "Load",LOAD_CONFIG_PB,461,0,24,12
+    PUSHBUTTON      "Range",EDIT_RANGE_PB,485,0,26,12
+END
+
+SELECT_MACHINES_DIALOG DIALOG DISCARDABLE  0, 0, 121, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Machines to Display"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,9,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,155,50,14
+    LISTBOX         MACHINE_LB,10,26,64,123,LBS_SORT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Machines",IDC_STATIC,25,12,32,8
+    LTEXT           "Select the machines to be displayed in the shift report. ",
+                    IDC_STATIC,79,36,42,46
+    PUSHBUTTON      "All",ALL_MACHINES_PB,80,116,29,11
+    PUSHBUTTON      "None",NO_MACHINES_PB,80,129,29,11
+END
+
+SAVE_AS_DIALOG DIALOG DISCARDABLE  0, 0, 175, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save Report"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,29,124,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,89,124,50,14
+    COMBOBOX        SAVE_AS_CBOX,7,6,158,116,CBS_SIMPLE | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+REPORT_TIME_RANGE_DIALOG DIALOG DISCARDABLE  0, 0, 400, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Report Time Range"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Report Title:",IDC_STATIC,3,8,40,8
+    EDITTEXT        PLOT_TITLE_EBOX,48,6,345,12,ES_AUTOHSCROLL
+    LTEXT           "Months",IDC_STATIC,59,27,24,12,SS_CENTERIMAGE
+    LTEXT           "Weeks",IDC_STATIC,122,27,24,12,SS_CENTERIMAGE
+    LTEXT           "Days",IDC_STATIC,185,27,17,12,SS_CENTERIMAGE
+    LTEXT           "Shifts",IDC_STATIC,241,27,18,12,SS_CENTERIMAGE
+    EDITTEXT        START_MONTHS_EBOX,89,27,25,12,ES_AUTOHSCROLL
+    EDITTEXT        START_WEEKS_EBOX,152,27,25,12,ES_AUTOHSCROLL
+    EDITTEXT        START_DAYS_EBOX,209,27,25,12,ES_AUTOHSCROLL
+    EDITTEXT        START_SHIFTS_EBOX,268,27,25,12,ES_AUTOHSCROLL
+    LTEXT           "Months",IDC_STATIC,60,44,24,12,SS_CENTERIMAGE
+    LTEXT           "Weeks",IDC_STATIC,122,44,24,12,SS_CENTERIMAGE
+    LTEXT           "Days",IDC_STATIC,186,44,17,12,SS_CENTERIMAGE
+    LTEXT           "Shifts",IDC_STATIC,242,44,18,12,SS_CENTERIMAGE
+    EDITTEXT        END_MONTHS_EBOX,90,44,25,12,ES_AUTOHSCROLL
+    EDITTEXT        END_WEEKS_EBOX,152,44,25,12,ES_AUTOHSCROLL
+    EDITTEXT        END_DAYS_EBOX,210,44,25,12,ES_AUTOHSCROLL
+    EDITTEXT        END_SHIFTS_EBOX,268,44,25,12,ES_AUTOHSCROLL
+    LTEXT           "Start",IDC_STATIC,20,27,24,12,SS_CENTERIMAGE
+    LTEXT           "End",IDC_STATIC,20,44,24,12,SS_CENTERIMAGE
+    LTEXT           "The report will include all data from the start of the ""Start"" shift to the end of the ""End"" shift. ",
+                    IDC_STATIC,7,65,289,8
+    LTEXT           "Ex. 1  To include all of yeasterday's data put a -1 in the Start Days and the End Days and leave everything else blank.",
+                    IDC_STATIC,7,79,370,8
+    LTEXT           "Ex. 2  To include all of the current shift's data put a 0 in the Start Shifts and the End Shifts and leave everything else blank.",
+                    IDC_STATIC,7,90,386,8
+    LTEXT           "Ex. 3  To include all of the today's data up to the shift before this one put a 0 in the Start Days and a -1 in the End Shifts.",
+                    IDC_STATIC,7,102,378,8
+    DEFPUSHBUTTON   "Save",IDOK,146,117,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,203,117,50,14
+    LTEXT           "Note: These hanges are SAVED to the current report. If you wish to create a new report, save the report to a new name first and then make changes here.",
+                    IDC_STATIC,11,139,377,18
+END
+
+WRITE_CSV_DIALOG DIALOG DISCARDABLE  0, 0, 351, 41
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Write CSV File"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        CSV_FILE_NAME_EBOX,57,6,281,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,169,23,50,14
+    DEFPUSHBUTTON   "Write File",IDOK,111,23,50,14
+    LTEXT           "CSV File Name:",IDC_STATIC,3,8,50,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "MAIN_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 302
+        BOTTOMMARGIN, 195
+    END
+
+    "SELECT_MACHINES_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    "SAVE_AS_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    "REPORT_TIME_RANGE_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MY_ICON                 ICON    DISCARDABLE     "shiftrpt.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Shift Report"
+    CREATE_FAILED_STRING    "Creation Failure"
+    THREAD_STRING           "Thread"
+    HOURS_STRING            "Hours"
+    DAYS_STRING             "Days"
+    MONTHS_STRING           "Months"
+    SAVE_REPORT_STRING      "Save Report"
+    LOAD_REPORT_STRING      "Load Report"
+    LOAD_STRING             "Load"
+    SAVE_STRING             "Save"
+    ZOOM_POPUP_STRING       "Zoom"
+    FONT_POPUP_STRING       "Choose Font"
+    PRINTER_LIST_STRING     "Printer List [EnumPrinters]"
+    NO_MEMORY_STRING        "Unable to allocate memory"
+    PRINTER_FONT_POPUP_STRING "Choose Printer Font"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

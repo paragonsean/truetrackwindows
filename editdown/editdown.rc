@@ -1,0 +1,169 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+EDITDOWN_DIALOG DIALOG DISCARDABLE  0, 0, 427, 214
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Date",-1,21,13,20,8,NOT WS_GROUP
+    LTEXT           "Time",-1,60,13,20,8,NOT WS_GROUP
+    LTEXT           "Code",-1,93,13,20,8,NOT WS_GROUP
+    LTEXT           "Category",-1,134,13,32,8,NOT WS_GROUP
+    LTEXT           "Sub-Category",-1,200,13,47,8,NOT WS_GROUP
+    LTEXT           "Part",-1,282,13,17,8,NOT WS_GROUP
+    LTEXT           "Operator",-1,320,13,33,8,NOT WS_GROUP
+    LTEXT           "Date",-1,13,143,20,8,NOT WS_GROUP
+    LTEXT           "Time",-1,13,163,20,8,NOT WS_GROUP
+    LTEXT           "Code",-1,88,144,20,8,NOT WS_GROUP
+    LTEXT           "Category",-1,169,143,32,8,NOT WS_GROUP
+    LTEXT           "Sub-Category",-1,169,159,47,8,NOT WS_GROUP
+    LTEXT           "Part",-1,306,141,17,8,NOT WS_GROUP
+    LTEXT           "Operator",-1,306,161,33,8,NOT WS_GROUP
+    LISTBOX         DOWNTIME_LISTBOX,12,24,390,108,LBS_USETABSTOPS |
+                    LBS_WANTKEYBOARDINPUT | WS_TABSTOP
+    EDITTEXT        DATE_EDITBOX,34,141,43,12
+    EDITTEXT        TIME_EDITBOX,34,161,43,12
+    EDITTEXT        CODE_EDITBOX,110,142,43,12
+    PUSHBUTTON      "Save Changes",SAVE_CHANGES_BUTTON,181,185,66,19,
+                    BS_CENTER
+    COMBOBOX        CAT_COMBOBOX,218,142,81,51,CBS_DROPDOWN | WS_VSCROLL |
+                    WS_TABSTOP
+    COMBOBOX        SUB_CAT_COMBOBOX,218,159,81,45,CBS_DROPDOWN | WS_VSCROLL |
+                    WS_TABSTOP
+    COMBOBOX        PART_COMBOBOX,340,138,50,44,CBS_DROPDOWN | CBS_SORT |
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        OPERATOR_COMBOBOX,340,155,75,49,CBS_DROPDOWN | CBS_SORT |
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New",ADD_BUTTON,350,190,66,14,BS_CENTER
+    SCROLLBAR       DOWNTIME_SCROLBAR,402,22,9,112,SBS_VERT
+    LTEXT           "Text15",MACHINE_NAME_TEXTBOX,214,2,33,8,NOT WS_GROUP
+    LTEXT           "Machine:",-1,181,2,33,8,NOT WS_GROUP
+    PUSHBUTTON      "Purge All",PURGE_BUTTON,10,190,66,14,BS_CENTER |
+                    WS_DISABLED
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+EDITDOWN_HOT_KEYS ACCELERATORS MOVEABLE PURE
+BEGIN
+    VK_F2,          F2_KEY,                 VIRTKEY
+    VK_F9,          F9_KEY,                 VIRTKEY
+    VK_INSERT,      INSERT_KEY,             VIRTKEY
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+EDITDOWN_ICON           ICON    DISCARDABLE     "editdown.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    NOTHING_TO_SAVE_STRING  "Nothing To Save"
+    NO_CHANGES_MADE_STRING  "No changes have been made."
+    CANNOT_UPDATE_STRING    "Cannot update downtime table"
+    UNABLE_TO_COMPLY_STRING "Unable to Comply"
+    NEW_RECORD_NOT_SAVED_STRING
+                            "The new record has not been saved and will be deleted"
+    RETURN_TO_NEW_STRING    "Do you wish to return to the new record?"
+    NO_DATE_CHANGE_STRING   "New Date = Old Date"
+    WILL_REPLACE_ORIGINAL_STRING "Original will be REPLACED. Continue?"
+    SEMAPHOR_FAIL_STRING    "Cannot own machine semaphor db"
+    SCROLL_CHANGES_STRING   "Changes will be lost if you continue to scroll"
+    CONTINUE_SCROLL_STRING  "Continue to scroll?"
+    PURGE_ALL_DOWNTIMES_STRING "All but the last downtime will be DELETED"
+    CONTINUE_STRING         "Continue?"
+    MAIN_WINDOW_TITLE_STRING "Edit Downtimes"
+    NOT_FOUND_ERROR_STRING  "Not Found"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    NO_NAME_STRING          "Unknown"
+    NO_NUMBER_STRING        "??"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

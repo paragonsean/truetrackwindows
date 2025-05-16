@@ -1,0 +1,54 @@
+TCHAR * operator[row][col]
+add_row( new_row )
+kill_row( dead_row )
+current_row()
+rewind();
+next();
+load
+save
+ 
+ 
+ 
+stddown
+ 
+class DB_ARRAY_CLASS
+    {
+    private:
+    int nof_rows;
+    int nof_cols;
+    int * colwidth;
+    TCHAR ** p;
+ 
+    void clean_up();
+ 
+    public:
+    DB_ARRAY_CLASS() { p = 0; colwidth = 0; nof_rows = 0; nof_cols = 0; }
+    ~DB_ARRAY_CLASS();
+    int     col_count( void ) { return nof_cols; }
+    int     row_count( void ) { return nof_rows; }
+    TCHAR * operator[][]( int row, int col );
+    bool add_row( int new_row_index, int nof_new_rows );
+    bool add_row( int new_row_index ) { return add_row( new_row_index, 1 ); }
+    bool del_row( int dead_row_index );
+    set( int  row, int  col, TCHAR * newtext );
+    read( TCHAR * path );
+    write( TCHAR * path );
+    }
+ 
+ 
+void clean_up()
+{
+int i;
+ 
+if ( p )
+    {
+ 
+    for ( i=0; i<n
+ 
+    }
+ 
+ 
+ 
+ 
+ 
+da[r][c]

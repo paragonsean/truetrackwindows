@@ -1,0 +1,1488 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcg.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+PARAMETER_LIMITS DIALOG DISCARDABLE  76, 25, 318, 127
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Warn-Grenzwerte ",WARN_LIMITS_STATIC,118,2,83,9,
+                    SS_SUNKEN
+    CTEXT           "Alarm-Grenzwerte",ALARM_LIMITS_STATIC,206,2,83,9,
+                    SS_SUNKEN
+    LTEXT           "Einh.",UNITS_STATIC,93,13,18,9
+    LTEXT           "Param.-Beschreibung",PARAM_DESC_STATIC,7,13,71,8
+    LTEXT           "unter.",LOW_STATIC,119,13,19,8
+    LTEXT           "Ausg.",WIRE_STATIC,141,13,19,8
+    LTEXT           "ober.",HIGH_STATIC,162,13,18,9
+    LTEXT           "Ausg.",IDC_STATIC,184,13,17,8
+    LTEXT           "unter.",IDC_STATIC,209,13,19,8
+    LTEXT           "Ausg.",IDC_STATIC,231,13,18,8
+    LTEXT           "ober.",IDC_STATIC,254,13,17,8
+    LTEXT           "Ausg.",IDC_STATIC,276,13,19,8
+    LISTBOX         PARAMETER_LIMIT_LISTBOX,5,23,310,93,LBS_USETABSTOPS |
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Entfernen",REMOVE_PARAMETER_BUTTON,7,1,38,11,BS_CENTER
+    PUSHBUTTON      "Hinzufügen",ADD_PARAMETER_BUTTON,58,1,44,11,BS_CENTER
+    PUSHBUTTON      "0",GOOD_SHOT_WIRE_PB,10,115,14,11
+    CONTROL         "Guter-Schuss-Ausg nur wenn warnungsfrei einschalten",
+                    GOOD_SHOT_NO_WARNINGS_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,116,116,196,8
+    LTEXT           "Guter-Schuss-Ausgang",IDC_STATIC,28,116,82,8
+END
+
+USER_DEFINED_POSITIONS DIALOG DISCARDABLE  80, 25, 345, 95
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "1",IDC_STATIC,38,29,8,8
+    LTEXT           "2",IDC_STATIC,38,41,8,8
+    LTEXT           "3",IDC_STATIC,38,53,8,8
+    LTEXT           "4",IDC_STATIC,38,65,9,8
+    LTEXT           "1",IDC_STATIC,232,28,8,8
+    LTEXT           "2",IDC_STATIC,232,40,8,8
+    LTEXT           "3",IDC_STATIC,232,53,8,8
+    LTEXT           "4",IDC_STATIC,232,66,9,8
+    LTEXT           "1",IDC_STATIC,142,29,8,8
+    LTEXT           "2",IDC_STATIC,142,41,8,8
+    LTEXT           "3",IDC_STATIC,142,53,8,8
+    LTEXT           "4",IDC_STATIC,142,65,9,8
+    LTEXT           "Grenzsch auf folgd. Plätze setzen",LS_POS_STATIC,4,32,
+                    30,35
+    LTEXT           "Start- Punkt",START_POS_STATIC,242,10,29,16
+    LTEXT           "End- Punkt",END_POS_STATIC,275,10,30,16
+    LTEXT           "Mittleren Vorschub in folgend.  Bereichen messen",
+                    AVG_VEL_RANGE_STATIC,192,29,35,41
+    LTEXT           "Standort ",POSITION_STATIC,46,17,32,8
+    LTEXT           "Vorschb an folgd. Plätzen messen",VEL_POS_STATIC,110,32,
+                    28,35
+    LTEXT           "Standort ",IDC_STATIC,153,17,29,8
+    EDITTEXT        LIMIT_SWITCH_POSITION_1_EDITBOX,48,28,27,12
+    EDITTEXT        LIMIT_SWITCH_POSITION_2_EDITBOX,48,40,27,12
+    EDITTEXT        LIMIT_SWITCH_POSITION_3_EDITBOX,48,52,27,12
+    EDITTEXT        LIMIT_SWITCH_POSITION_4_EDITBOX,48,64,27,12
+    EDITTEXT        VELOCITY_POSITION_1_EDITBOX,152,28,27,12
+    EDITTEXT        VELOCITY_POSITION_2_EDITBOX,152,40,27,12
+    EDITTEXT        VELOCITY_POSITION_3_EDITBOX,152,52,27,12
+    EDITTEXT        VELOCITY_POSITION_4_EDITBOX,152,64,27,12
+    EDITTEXT        AVG_VELOCITY_START_1_EDITBOX,242,28,27,12
+    EDITTEXT        AVG_VELOCITY_END_1_EDITBOX,274,28,27,12
+    EDITTEXT        AVG_VELOCITY_START_2_EDITBOX,242,40,27,12
+    EDITTEXT        AVG_VELOCITY_END_2_EDITBOX,274,40,27,12
+    EDITTEXT        AVG_VELOCITY_START_3_EDITBOX,242,52,27,12
+    EDITTEXT        AVG_VELOCITY_END_3_EDITBOX,274,52,27,12
+    EDITTEXT        AVG_VELOCITY_START_4_EDITBOX,242,64,27,12
+    EDITTEXT        AVG_VELOCITY_END_4_EDITBOX,274,64,27,12
+    LTEXT           "Wire",LS_WIRE_STATIC,81,17,16,8
+    PUSHBUTTON      "",LS_WIRE_1_PB,81,28,14,11
+    PUSHBUTTON      "",LS_WIRE_2_PB,81,40,14,11
+    PUSHBUTTON      "",LS_WIRE_3_PB,81,52,14,11
+    PUSHBUTTON      "",LS_WIRE_4_PB,81,64,14,11
+END
+
+ADVANCED_SETUP DIALOG DISCARDABLE  80, 25, 354, 86
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        PLUNGER_DIAMETER_EDITBOX,48,8,41,12
+    EDITTEXT        SLEEVE_FILL_DISTANCE_EDITBOX,48,20,41,12
+    EDITTEXT        RUNNER_FILL_DISTANCE_EDITBOX,48,32,41,12
+    EDITTEXT        CSFS_MIN_POSITION_EDITBOX,48,44,41,12
+    EDITTEXT        CSFS_MIN_VELOCITY_EDITBOX,48,56,41,12
+    EDITTEXT        CSFS_RISE_VELOCITY_EDITBOX,171,8,41,12
+    EDITTEXT        TIME_FOR_INTENS_PRES_EDITBOX,171,20,41,12
+    EDITTEXT        PRES_FOR_RESPONSE_TIME_EDITBOX,171,32,41,12
+    EDITTEXT        BISCUIT_TIME_DELAY_EDITBOX,171,44,41,12
+    LTEXT           "Stempeldurchmesser",PLUNGER_DIAMETER_STATIC,92,10,71,11
+    LTEXT           "Abstand von P1 zu P3",P1_TO_P3_STATIC,92,22,77,11
+    LTEXT           "Abstand von P2 zu P3",P2_TO_P3_STATIC,92,34,76,11
+    LTEXT           "Min. CSFS-Wegstrecke",MIN_CSFS_POS_STATIC,92,46,76,10
+    LTEXT           "Min. CSFS-Vorschub",MIN_CSFS_VEL_STATIC,92,58,75,11
+    LTEXT           "Verzögerung Tablette(n) ",BISCUIT_TIME_DELAY_STATIC,215,
+                    45,83,11
+    LTEXT           "Steigrate für CSFS",VEL_FOR_RISE_STATIC,215,10,74,11
+    LTEXT           "Nachdruckzeit (ms)",TIME_FOR_INTENS_STATIC,215,21,84,11
+    LTEXT           "Druck für Reaktionszeit",PRES_FOR_RESPONSE_STATIC,215,
+                    33,96,11
+END
+
+BASIC_SETUP DIALOG DISCARDABLE  70, 21, 257, 86
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Zoll",INCHES_BUTTON,"Button",BS_AUTORADIOBUTTON |
+                    WS_GROUP | WS_TABSTOP,85,6,36,12
+    CONTROL         "Millimeter",MM_BUTTON,"Button",BS_AUTORADIOBUTTON,121,6,
+                    48,12
+    CONTROL         "Zentimeter",CM_BUTTON,"Button",BS_AUTORADIOBUTTON,169,6,
+                    49,12
+    CONTROL         "Z/s",IPS_BUTTON,"Button",BS_AUTORADIOBUTTON | WS_GROUP |
+                    WS_TABSTOP,85,21,23,12
+    CONTROL         "F/s",FPM_BUTTON,"Button",BS_AUTORADIOBUTTON,115,21,27,
+                    12
+    CONTROL         "cm/s",CMPS_BUTTON,"Button",BS_AUTORADIOBUTTON,149,21,32,
+                    12
+    CONTROL         "m/s",MPS_BUTTON,"Button",BS_AUTORADIOBUTTON,188,21,30,
+                    12
+    EDITTEXT        TOTAL_STROKE_LEN_EDITBOX,31,41,37,12,WS_GROUP
+    EDITTEXT        MIN_STROKE_LEN_EDITBOX,31,54,37,12
+    EDITTEXT        EOS_VEL_EDITBOX,31,67,37,12
+    LTEXT           "Maßeinheiten:",DISTANCE_UNITS_STATIC,33,8,52,10
+    LTEXT           "Vorschub-Einh.",VELOCITY_UNITS_STATIC,34,22,49,10
+    CONTROL         "",DIST_UNITS_STATIC,"Static",SS_BLACKFRAME,31,5,189,14
+    CONTROL         "",VEL_UNITS_STATIC,"Static",SS_BLACKFRAME,31,20,189,14
+    LTEXT           "Gesamt-Hublänge",TOTAL_STROKE_STATIC,71,42,68,10
+    LTEXT           "Mindest-Hublänge",MIN_STROKE_STATIC,71,55,80,10
+    LTEXT           "Vorschub Schussende ",EOS_STATIC,71,68,76,9
+END
+
+MAIN_DIALOG DIALOG DISCARDABLE  0, 0, 430, 203
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE | WS_CLIPCHILDREN
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        MACHINE_LISTBOX_ID,6,28,48,80,CBS_DROPDOWNLIST |
+                    CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LISTBOX         PART_LISTBOX_ID,5,53,66,97,LBS_SORT | WS_VSCROLL |
+                    WS_TABSTOP
+    CONTROL         "Tab1",TAB_CONTROL_ID,"SysTabControl32",TCS_MULTILINE |
+                    WS_TABSTOP,76,16,348,170
+    PUSHBUTTON      "Gussteil neu einrichten",CREATE_PART_BUTTON,2,2,79,14,
+                    BS_CENTER
+    PUSHBUTTON      "Dies.Teil löschen ",DELETE_PART_BUTTON,86,2,63,14,
+                    BS_CENTER
+    PUSHBUTTON      "In vorhandeneTeile kopier.",
+                    COPY_TO_EXISTING_PARTS_BUTTON,156,2,87,14,BS_CENTER
+    PUSHBUTTON      "In andere Maschine kopier.",COPY_MULTIPLE_BUTTON,250,2,
+                    96,14,BS_CENTER
+    PUSHBUTTON      "Kalkulationen",CALCULATOR_BUTTON,353,2,52,14,BS_CENTER
+    PUSHBUTTON      "Dieses Teil &überwachen",MONITOR_THIS_PART_BUTTON,76,
+                    187,80,14,BS_CENTER
+    PUSHBUTTON      "Änderungen &speichern",SAVE_CHANGES_BUTTON,167,187,80,
+                    14
+    PUSHBUTTON      "Gespeich.Einstellg. &zurückladen",RELOAD_BUTTON,260,187,
+                    105,14
+    PUSHBUTTON      "&Drucken",MAIN_PRINT_BUTTON,374,187,50,14
+    CTEXT           "Maschine",IDC_STATIC,6,19,36,8,NOT WS_GROUP
+    LTEXT           "Gussteil",IDC_STATIC,7,43,29,8,NOT WS_GROUP
+    LTEXT           "Wechsel",IDC_STATIC,30,180,29,8,NOT WS_GROUP
+    LTEXT           "Bildschärfe",IDC_STATIC,31,188,37,8,NOT WS_GROUP
+    LTEXT           "F10:",IDC_STATIC,13,185,14,8
+END
+
+PROFILE_MARKS DIALOG DISCARDABLE  0, 0, 234, 79
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,152,20,42,34
+    LTEXT           "Text für Quellangaben",MARK_SOURCE_DESCRIPTION_STATIC,
+                    22,8,72,10
+    CTEXT           "Farbe",MARK_COLOR_CHOICE_STATIC,120,8,21,8
+    LTEXT           "Linienart",MARK_LINE_TYPE_STATIC,156,8,28,8
+    LTEXT           "Text",MARK_LABEL_STATIC,200,8,21,8
+    LISTBOX         MARKS_LISTBOX_ID,7,20,105,51,LBS_USETABSTOPS |
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         MARKS_COLOR_LISTBOX_ID,116,20,32,58,WS_TABSTOP
+    CONTROL         "keine",MARKS_NO_LINE_BUTTON,"Button",BS_AUTORADIOBUTTON |
+                    WS_TABSTOP,155,22,33,9
+    CONTROL         "vertikal",MARKS_VLINE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,155,32,38,9
+    CONTROL         "Basis",MARKS_BASE_LINE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,155,43,33,9
+    EDITTEXT        MARKS_LABEL_ID,197,20,30,12
+    PUSHBUTTON      "&Einfügen",MARKS_ADD_BUTTON,153,64,33,14
+    PUSHBUTTON      "&Löschen",MARKS_REMOVE_BUTTON,193,64,37,14
+END
+
+FASTRAK_CHANNELS DIALOG DISCARDABLE  80, 25, 341, 124
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        FT_CHANNEL_1_LISTBOX,28,15,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_2_LISTBOX,28,27,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_3_LISTBOX,28,39,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_4_LISTBOX,28,51,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "",HEAD_PRES_CHAN_1_BUTTON,"Button",BS_AUTORADIOBUTTON |
+                    WS_GROUP | WS_TABSTOP,161,17,8,8
+    CONTROL         "",HEAD_PRES_CHAN_2_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    161,30,8,8
+    CONTROL         "",HEAD_PRES_CHAN_3_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    161,43,8,8
+    CONTROL         "",HEAD_PRES_CHAN_4_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    161,55,8,8
+    CONTROL         "",HEAD_PRES_NO_CHAN_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    161,114,8,8
+    CONTROL         "",ROD_PRES_CHAN_1_BUTTON,"Button",BS_AUTORADIOBUTTON |
+                    WS_GROUP | WS_TABSTOP,177,17,8,8
+    CONTROL         "",ROD_PRES_CHAN_2_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    177,30,8,8
+    CONTROL         "",ROD_PRES_CHAN_3_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    177,43,8,8
+    CONTROL         "",ROD_PRES_CHAN_4_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    177,55,8,8
+    CONTROL         "",ROD_PRES_NO_CHAN_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    177,114,8,8
+    CTEXT           "Kopf Drck",HEAD_PRES_STATIC,152,1,19,17
+    CTEXT           "Stmp Drck",ROD_PRES_STATIC,172,1,20,17
+    LTEXT           "1",IDC_STATIC,12,17,8,8
+    LTEXT           "2",IDC_STATIC,12,29,8,8
+    LTEXT           "3",IDC_STATIC,12,41,8,8
+    LTEXT           "4",IDC_STATIC,12,53,8,8
+    LTEXT           "FasTrak Kanäle",FASTRAK_CHANNEL_STATIC,0,0,26,16
+    LTEXT           "Analoggeber",ANALOG_SENSOR_STATIC,68,5,46,8
+    LTEXT           "Keines",IDC_STATIC,134,115,22,8
+    PUSHBUTTON      "Analoggeber-Einstellungen",EDIT_ANALOG_SENSORS_BUTTON,
+                    248,112,92,12,BS_CENTER
+    EDITTEXT        CHAN_1_AXIS_LABEL_EBOX,199,16,45,12,ES_AUTOHSCROLL
+    EDITTEXT        CHAN_2_AXIS_LABEL_EBOX,199,28,45,12,ES_AUTOHSCROLL
+    EDITTEXT        CHAN_3_AXIS_LABEL_EBOX,199,40,45,12,ES_AUTOHSCROLL
+    EDITTEXT        CHAN_4_AXIS_LABEL_EBOX,199,52,45,12,ES_AUTOHSCROLL
+    CTEXT           "Kanalnamen",IDC_STATIC,196,0,43,16
+    LTEXT           "Kanalnamen erscheinen am Kurvenbild falls kontin. Kanäle beim  Einrichten der Anzeige gewählt wurde.",
+                    IDC_STATIC,257,34,48,69
+    PUSHBUTTON      "Erwaeiterte Kanäle",EXTENDED_CHANNELS_PB,271,0,69,12,
+                    BS_CENTER
+    EDITTEXT        CHAN_5_AXIS_LABEL_EBOX,200,66,45,12,ES_AUTOHSCROLL
+    EDITTEXT        CHAN_6_AXIS_LABEL_EBOX,200,78,45,12,ES_AUTOHSCROLL
+    EDITTEXT        CHAN_7_AXIS_LABEL_EBOX,200,90,45,12,ES_AUTOHSCROLL
+    EDITTEXT        CHAN_8_AXIS_LABEL_EBOX,200,102,45,12,ES_AUTOHSCROLL
+    COMBOBOX        FT_CHANNEL_5_LISTBOX,28,63,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_6_LISTBOX,28,75,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_7_LISTBOX,28,87,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_8_LISTBOX,28,99,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "",HEAD_PRES_CHAN_5_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    161,65,8,8
+    CONTROL         "",HEAD_PRES_CHAN_6_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    161,77,8,8
+    CONTROL         "",HEAD_PRES_CHAN_7_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    161,89,8,8
+    CONTROL         "",HEAD_PRES_CHAN_8_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    161,101,8,8
+    CONTROL         "",ROD_PRES_CHAN_5_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    177,65,8,8
+    CONTROL         "",ROD_PRES_CHAN_6_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    177,77,8,8
+    CONTROL         "",ROD_PRES_CHAN_7_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    177,89,8,8
+    CONTROL         "",ROD_PRES_CHAN_8_BUTTON,"Button",BS_AUTORADIOBUTTON,
+                    177,101,8,8
+    LTEXT           "5",CHAN_5_TBOX,12,65,8,8
+    LTEXT           "6",CHAN_6_TBOX,12,77,8,8
+    LTEXT           "7",CHAN_7_TBOX,12,89,8,8
+    LTEXT           "8",CHAN_8_TBOX,12,101,8,8
+END
+
+EXTENDED_CHANNELS DIALOG DISCARDABLE  80, 25, 223, 138
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Choose the Analog Sensors for the Extended Channels"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        FT_CHANNEL_1_LISTBOX,56,12,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_2_LISTBOX,56,24,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_3_LISTBOX,56,36,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_4_LISTBOX,56,48,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_5_LISTBOX,56,60,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_6_LISTBOX,56,72,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_7_LISTBOX,56,84,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        FT_CHANNEL_8_LISTBOX,56,96,125,120,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "9",IDC_STATIC,47,14,8,8
+    LTEXT           "10",IDC_STATIC,44,26,8,8
+    LTEXT           "11",IDC_STATIC,44,38,8,8
+    LTEXT           "12",IDC_STATIC,44,50,8,8
+    LTEXT           "13",CHAN_5_TBOX,44,62,8,8
+    LTEXT           "14",CHAN_6_TBOX,44,74,8,8
+    LTEXT           "15",CHAN_7_TBOX,44,86,8,8
+    LTEXT           "16",CHAN_8_TBOX,44,98,8,8
+    LTEXT           "Extended Channel",FASTRAK_CHANNEL_STATIC,7,51,34,17
+    LTEXT           "Analogmeßwertgeber",ANALOG_SENSOR_STATIC,82,2,67,8
+    PUSHBUTTON      "OK",IDOK,57,120,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,116,120,50,14
+END
+
+COPYTODIALOG DIALOG DISCARDABLE  0, 0, 241, 157
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "Kopieren in"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Abschnitte zu kopieren",101,60,4,175,73,WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,100,137,40,15
+    CTEXT           "Maschine",IDC_STATIC,9,2,33,8
+    COMBOBOX        1000,7,13,48,80,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL |
+                    WS_TABSTOP
+    LTEXT           "Gussteil",IDC_STATIC,8,28,27,8
+    LISTBOX         1012,6,36,51,98,LBS_SORT | LBS_EXTENDEDSEL | WS_VSCROLL |
+                    WS_TABSTOP
+    CONTROL         "Grundeinstellung.",1018,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,66,15,69,8
+    CONTROL         "Weitere Einstellung.",1019,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,66,25,74,8
+    CONTROL         "Parametergrenzen",1020,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,66,35,70,8
+    CONTROL         "Parameternamen",1026,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,66,45,72,8
+    CONTROL         "Profil-Textmarke",1022,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,66,65,66,8
+    CONTROL         "Fastrak-Kanäle",1023,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,153,15,70,8
+    GROUPBOX        "Kopieren von Gussteilen in",102,60,81,175,52,WS_GROUP
+    CONTROL         "Gewählte Gussteile",103,"Button",BS_AUTORADIOBUTTON |
+                    WS_TABSTOP,67,91,78,10
+    CONTROL         "Alle Teile der gewählten Maschine",104,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,67,101,124,10
+    CONTROL         "Alle Gussteile, alle Maschinen",105,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,67,111,106,10
+    CONTROL         "Gleiches Teil, alle Maschinen",106,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,67,121,106,10
+    CONTROL         "Bezugskennlinie",1024,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,153,25,70,8
+    CONTROL         "SureTrak-Schritte",1025,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,153,35,69,8
+    CONTROL         "Nutzerbestimmt.Punkt",1021,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,66,55,85,8
+    CONTROL         "Teil vorwärmen",1027,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,153,45,62,8
+    CONTROL         "Teilanzeige einrichten",1028,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,153,55,86,8
+    CONTROL         "Aufschrift Kanalachse",1029,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,153,65,84,8
+END
+
+SURETRAK_PROFILE DIALOG DISCARDABLE  0, 0, 345, 127
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,67,18,27,1
+    LTEXT           "Beschl.",ACCEL_STATIC,10,9,24,8,NOT WS_GROUP
+    LTEXT           "Vorschub",VELOCITY_STATIC,36,9,31,8,NOT WS_GROUP
+    LTEXT           "End- Punkt",ENDING_POS_STATIC,68,0,25,17,NOT WS_GROUP
+    CTEXT           "Vakuum warten",VACUUM_WAIT_STATIC,92,0,30,17,NOT
+                    WS_GROUP
+    LTEXT           "Stoss- reduz.",LOW_IMPACT_STATIC,124,0,26,17,NOT
+                    WS_GROUP
+    LTEXT           "Stossreduz. v. Eingang",LOW_IMPACT_FROM_INPUT_STATIC,
+                    150,0,40,17,NOT WS_GROUP
+    CTEXT           "Grenzschalterpunkte",LIMIT_SWITCH_POS_STATIC,190,16,76,
+                    10,NOT WS_GROUP
+    EDITTEXT        ACCEL_1_EDITBOX,9,18,27,12
+    EDITTEXT        VEL_1_EDITBOX,38,18,27,12
+    EDITTEXT        EP_1_EDITBOX,67,18,27,12
+    CONTROL         "",VW_1_CHECKBOX,"Button",BS_AUTOCHECKBOX | BS_MULTILINE |
+                    WS_TABSTOP,103,18,12,12
+    EDITTEXT        LI_1_EDITBOX,123,18,27,12
+    CONTROL         "",LIFI_1_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    162,18,12,12
+    EDITTEXT        ACCEL_2_EDITBOX,9,31,27,12
+    EDITTEXT        VEL_2_EDITBOX,38,31,27,12
+    EDITTEXT        EP_2_EDITBOX,67,31,27,12
+    CONTROL         "",VW_2_CHECKBOX,"Button",BS_AUTOCHECKBOX | BS_MULTILINE |
+                    WS_GROUP | WS_TABSTOP,103,31,12,12
+    EDITTEXT        LI_2_EDITBOX,123,31,27,12
+    CONTROL         "",LIFI_2_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    162,31,12,12
+    EDITTEXT        ACCEL_3_EDITBOX,9,44,27,12
+    EDITTEXT        VEL_3_EDITBOX,38,44,27,12
+    EDITTEXT        EP_3_EDITBOX,67,44,27,12
+    CONTROL         "",VW_3_CHECKBOX,"Button",BS_AUTOCHECKBOX | BS_MULTILINE |
+                    WS_TABSTOP,103,44,12,12
+    EDITTEXT        LI_3_EDITBOX,123,44,27,12
+    CONTROL         "",LIFI_3_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    162,44,12,12
+    EDITTEXT        ACCEL_4_EDITBOX,9,57,27,12
+    EDITTEXT        VEL_4_EDITBOX,38,57,27,12
+    EDITTEXT        EP_4_EDITBOX,67,57,27,12
+    CONTROL         "",VW_4_CHECKBOX,"Button",BS_AUTOCHECKBOX | BS_MULTILINE |
+                    WS_TABSTOP,103,57,12,12
+    EDITTEXT        LI_4_EDITBOX,123,57,27,12
+    CONTROL         "",LIFI_4_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    162,57,12,12
+    EDITTEXT        ACCEL_5_EDITBOX,9,70,27,12
+    EDITTEXT        VEL_5_EDITBOX,38,70,27,12
+    EDITTEXT        EP_5_EDITBOX,67,70,27,12
+    CONTROL         "",VW_5_CHECKBOX,"Button",BS_AUTOCHECKBOX | BS_MULTILINE |
+                    WS_TABSTOP,103,70,12,12
+    EDITTEXT        LI_5_EDITBOX,123,70,27,12
+    CONTROL         "",LIFI_5_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    162,70,12,12
+    EDITTEXT        ACCEL_6_EDITBOX,9,83,27,12
+    EDITTEXT        VEL_6_EDITBOX,38,83,27,12
+    EDITTEXT        EP_6_EDITBOX,67,83,27,12
+    CONTROL         "",VW_6_CHECKBOX,"Button",BS_AUTOCHECKBOX | BS_MULTILINE |
+                    WS_TABSTOP,103,83,12,12
+    EDITTEXT        LI_6_EDITBOX,123,83,27,12
+    CONTROL         "",LIFI_6_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    162,83,12,12
+    RTEXT           "GS 1",LS1_DESC_TBOX,177,28,67,10,NOT WS_GROUP
+    RTEXT           "GS 2",LS2_DESC_TBOX,178,40,69,10,NOT WS_GROUP
+    RTEXT           "GS 3",LS3_DESC_TBOX,178,52,69,10,NOT WS_GROUP
+    RTEXT           "GS 4",LS4_DESC_TBOX,178,64,69,10,NOT WS_GROUP
+    EDITTEXT        LS1_EDITBOX,248,26,22,12
+    EDITTEXT        LS2_EDITBOX,248,38,22,12
+    EDITTEXT        LS3_EDITBOX,248,50,22,12
+    EDITTEXT        LS4_EDITBOX,248,62,22,12
+    LTEXT           "1.",IDC_STATIC,1,20,8,12,NOT WS_GROUP
+    LTEXT           "2.",IDC_STATIC,1,33,8,12,NOT WS_GROUP
+    LTEXT           "3.",IDC_STATIC,1,46,8,12,NOT WS_GROUP
+    LTEXT           "4.",IDC_STATIC,1,59,8,12,NOT WS_GROUP
+    LTEXT           "5.",IDC_STATIC,1,72,8,12,NOT WS_GROUP
+    LTEXT           "6.",IDC_STATIC,1,84,8,12,NOT WS_GROUP
+    CTEXT           "Keine Änderung gespeichert",HAVE_ST_MOD_TBOX,68,108,95,
+                    8,NOT WS_GROUP
+    PUSHBUTTON      "MS-DOS",DOS_BACKUP_BUTTON,0,103,32,12,BS_CENTER | NOT
+                    WS_TABSTOP
+    CTEXT           "Ausgangsstellg Schnellschuss",FS_POSITION_MSG_TBOX,174,
+                    77,97,8,NOT WS_GROUP
+    EDITTEXT        VEL_LOOP_GAIN_EBOX,292,17,32,12
+    EDITTEXT        BREAK_VEL_1_EBOX,294,49,28,12
+    EDITTEXT        BREAK_GAIN_1_EBOX,323,49,18,12
+    EDITTEXT        BREAK_VEL_2_EBOX,294,62,28,12
+    EDITTEXT        BREAK_GAIN_2_EBOX,323,62,18,12
+    EDITTEXT        BREAK_VEL_3_EBOX,294,75,28,12
+    EDITTEXT        BREAK_GAIN_3_EBOX,323,75,18,12
+    RTEXT           "Vorschubkreis -Verstärkung ",VEL_LOOP_GAIN_STATIC,281,0,
+                    48,16,NOT WS_GROUP
+    LTEXT           "Vorsch.",BREAK_VEL_STATIC,294,40,26,8,NOT WS_GROUP
+    CTEXT           "Vrstärk",BREAK_GAIN_STATIC,321,40,23,8,NOT WS_GROUP
+    LTEXT           "Verlaufwechsel ",BREAK_1_STATIC,293,31,51,8
+    LTEXT           "1",IDC_STATIC,287,51,5,8
+    LTEXT           "2",IDC_STATIC,287,65,5,8
+    LTEXT           "3",IDC_STATIC,287,78,5,8
+    GROUPBOX        "Vorwärmschuss",WARMUP_GROUP_STATIC,173,100,172,26
+    LTEXT           "Ausg.",IDC_STATIC,275,111,19,8
+    CONTROL         "aktiv",WARMUP_ENABLE_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,177,111,36,10
+    COMBOBOX        WARMUP_PART_CBOX,215,109,55,74,CBS_DROPDOWNLIST |
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        WARMUP_WIRE_EBOX,297,109,16,12,ES_AUTOHSCROLL
+    LTEXT           "ist",IDC_STATIC,316,111,8,10
+    CONTROL         "Aus",WARMUP_RUN_IF_ON_XBOX,"Button",BS_AUTOCHECKBOX |
+                    BS_PUSHLIKE | WS_TABSTOP,324,108,18,14
+    PUSHBUTTON      "Mehrf. Ablaufliste bearb.",
+                    EDIT_MULTIPART_RUNLIST_BUTTON,189,0,78,13
+    PUSHBUTTON      "",LS1_WIRE_PB,271,26,14,12
+    PUSHBUTTON      "",LS2_WIRE_PB,271,38,14,12
+    PUSHBUTTON      "",LS3_WIRE_PB,271,50,14,12
+    PUSHBUTTON      "",LS4_WIRE_PB,271,62,14,12
+    LTEXT           "Eing",ST_LS_WIRE_STATIC,269,16,15,8
+    LTEXT           "Halt-pkt Stemp-durchfolge",FT_STOP_POS_STATIC,175,89,83,
+                    8
+    EDITTEXT        FT_STOP_POS_EBOX,283,89,22,12,ES_AUTOHSCROLL
+END
+
+PRESSURE_CONTROL_PROFILE DIALOG DISCARDABLE  0, 0, 345, 114
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,128,65,27,1
+    CTEXT           "Beschl (ms)",RAMP_STATIC,17,47,24,16,NOT WS_GROUP
+    LTEXT           "Druck",PRES_STATIC,73,56,27,8,NOT WS_GROUP
+    CTEXT           "End- zeitpkt (ms)",HOLD_TIME_STATIC,129,40,23,24,NOT
+                    WS_GROUP
+    EDITTEXT        RAMP_1_EBOX,16,65,27,12
+    EDITTEXT        PRES_1_EBOX,74,65,27,12
+    EDITTEXT        HOLD_TIME_1_EBOX,128,65,27,12
+    EDITTEXT        RAMP_2_EBOX,16,78,27,12
+    EDITTEXT        PRES_2_EBOX,74,78,27,12
+    EDITTEXT        HOLD_TIME_2_EBOX,128,78,27,12
+    EDITTEXT        RAMP_3_EBOX,16,91,27,12
+    EDITTEXT        PRES_3_EBOX,74,91,27,12
+    EDITTEXT        HOLD_TIME_3_EBOX,128,91,27,12
+    CONTROL         "MS",PC_GOOSE_1_XBOX,"Button",BS_AUTOCHECKBOX |
+                    BS_PUSHLIKE | WS_TABSTOP,47,65,20,12
+    CONTROL         "MS",PC_GOOSE_2_XBOX,"Button",BS_AUTOCHECKBOX |
+                    BS_PUSHLIKE | WS_TABSTOP,47,79,20,12
+    CONTROL         "MS",PC_GOOSE_3_XBOX,"Button",BS_AUTOCHECKBOX |
+                    BS_PUSHLIKE | WS_TABSTOP,47,92,20,12
+    CONTROL         "Druckregelung freischalten",PRES_CONTROL_ENABLE_XBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,18,101,10
+    CONTROL         "Nur positive Befehle",POSITIVE_ONLY_XBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,29,79,10
+    LTEXT           "Druckprofilvorgaben",IDC_STATIC,114,0,65,8
+    RTEXT           "Druckmessgeber",IDC_STATIC,164,14,54,8
+    COMBOBOX        ST_PRES_SENSOR_CBOX,222,11,119,112,CBS_DROPDOWN |
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "+-2.5 V",PC_2_VOLT_RANGE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,222,27,39,10
+    CONTROL         "+-5 V",PC_5_VOLT_RANGE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,264,27,33,10
+    CONTROL         "+-10 V",PC_10_VOLT_RANGE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,301,27,37,10
+    LTEXT           "Ausgangsspannungsbereich",IDC_STATIC,129,28,101,8
+    CONTROL         "",PC_OPEN_LOOP_1_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,109,67,10,8
+    CONTROL         "",PC_OPEN_LOOP_2_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,109,80,10,8
+    CONTROL         "",PC_OPEN_LOOP_3_XBOX,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,109,93,10,8
+    CTEXT           "Offener Reglkrs",IDC_STATIC,98,46,28,16
+    RTEXT           "Druckkreisverstärkung ",IDC_STATIC,189,43,74,8
+    RTEXT           "Arm-spannung",IDC_STATIC,200,56,52,8
+    RTEXT           "Ausgangsdruck",IDC_STATIC,203,70,49,8
+    RTEXT           "Rückzugspannung",IDC_STATIC,190,84,63,8
+    RTEXT           "Ventil-Parkspannung",IDC_STATIC,188,98,65,8
+    EDITTEXT        PC_LOOP_GAIN_EBOX,257,41,40,12,ES_AUTOHSCROLL
+    EDITTEXT        INTENS_ARM_PRES_EBOX,257,54,40,12,ES_AUTOHSCROLL
+    EDITTEXT        INITIAL_PRES_EBOX,257,68,40,12
+    EDITTEXT        RETRACT_PRES_EBOX,257,82,40,12,ES_AUTOHSCROLL
+    EDITTEXT        PARK_PRES_EBOX,257,97,40,12,ES_AUTOHSCROLL
+    LTEXT           "1",IDC_STATIC,5,67,8,8
+    LTEXT           "2",IDC_STATIC,5,80,8,8
+    LTEXT           "3",IDC_STATIC,5,93,8,8
+END
+
+PARAMETER_DIALOG DIALOG DISCARDABLE  3, 4, 337, 110
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "keine",PARAMETER_TYPE_TEXTBOX,150,14,110,8,NOT WS_GROUP
+    LTEXT           "Warn: hoch",IDC_STATIC,4,53,38,8
+    LTEXT           "Warn: niedrig ",IDC_STATIC,4,39,44,8
+    LTEXT           "Alarm: niedrig",IDC_STATIC,4,69,43,8
+    LTEXT           "Alarm: hoch",IDC_STATIC,4,83,43,8
+    LTEXT           "Wert",IDC_STATIC,57,25,20,8
+    LTEXT           "Alarm Ausg.",IDC_STATIC,90,16,20,16
+    EDITTEXT        PARAMETER_DESC_EDITBOX,2,6,84,12
+    EDITTEXT        LOW_WARN_VALUE_EDITBOX,52,35,30,12
+    EDITTEXT        HIGH_WARN_VALUE_EDITBOX,52,51,30,12
+    EDITTEXT        LOW_ALARM_VALUE_EDITBOX,52,67,30,12
+    EDITTEXT        HIGH_ALARM_VALUE_EDITBOX,52,83,30,12
+    PUSHBUTTON      "Nullstellen",CLEAR_BUTTON,4,24,40,10,BS_CENTER
+    GROUPBOX        "Parameterkategorie",IDC_STATIC,139,4,125,21,WS_GROUP
+    PUSHBUTTON      "",LOW_WARN_WIRE_PB,89,36,16,12
+    PUSHBUTTON      "",HIGH_WARN_WIRE_PB,89,52,16,12
+    PUSHBUTTON      "",LOW_ALARM_WIRE_PB,89,68,16,12
+    PUSHBUTTON      "",HIGH_ALARM_WIRE_PB,89,84,16,12
+END
+
+NEW_PARAMETER_DIALOG DIALOG DISCARDABLE  0, 0, 177, 135
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE |
+    WS_CAPTION
+CAPTION "Neue Parameter einrichten"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Den einzurichtenden Parametertyp wählen:",IDC_STATIC,9,
+                    6,158,8,NOT WS_GROUP
+    PUSHBUTTON      "FasTrak-Analogeingang",CREATE_FT_ANALOG_BUTTON,32,23,
+                    114,14,BS_CENTER
+    PUSHBUTTON      "FasTrak-Digitaleingang",CREATE_FT_ONOFF_BUTTON,32,41,
+                    114,14,BS_CENTER
+    PUSHBUTTON      "Sollwertstellung",CREATE_FT_TARGET_BUTTON,32,59,114,14,
+                    BS_CENTER
+    PUSHBUTTON      "Digitaleingang",CREATE_FT_DIGITAL_BUTTON,32,78,114,14,
+                    BS_CENTER
+    PUSHBUTTON      "FasTrak2 erweit. Analogeingang",
+                    CREATE_FT_EXTENDED_ANALOG_BUTTON,32,92,114,14,BS_CENTER
+    PUSHBUTTON      "Abbrechen",IDCANCEL,32,109,114,14
+END
+
+NEW_INTERNAL_PARAMETER_DIALOG DIALOG DISCARDABLE  0, 0, 167, 221
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE |
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Neue Parameter einrichten"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Die nötigen internen Parameter wählen:",IDC_STATIC,3,11,
+                    158,8,NOT WS_GROUP
+    LISTBOX         INTERNAL_PARAMETER_LISTBOX,31,32,104,153,WS_VSCROLL |
+                    WS_TABSTOP
+    PUSHBUTTON      "OK",IDOK,59,197,50,14,BS_CENTER
+END
+
+FT_ANALOG DIALOG DISCARDABLE  0, 0, 224, 75
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",CHANNEL_1_BUTTON,"Button",BS_AUTORADIOBUTTON |
+                    WS_GROUP | WS_TABSTOP,94,10,10,10
+    CONTROL         "",CHANNEL_2_BUTTON,"Button",BS_AUTORADIOBUTTON,106,10,
+                    10,10
+    CONTROL         "",CHANNEL_3_BUTTON,"Button",BS_AUTORADIOBUTTON,118,10,
+                    10,10
+    CONTROL         "",CHANNEL_4_BUTTON,"Button",BS_AUTORADIOBUTTON,130,10,
+                    10,10
+    CONTROL         "",CHANNEL_5_BUTTON,"Button",BS_AUTORADIOBUTTON,142,10,
+                    10,10
+    CONTROL         "",CHANNEL_6_BUTTON,"Button",BS_AUTORADIOBUTTON,154,10,
+                    10,10
+    CONTROL         "",CHANNEL_7_BUTTON,"Button",BS_AUTORADIOBUTTON,166,10,
+                    10,10
+    CONTROL         "",CHANNEL_8_BUTTON,"Button",BS_AUTORADIOBUTTON,178,10,
+                    10,10
+    CONTROL         "",DIF_CHANNEL_BUTTON,"Button",BS_AUTORADIOBUTTON,190,10,
+                    10,10
+    CTEXT           "1",IDC_STATIC,94,1,10,10
+    CTEXT           "2",IDC_STATIC,106,1,10,10
+    CTEXT           "3",IDC_STATIC,118,1,10,10
+    CTEXT           "4",IDC_STATIC,130,1,10,10
+    CTEXT           "5",IDC_STATIC,142,1,10,10
+    CTEXT           "6",IDC_STATIC,154,1,10,10
+    CTEXT           "7",IDC_STATIC,166,1,10,10
+    CTEXT           "8",IDC_STATIC,178,1,10,10
+    CTEXT           "0 - 5V = 0-1000 Lbs/Zoll^2",ANALOG_DESC_TEXTBOX,98,21,
+                    99,10,NOT WS_GROUP
+    CONTROL         "Weg während dem Schuss",POSITION_SAMPLE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,101,51,99,10
+    CONTROL         "Zeit (ms) in Nachdruckphase",TIME_SAMPLE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,101,62,110,10
+    LTEXT           "IN.",ANALOG_UNITS_TEXTBOX,80,52,10,8,NOT WS_GROUP
+    EDITTEXT        SAMPLE_POINT_EDITBOX,45,49,30,12,ES_AUTOHSCROLL
+    LTEXT           "FasTrak Analog-Kanal",IDC_STATIC,40,8,46,18
+    LTEXT           "Dif",IDC_STATIC,190,1,10,8
+    CONTROL         "Single Point",SINGLE_POINT_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,41,34,53,10
+    CONTROL         "Max",MAX_RADIO,"Button",BS_AUTORADIOBUTTON,99,34,29,10
+    CONTROL         "Min",MIN_RADIO,"Button",BS_AUTORADIOBUTTON,133,34,27,10
+    CONTROL         "Avg",AVG_RADIO,"Button",BS_AUTORADIOBUTTON,165,34,29,10
+    RTEXT           "Start",START_POINT_TBOX,5,51,37,8
+    RTEXT           "End",END_POINT_TBOX,28,63,14,8
+    EDITTEXT        END_POINT_EBOX,45,61,30,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,31,224,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,45,224,1
+END
+
+FT_EXTENDED_ANALOG DIALOG DISCARDABLE  0, 0, 204, 76
+STYLE DS_3DLOOK | WS_POPUP | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",CHANNEL_1_PB,"Button",BS_AUTORADIOBUTTON | WS_GROUP,6,
+                    21,10,10
+    CONTROL         "",CHANNEL_2_PB,"Button",BS_AUTORADIOBUTTON,18,21,10,10
+    CONTROL         "",CHANNEL_3_PB,"Button",BS_AUTORADIOBUTTON,30,21,10,10
+    CONTROL         "",CHANNEL_4_PB,"Button",BS_AUTORADIOBUTTON,42,21,10,10
+    CONTROL         "",CHANNEL_5_PB,"Button",BS_AUTORADIOBUTTON,54,21,10,10
+    CONTROL         "",CHANNEL_6_PB,"Button",BS_AUTORADIOBUTTON,66,21,10,10
+    CONTROL         "",CHANNEL_7_PB,"Button",BS_AUTORADIOBUTTON,78,21,10,10
+    CONTROL         "",CHANNEL_8_PB,"Button",BS_AUTORADIOBUTTON,90,21,10,10
+    CONTROL         "",CHANNEL_9_PB,"Button",BS_AUTORADIOBUTTON,103,21,10,10
+    CONTROL         "",CHANNEL_10_PB,"Button",BS_AUTORADIOBUTTON,115,21,10,
+                    10
+    CONTROL         "",CHANNEL_11_PB,"Button",BS_AUTORADIOBUTTON,127,21,10,
+                    10
+    CONTROL         "",CHANNEL_12_PB,"Button",BS_AUTORADIOBUTTON,139,21,10,
+                    10
+    CONTROL         "",CHANNEL_13_PB,"Button",BS_AUTORADIOBUTTON,151,21,10,
+                    10
+    CONTROL         "",CHANNEL_14_PB,"Button",BS_AUTORADIOBUTTON,163,21,10,
+                    10
+    CONTROL         "",CHANNEL_15_PB,"Button",BS_AUTORADIOBUTTON,175,21,10,
+                    10
+    CONTROL         "",CHANNEL_16_PB,"Button",BS_AUTORADIOBUTTON,187,21,10,
+                    10
+    CTEXT           "1",IDC_STATIC,6,12,10,10
+    CTEXT           "2",IDC_STATIC,18,12,10,10
+    CTEXT           "3",IDC_STATIC,30,12,10,10
+    CTEXT           "4",IDC_STATIC,42,12,10,10
+    CTEXT           "5",IDC_STATIC,54,12,10,10
+    CTEXT           "6",IDC_STATIC,66,12,10,10
+    CTEXT           "7",IDC_STATIC,78,12,10,10
+    CTEXT           "8",IDC_STATIC,90,12,10,10
+    CTEXT           "9",IDC_STATIC,103,12,10,10
+    CTEXT           "10",IDC_STATIC,115,12,10,10
+    CTEXT           "11",IDC_STATIC,127,12,10,10
+    CTEXT           "12",IDC_STATIC,139,12,10,10
+    CTEXT           "13",IDC_STATIC,151,12,10,10
+    CTEXT           "14",IDC_STATIC,163,12,10,10
+    CTEXT           "15",IDC_STATIC,175,12,10,10
+    CTEXT           "16",IDC_STATIC,187,12,10,10
+    CTEXT           "0 - 5V = 0-1000 PSI",ANALOG_DESC_TEXTBOX,50,30,104,8,
+                    NOT WS_GROUP
+    CTEXT           "FasTrak2 Analog Channel",IDC_STATIC,53,1,92,8
+    EDITTEXT        FT_EXTENDED_INPUT_WIRE_EBOX,51,51,25,12,ES_AUTOHSCROLL
+    LTEXT           "Input Number",IDC_STATIC,4,53,44,8
+    CONTROL         "Transition from OFF to ON",
+                    FT_EXTENDED_TRIGGER_HIGH_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,89,50,98,10
+    CONTROL         "Transition from ON to OFF",
+                    FT_EXTENDED_TRIGGER_LOW_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,89,62,98,10
+    GROUPBOX        "When to sample",IDC_STATIC,84,40,113,35
+END
+
+FT_TARGET DIALOG DISCARDABLE  0, 0, 191, 71
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "FasTrak Analog-Kanal",IDC_STATIC,0,1,191,34,WS_TABSTOP
+    CONTROL         "",CHANNEL_1_BUTTON,"Button",BS_AUTORADIOBUTTON |
+                    WS_GROUP | WS_TABSTOP,4,21,10,10
+    CONTROL         "",CHANNEL_2_BUTTON,"Button",BS_AUTORADIOBUTTON,16,21,10,
+                    10
+    CONTROL         "",CHANNEL_3_BUTTON,"Button",BS_AUTORADIOBUTTON,28,21,10,
+                    10
+    CONTROL         "",CHANNEL_4_BUTTON,"Button",BS_AUTORADIOBUTTON,40,21,10,
+                    10
+    CONTROL         "",CHANNEL_5_BUTTON,"Button",BS_AUTORADIOBUTTON,52,21,10,
+                    10
+    CONTROL         "",CHANNEL_6_BUTTON,"Button",BS_AUTORADIOBUTTON,64,21,10,
+                    10
+    CONTROL         "",CHANNEL_7_BUTTON,"Button",BS_AUTORADIOBUTTON,76,21,10,
+                    10
+    CONTROL         "",CHANNEL_8_BUTTON,"Button",BS_AUTORADIOBUTTON,88,21,10,
+                    10
+    LTEXT           "1",IDC_STATIC,4,12,10,10
+    LTEXT           "2",IDC_STATIC,16,12,10,10
+    LTEXT           "3",IDC_STATIC,28,12,10,10
+    LTEXT           "4",IDC_STATIC,40,12,10,10
+    CTEXT           "5",IDC_STATIC,52,12,10,10
+    CTEXT           "6",IDC_STATIC,64,12,10,10
+    CTEXT           "7",IDC_STATIC,76,12,10,10
+    CTEXT           "8",IDC_STATIC,88,12,10,10
+    LTEXT           "0 - 5V = 0-1000 Lbs/Zoll^2",ANALOG_DESC_TEXTBOX,101,21,
+                    86,10,NOT WS_GROUP
+    GROUPBOX        "Sollwert",IDC_STATIC,105,45,68,24,WS_TABSTOP
+    LTEXT           "Zoll",ANALOG_UNITS_TEXTBOX,155,57,12,8,NOT WS_GROUP
+    EDITTEXT        SAMPLE_POINT_EDITBOX,117,54,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "Art der Auslösung",IDC_STATIC,5,35,95,35,WS_TABSTOP
+    CONTROL         "Auslösen wenn größer",POSITION_SAMPLE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,10,47,84,10
+    CONTROL         "Auslösen wenn kleiner",TIME_SAMPLE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,10,58,87,10
+END
+
+FT_ONOFF DIALOG DISCARDABLE  0, 0, 188, 35
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Prüfpunkt",IDC_STATIC,88,0,99,34,BS_CENTER
+    GROUPBOX        "FasTrak Digital-Eing.-Nr.",IDC_STATIC,0,0,88,34,
+                    BS_CENTER
+    CONTROL         "",ONOFF_1_BUTTON,"Button",BS_AUTORADIOBUTTON | WS_GROUP |
+                    WS_TABSTOP,9,19,9,10
+    CONTROL         "",ONOFF_2_BUTTON,"Button",BS_AUTORADIOBUTTON,27,19,11,
+                    10
+    CONTROL         "",ONOFF_3_BUTTON,"Button",BS_AUTORADIOBUTTON,45,19,11,
+                    10
+    CONTROL         "",ONOFF_4_BUTTON,"Button",BS_AUTORADIOBUTTON,65,19,11,
+                    10
+    CONTROL         "Flanke von Aus auf Ein",ONOFF_ON_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,93,9,89,10
+    CONTROL         "Flanke von Ein auf Aus",ONOFF_OFF_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,93,20,91,10
+    LTEXT           "1",IDC_STATIC,10,10,11,10
+    LTEXT           "2",IDC_STATIC,28,10,11,10
+    LTEXT           "3",IDC_STATIC,46,10,11,10
+    LTEXT           "4",IDC_STATIC,66,10,11,10
+END
+
+FT_DIGITAL DIALOG DISCARDABLE  0, 0, 191, 71
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Input Wire Number (18,31)",IDC_STATIC,36,26,85,10
+    EDITTEXT        FT_DIGITAL_INPUT_WIRE_EBOX,125,25,30,12,ES_AUTOHSCROLL
+END
+
+FT_OUTPUT_WIRE_DIALOG DIALOG DISCARDABLE  0, 0, 124, 66
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "Enter the Output Wire Number"
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "Wire Number",IDC_STATIC,17,27,42,8
+    EDITTEXT        FT_OUTPUT_WIRE_EBOX,62,25,30,12,ES_AUTOHSCROLL
+    LTEXT           "Wires 1-16 are monitor outputs.",IDC_STATIC,10,2,99,8
+    LTEXT           "Wires 17-32 are control outputs.",IDC_STATIC,10,12,102,
+                    8
+    PUSHBUTTON      "OK",IDOK,8,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,65,45,50,14
+END
+
+FT_PLC DIALOG DISCARDABLE  0, 0, 191, 71
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "PLC-Register-Number",IDC_STATIC,36,26,85,10
+    EDITTEXT        FT_PLC_REGISTER_EBOX,125,25,30,12,ES_AUTOHSCROLL
+END
+
+INTERNAL_PARAMETERS DIALOG DISCARDABLE  0, 0, 170, 60
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Interner Name",IDC_STATIC,3,2,125,22,WS_GROUP
+    LTEXT           "",TRUE_PARAMETER_NAME_TEXTBOX,8,12,111,8,NOT WS_GROUP
+END
+
+ADD_MARKS DIALOG DISCARDABLE  0, 0, 117, 117
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION |
+    WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Textmarke einfügen",IDC_STATIC,22,5,65,10
+    LISTBOX         ADD_MARKS_LISTBOX_ID,7,20,105,76,LBS_USETABSTOPS |
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ok",IDOK,40,99,40,14,BS_CENTER
+END
+
+COPY_MULTIPLE DIALOG DISCARDABLE  0, 0, 146, 146
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "Zu kopierende Maschinen wählen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Kopieren starten",IDOK,40,124,59,15
+    LISTBOX         CMULTIPLE_MACHINE_LISTBOX_ID,40,28,56,92,LBS_USETABSTOPS |
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Maschinen- nummer",IDC_STATIC,65,8,40,15
+    LTEXT           "Habe Teil",IDC_STATIC,40,8,20,16
+END
+
+ADD_PART DIALOG DISCARDABLE  0, 0, 92, 50
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "Gussteil einrichten"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        ADD_PART_PART_EDITBOX,2,13,80,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Ok",IDOK,23,33,35,14
+    LTEXT           "Name für neues Teil",IDC_STATIC,9,2,71,8
+END
+
+MSDOS_BACKUP_DIALOG DIALOG DISCARDABLE  0, 0, 142, 79
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "Zu MSDOS-Boot-Diskette sichern"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Beginnen",IDOK,17,57,50,14,BS_CENTER
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,75,57,50,14,BS_CENTER
+    CTEXT           "Diskette einlegen. Mit ""Beginnen"" die aktuellen SureTrak Einstellungen zur Diskette zu kopieren.",
+                    -1,23,10,96,37,NOT WS_GROUP
+    LTEXT           "",MSDOS_BU_STATUS_TBOX,28,40,84,8,NOT WS_GROUP
+END
+
+CALCULATOR_DIALOG DIALOG DISCARDABLE  0, 0, 305, 261
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "Kalkulationen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Stempeldurchmesser",IDC_STATIC,2,43,65,8,NOT WS_GROUP
+    LTEXT           "Stempelfläche",IDC_STATIC,2,55,60,8,NOT WS_GROUP
+    LTEXT           "Leerlaufschusslänge",IDC_STATIC,2,67,67,8,NOT WS_GROUP
+    LTEXT           "Druckkammervolum",IDC_STATIC,2,79,64,8,NOT WS_GROUP
+    LTEXT           "Gussteilgewicht",IDC_STATIC,2,91,60,8,NOT WS_GROUP
+    LTEXT           "Überflussgewicht",IDC_STATIC,2,103,60,8,NOT WS_GROUP
+    LTEXT           "Hohlraumgewicht",IDC_STATIC,2,115,60,8,NOT WS_GROUP
+    LTEXT           "Gewicht R+B",IDC_STATIC,2,127,60,8,NOT WS_GROUP
+    LTEXT           "Gesamtschussgew.",IDC_STATIC,2,139,64,8,NOT WS_GROUP
+    LTEXT           "Dichte",IDC_STATIC,2,151,60,8,NOT WS_GROUP
+    LTEXT           "Schussvolumen",IDC_STATIC,2,163,60,8,NOT WS_GROUP
+    LTEXT           "Druckkammer % voll",IDC_STATIC,2,175,65,8,NOT WS_GROUP
+    LTEXT           "SSF Punkt (P1)",IDC_STATIC,2,187,60,8,NOT WS_GROUP
+    LTEXT           "Gießtablettenlänge",IDC_STATIC,2,199,60,8,NOT WS_GROUP
+    LTEXT           "Tablettenvolumen",IDC_STATIC,2,211,66,8,NOT WS_GROUP
+    LTEXT           "Tablettengewicht ",IDC_STATIC,2,223,60,8,NOT WS_GROUP
+    LTEXT           "Abstichrinnengew.",IDC_STATIC,2,233,68,8,NOT WS_GROUP
+    LTEXT           "Abstichrinnenvolum. ",IDC_STATIC,2,245,64,8,NOT
+                    WS_GROUP
+    LTEXT           "Abstichrinne Fülllänge",IDC_STATIC,149,43,69,8,NOT
+                    WS_GROUP
+    LTEXT           "Metall am Schieber (P2)",IDC_STATIC,149,55,77,8,NOT
+                    WS_GROUP
+    LTEXT           "Vorschub beim Einfüllen",IDC_STATIC,149,67,77,8,NOT
+                    WS_GROUP
+    LTEXT           "Schieberfläche",IDC_STATIC,149,79,60,8,NOT WS_GROUP
+    LTEXT           "Schiebervorschub",IDC_STATIC,149,91,60,8,NOT WS_GROUP
+    LTEXT           "Hohlraumvolumen",IDC_STATIC,149,103,60,8,NOT WS_GROUP
+    LTEXT           "Beweg.z.Hohlraumfüllen ",IDC_STATIC,149,115,79,8,NOT
+                    WS_GROUP
+    LTEXT           "Einfülldauer",IDC_STATIC,149,127,60,8,NOT WS_GROUP
+    LTEXT           "Nachdruckgröße",IDC_STATIC,149,139,60,8,NOT WS_GROUP
+    LTEXT           "Stempel/Schieberverhält.",IDC_STATIC,149,151,80,8,NOT
+                    WS_GROUP
+    LTEXT           "Hydraulikzylinder-Durchm ",IDC_STATIC,149,163,80,8,NOT
+                    WS_GROUP
+    LTEXT           "Hydraulikzylinderfläche ",IDC_STATIC,149,175,80,8,NOT
+                    WS_GROUP
+    LTEXT           "Metalldruck",IDC_STATIC,149,187,60,8,NOT WS_GROUP
+    LTEXT           "Gussfläche/Überl/Spritz",IDC_STATIC,149,199,80,8,NOT
+                    WS_GROUP
+    LTEXT           "Öffnungskraft",IDC_STATIC,149,211,60,8,NOT WS_GROUP
+    EDITTEXT        PLUNGER_DIAMETER_EBOX,70,41,40,11
+    LTEXT           ".7854",PLUNGER_AREA_TBOX,71,55,40,8,NOT WS_GROUP
+    EDITTEXT        DRY_SHOT_LENGTH_EBOX,70,65,40,11
+    LTEXT           "19.63",SHOT_SLEEVE_VOL_TBOX,71,79,40,8,NOT WS_GROUP
+    EDITTEXT        CASTING_WEIGHT_EBOX,70,89,40,11
+    EDITTEXT        OVERFLOW_WEIGHT_EBOX,70,101,40,11
+    LTEXT           "1.0",CAVITY_WEIGHT_TBOX,71,115,40,8,NOT WS_GROUP
+    EDITTEXT        WEIGHT_R_AND_B_EBOX,70,125,40,11
+    LTEXT           "1.0",TOTAL_SHOT_WEIGHT_TBOX,71,139,40,8,NOT WS_GROUP
+    LTEXT           "1.0",DENSITY_TBOX,71,151,40,8,NOT WS_GROUP
+    LTEXT           "1.0",VOLUME_OF_SHOT_TBOX,71,163,40,8,NOT WS_GROUP
+    LTEXT           "1.0",PERCENT_SLEEVE_FULL_TBOX,71,175,40,8,NOT WS_GROUP
+    LTEXT           "1.0",P1_POSITION_TBOX,71,187,40,8,NOT WS_GROUP
+    EDITTEXT        BISCUIT_LEN_EBOX,70,197,40,11
+    LTEXT           "1.0",BISCUIT_VOLUME_TBOX,71,211,40,8,NOT WS_GROUP
+    LTEXT           "1.0",BISCUIT_WEIGHT_TBOX,71,223,40,8,NOT WS_GROUP
+    LTEXT           "1.0",RUNNER_WEIGHT_TBOX,71,233,40,8,NOT WS_GROUP
+    LTEXT           "1.0",RUNNER_VOLUME_TBOX,71,244,40,8,NOT WS_GROUP
+    LTEXT           "1.0",DIST_TO_FILL_RUNNER_TBOX,231,43,40,8,NOT WS_GROUP
+    LTEXT           "1.0",METAL_AT_GATE_TBOX,231,55,40,8,NOT WS_GROUP
+    COMBOBOX        DENSITY_CBOX,200,16,100,54,CBS_DROPDOWN | WS_VSCROLL |
+                    WS_GROUP
+    EDITTEXT        VEL_DURING_FILL_EBOX,229,65,40,11
+    EDITTEXT        GATE_AREA_EBOX,229,77,40,11
+    EDITTEXT        GATE_VELOCITY_EBOX,229,91,40,11
+    LTEXT           "1.0",CAVITY_VOLUME_TBOX,231,104,40,8,NOT WS_GROUP
+    LTEXT           "1.0",SWEEP_TO_FILL_CAVITY_TBOX,231,115,40,8,NOT
+                    WS_GROUP
+    EDITTEXT        FILLTIME_EBOX,229,125,40,11
+    EDITTEXT        INTENS_PRESSURE_EBOX,229,137,40,11
+    LTEXT           "1.0",PLUNGER_GATE_RATIO_TBOX,231,151,40,8,NOT WS_GROUP
+    EDITTEXT        CYLINDER_DIAMETER_EBOX,229,161,40,11
+    LTEXT           "1.0",CYLINDER_AREA_TBOX,231,176,40,8,NOT WS_GROUP
+    LTEXT           "1.0",METAL_PRESSURE_TBOX,231,187,40,8,NOT WS_GROUP
+    EDITTEXT        AREA_CAST_OVRFLW_EBOX,229,197,40,11
+    LTEXT           "1.0",OPENING_FORCE_TBOX,231,211,40,8,NOT WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,2,1,190,37
+    LTEXT           "Längseinheiten",IDC_STATIC,4,4,50,10,NOT WS_GROUP
+    LTEXT           "Gewichtseinh.",IDC_STATIC,4,26,46,10,NOT WS_GROUP
+    LTEXT           "Vorschubeinh.",IDC_STATIC,4,15,49,10,NOT WS_GROUP
+    LTEXT           "Legierung",IDC_STATIC,221,4,35,8,NOT WS_GROUP
+    LTEXT           "IN",PLUNGER_DIAMETER_UNITS_TBOX,114,43,24,8,NOT
+                    WS_GROUP
+    LTEXT           "IN^2",PLUNGER_AREA_UNITS_TBOX,114,55,24,8,NOT WS_GROUP
+    LTEXT           "IN",DRY_SHOT_LENGTH_UNITS_TBOX,114,67,24,8,NOT WS_GROUP
+    LTEXT           "IN^3",SHOT_SLEEVE_VOL_UNITS_TBOX,114,79,24,8,NOT
+                    WS_GROUP
+    LTEXT           "LBS",CASTING_WEIGHT_UNITS_TBOX,114,91,24,8,NOT WS_GROUP
+    LTEXT           "LBS",OVERFLOW_WEIGHT_UNITS_TBOX,114,103,24,8,NOT
+                    WS_GROUP
+    LTEXT           "LBS",CAVITY_WEIGHT_UNITS_TBOX,114,115,24,8,NOT WS_GROUP
+    LTEXT           "LBS",WEIGHT_R_AND_B_UNITS_TBOX,114,127,24,8,NOT
+                    WS_GROUP
+    LTEXT           "LBS",TOTAL_SHOT_WEIGHT_UNITS_TBOX,114,139,24,8,NOT
+                    WS_GROUP
+    LTEXT           "LBS/IN^3",DENSITY_UNITS_TBOX,114,151,34,8,NOT WS_GROUP
+    LTEXT           "IN^3",VOLUME_OF_SHOT_UNITS_TBOX,114,163,24,8,NOT
+                    WS_GROUP
+    LTEXT           "IN",P1_POSITION_UNITS_TBOX,114,187,24,8,NOT WS_GROUP
+    LTEXT           "IN",BISCUIT_LEN_UNITS_TBOX,114,199,24,8,NOT WS_GROUP
+    LTEXT           "IN^3",BISCUIT_VOLUME_UNITS_TBOX,114,211,24,8,NOT
+                    WS_GROUP
+    LTEXT           "LBS",BISCUIT_WEIGHT_UNITS_TBOX,114,223,24,8,NOT
+                    WS_GROUP
+    LTEXT           "LBS",RUNNER_WEIGHT_UNITS_TBOX,114,233,24,8,NOT WS_GROUP
+    LTEXT           "IN^3",RUNNER_VOLUME_UNITS_TBOX,114,244,24,8,NOT
+                    WS_GROUP
+    LTEXT           "IN",DIST_TO_FILL_RUNNER_UNITS_TBOX,274,43,24,8,NOT
+                    WS_GROUP
+    LTEXT           "IN",METAL_AT_GATE_UNITS_TBOX,274,55,24,8,NOT WS_GROUP
+    LTEXT           "IPS",VEL_DURING_FILL_UNITS_TBOX,274,65,24,8,NOT
+                    WS_GROUP
+    LTEXT           "IN^2",GATE_AREA_UNITS_TBOX,274,77,24,8,NOT WS_GROUP
+    LTEXT           "IPS",GATE_VELOCITY_UNITS_TBOX,274,91,24,8,NOT WS_GROUP
+    LTEXT           "IN^3",CAVITY_VOLUME_UNITS_TBOX,274,103,24,8,NOT
+                    WS_GROUP
+    LTEXT           "IN",SWEEP_TO_FILL_CAVITY_UNITS_TBOX,274,115,24,8,NOT
+                    WS_GROUP
+    LTEXT           "MS",FILLTIME_UNITS_TBOX,274,127,24,8,NOT WS_GROUP
+    LTEXT           "PSI",INTENS_PRESSURE_UNITS_TBOX,274,139,24,8,NOT
+                    WS_GROUP
+    LTEXT           "IN",CYLINDER_DIAMETER_UNITS_TBOX,274,161,24,8,NOT
+                    WS_GROUP
+    LTEXT           "IN^2",CYLINDER_AREA_UNITS_TBOX,274,176,24,8,NOT
+                    WS_GROUP
+    LTEXT           "PSI",METAL_PRESSURE_UNITS_TBOX,274,187,24,8,NOT
+                    WS_GROUP
+    LTEXT           "IN^2",AREA_CAST_OVRFLW_UNITS_TBOX,274,197,24,8,NOT
+                    WS_GROUP
+    LTEXT           "TONS",OPENING_FORCE_UNITS_TBOX,274,211,24,8,NOT
+                    WS_GROUP
+    CONTROL         "P1 und P2 zu Teile-Einstellung. kopieren ",
+                    COPY_P1_P2_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_GROUP |
+                    WS_TABSTOP,150,227,140,8
+    PUSHBUTTON      "Änderungen &speichern",CALC_SAVE_CHANGES_BUTTON,194,243,
+                    79,14,BS_CENTER | WS_GROUP
+    PUSHBUTTON      "Ändern",EDIT_DENSITIES_BUTTON,276,1,25,11,NOT
+                    WS_TABSTOP
+    CONTROL         "Zoll",IN_UNITS_RADIO,"Button",BS_AUTORADIOBUTTON,59,3,
+                    28,12
+    CONTROL         "mm",MM_UNITS_RADIO,"Button",BS_AUTORADIOBUTTON,88,2,28,
+                    12
+    CONTROL         "cm",CM_UNITS_RADIO,"Button",BS_AUTORADIOBUTTON,119,3,28,
+                    12
+    CONTROL         "Z/s",IPS_UNITS_RADIO,"Button",BS_AUTORADIOBUTTON |
+                    WS_GROUP,59,14,23,10
+    CONTROL         "F/min",FPM_UNITS_RADIO,"Button",BS_AUTORADIOBUTTON,88,
+                    13,30,12
+    CONTROL         "cm/s",CMPS_UNITS_RADIO,"Button",BS_AUTORADIOBUTTON,120,
+                    14,32,12
+    CONTROL         "m/s",MPS_UNITS_RADIO,"Button",BS_AUTORADIOBUTTON,157,14,
+                    30,12
+    CONTROL         "Lbs",LBS_UNITS_RADIO,"Button",BS_AUTORADIOBUTTON |
+                    WS_GROUP,59,23,28,12
+    CONTROL         "kg",KG_UNITS_RADIO,"Button",BS_AUTORADIOBUTTON,87,24,24,
+                    12
+END
+
+DENSITY_DIALOG DIALOG DISCARDABLE  0, 0, 292, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dichte des Metalls"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Abbrechen",IDCANCEL,153,156,50,14
+    LISTBOX         DENSITY_LISTBOX,4,22,146,126,LBS_USETABSTOPS |
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Beschreibung",IDC_STATIC,6,12,44,8
+    LTEXT           "Flüssig",LIQUID_DENSITY_STATIC,88,12,22,8
+    LTEXT           "Fest",SOLID_DENSITY_STATIC,126,12,14,8
+    CTEXT           "Dichte",IDC_STATIC,88,0,60,10,SS_SUNKEN
+    PUSHBUTTON      "&Neu",NEW_DENSITY_BUTTON,237,3,50,14
+    PUSHBUTTON      "&Löschen",DELETE_DENSITY_BUTTON,237,20,50,14
+    EDITTEXT        METAL_NAME_EBOX,159,60,129,12,ES_AUTOHSCROLL
+    EDITTEXT        LIQUID_DENSITY_EBOX,160,93,69,12,ES_AUTOHSCROLL
+    EDITTEXT        SOLID_DENSITY_EBOX,160,126,69,12,ES_AUTOHSCROLL
+    LTEXT           "Beschreibung",IDC_STATIC,159,49,44,8
+    LTEXT           "Flüssigkeitsdichte",IDC_STATIC,160,84,56,8
+    LTEXT           "Festkörperdichte",IDC_STATIC,160,117,54,8
+    LTEXT           "Lbs/Zoll^3",IDC_STATIC,234,95,35,8
+    LTEXT           "Lbs/Zoll^3",IDC_STATIC,232,129,35,8
+    PUSHBUTTON      "Änderungen &speichern",SAVE_DENSITY_CHANGES_BUTTON,55,
+                    156,78,14
+END
+
+SETUP_SHEET_DIALOG DIALOG DISCARDABLE  0, 0, 328, 100
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        SETUP_EBOX,0,0,328,100,ES_MULTILINE | ES_AUTOVSCROLL |
+                    ES_AUTOHSCROLL | ES_WANTRETURN
+END
+
+MISSING_FILE_DIALOG DIALOG DISCARDABLE  0, 0, 328, 92
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "Missing File"
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "Description",MISSING_FILE_DESC_TBOX,27,10,271,23
+    LTEXT           "Action",MISSING_FILE_ACTION_TBOX,27,43,271,23
+    PUSHBUTTON      "Close",IDOK,135,74,50,14
+END
+
+GERMAN_BASIC_SETUP DIALOG DISCARDABLE  70, 21, 257, 86
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Zoll",103,"Button",BS_AUTORADIOBUTTON | WS_GROUP |
+                    WS_TABSTOP,85,6,36,12
+    CONTROL         "Millimeter",104,"Button",BS_AUTORADIOBUTTON,121,6,48,12
+    CONTROL         "Zentimeter",105,"Button",BS_AUTORADIOBUTTON,169,6,49,12
+    CONTROL         "IPS",106,"Button",BS_AUTORADIOBUTTON | WS_GROUP |
+                    WS_TABSTOP,118,21,23,12
+    CONTROL         "FPM",107,"Button",BS_AUTORADIOBUTTON,148,21,27,12
+    CONTROL         "CMPS",108,"Button",BS_AUTORADIOBUTTON,182,21,32,12
+    CONTROL         "MPS",109,"Button",BS_AUTORADIOBUTTON,221,21,30,12
+    EDITTEXT        110,31,41,37,12,WS_GROUP
+    EDITTEXT        111,31,54,37,12
+    EDITTEXT        112,31,67,37,12
+    LTEXT           "Masseinheit:",IDC_STATIC,33,8,41,10
+    LTEXT           "Geschwindigkeitseinheit",IDC_STATIC,34,22,77,10
+    CONTROL         "",DIST_UNITS_STATIC,"Static",SS_BLACKFRAME,31,5,189,14
+    CONTROL         "",VEL_UNITS_STATIC,"Static",SS_BLACKFRAME,31,20,225,14
+    LTEXT           "Hub bei geschloss. Form",TOTAL_STROKE_STATIC,71,42,78,
+                    10
+    LTEXT           "Minimaler Kolbenhum",MIN_STROKE_STATIC,71,55,80,10
+    LTEXT           "Geschwind. bei Schussende",EOS_STATIC,71,69,98,9
+END
+
+GERMAN_ADVANCED_SETUP DIALOG DISCARDABLE  80, 25, 282, 86
+STYLE DS_3DLOOK | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        PLUNGER_DIAMETER_EDITBOX,6,12,41,12
+    EDITTEXT        SLEEVE_FILL_DISTANCE_EDITBOX,6,24,41,12
+    EDITTEXT        RUNNER_FILL_DISTANCE_EDITBOX,6,36,41,12
+    EDITTEXT        CSFS_MIN_POSITION_EDITBOX,6,48,41,12
+    EDITTEXT        CSFS_MIN_VELOCITY_EDITBOX,6,60,41,12
+    EDITTEXT        CSFS_RISE_VELOCITY_EDITBOX,144,12,41,12
+    EDITTEXT        TIME_FOR_INTENS_PRES_EDITBOX,144,24,41,12
+    EDITTEXT        PRES_FOR_RESPONSE_TIME_EDITBOX,144,36,41,12
+    EDITTEXT        BISCUIT_TIME_DELAY_EDITBOX,144,48,41,12
+    LTEXT           "Giesskolbendurchmesser.",PLUNGER_DIAMETER_STATIC,50,14,
+                    85,11
+    LTEXT           "Hub vor Giessrest, P1",P1_TO_P3_STATIC,50,26,77,11
+    LTEXT           "Hub vor Giessrest, P2",P2_TO_P3_STATIC,50,38,76,11
+    LTEXT           "Kürzester Hub 1. Phase",MIN_CSFS_POS_STATIC,50,50,85,10
+    LTEXT           "Startgeschw. 2, Phase",MIN_CSFS_VEL_STATIC,50,62,75,11
+    LTEXT           "Wartezeit f. Giessrest.(Sec.)",
+                    BISCUIT_TIME_DELAY_STATIC,188,49,93,9
+    LTEXT           "Min-Geschw. 2, Phase",VEL_FOR_RISE_STATIC,188,14,74,11
+    LTEXT           "Wartezeit f. Multidruck (Ms)",TIME_FOR_INTENS_STATIC,
+                    188,25,93,11
+    LTEXT           "Min-Multidruck",PRES_FOR_RESPONSE_STATIC,188,37,78,11
+END
+
+MULTIPART_RUNLIST_DIALOG DIALOG DISCARDABLE  0, 0, 169, 129
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HPM Alternative Teileauslistung"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Profil 0",HPM_0_TBOX,2,2,79,9
+    RTEXT           "Profil 1",HPM_1_TBOX,2,15,79,9
+    RTEXT           "Profil 2",HPM_2_TBOX,2,29,79,9
+    RTEXT           "Profil 3",HPM_3_TBOX,2,43,79,9
+    RTEXT           "Profil 4",HPM_4_TBOX,2,56,79,9
+    RTEXT           "Profil 5",HPM_5_TBOX,2,70,79,9
+    RTEXT           "Profil 6",HPM_6_TBOX,2,83,79,9
+    RTEXT           "Profil 7",HPM_7_TBOX,2,95,79,9
+    COMBOBOX        HPM_0_CBOX,87,1,78,52,CBS_DROPDOWN | WS_VSCROLL |
+                    WS_TABSTOP
+    COMBOBOX        HPM_1_CBOX,87,14,78,52,CBS_DROPDOWN | WS_VSCROLL |
+                    WS_TABSTOP
+    COMBOBOX        HPM_2_CBOX,87,27,78,52,CBS_DROPDOWN | WS_VSCROLL |
+                    WS_TABSTOP
+    COMBOBOX        HPM_3_CBOX,87,40,78,52,CBS_DROPDOWN | WS_VSCROLL |
+                    WS_TABSTOP
+    COMBOBOX        HPM_4_CBOX,87,53,78,52,CBS_DROPDOWN | WS_VSCROLL |
+                    WS_TABSTOP
+    COMBOBOX        HPM_5_CBOX,87,66,78,52,CBS_DROPDOWN | WS_VSCROLL |
+                    WS_TABSTOP
+    COMBOBOX        HPM_6_CBOX,87,79,78,52,CBS_DROPDOWN | WS_VSCROLL |
+                    WS_TABSTOP
+    COMBOBOX        HPM_7_CBOX,87,92,78,52,CBS_DROPDOWN | WS_VSCROLL |
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,32,112,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,87,112,50,14
+END
+
+CHOOSE_WIRE_DIALOG DIALOG DISCARDABLE  0, 0, 359, 325
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ausgang wählen"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",CHOOSE_WIRE_CONTROL,"ChooseWireControl",WS_TABSTOP,0,
+                    0,359,268
+    PUSHBUTTON      "OK",IDOK,131,306,38,14,BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "Abbrechen",IDCANCEL,177,306,38,14,BS_CENTER | NOT
+                    WS_TABSTOP
+    LTEXT           "Statisch",CHOOSE_WIRE_INFO_TBOX,0,268,359,22,WS_BORDER
+    LTEXT           "Gewünschtes Modul anklicken oder mit Tab zum nächsten Modul fortschreiten",
+                    IDC_STATIC,231,291,126,17
+    PUSHBUTTON      "Manual Entry",MANUAL_CHOICE_PB,304,324,55,11,BS_CENTER |
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "Steuerausgänge",CONTROL_OUTPUT_PB,0,291,55,14,BS_CENTER |
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "Monitorausgänge",MONITOR_OUTPUT_PB,56,291,65,14,
+                    BS_CENTER | NOT WS_TABSTOP
+    PUSHBUTTON      "Handeingabe",MANUAL_CHOICE_PB2,304,311,55,11,BS_CENTER |
+                    NOT WS_TABSTOP
+END
+
+LIMIT_SWITCH_DESC_DIALOG DIALOG DISCARDABLE  0, 0, 235, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grenzschalter-Beschreibung"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        LS1_DESC_EBOX,83,18,100,12
+    EDITTEXT        LS2_DESC_EBOX,83,33,100,12
+    EDITTEXT        LS3_DESC_EBOX,83,48,100,12
+    EDITTEXT        LS4_DESC_EBOX,83,63,100,12
+    PUSHBUTTON      "OK",IDOK,75,83,42,14,BS_CENTER
+    PUSHBUTTON      "Abbrechen",IDCANCEL,119,83,41,14,BS_CENTER
+    LTEXT           "Grenzschalter Nr.1",IDC_STATIC,19,20,60,8
+    LTEXT           "Grenzschalter Nr.2",IDC_STATIC,18,36,60,8
+    LTEXT           "Grenzschalter Nr.3",IDC_STATIC,18,50,60,8
+    LTEXT           "Grenzschalter Nr.4",IDC_STATIC,18,66,60,8
+    LTEXT           "Gemachte Änderungen erscheinen an allen Gussteilen dieser Maschine",
+                    IDC_STATIC,8,4,226,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE
+BEGIN
+    "ADVANCED_SETUP", DIALOG
+    BEGIN
+        RIGHTMARGIN, 257
+    END
+
+    "FASTRAK_CHANNELS", DIALOG
+    BEGIN
+        RIGHTMARGIN, 208
+        BOTTOMMARGIN, 120
+    END
+
+    "SURETRAK_PROFILE", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 115
+    END
+
+    "PRESSURE_CONTROL_PROFILE", DIALOG
+    BEGIN
+        RIGHTMARGIN, 308
+        BOTTOMMARGIN, 96
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+EDITPART_HOT_KEYS ACCELERATORS MOVEABLE PURE
+BEGIN
+    VK_F5,          F5_KEY,                 VIRTKEY
+    VK_F10,         F10_KEY,                VIRTKEY
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resrcg.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+EDITPART_ICON           ICON    DISCARDABLE     "editpart.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    BASIC_TAB_STRING        "Grundeinstellungen"
+    ADVANCED_TAB_STRING     "Weitere Einstellungen"
+    PARAMETERS_TAB_STRING   "Parameter"
+    POSITIONS_TAB_STRING    "Wegstrecken"
+    MARKS_TAB_STRING        "Textmarken"
+    CHANNELS_TAB_STRING     "Kanäle"
+    SURETRAK_TAB_STRING     "Sure&Trak-Steuerung"
+    PRES_CONTROL_TAB_STRING "SureTrak-Druckregelung"
+    SETUP_SHEET_TAB_STRING  "Einstellungen"
+    START_POS_MARK_STRING   "Anfang Vorschub-Bereich 1"
+    12                      "Anfang Vorschub-Bereich 2"
+    13                      "Anfang Vorschub-Bereich 3"
+    14                      "Anfang Vorschub-Bereich 4"
+    END_POS_MARK_STRING     "Ende Vorschub-Bereich 1 "
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    16                      "Ende Vorschub-Bereich 2"
+    17                      "Ende Vorschub-Bereich 3"
+    18                      "Ende Vorschub-Bereich 4"
+    VEL_POS_MARK_STRING     "Vorschub Punkt 1"
+    20                      "Vorschub Punkt 2"
+    21                      "Vorschub Punkt 3"
+    22                      "Vorschub Punkt 4"
+    MUST_SELECT_STRING      "Zuerst ein Gussteil auswählen"
+    CANT_DO_THAT_STRING     "Nicht durchführbar."
+    LAST_PART_STRING        "Das letzte Gussteil kann nicht gelöscht werden"
+    ABOUT_TO_DELETE_STRING  "Sie beabsichtigen alle Informationen über dieses Gussteil zu löschen."
+    CONTINUE_STRING         "Möchten Sie fortfahren?"
+    NO_PART_SELECTED_STRING "Keine Gussteil wurde gewählt."
+    INTERNAL_PARAMETER_STRING "Interner Parameter"
+    FT_ANALOG_STRING        "FasTrak Analogeingang"
+    FT_ONOFF_STRING         "FasTrak Digital-Eingang"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    FT_TARGET_STRING        "Zielwertstellung"
+    FT_DIGITAL_STRING       "FasTrak Digital Input"
+    FT_PLC_STRING           "FasTrak PLC Input"
+    FT_EXTENDED_ANALOG_STRING "FasTrak2 Extended Analogeingang"
+    VELOCITY_STRING         "Vorschub"
+    POSITION_STRING         "Wegstrecke"
+    NO_PERCENT_PERCENT_STRING
+                            "Beschleunigung und Vorschub können nicht beide in % sein."
+    INVALID_ENTRY_STRING    "Ungültige Eingabe"
+    PERCENT_STRING          "Prozent"
+    MONITOR_THIS_PART_STRING "Dieses Gussteil überwachen"
+    THIS_IS_CURRENT_PART_STRING "Dies ist das aktuelle Gussteil"
+    NOT_MONITORED_STRING    "Maschine wird nicht überwacht."
+    LI_GT_STRING            "Stossreduzierungs-Befehl beläuft sich auf mindestens"
+    SOME_LI_CHANGED_STRING  "Einige SureTrak Stossreduzierungs-Befehle wurden auf minimum geändert."
+    INVALID_LI_ENTRY_STRING "Ungültige SureTrak-Eingabe in der Gussteil-Bearbeitung"
+    NO_START_OF_FS_LS_STRING
+                            "Beginn des ""Schuss schnell"" Grenzschalters ist leer."
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    NO_OUTPUT_STRING        "No Output"
+    VALVE_TEST_IN_OPERATION_STRING "VENTILPRÜFUNG LÄUFT"
+    WARNING_ACTIVE_LOW_STRING "Warnung: Tiefpegelaktivierung"
+    DONT_USE_WIRE_STRING    "You SHOULD NOT USE THIS WIRE! It is already in use."
+    NEW_PARAMETER_NAME_STRING "Neuer Parametername"
+    NO_DEL_INTERNAL_PARAM_STRING "Entfernen interner Parameter nicht möglich"
+    NOT_ST_MACHINE_STRING   "Diese Maschine ist nicht für SureTrak2 bestimmt"
+    CHANGE_MACHINE_SETUP_STRING
+                            "Sie sollten die Einrichtung der Maschine ändern"
+    BISCUIT_TIME_DELAY_STRING "Verzögerung Tablette(n) "
+    TIME_TO_MEASURE_BISCUIT_STRING
+                            "Zeitaufwand zur Messung der Gießtablette (Sek.)"
+    GOOD_SHOT_WIRE_STRING   "Ausgang Guter Schuss"
+    NO_ANALOG_SENSOR_START_STRING "The Analog Sensor for Channel "
+    NO_ANALOG_SENSOR_END_STRING " is not valid."
+    NO_ANALOG_SENSOR_LINE2_STRING
+                            "______  It has been replaced with the default sensor.  ______"
+    MISSING_FILE_DESC_STRING
+                            "The list of analog sensors for each channel is missing."
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    SHOULD_BE_ENTERED_STRING "Folgender Wert sollte eingegeben werden"
+    FLOPPY_WRITE_ERROR_STRING "Fehler: zur Diskette schreiben"
+    NOT_CURRENT_PART_STRING "Nicht das aktuelle Gussteil"
+    MAIN_WINDOW_TITLE_STRING "Gussteil-Einstellungen"
+    SURETRAK_PLOT_WINDOW_TITLE_STRING "SureTrak -Aufzeichnung"
+    SURETRAK_PARAMETERS_STRING "SureTrak-Parameter"
+    SURETRAK_GLOBAL_PARAMETERS_STRING "Globale SureTrak-Parameter"
+    VEL_LOOP_GAIN_STRING    "Vorschubkreis-Verstärkung "
+    FT_STOP_POS_STRING      "Bis Haltepunkt folgen:"
+    BREAK_1_STRING          "Verlaufwechsel Nr. 1"
+    BREAK_2_STRING          "Verlaufwechsel Nr. 2"
+    BREAK_3_STRING          "Verlaufwechsel Nr. 3"
+    GAIN_STRING             "Verstärkung "
+    TIME_STRING             "Zeitdauer"
+    PRESSURE_STRING         "Druck"
+    NEW_DENSITY_NAME_STRING "Neu"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    LOW_PASSWORD_STRING     "Ihre Kennwortstufe ist zu niedrig."
+    VELOCITY_CHANGES_STRING "Vorschubänderungen"
+    CHANNEL_1_LABEL_STRING  "Kan 1"
+    CHANNEL_2_LABEL_STRING  "Kan 2"
+    CHANNEL_3_LABEL_STRING  "Kan 3"
+    CHANNEL_4_LABEL_STRING  "Kan 4"
+    CHANNEL_5_LABEL_STRING  "Kan 5"
+    CHANNEL_6_LABEL_STRING  "Kan 6"
+    CHANNEL_7_LABEL_STRING  "Kan 7"
+    CHANNEL_8_LABEL_STRING  "Kan 8"
+    MULTIPART_RUNLIST_LABEL "Mehrfache Ablaufliste "
+    THIS_IS_A_WARMUP_PART_STRING "Dies ist ein Vorwärmteil für:"
+    ADVANCED_GRID_0_STRING  "Digitaleingang "
+    ADVANCED_GRID_1_STRING  "Alarmausgang"
+    NOT_USED_STRING         "Keines"
+    CANT_CREATE_RUNLIST     "Datei für mehrfache Ablaufliste lässt sich nicht erstellen."
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    SAVING_STRING           "Speichern..."
+    OFF_STRING              "Aus"
+    ON_STRING               "Ein"
+    SAVING_VELOCITY_CHANGES_STRING "Vorschubänderungen werden gespeichert"
+    FTII_CONTROL_PGM_WRITE_FAIL_STRING
+                            "!STEUERPROGRAMM lässt sich nicht  schreiben!"
+    FTII_NO_MASTER_CONTROL_PGM_STRING
+                            "!HAUPT-STEUERPROGRAMM nicht auffindbar!"
+    START_POINT_STRING      "Start"
+    SAMPLE_POINT_STRING     "Probe bei"
+    MSL_TOO_SMALL_STRING    "Mindest-Hublänge kann zu gering sein."
+    RECOMMENDED_MSL_STRING  "Die empfohlene Mindest-Hublänge ="
+    SLOW_SHOT_OUTPUT_STRING "AUSGANG LANGSAMER SCHUSS "
+    ACCUMULATOR_OUTPUT_STRING "DRUCKSPEICHER-AUSGANG"
+    ALREADY_IN_USE_STRING   "Bereits im Einsatz für"
+    WIRE_NUMBER_STRING      "Nummer für Optoanschluss "
+    OUTPUT_NUMBER_STRING    "E/A Nummer"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    MISSING_FILE_ACTION_STRING
+                            "You should set this up in the Channels tab and save the changes."
+    RETRACT_VOLTS_STRING    "Retract Volts"
+    VALVE_PARK_VOLTS_STRING "Valve Park Volts"
+    RETRACT_PERCENT_STRING  "Retract %"
+    VALVE_PARK_PERCENT_STRING "Valve Park %"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,151 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrc1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+MY_ICON                 ICON    DISCARDABLE     "terminal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+TCPIP_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 172, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "FasTrak II Terminal Tcp/Ip Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "Tcp/Ip Address",-1,10,15,60,8,NOT WS_GROUP
+    EDITTEXT        TCP_IP_ADDRESS_EBOX,75,14,78,10,WS_GROUP
+    RTEXT           "Port",-1,10,29,60,8,NOT WS_GROUP
+    EDITTEXT        TCP_IP_PORT_EBOX,75,28,78,10,WS_GROUP
+    DEFPUSHBUTTON   "Save Changes",IDOK,38,42,50,12
+    PUSHBUTTON      "Cancel",IDCANCEL,90,42,50,12
+END
+
+UPLOAD_FILE_NAME_DIALOG DIALOG DISCARDABLE  0, 0, 270, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Upload Ascii File to FasTrak II"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Upload File Name:",-1,0,5,63,12
+    EDITTEXT        UPLOAD_FILE_NAME_EBOX,64,4,201,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Begin",IDOK,18,25,56,14,BS_CENTER
+    PUSHBUTTON      "Cancel",IDCANCEL,81,25,56,14,BS_CENTER
+    PUSHBUTTON      "emc_2_0",DEV_FILE_PB,167,20,102,12
+    PUSHBUTTON      "emc_chip_02000000.hexout",DEV_HEXOUT_FILE_PB,167,
+                    34,102,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MAINMENU MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Upload File w handshaking",  UPLOAD_FILE_W_HANDSHAKING_CHOICE
+
+        MENUITEM "&Write listbox to listbox.txt", WRITE_LISTBOX_CHOICE
+        MENUITEM "&Write profile",              WRITE_PROFILE_CHOICE
+        MENUITEM "&Write CSV",                  WRITE_CSV_CHOICE
+        MENUITEM "E&xit",                       EXIT_CHOICE
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Connect",                    CONNECT_CHOICE
+        MENUITEM "&Disconnect",                 STOP_CHOICE
+        MENUITEM "&Address",                    SET_ADDRESS_CHOICE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Clear Listbox",              CLEAR_LISTBOX_CHOICE
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resrc1.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "FasTrak II Terminal"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,6 @@
+resources
+
+                                 German  Japanese  Chinese
+
+choose_downtime_machine_dialog      x       x         x
+

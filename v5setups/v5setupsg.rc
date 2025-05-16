@@ -1,0 +1,378 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resrcg.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ADD_COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 181, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Computers"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Hinzufügen",IDOK,38,196,50,14
+    LISTBOX         ADD_COMPUTER_LB,7,26,108,164,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "Hinzuzufügende Rechner aus folgender Auflistung wählen",
+                    IDC_STATIC,4,4,103,19,NOT WS_GROUP
+    LTEXT           "Um mehrere zu wählen die Strg-Taste gedrückt halten. \n\n Klicken und über Bereich ziehen.",
+                    IDC_STATIC,123,54,53,65
+    LTEXT           "Hinzugefügte Rechner erscheinen erst nach Neustart des TrueTrak-Programms.",
+                    IDC_STATIC,124,129,47,59
+END
+
+BOARDS_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 376, 267
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name",-1,10,0,30,8,NOT WS_GROUP
+    LTEXT           "Verzeichnis",-1,46,0,42,8,NOT WS_GROUP
+    LTEXT           "Dieser Rechner",-1,240,38,51,8,NOT WS_GROUP
+    LTEXT           "Modul- nummer",-1,10,83,30,17,NOT WS_GROUP
+    LTEXT           "Moduladresse",-1,40,91,53,8,NOT WS_GROUP
+    LTEXT           "Modul- Typ",-1,102,83,30,17,NOT WS_GROUP
+    LTEXT           "Mhz or Tcp Port",-1,141,84,30,16,NOT WS_GROUP
+    LTEXT           "Maschinen- nummer",-1,10,168,38,17,NOT WS_GROUP
+    LTEXT           "Modul- nummer",-1,55,168,29,17,NOT WS_GROUP
+    LTEXT           "FasTrak Mux-Kanal",-1,93,168,38,17,NOT WS_GROUP
+    LTEXT           "Modulnummer",-1,174,108,50,9,NOT WS_GROUP
+    LTEXT           "Moduladresse",-1,174,123,54,9,NOT WS_GROUP
+    LTEXT           "Modultyp",-1,174,137,37,9,NOT WS_GROUP
+    LTEXT           "Taktfrequenz",-1,174,150,46,9,NOT WS_GROUP
+    LTEXT           "Mhz",-1,281,152,19,8,NOT WS_GROUP
+    LTEXT           "Modulnummer:",-1,162,209,50,9,NOT WS_GROUP
+    LTEXT           "Mux Channel:",-1,162,222,50,9,NOT WS_GROUP
+    LISTBOX         COMPUTER_LISTBOX,9,8,219,67,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LISTBOX         BOARD_LISTBOX,9,101,160,63,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "1",BOARD_RADIO_1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,228,107,18,12
+    CONTROL         "2",BOARD_RADIO_2,"Button",BS_AUTORADIOBUTTON,246,107,18,
+                    12
+    CONTROL         "3",BOARD_RADIO_3,"Button",BS_AUTORADIOBUTTON,264,107,18,
+                    12
+    CONTROL         "4",BOARD_RADIO_4,"Button",BS_AUTORADIOBUTTON,282,107,18,
+                    12
+    CONTROL         "5",BOARD_RADIO_5,"Button",BS_AUTORADIOBUTTON,300,107,18,
+                    12
+    CONTROL         "6",BOARD_RADIO_6,"Button",BS_AUTORADIOBUTTON,318,107,18,
+                    12
+    CONTROL         "7",BOARD_RADIO_7,"Button",BS_AUTORADIOBUTTON,336,107,18,
+                    12
+    CONTROL         "8",BOARD_RADIO_8,"Button",BS_AUTORADIOBUTTON,354,107,18,
+                    12
+    EDITTEXT        BOARD_ADDRESS_EDITBOX,230,123,38,12,WS_GROUP
+    CONTROL         "",BOARD_ADDRESS_UPDOWN,"msctls_updown32",UDS_ARROWKEYS,
+                    267,121,11,15
+    CONTROL         "Einfach",SINGLE_BOARD_TYPE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,228,137,36,12
+    CONTROL         "Multiplex",MUX_BOARD_TYPE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,267,137,45,12
+    CONTROL         "FasTrak2",FTII_BOARD_TYPE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,318,135,45,12
+    CONTROL         "4",MHZ_4_BUTTON,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,228,150,23,12
+    CONTROL         "12",MHZ_12_BUTTON,"Button",BS_AUTORADIOBUTTON,251,150,
+                    23,12
+    LISTBOX         MACHINE_LISTBOX,9,185,148,67,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "1",MACHINE_BOARD_RADIO_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,216,208,18,12
+    CONTROL         "2",MACHINE_BOARD_RADIO_2,"Button",BS_AUTORADIOBUTTON,
+                    234,208,18,12
+    CONTROL         "3",MACHINE_BOARD_RADIO_3,"Button",BS_AUTORADIOBUTTON,
+                    252,208,18,12
+    CONTROL         "4",MACHINE_BOARD_RADIO_4,"Button",BS_AUTORADIOBUTTON,
+                    270,208,18,12
+    CONTROL         "5",MACHINE_BOARD_RADIO_5,"Button",BS_AUTORADIOBUTTON,
+                    288,208,18,12
+    CONTROL         "6",MACHINE_BOARD_RADIO_6,"Button",BS_AUTORADIOBUTTON,
+                    306,208,18,12
+    CONTROL         "7",MACHINE_BOARD_RADIO_7,"Button",BS_AUTORADIOBUTTON,
+                    324,208,18,12
+    CONTROL         "8",MACHINE_BOARD_RADIO_8,"Button",BS_AUTORADIOBUTTON,
+                    342,208,18,12
+    CONTROL         "1",MACHINE_MUX_RADIO_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,216,221,18,12
+    CONTROL         "2",MACHINE_MUX_RADIO_2,"Button",BS_AUTORADIOBUTTON,234,
+                    221,18,12
+    CONTROL         "3",MACHINE_MUX_RADIO_3,"Button",BS_AUTORADIOBUTTON,252,
+                    221,18,12
+    CONTROL         "4",MACHINE_MUX_RADIO_4,"Button",BS_AUTORADIOBUTTON,270,
+                    221,18,12
+    CONTROL         "5",MACHINE_MUX_RADIO_5,"Button",BS_AUTORADIOBUTTON,288,
+                    221,18,12
+    CONTROL         "6",MACHINE_MUX_RADIO_6,"Button",BS_AUTORADIOBUTTON,306,
+                    221,18,12
+    CONTROL         "7",MACHINE_MUX_RADIO_7,"Button",BS_AUTORADIOBUTTON,324,
+                    221,18,12
+    CONTROL         "8",MACHINE_MUX_RADIO_8,"Button",BS_AUTORADIOBUTTON,342,
+                    221,18,12
+    PUSHBUTTON      "Änderungen &speichern",IDOK,164,248,79,16,BS_CENTER | 
+                    WS_GROUP
+    CONTROL         "",-1,"Static",SS_GRAYFRAME,0,73,375,1
+    CONTROL         "",-1,"Static",SS_GRAYFRAME,0,164,375,1
+    CTEXT           "Rechner",-1,231,0,36,8,NOT WS_GROUP
+    CTEXT           "Maschinen auf diesem Rechner",-1,151,166,112,8,NOT 
+                    WS_GROUP
+    CTEXT           "Karten auf diesem Rechner",-1,157,75,91,8,NOT WS_GROUP
+    PUSHBUTTON      "&Neu",NEW_BOARD_BUTTON,290,78,40,12,BS_CENTER | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Löschen",DELETE_BOARD_BUTTON,333,78,40,12,BS_CENTER | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "&Neu",NEW_COMPUTER_BUTTON,290,2,40,12,BS_CENTER | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "&Löschen",DELETE_COMPUTER_BUTTON,333,2,40,12,BS_CENTER | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    PUSHBUTTON      "&Edit",EDIT_COMPUTER_BUTTON,332,15,40,12,WS_DISABLED
+    LTEXT           "???",THIS_COMPUTER_TBOX,297,38,17,8,NOT WS_GROUP
+    EDITTEXT        TCP_ADDR_EBOX,205,147,86,12,ES_AUTOHSCROLL
+    EDITTEXT        TCP_PORT_EBOX,311,147,43,12,ES_AUTOHSCROLL
+    LTEXT           "Address",TCP_ADDR_TXT,177,149,26,8
+    LTEXT           "Port",TCP_PORT_TXT,295,150,14,8
+END
+
+EDIT_COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 114, 31
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Rechnername bearbeiten"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,62,9,37,14
+    EDITTEXT        COMPUTER_NAME_EBOX,13,10,38,12,WS_GROUP
+END
+
+NO_COMPUTER_BOARDS_SETUP_DIALOG DIALOG DISCARDABLE  0, 0, 362, 231
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "C01",THIS_COMPUTER_TBOX,215,2,19,8,NOT WS_GROUP
+    LTEXT           "Modul- nummer",-1,10,17,26,17,NOT WS_GROUP
+    LTEXT           "Modul- adresse",-1,44,17,28,17,NOT WS_GROUP
+    LTEXT           "Modul- typ",-1,81,17,27,17,NOT WS_GROUP
+    LTEXT           "Taktfreq. Mhz",-1,116,17,33,16,NOT WS_GROUP
+    LTEXT           "Maschinen- nummer",-1,10,121,38,17,NOT WS_GROUP
+    LTEXT           "Mudul- nummer",-1,53,121,29,17,NOT WS_GROUP
+    LTEXT           "FasTrak-Mux Kanal",-1,88,121,43,17,NOT WS_GROUP
+    LTEXT           "Modulnummer",-1,162,42,50,9,NOT WS_GROUP
+    LTEXT           "Moduladresse",-1,162,57,54,9,NOT WS_GROUP
+    LTEXT           "Modultyp",-1,162,71,43,9,NOT WS_GROUP
+    LTEXT           "Taktfrequenz",-1,162,84,46,9,NOT WS_GROUP
+    LTEXT           "Mhz",-1,269,86,19,8,NOT WS_GROUP
+    LTEXT           "Modulnummer",-1,162,162,50,9,NOT WS_GROUP
+    LTEXT           "Mux-Kanal",-1,162,175,50,9,NOT WS_GROUP
+    LISTBOX         BOARD_LISTBOX,9,36,148,63,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "1",BOARD_RADIO_1,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,216,41,18,12
+    CONTROL         "2",BOARD_RADIO_2,"Button",BS_AUTORADIOBUTTON,234,41,18,
+                    12
+    CONTROL         "3",BOARD_RADIO_3,"Button",BS_AUTORADIOBUTTON,252,41,18,
+                    12
+    CONTROL         "4",BOARD_RADIO_4,"Button",BS_AUTORADIOBUTTON,270,41,18,
+                    12
+    CONTROL         "5",BOARD_RADIO_5,"Button",BS_AUTORADIOBUTTON,288,41,18,
+                    12
+    CONTROL         "6",BOARD_RADIO_6,"Button",BS_AUTORADIOBUTTON,306,41,18,
+                    12
+    CONTROL         "7",BOARD_RADIO_7,"Button",BS_AUTORADIOBUTTON,324,41,18,
+                    12
+    CONTROL         "8",BOARD_RADIO_8,"Button",BS_AUTORADIOBUTTON,342,41,18,
+                    12
+    EDITTEXT        BOARD_ADDRESS_EDITBOX,218,57,38,12,WS_GROUP
+    CONTROL         "UpDown2",BOARD_ADDRESS_UPDOWN,"msctls_updown32",
+                    UDS_ARROWKEYS,255,55,11,15
+    CONTROL         "Einfach",SINGLE_BOARD_TYPE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,216,71,36,12
+    CONTROL         "Multiplex",MUX_BOARD_TYPE_BUTTON,"Button",
+                    BS_AUTORADIOBUTTON,260,71,45,12
+    CONTROL         "4",MHZ_4_BUTTON,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,216,84,23,12
+    CONTROL         "12",MHZ_12_BUTTON,"Button",BS_AUTORADIOBUTTON,239,84,23,
+                    12
+    LISTBOX         MACHINE_LISTBOX,9,138,148,67,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "1",MACHINE_BOARD_RADIO_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,216,161,18,12
+    CONTROL         "2",MACHINE_BOARD_RADIO_2,"Button",BS_AUTORADIOBUTTON,
+                    234,161,18,12
+    CONTROL         "3",MACHINE_BOARD_RADIO_3,"Button",BS_AUTORADIOBUTTON,
+                    252,161,18,12
+    CONTROL         "4",MACHINE_BOARD_RADIO_4,"Button",BS_AUTORADIOBUTTON,
+                    270,161,18,12
+    CONTROL         "5",MACHINE_BOARD_RADIO_5,"Button",BS_AUTORADIOBUTTON,
+                    288,161,18,12
+    CONTROL         "6",MACHINE_BOARD_RADIO_6,"Button",BS_AUTORADIOBUTTON,
+                    306,161,18,12
+    CONTROL         "7",MACHINE_BOARD_RADIO_7,"Button",BS_AUTORADIOBUTTON,
+                    324,161,18,12
+    CONTROL         "8",MACHINE_BOARD_RADIO_8,"Button",BS_AUTORADIOBUTTON,
+                    342,161,18,12
+    CONTROL         "1",MACHINE_MUX_RADIO_1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,216,174,18,12
+    CONTROL         "2",MACHINE_MUX_RADIO_2,"Button",BS_AUTORADIOBUTTON,234,
+                    174,18,12
+    CONTROL         "3",MACHINE_MUX_RADIO_3,"Button",BS_AUTORADIOBUTTON,252,
+                    174,18,12
+    CONTROL         "4",MACHINE_MUX_RADIO_4,"Button",BS_AUTORADIOBUTTON,270,
+                    174,18,12
+    CONTROL         "5",MACHINE_MUX_RADIO_5,"Button",BS_AUTORADIOBUTTON,288,
+                    174,18,12
+    CONTROL         "6",MACHINE_MUX_RADIO_6,"Button",BS_AUTORADIOBUTTON,306,
+                    174,18,12
+    CONTROL         "7",MACHINE_MUX_RADIO_7,"Button",BS_AUTORADIOBUTTON,324,
+                    174,18,12
+    CONTROL         "8",MACHINE_MUX_RADIO_8,"Button",BS_AUTORADIOBUTTON,342,
+                    174,18,12
+    PUSHBUTTON      "Änderungen &speichern",IDOK,156,208,86,16,BS_CENTER | 
+                    WS_GROUP
+    CONTROL         "",-1,"Static",SS_GRAYFRAME,0,107,368,1
+    CTEXT           "Maschinen an diesem Rechner",-1,137,112,112,8,NOT 
+                    WS_GROUP
+    CTEXT           "Karten am Rechner",-1,139,2,76,8,NOT WS_GROUP
+    PUSHBUTTON      "&Neu",NEW_BOARD_BUTTON,277,3,40,12,BS_CENTER | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Löschen",DELETE_BOARD_BUTTON,320,3,40,12,BS_CENTER | 
+                    NOT WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "BOARDS_SETUP_DIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 362
+        BOTTOMMARGIN, 265
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+V5SETUPS_ICON           ICON    DISCARDABLE     "v5setups.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resrcg.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SINGLE_BOARD_STRING     "Einzeln"
+    MULTIPLEX_BOARD_STRING  "Multiplex"
+    FTII_BOARD_STRING       "FasTrak2"
+    UNKNOWN_BOARD_STRING    "Nicht bekannt"
+    NO_DELETE_THIS_COMPUTER_STRING 
+                            "Dieser Rechner kann nicht entfernt werden."
+    UNABLE_TO_COMPLY_STRING "Nicht durchführbar."
+    DELETE_COMPUTER_STRING  "Rechner löschen."
+    NO_DELETE_ONLY_COMPUTER_STRING 
+                            "Der einzige Rechner kann nicht entfernt werden."
+    NO_CREATE_DIR_STRING    "Verzeichnis einrichten nicht möglich."
+    NO_DEL_COMPUTER_DIR_STRING "Verzeichnis löschen nicht möglich."
+    MAIN_WINDOW_TITLE       "FasTrak Modul-Einstellungen"
+    ERROR_GETTING_DIR_STRING "Fehler: Zugriff auf Verzeichnisnamen."
+    MUST_CHANGE_COMPUTER_STRING 
+                            "Name sowie Verzeichnis müssen geändert werden."
+    NO_CREATE_COMPUTER_STRING 
+                            "Es lassen sich keine weiteren Rechner hinzufügen."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    NO_EMPTY_COMPUTER_STRING "Name sowie Verzeichnis erfordern eine Eingabe."
+    ONLY_EIGHT_BOARDS_STRING "Nicht mehr als 8 Module erlaubt."
+    NO_CREATE_BOARD_STRING  "Es lassen sich keine weiteren Module hinzufügen."
+    USED_BOARD_ADDRESS_STRING "Diese Adresse ist bereits belegt."
+    NO_ADDRESS_CHANGE_STRING "Modul-Adresse lässt sich nicht ändern."
+    NO_OTHER_COMPUTERS_STRING "Keine weiteren Rechner im Datennetz gefunden"
+    ADDING_STRING           "Hinzufügen"
+    V5_DIR_NOT_FOUND_STRING "V5-Verzeichnis nicht auffindbar"
+    NO_EDIT_THIS_COMPUTER_STRING 
+                            "Dieser Rechner darf nicht bearbeitet werden."
+    RENAME_BEFORE_SAVING_STRING 
+                            "Diese sollten vor dem Abspeichern umbenannt werden"
+    SAME_NAME_STRING        "Ein oder mehrere Rechner haben den gleichen Namen."
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

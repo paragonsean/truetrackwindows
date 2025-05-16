@@ -1,0 +1,232 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "msresj.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 477, 194
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    LTEXT           "コンピュータ",IDC_STATIC,12,9,48,8
+    LTEXT           "ディレクトリ",DIRECTORY_TBOX,65,9,45,8
+    LTEXT           "種類",TYPE_TBOX,140,9,17,8
+    LTEXT           "接続路",CONNECTIONS_TBOX,189,9,40,8
+    LTEXT           "Online",ONLINE_TBOX,439,10,21,8
+    LTEXT           "コンピュータの名",COMPUTER_NAME_TBOX,13,113,66,8,
+                    WS_DISABLED
+    CTEXT           "接続された コンピュータ",CONNECTED_COMPUTERS_TBOX,263,
+                    111,47,17,WS_DISABLED
+    CTEXT           "依存的な   コンピュータ",AVAILABLE_COMPUTERS_TBOX,319,
+                    110,45,17,WS_DISABLED
+    GROUPBOX        "種類",TYPE_GBOX,87,107,122,49,WS_DISABLED
+    LISTBOX         COMPUTER_LISTBOX,10,19,452,85,LBS_SORT | LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        COMPUTER_NAME_EBOX,11,124,69,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED | WS_GROUP
+    CONTROL         "モニトリングコンピュータ",MONITORING_COMPUTER_RADIO,
+                    "Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP | 
+                    WS_TABSTOP,97,117,107,10
+    CONTROL         "オフィスヴォクステーション",OFFICE_WORKSTATION_RADIO,
+                    "Button",BS_AUTORADIOBUTTON | WS_DISABLED,97,129,110,10
+    CONTROL         "データショーワ",DATA_SERVER_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,97,141,74,10
+    PUSHBUTTON      "準備的な  接続路",STANDARD_CONNECTIONS_BUTTON,213,119,
+                    48,28,BS_CENTER | BS_MULTILINE | WS_GROUP
+    LISTBOX         CONNECTED_COMPUTER_LISTBOX,265,129,44,46,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         AVAILABLE_COMPUTER_LISTBOX,322,129,44,46,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "上書き保存",SAVE_CHANGES_BUTTON,137,163,57,14
+    LTEXT           "\\\\W01\\V5",CHECKING_DIR_TBOX,6,172,128,9
+    PUSHBUTTON      "&Help",HELP_BUTTON,364,0,19,8
+    PUSHBUTTON      "Browse for Computers",BROUSE_COMPUTERS_BUTTON,10,139,76,
+                    10
+    PUSHBUTTON      "Remove Computer(s)",REMOVE_COMPUTER_BUTTON,10,150,76,10
+    LTEXT           "Version",VERSION_TBOX,385,10,24,7
+    LTEXT           "Shared Full",SHARED_FULL_TBOX,415,2,24,16
+END
+
+ADD_COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 181, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Computers"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,8,196,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,196,50,14
+    LISTBOX         ADD_COMPUTER_LB,7,26,108,164,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "Choose the Computers to Add from the Following List",
+                    IDC_STATIC,4,4,103,19,NOT WS_GROUP
+    LTEXT           "Hold down the Ctrl key to select more than one. \n\nClick and drag for a range.",
+                    IDC_STATIC,123,54,53,76
+END
+
+RENAME_NEW_COMPUTER_DIALOG DIALOG DISCARDABLE  0, 0, 188, 88
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,27,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,65,50,14
+    LTEXT           "Because you already have a computer with this name you will have to use a different name for the new one.",
+                    IDC_STATIC,4,1,168,28
+    EDITTEXT        NEW_COMPUTER_NAME_EBOX,132,45,22,12,ES_AUTOHSCROLL
+    LTEXT           "Enter a new name, three characters or less, below.",
+                    IDC_STATIC,4,32,173,8
+    LTEXT           "W01",OLD_COMPUTER_NAME_TBOX,59,47,16,8
+    LTEXT           "Current Name",IDC_STATIC,11,47,44,8
+    LTEXT           "New Name",IDC_STATIC,90,47,36,8
+END
+
+PATH_TOO_LONG_DIALOG DIALOG DISCARDABLE  0, 0, 420, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Path Too Long"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "Close",IDOK,180,73,50,14
+    LTEXT           "W01",TOO_LONG_SORC_TBOX,85,7,26,8
+    LTEXT           "WS0",TOO_LONG_DEST_TBOX,137,21,42,8
+    LTEXT           "\\\\The-Office-Workstation-Computer\\V5\\DATA\\",
+                    TOO_LONG_PATH_TBOX,137,31,245,8
+    LTEXT           "Computer being updated:",IDC_STATIC,0,7,80,8
+    LTEXT           "Computer being added to the connect list:",IDC_STATIC,0,
+                    20,133,8
+    LTEXT           "Path:",IDC_STATIC,115,31,18,8
+    LTEXT           "The computer being updated has an older version of the True-Trak 2020 (tm) software which does not support root paths (as shown above) longer than 15 characters.",
+                    IDC_STATIC,18,49,383,19
+END
+
+COMPUTER_DIR_CHANGED_DIALOG DIALOG DISCARDABLE  0, 0, 319, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Computer Directory Change"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "Close",IDOK,135,73,50,14
+    CTEXT           "W01",TOO_LONG_SORC_TBOX,44,7,22,8
+    LTEXT           "WS0",TOO_LONG_DEST_TBOX,69,29,245,8
+    LTEXT           "\\\\The-Office-Workstation-Computer\\V5\\DATA\\",
+                    TOO_LONG_PATH_TBOX,69,39,245,8
+    LTEXT           "The Path of ",IDC_STATIC,0,7,40,8
+    LTEXT           "has changed since the last time this program was run.",
+                    IDC_STATIC,73,7,174,8
+    LTEXT           "Current Path:",IDC_STATIC,19,39,42,8
+    LTEXT           "Previous Path:",IDC_STATIC,14,28,47,8
+    LTEXT           "You should update any computers that connect to this one",
+                    IDC_STATIC,7,57,188,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "msresj.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+NETSETUP_ICON           ICON    DISCARDABLE     "netsetup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    MAIN_WINDOW_TITLE_STRING "Visi-Trakのネットワークコンピュータの設定"
+    MONITORING_COMPUTER_STRING "モニトリングコンピュータ"
+    WORKSTATION_COMPUTER_STRING "オフィスヴォクステーション"
+    DATA_SERVER_COMPUTER_STRING "データショーワ"
+    CANT_COMPLY_STRING      "実施することができません"
+    ERROR_WRITING_COMPUTER_STRING "COMPUTER.TXTファイルへの書き込みエラー"
+    DIR_TOO_LONG_STRING     "Directory Name Too Long, Max is 25 Chars"
+    YES_STRING              "Yes"
+    NO_STRING               "No"
+    CONFIRM_REMOVE_STRING   "Do you wish to continue?"
+    WILL_REMOVE_STRING      "Highlighted computers will be REMOVED"
+    NEW_NAME_TOO_LONG_STRING "New Name is Too Long"
+    NO_NAME_ENTERED_STRING  "You must enter a Name"
+    SAME_NAME_STRING        "You must enter DIFFERENT Name"
+    CREATE_FAILED_STRING    "新設できません"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ENUMERATION_THREAD_STRING "Network Computer Search Thread"
+    ADD_COMPUTERS_FROM_LISTBOX_THREAD_STRING "Add Computers from Listbox"
+    NO_V5_FOLDER_FOUND_STRING "No V5 Folder Found"
+    NO_DATA_DIR_FOUND_STRING "\\DATA\\ not found in local directory"
+    COMPUTER_ALREADY_IN_LIST_STRING "This computer is already in the list"
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

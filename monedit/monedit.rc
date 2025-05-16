@@ -1,0 +1,211 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "msres.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+MONITOR_LIST DIALOG DISCARDABLE  0, 0, 386, 234
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Parameters",PARM_GROUPBOX,29,129,155,81
+    GROUPBOX        "Profiles",PROF_GROUPBOX,190,129,155,81
+    LTEXT           "Acquire Count",IDC_STATIC,135,145,47,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,194,142,64,62
+    LTEXT           "Ma",IDC_STATIC,7,17,14,8
+    LTEXT           "Part",PART_STATIC,32,17,16,8
+    LTEXT           "A L M",ALARM_STATIC,75,3,8,24
+    LTEXT           "M T R",MONITOR_STATIC,83,3,8,23
+    LTEXT           "Sample",POST_SECONDS_STATIC,93,18,25,8
+    LTEXT           "Display",DISPLAY_SECONDS_STATIC,123,18,25,8
+    LTEXT           "Skip",PARAM_SKIP_STATIC,156,19,17,8
+    LTEXT           "Acquire",PARAM_ACQUIRE_STATIC,203,19,27,8
+    LTEXT           "Max",PARAM_MAX_STATIC,235,19,14,8
+    LTEXT           "Skip",SHOT_SKIP_STATIC,266,19,17,8
+    LTEXT           "Acquire",SHOT_ACQUIRE_STATIC,314,19,27,8
+    LTEXT           "Max",SHOT_MAX_STATIC,346,19,14,8
+    CTEXT           "Parameters",IDC_STATIC,157,8,94,9,SS_SUNKEN
+    CTEXT           "Profiles",IDC_STATIC,265,8,96,9,SS_SUNKEN
+    LTEXT           "Max Saved",IDC_STATIC,135,194,41,8
+    LTEXT           "Current Part Name",IDC_STATIC,32,98,63,10
+    LTEXT           "Acquire Count",IDC_STATIC,296,145,47,8
+    LTEXT           "Max Saved",IDC_STATIC,296,194,41,8
+    LTEXT           "Sample Time",IDC_STATIC,230,105,46,10
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,33,142,64,62
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,6,93,359,1
+    LISTBOX         MONITOR_LISTBOX,4,29,368,60,LBS_SORT | LBS_USETABSTOPS | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        PART_NAME_COMBOBOX,32,110,83,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Monitor This Part",MONITOR_MACHINE_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,133,101,77,12
+    CONTROL         "Monitor Alarms",MONITOR_ALARMS_CHECKBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,133,112,62,11
+    EDITTEXT        SAMPLE_TIME_EDIT,234,116,39,11
+    CONTROL         "Acquire All",PARM_ACQUIRE_ALL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,36,147,51,12
+    CONTROL         "Acquire None",PARM_ACQUIRE_NONE,"Button",
+                    BS_AUTORADIOBUTTON,36,160,57,12
+    CONTROL         "Time Skip",PARM_TIME_SKIP,"Button",BS_AUTORADIOBUTTON,
+                    36,174,52,12
+    CONTROL         "Shot Skip",PARM_SKIP_COUNT,"Button",BS_AUTORADIOBUTTON,
+                    36,188,49,12
+    LTEXT           "Skip Time",PARM_SKIP_LABEL,135,168,45,8
+    EDITTEXT        PARM_ACQUIRE_COUNT,99,143,33,11,WS_GROUP
+    EDITTEXT        PARM_SKIP,99,166,33,11
+    EDITTEXT        PARM_MAX_SAVED,99,192,33,11
+    CONTROL         "Acquire All",PROF_ACQUIRE_ALL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,198,146,51,12
+    CONTROL         "Acquire None",PROF_ACQUIRE_NONE,"Button",
+                    BS_AUTORADIOBUTTON,198,160,57,12
+    CONTROL         "Time Skip",PROF_TIME_SKIP,"Button",BS_AUTORADIOBUTTON,
+                    198,174,52,12
+    CONTROL         "Shot Skip",PROF_SKIP_COUNT,"Button",BS_AUTORADIOBUTTON,
+                    198,188,49,12
+    LTEXT           "Skip Time",PROF_SKIP_LABEL,296,168,46,8
+    EDITTEXT        PROF_ACQUIRE_COUNT,260,143,33,11,WS_GROUP
+    EDITTEXT        PROF_SKIP,260,166,33,11
+    EDITTEXT        PROF_MAX_SAVED,260,192,33,11
+    PUSHBUTTON      "Save Changes",SAVE_CHANGES_BUTTON,126,215,61,14
+    PUSHBUTTON      "Begin Monitoring",BEGIN_MONITORING_BUTTON,191,215,64,14,
+                    BS_CENTER
+    EDITTEXT        DISPLAY_TIME_EBOX,291,116,29,11
+    LTEXT           "Display Time",DISPLAY_TIME_TBOX,285,105,41,8
+    GROUPBOX        "Post Impact Seconds",IDC_STATIC,216,96,129,34,BS_CENTER
+    CTEXT           "Post Impact Sec.",IDC_STATIC,88,4,61,8
+END
+
+MULTIPART_DIALOG DIALOG DISCARDABLE  0, 0, 397, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Muli-Part Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,144,134,45,14
+    PUSHBUTTON      "Cancel",IDCANCEL,198,134,45,14
+    CONTROL         "",GRID_POSITION_BORDER,"Static",SS_BLACKFRAME,3,17,385,
+                    114
+    RTEXT           "This Machine =",IDC_STATIC,98,3,54,10
+    LTEXT           "M01",MACHINE_NAME_TBOX,155,3,21,10,NOT WS_GROUP
+    RTEXT           "This Part =",IDC_STATIC,182,3,43,10
+    LTEXT           "VISITRAK",PART_NAME_TBOX,227,3,51,10,NOT WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "MONITOR_LIST", DIALOG
+    BEGIN
+        RIGHTMARGIN, 353
+    END
+
+    "MULTIPART_DIALOG", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "msres.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MONEDIT             ICON    DISCARDABLE     "monedit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    SKIP_COUNT_STRING       "Skip Count"
+    SKIP_SECONDS_STRING     "Skip Seconds"
+    CANNOT_FIND_MACHINE_STRING "Cannot Find Machine"
+    DONOT_CONTINUE_STRING   "Do not Continue"
+    MONEDIT_TITLE_STRING    "Monitor Setup"
+    SHOTS_STRING            " Shots"
+    SEC_STRING              " Sec"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
